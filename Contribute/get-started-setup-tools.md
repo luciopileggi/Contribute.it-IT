@@ -8,11 +8,11 @@ ms.date: 01/04/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 62c4b234f23b470ffea33cacdfc469fbd7e526bd
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: 0ca942e557640db1ba36d3f5b1064656ed3dea8d
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="install-content-authoring-tools"></a>Installare gli strumenti di creazione del contenuto
 
@@ -22,9 +22,9 @@ In questo articolo vengono descritti i passaggi per installare in modo interatti
 > * Installare [Visual Studio Code](https://code.visualstudio.com/)
 
 >[!IMPORTANT]
-> Per apportare solo modifiche minime agli articoli, *non* è necessario completare i passaggi contenuti in questo articolo ed è possibile passare direttamente al [flusso di lavoro per modifiche minime o non frequenti](light-workflow.md).
+> Per apportare solo modifiche minime agli articoli, *non* è necessario completare i passaggi contenuti in questo articolo ed è possibile passare direttamente al [flusso di lavoro le per modifiche rapide](index.md#quick-edits-to-existing-documents).
 >
-> I collaboratori principali sono invitati a completare questi passaggi, che consentono di usare il [flusso di lavoro per modifiche di rilievo o di lunga durata](full-workflow.md). Anche se sono disponibili le autorizzazioni di scrittura nel repository principale, *è caldamente consigliata la creazione di un fork e di un clone del repository* (e le informazioni nella presente guida la danno per scontata), in modo da disporre di autorizzazioni di lettura/scrittura per archiviare le modifiche proposte nel fork.
+> I collaboratori principali sono invitati a completare questi passaggi, che consentono di usare il [flusso di lavoro per modifiche di rilievo o di lunga durata](how-to-write-workflows-major.md). Anche se sono disponibili le autorizzazioni di scrittura nel repository principale, *è caldamente consigliata la creazione di un fork e di un clone del repository* (e le informazioni nella presente guida la danno per scontata), in modo da disporre di autorizzazioni di lettura/scrittura per archiviare le modifiche proposte nel fork.
 
 ## <a name="install-git-client-tools-on-windows"></a>Installare gli strumenti client Git in Windows
 
