@@ -1,18 +1,18 @@
 ---
 title: Installare gli strumenti di creazione del contenuto
 description: Questo articolo include informazioni utili per scaricare e installare gli strumenti client che saranno necessari per Git e la modifica dei file markdown.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
-ms.date: 01/04/2018
+author: jasonwhowell
+ms.author: jasonh
+manager: kfile
+ms.date: 04/30/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 0ca942e557640db1ba36d3f5b1064656ed3dea8d
-ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
+ms.openlocfilehash: 1011c3fc829202a3df134ddc80eb05b8959b7bf6
+ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-content-authoring-tools"></a>Installare gli strumenti di creazione del contenuto
 
@@ -20,6 +20,7 @@ In questo articolo vengono descritti i passaggi per installare in modo interatti
 > [!div class="checklist"]
 > * Installare [Git per Windows](https://git-scm.com/download/win)
 > * Installare [Visual Studio Code](https://code.visualstudio.com/)
+> * Installare [Docs Authoring Pack](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)
 
 >[!IMPORTANT]
 > Per apportare solo modifiche minime agli articoli, *non* è necessario completare i passaggi contenuti in questo articolo ed è possibile passare direttamente al [flusso di lavoro le per modifiche rapide](index.md#quick-edits-to-existing-documents).
@@ -58,6 +59,16 @@ Scaricare e installare [Visual Studio Code](https://code.visualstudio.com/). La 
 
 > [!TIP]
 > Per avviare Visual Studio Code e aprire la cartella corrente, eseguire il comando `code .` nella riga di comando o nella shell Bash. Se la cartella corrente fa parte di un repository Git locale, l'integrazione di GitHub viene visualizzata automaticamente in Visual Studio Code.
+
+## <a name="docs-authoring-pack"></a>Docs Authoring Pack
+Installare Docs Authoring Pack per Visual Studio Code. Questo set di estensioni include strumenti e informazioni di base per la creazione di contenuto, utili durante la scrittura di Markdown, oltre a una funzionalità di anteprima che consente di vedere l'aspetto di Markdown nello stile del sito docs.microsoft.com.
+
+   Visitare questa [pagina del marketplace](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) e selezionare **Installa** oppure cercare `docsmsft.docs-authoring-pack` nell'elenco delle estensioni nella finestra di VS Code. 
+
+   Docs Authoring Pack è accessibile premendo ALT+M all'interno di VS Code. La barra degli strumenti è nascosta per impostazione predefinita, ma può essere visualizzata. Modificare le impostazioni di VS Code (CTRL+virgola) e aggiungere l'impostazione utente `"markdown.showToolbar": true` per visualizzare la barra degli strumenti.
+
+   Per altre informazioni, vedere la pagina di [Docs Authoring Pack](how-to-write-docs-auth-pack.md).
+
 
 ## <a name="next-steps"></a>Passaggi successivi
 
