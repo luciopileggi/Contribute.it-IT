@@ -8,11 +8,11 @@ ms.date: 01/18/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: d9c7211641fb05aaca8a76e10c7216ff61a5d23c
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: f702d0d29ee7dc9c69cb26b79bf6283d91b6b6bc
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Configurare un repository Git locale per la documentazione
 
@@ -27,7 +27,7 @@ Eseguire le attività di installazione seguenti, da effettuare una sola volta, p
 > * Configurare il valore del repository remoto upstream
 
 > [!IMPORTANT]
-> Se si stanno apportando solo piccole modifiche a un articolo, *non* è necessario completare i passaggi descritti in questo articolo. È possibile proseguire direttamente con il [flusso di lavoro modifiche minime/non frequenti](light-workflow.md).
+> Se si stanno apportando solo piccole modifiche a un articolo, *non* è necessario completare i passaggi descritti in questo articolo. È possibile proseguire direttamente con il [flusso di lavoro delle modifiche rapide](index.md#quick-edits-to-existing-documents).
 >
 
 ## <a name="overview"></a>Panoramica
@@ -46,7 +46,7 @@ La documentazione ospitata in [docs.microsoft.com](https://docs.microsoft.com) s
 
 1. Se non si è certi del repository da usare, visitare l'articolo su docs.microsoft.com con il Web browser. Selezionare il collegamento **Modifica** (icona a forma di matita) nell'angolo superiore destro dell'articolo.
 
-   ![Fare clic su Modifica per determinare il repository e il percorso del file.](media/edit-article.png)
+   ![Fare clic su Modifica per determinare il repository e il percorso del file.](media/index/edit-article.png)
 
 2. Tale collegamento consente di visualizzare la posizione in github.com del file Markdown corrispondente nel repository appropriato. Esaminare l'URL per visualizzare il nome del repository.
 

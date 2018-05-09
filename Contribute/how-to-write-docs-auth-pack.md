@@ -1,19 +1,18 @@
 ---
 title: Docs Authoring Pack per VS Code
-description: Pacchetto di estensioni VS Code per facilitare la creazione di codice Markdown per docs.microsoft.com.
+description: Questo articolo illustra il pacchetto di estensioni VS Code per facilitare la creazione di codice Markdown per docs.microsoft.com.
 author: meganbradley
 ms.author: mbradley
 manager: jemash
 ms.date: 04/06/2018
-ms.article: contributor-guide
-ms.prod: n.a
-ms.service: n.a
-ms.technology: n.a
-ms.openlocfilehash: 5c857deb07e28e1f6744c895a291bf78a6acf1df
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.prod: non-product-specific
+ms.topic: contributor-guide
+ms.custom: external-contributor-guide
+ms.openlocfilehash: d0d61db2faf88598ecd2c800fb5fbe8df8ec44f5
+ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Docs Authoring Pack per VS Code
 
@@ -87,7 +86,7 @@ Gli utenti che in precedenza usavano il codice di estensione denominato "Gauntle
 
 ## <a name="known-issues"></a>Problemi noti
 
-- [DocFX Preview] MacOS e Linux: l'anteprima di DocFX non viene avviata correttamente. Per impostazione predefinita, per queste piattaforme viene usata l'anteprima di Markdown di VS Code.
-- [DocFx Preview] Tutte le piattaforme: nell'anteprima di alcuni elementi della sintassi, ad esempio i collegamenti xref (riferimenti incrociati) ad API, il rendering non viene eseguito correttamente, con lacune di contenuto in alcuni casi.
-- [External bookmarks] Linux: l'elenco file viene visualizzato, ma non vengono visualizzate intestazioni da selezionare.
-- [Includes] Linux: l'elenco file viene visualizzato, ma non viene aggiunto alcun collegamento dopo la selezione.
+- Anteprima di DocFX: in MacOS e Linux l'anteprima di DocFX non viene avviata correttamente. Per impostazione predefinita, per queste piattaforme viene usata l'anteprima Markdown di VS Code.
+- Anteprima di DocFX: in tutte le piattaforme, nell'anteprima di alcuni elementi della sintassi, ad esempio i collegamenti xref (riferimenti incrociati) ad API, il rendering non viene eseguito correttamente, con lacune di contenuto in alcuni casi.
+- Segnalibri esterni: in Linux l'elenco file viene visualizzato, ma non vengono visualizzate intestazioni da selezionare.
+- File di inclusione: in Linux l'elenco file viene visualizzato, ma non viene aggiunto alcun collegamento dopo la selezione.
