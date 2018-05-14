@@ -1,3 +1,3 @@
-## Microsoft Open Source Code of Conduct
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+## Codice sorgente Microsoft Open di comportamento
+Il progetto ha adottato [Microsoft Apri origine codice di comportamento](https://opensource.microsoft.com/codeofconduct/).
+Per ulteriori informazioni vedere il [Codice di condurre domande frequenti](https://opensource.microsoft.com/codeofconduct/faq/) o contattare [opencode@microsoft.com](mailto:opencode@microsoft.com) con altre domande o commenti.
