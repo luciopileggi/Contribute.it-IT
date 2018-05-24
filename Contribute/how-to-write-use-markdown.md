@@ -8,17 +8,22 @@ ms.date: 07/13/2017
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 96d00abc052c3b23ca62201dccdbe590a927e72d
-ms.sourcegitcommit: de6e6b6ca641fdd5b30eb46deee9ac3a500089ef
+ms.openlocfilehash: 041398361aef90c44bdf3a0dad4aaa2d40a38289
+ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Come usare Markdown per scrivere articoli di Docs
 
 Gli articoli di docs.microsoft.com sono scritti in un semplice linguaggio di markup denominato [Markdown](https://daringfireball.net/projects/markdown/), facile sia da leggere che da apprendere. Per questo motivo si sta imponendo rapidamente come standard del settore.
 
-Dato che il contenuto di Docs è archiviato in GitHub, può usare un superset di Markdown denominato [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), che offre funzionalità aggiuntive per esigenze di formattazione comuni. In più, Open Publishing Services (OPS) implementa DocFX Flavored Markdown (DFM), un linguaggio altamente compatibile con GitHub Flavored Markdown (GFM), che aggiunge funzionalità per abilitare funzioni specifiche di Docs.
+Dato che il contenuto di Docs è archiviato in GitHub, può usare un superset di Markdown denominato [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), che offre funzionalità aggiuntive per esigenze di formattazione comuni. In più, Open Publishing Services (OPS) implementa il parser Markdig per Markdown. Markdig è altamente compatibile con GitHub Flavored Markdown (GFM) e aggiunge funzionalità per abilitare funzioni specifiche di Docs.
+
+* Markdig è un processore Markdown per .NET veloce, potente, estensibile e conforme a CommonMark.
+* https://github.com/lunet-io/markdig
+* Supporto della community migliorato
+* Supporto degli standard migliorato
 
 ## <a name="markdown-basics"></a>Nozioni di base su Markdown
 
@@ -145,7 +150,7 @@ verrà rappresentato nel modo seguente:
 
 Per altre informazioni sulla creazione di tabelle, vedere:
 
-- La [funzionalità per i ritorni a capo nelle tabelle](#table-wrapping) di DFM, utile per la formattazione di tabelle estese
+- La [funzionalità per i ritorni a capo nelle tabelle](#table-wrapping) di Markdig, utile per la formattazione di tabelle estese
 - [Organizing information with tables](https://help.github.com/articles/organizing-information-with-tables/) (Organizzazione delle informazioni con le tabelle) di GitHub
 - L'app Web [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables)
 - [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables) (Informazioni di riferimento rapide su Markdown di Adam Pritchard)
@@ -161,7 +166,7 @@ La sintassi di Markdown per un collegamento inline è costituita dalla parte `[l
 Per altre informazioni sui collegamenti, vedere:
 
 - La [guida alla sintassi di Markdown](https://daringfireball.net/projects/markdown/syntax#link) per informazioni dettagliate sul supporto dei collegamenti di base di Markdown.
-- La pagina [Collegamenti](how-to-write-links.md) in questa guida per altri dettagli sulla sintassi aggiuntiva per i collegamenti prevista da DFM.
+- La pagina [Collegamenti](how-to-write-links.md) in questa guida per altri dettagli sulla sintassi aggiuntiva per i collegamenti fornita da Markdig.
 
 ### <a name="code-snippets"></a>Frammenti di codice
 
@@ -272,9 +277,9 @@ CREATE TABLE T1 (
 ## <a name="ops-custom-markdown-extensions"></a>Estensioni Markdown personalizzate di OPS
 
 > [!NOTE]
-> OPS (Open Publishing Services) implementa DocFX Flavored Markdown (DFM), altamente compatibile con GitHub Flavored Markdown (GFM). DFM aggiunge altre funzionalità tramite le estensioni per Markdown. Di conseguenza, alcuni articoli della guida completa alla creazione in OPS sono inclusi in questa guida per riferimento (vedere ad esempio "Estensioni DFM e Markdown" e "Frammenti di codice" nel sommario).
+> OPS (Open Publishing Services) implementa il parser Markdig per Markdown, altamente compatibile con GitHub Flavored Markdown (GFM). Markdig aggiunge altre funzionalità tramite le estensioni per Markdown. Di conseguenza, alcuni articoli della guida completa alla creazione in OPS sono inclusi in questa guida per riferimento (vedere ad esempio "Markdig e le estensioni Markdown" e "Frammenti di codice" nel sommario).
 
-Gli articoli di Docs usano GFM per la maggior parte della formattazione, come paragrafi, collegamenti, elenchi, titoli e così via. Per elementi di formattazione più elaborati, negli articoli è possibile usare funzionalità DFM come:
+Gli articoli di Docs usano GFM per la maggior parte della formattazione, come paragrafi, collegamenti, elenchi, titoli e così via. Per elementi di formattazione più elaborati, negli articoli è possibile usare funzionalità Markdig come:
 
 - Blocchi per le note
 - File di inclusione
@@ -282,7 +287,7 @@ Gli articoli di Docs usano GFM per la maggior parte della formattazione, come pa
 - Video incorporati
 - Frammenti di codice/esempi
 
-Per l'elenco completo, vedere "Estensioni DFM e Markdown" e "Frammenti di codice" nel sommario.
+Per l'elenco completo, vedere "Markdig e le estensioni Markdown" e "Frammenti di codice" nel sommario.
 
 ### <a name="note-blocks"></a>Blocchi per le note
 
@@ -297,7 +302,7 @@ In generale è consigliabile usare i blocchi per le note sporadicamente, perché
 
 ### <a name="includes"></a>File di inclusione
 
-In presenza di testo riutilizzabile o file di immagine che devono essere inclusi nei file degli articoli, è possibile usare un riferimento al file di "inclusione" tramite la funzionalità di inclusione file di DFM. Questa funzionalità indica a OPS di includere il file specificato nell'articolo in fase di compilazione, rendendolo così parte dell'articolo pubblicato. Esistono tre tipi di inclusioni disponibili per agevolare il riutilizzo del contenuto:
+In presenza di testo riutilizzabile o file di immagine che devono essere inclusi nei file degli articoli, è possibile usare un riferimento al file di "inclusione" tramite la funzionalità di inclusione file di Markdig. Questa funzionalità indica a OPS di includere il file specificato nell'articolo in fase di compilazione, rendendolo così parte dell'articolo pubblicato. Esistono tre tipi di inclusioni disponibili per agevolare il riutilizzo del contenuto:
 
 - Inline: riutilizzo di un frammento di testo comune inline all'interno di un'altra frase.
 - Blocco: riutilizzo di un intero file Markdown come blocco, annidato all'interno di una sezione di un articolo.
@@ -309,7 +314,7 @@ Di seguito sono elencati i requisiti e le considerazioni per i file di inclusion
 
 - Usare le inclusioni ogni volta che occorre visualizzare lo stesso testo in più articoli.
 - Usare le inclusioni di tipo Blocco per quantità significative di contenuto, ad esempio uno o due paragrafi, una procedura o una sezione condivisa. Non usarle per includere testi più piccoli di una frase.
-- Le inclusioni non vengono visualizzate nel rendering dell'articolo in GitHub, perché si basano su estensioni DFM. Saranno visualizzate solo dopo la pubblicazione.
+- Le inclusioni non vengono visualizzate nel rendering dell'articolo in GitHub, perché si basano su estensioni Markdig. Saranno visualizzate solo dopo la pubblicazione.
 - Assicurarsi che tutto il testo in un'inclusione sia scritto con frasi complete o frasi che non dipendono dal testo precedente o successivo nell'articolo che fa riferimento all'inclusione. Ignorare questa indicazione significa creare una stringa intraducibile nell'articolo con effetti negativi sull'esperienza localizzata.
 - Non incorporare inclusioni in altre inclusioni. Ciò non è supportato.
 - Posizionare i file multimediali in una cartella corrispondete, in una sottodirectory di inclusione, ad esempio la cartella `<repo>`/includi/file multimediali. La directory media non deve includere immagini alla radice. Se nell'inclusione non sono contenute immagini, non è necessaria una directory corrispondente per i file multimediali.
@@ -318,13 +323,13 @@ Di seguito sono elencati i requisiti e le considerazioni per i file di inclusion
 
 ### <a name="selectors"></a>Selettori
 
-Usare i selettori negli articoli tecnici quando si creano più versioni dello stesso articolo per gestire le differenze a livello di implementazione per tecnologie o piattaforme eterogenee. Un esempio tipico è il contenuto per sviluppatori per la piattaforma per dispositivi mobili. Esistono attualmente due diversi tipi di selettori in DFM, ovvero un selettore singolo e un selettore multiplo.
+Usare i selettori negli articoli tecnici quando si creano più versioni dello stesso articolo per gestire le differenze a livello di implementazione per tecnologie o piattaforme eterogenee. Un esempio tipico è il contenuto per sviluppatori per la piattaforma per dispositivi mobili. In Markdig esistono attualmente due tipi di selettori, un selettore singolo e un selettore multiplo.
 
 Poiché lo stesso selettore Markdown viene aggiunto in ogni articolo della selezione, è consigliabile inserire il selettore dell'articolo in un'inclusione. A questo punto è possibile fare riferimento a quell'inclusione in tutti gli articoli che usano lo stesso selettore.
 
 ### <a name="code-snippets"></a>Frammenti di codice
 
-DFM supporta l'inclusione avanzata di codice in un articolo, tramite l'estensione per i frammenti di codice. Sono disponibili opzioni di rendering avanzate basate sulle funzionalità di GFM, come la scelta del linguaggio di programmazione e la colorazione della sintassi, oltre a funzionalità interessanti come:
+Markdig supporta l'inclusione avanzata di codice in un articolo, tramite l'estensione per i frammenti di codice. Sono disponibili opzioni di rendering avanzate basate sulle funzionalità di GFM, come la scelta del linguaggio di programmazione e la colorazione della sintassi, oltre a funzionalità interessanti come:
 
 - Inclusione di esempi di codice/frammenti di codice centralizzati da un repository esterno.
 - Interfaccia utente a schede per visualizzare più versioni degli esempi di codice in linguaggi diversi.
