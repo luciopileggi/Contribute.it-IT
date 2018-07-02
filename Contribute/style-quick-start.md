@@ -1,19 +1,13 @@
 ---
 title: Guida di stile per Docs - Guida rapida
 description: Questo articolo è una guida sintetica per le considerazioni sullo stile, che contiene solo gli argomenti fondamentali per iniziare a contribuire a docs.microsoft.com.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 07/25/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 74f78b72f61cfebddb0cb03b73a3a806f4fe4a10
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: 34cd0dc1760f2a569f8bfec782f04b2691a74470
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469395"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239604"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Guida rapida a stile e voce per Docs
 
@@ -56,5 +50,6 @@ Gli articoli tecnici di Microsoft vengono tradotti in varie lingue e alcuni adat
 ## <a name="localized-documentation"></a>Documentazione localizzata
 
 - Per offrire contributi per la documentazione localizzata, fare riferimento al [Portale linguistico Microsoft](https://www.microsoft.com/Language/Default.aspx).
-- Per linee guida sulla localizzazione, indicazioni sullo stile e l'uso della lingua nelle pubblicazioni tecniche e informazioni sui formati di dati specifici per i diversi mercati, scaricare la [guida di stile](https://www.microsoft.com/Language/StyleGuides.aspx) per la lingua in questione.
-- Per informazioni sulla terminologia localizzata Microsoft, eseguire una ricerca nella [terminologia approvata per prodotti specifici](https://www.microsoft.com/Language/Search.aspx) oppure scaricare la [Raccolta terminologica Microsoft](https://www.microsoft.com/Language/Terminology.aspx) nella propria lingua.
+- Per linee guida sulla localizzazione, indicazioni sullo stile e l'uso della lingua nelle pubblicazioni tecniche e informazioni sui formati di dati specifici per i diversi mercati, scaricare la [guida di stile](https://www.microsoft.com/Language/StyleGuides) per la lingua in questione.
+- Per informazioni sulla terminologia localizzata Microsoft, eseguire una ricerca nella [terminologia approvata per prodotti specifici](https://www.microsoft.com/Language/Default.aspx) oppure scaricare la [Raccolta terminologica Microsoft](https://www.microsoft.com/Language/Terminology.aspx) nella propria lingua.
+- Sono disponibili altre informazioni nella sezione [Localization](https://docs.microsoft.com/style-guide/global-communications/) (Localizzazione) della guida di stile Microsoft.

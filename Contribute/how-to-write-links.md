@@ -1,19 +1,13 @@
 ---
 title: Come usare collegamenti nella documentazione
 description: Questo articolo rappresenta materiale sussidiario per la creazione di collegamenti a contenuto all'interno di docs.microsoft.com.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 06/29/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 1699e57ac6a4dc4c5a1ef099ea183b3cbc6307cd
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: a66e2fb4febf1947afe01919b96b1c10873cf57d
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469533"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239727"
 ---
 # <a name="using-links-in-documentation"></a>Uso di collegamenti nella documentazione
 Questo articolo descrive come usare collegamenti ipertestuali da pagine ospitate in docs.microsoft.com. È facile aggiungere collegamenti all'interno di markdown, con alcune convenzioni. I collegamenti possono indirizzare gli utenti a contenuto all'interno della stessa pagina, ad altre pagine vicine o a siti e URL esterni.
@@ -63,7 +57,10 @@ Per creare un collegamento inline da un articolo tecnico di Docs a un altro arti
   `[link text](../directory/article-name.md)`
 
 - Un articolo che si collega a più docset (anche se nello stesso repository): `[link text](./directory/article-name)`
-  
+
+> [!IMPORTANT]
+> Nessuno degli esempi precedenti utilizza `~/` come parte del collegamento. Se ci si collega a un percorso alla radice del repository, iniziare con `/`. Quando ci si sposta nei repository di origine in GitHub, l'inserimento di `~/` genera collegamenti non validi. Iniziare il percorso con `/` risolve correttamente il problema.
+
 ## <a name="links-to-anchors"></a>Collegamenti agli ancoraggi
 
 Non è necessario creare ancoraggi. Vengono generati automaticamente in fase di pubblicazione per tutti i titoli H2. L'unica operazione necessaria è creare collegamenti alle sezioni H2.
