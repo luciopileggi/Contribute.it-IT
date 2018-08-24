@@ -5,18 +5,18 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: a0c52fea8f3a57cdfe89c2cd7a24ef7b511ada7c
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239770"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251441"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Panoramica della guida per i collaboratori di Microsoft Docs
 
 Questa è la Guida per i collaboratori di [docs.microsoft.com](https://docs.microsoft.com).
 
-Diversi set di documentazione sono open source e disponibili su GitHub. Sempre più team stanno adottando regolarmente questo modello. Anche i set di documenti non completamente open source hanno repository pubblici dove è possibile eseguire richieste pull. Ciò permette di semplificare e migliorare le comunicazioni tra gli sviluppatori, i team dei contenuti e i clienti. Operare in modo visibile offre diversi vantaggi:
+Diversi set di documentazione sono open source e disponibili su GitHub. Sempre più team a Microsoft stanno adottando regolarmente questo modello. Anche i set di documenti non completamente open source hanno repository pubblici dove è possibile eseguire richieste pull. Ciò permette di semplificare e migliorare le comunicazioni tra gli sviluppatori, i team dei contenuti e i clienti. Operare in modo visibile offre diversi vantaggi:
 
 - La pianificazione dei repository open source è visibile per poter ricevere commenti e suggerimenti sugli argomenti che più necessitano di documentazione.
 - La revisione dei repository open source è visibile per poter pubblicare il contenuto più utile già nella prima versione.

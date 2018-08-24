@@ -2,22 +2,22 @@
 title: Guida di stile per Docs - Guida rapida
 description: Questo articolo è una guida sintetica per le considerazioni sullo stile, che contiene solo gli argomenti fondamentali per iniziare a contribuire a docs.microsoft.com.
 ms.date: 07/25/2017
-ms.openlocfilehash: 34cd0dc1760f2a569f8bfec782f04b2691a74470
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239604"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40243024"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Guida rapida a stile e voce per Docs
 
-La lettura di questa guida rapida richiede poco tempo, ma offre un quadro di come applicare i concetti di stile più importanti per Docs durante la scrittura di articoli per docs.microsoft.com. Queste linee guida sono valide sia per la creazione di nuova documentazione che per l'aggiornamento di documentazione esistente.
+Questa guida introduttiva è una breve guida alla redazione di contenuto tecnico per la pubblicazione su docs.microsoft.com. Queste linee guida sono valide sia per la creazione di nuova documentazione che per l'aggiornamento di documentazione esistente.
 
-Questi sono i requisiti minimi:
+Procedure consigliate:
 
 - Controllare l'ortografia e la grammatica degli articoli, anche se per eseguire questa operazione è necessario copiarli e incollarli in Word.
 - Usare un tono informale e discorsivo.
-- Usare frasi semplici. Sono più facili da capire e anche da tradurre sia per i traduttori che per i sistemi di traduzione automatica.
+- Usare frasi semplici. Frasi semplici da leggere significano che il lettore può mettere in pratica velocemente le indicazioni condivise.
 
 ## <a name="use-the-microsoft-voice-principles"></a>Rispettare i principi per tono e voce Microsoft
 

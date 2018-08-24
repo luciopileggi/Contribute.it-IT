@@ -5,18 +5,18 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 00631485f1f4eed9e0de2f6df98d973a819dfe4d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 9f22a416810711c076645a9483f022112a3a7642
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238921"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251420"
 ---
 # <a name="install-content-authoring-tools"></a>Installare gli strumenti di creazione del contenuto
 
 In questo articolo vengono descritti i passaggi per installare in modo interattivo gli strumenti client Git e Visual Studio Code.
 > [!div class="checklist"]
-> * Installare [Git per Windows](https://git-scm.com/download/win)
+> * Installare [Git](https://git-scm.com/)
 > * Installare [Visual Studio Code](https://code.visualstudio.com/)
 > * Installare [Docs Authoring Pack](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)
 
@@ -25,9 +25,13 @@ In questo articolo vengono descritti i passaggi per installare in modo interatti
 >
 > I collaboratori principali sono invitati a completare questi passaggi, che consentono di usare il [flusso di lavoro per modifiche di rilievo o di lunga durata](how-to-write-workflows-major.md). Anche se sono disponibili le autorizzazioni di scrittura nel repository principale, *è caldamente consigliata la creazione di un fork e di un clone del repository* (e le informazioni nella presente guida la danno per scontata), in modo da disporre di autorizzazioni di lettura/scrittura per archiviare le modifiche proposte nel fork.
 
-## <a name="install-git-client-tools-on-windows"></a>Installare gli strumenti client Git in Windows
+## <a name="install-git-client-tools"></a>Installare gli strumenti client Git 
 
- Installare la versione più recente degli [strumenti client Git di Software Freedom Conservancy](https://git-scm.com/download/). L'installazione include il sistema di controllo delle versioni di Git e Git Bash, l'app della riga di comando usata per interagire con il repository Git locale.
+ Installare la versione più recente degli [strumenti client Git di Software Freedom Conservancy](https://git-scm.com/download/) per la piattaforma in uso. 
+
+* [Git per Windows](https://git-scm.com/download/win). Questa installazione include il sistema di controllo delle versioni di Git e Git Bash, l'app della riga di comando usata per interagire con il repository Git locale.
+* Git per Mac è incluso negli strumenti della riga di comando Xcode. Eseguire semplicemente `git` dalla riga di comando. Verrà richiesto di installare gli strumenti della riga di comando, se necessario. È anche possibile scaricare [Git per Mac](https://git-scm.com/download/mac) da Software Freedom Conservancy.
+* [Git per Linux e Unix](https://git-scm.com/download/linux)
 
 Se si preferisce un'interfaccia utente grafica (GUI) rispetto a un'interfaccia della riga di comando, vedere alcune opzioni diffuse in [Software Freedom Conservancy's available GUI Clients](https://git-scm.com/downloads/guis) (Client GUI disponibili di Software Freedom Conservancy), [GitHub's GitHub Desktop](https://desktop.github.com/) (GitHub Desktop di GitHub) o [Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx).
 
