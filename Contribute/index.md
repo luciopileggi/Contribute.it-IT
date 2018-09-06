@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 94fad6f4b2faeefff687eb57cd2de8a0fb5bbbf3
+ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251441"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43308894"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Panoramica della guida per i collaboratori di Microsoft Docs
 
@@ -31,7 +31,7 @@ L'esperienza utente in [docs.microsoft.com](https://docs.microsoft.com) viene di
 
 ## <a name="quick-edits-to-existing-documents"></a>Modifiche rapide ai documenti esistenti
 
-Le modifiche rapide semplificano il processo di segnalazione e correzione di piccoli errori e omissioni. Nonostante l'impegno, nei documenti pubblicati si possono riscontrare piccoli errori grammaticali e ortografici. Anche se è possibile creare problemi per segnalare gli errori, è più facile e veloce creare una richiesta pull per risolvere il problema. In quasi tutti gli articoli è presente un pulsante di modifica, come illustrato nella figura seguente. Facendo clic sul pulsante **Modifica** si accede al file di origine in GitHub.
+Le modifiche rapide semplificano il processo di segnalazione e correzione di piccoli errori e omissioni. Nonostante l'impegno, nei documenti pubblicati si possono riscontrare piccoli errori grammaticali e ortografici. Anche se è possibile creare problemi per segnalare gli errori, è più facile e veloce creare una richiesta pull per risolvere il problema. In quasi tutti gli articoli è presente un pulsante di modifica, come illustrato nella figura seguente. Facendo clic sul pulsante **Edit** (o sulla versione equivalente localizzata) si accede al file di origine in GitHub.
 
 ![Percorso del collegamento Modifica](./media/index/edit-article.png)
 
@@ -46,6 +46,12 @@ Dopo avere apportato le modifiche, scorrere fino alla fine della pagina. Immette
 
 ![Proposta della modifica](./media/index/submit-pull-request.png)
 
+Dopo aver proposto la modifica, è necessario chiedere ai proprietari del repository di eseguire il "pull" delle modifiche nel loro repository. Questa operazione viene eseguita tramite una "richiesta pull". Quando si fa clic su **Propose file change** (Proponi modifica file) nella figura precedente, dovrebbe essere visualizzata una pagina simile a quella nella figura seguente:
+
+![creare una richiesta pull](media/index/create-pull-request.png)
+
+Fare clic su **Crea richiesta pull**, immettere un titolo (e facoltativamente una descrizione) per la richiesta pull e quindi fare di nuovo clic su **Crea richiesta pull**.
+
 Questo è tutto. I membri del team dei contenuti esamineranno e uniranno la richiesta pull. Se sono state apportate modifiche più significative, è possibile ricevere alcune richieste di modifica.
 
 L'interfaccia utente di modifica di GitHub è diversa a seconda delle autorizzazioni per il repository. Le immagini precedenti si riferiscono a collaboratori che non hanno autorizzazioni di scrittura per il repository di destinazione. GitHub crea automaticamente un fork del repository di destinazione nell'account. Se si ha l'accesso in scrittura al repository di destinazione, GitHub crea una nuovo ramo nel repository di destinazione. Il nome del ramo ha il formato **\<GitHubId\>-patch-n**, che usa l'ID GitHub e un identificatore numerico per il ramo della patch.
@@ -53,6 +59,12 @@ L'interfaccia utente di modifica di GitHub è diversa a seconda delle autorizzaz
 Le richieste pull vengono usate per tutte le modifiche, anche per i collaboratori che hanno l'accesso in scrittura. La maggior parte dei repository ha il ramo `master` protetto e quindi gli aggiornamenti devono essere inviati come richieste pull.
 
 L'esperienza di modifica nel browser è ideale per modifiche secondarie o poco frequenti. Per pubblicare contributi più estesi oppure se si usano funzionalità Git avanzate, come la gestione dei rami o la risoluzione avanzata dei conflitti di merge, è necessario [creare una copia tramite fork del repository e lavorare in locale](how-to-write-workflows-major.md).
+
+> [!NOTE]
+> Se abilitato, è possibile modificare un articolo in **qualsiasi lingua** e, in base al tipo di modifica, si verificherà quanto segue:
+> 1. qualsiasi modifica linguistica approvata migliorerà anche il motore di traduzione automatica
+> 2. qualsiasi modifica che cambia in modo significativo il contenuto dell'articolo verrà gestita internamente per inviare un modifica allo stesso articolo in inglese, in modo che venga localizzata in tutte le lingue in caso di approvazione.
+> I miglioramenti consigliati, quindi, non influiranno positivamente solo sugli articoli nella propria lingua, ma in tutte le lingue disponibili.
 
 ## <a name="review-open-prs"></a>Esaminare le richieste pull aperte
 
