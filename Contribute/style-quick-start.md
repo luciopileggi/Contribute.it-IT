@@ -2,12 +2,12 @@
 title: Guida di stile per Docs - Guida rapida
 description: Questo articolo è una guida sintetica per le considerazioni sullo stile, che contiene solo gli argomenti fondamentali per iniziare a contribuire a docs.microsoft.com.
 ms.date: 07/25/2017
-ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
+ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40243024"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084400"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Guida rapida a stile e voce per Docs
 
@@ -15,7 +15,7 @@ Questa guida introduttiva è una breve guida alla redazione di contenuto tecnico
 
 Procedure consigliate:
 
-- Controllare l'ortografia e la grammatica degli articoli, anche se per eseguire questa operazione è necessario copiarli e incollarli in Word.
+- Controllare l'ortografia e la grammatica degli articoli, anche se per eseguire il controllo è necessario copiarli e incollarli in Microsoft Word.
 - Usare un tono informale e discorsivo.
 - Usare frasi semplici. Frasi semplici da leggere significano che il lettore può mettere in pratica velocemente le indicazioni condivise.
 
@@ -45,11 +45,11 @@ Gli articoli tecnici di Microsoft vengono tradotti in varie lingue e alcuni adat
 - Per i passaggi che includono frammenti di codice, inserire le informazioni aggiuntive sul passaggio nel codice in forma di commenti. In questo modo si riduce la quantità di testo che gli utenti dovranno leggere con attenzione. Le informazioni cruciali vengono copiate nel progetto del codice per ricordare al lettore quali sono gli scopi del codice in qualsiasi momento.
 - Nei titoli e nelle intestazioni usare la lettera maiuscola solo per la prima parola.
 - Usare "accesso" e non "login".
-- Includere le parole "come segue" o "seguente" in tutte le frasi che precedono un elenco o un frammento di codice.
+- Per altre linee guida, vedere la [Microsoft Writing Style Guide](https://docs.microsoft.com/style-guide/welcome) (Guida di stile per la redazione Microsoft).
 
 ## <a name="localized-documentation"></a>Documentazione localizzata
 
 - Per offrire contributi per la documentazione localizzata, fare riferimento al [Portale linguistico Microsoft](https://www.microsoft.com/Language/Default.aspx).
 - Per linee guida sulla localizzazione, indicazioni sullo stile e l'uso della lingua nelle pubblicazioni tecniche e informazioni sui formati di dati specifici per i diversi mercati, scaricare la [guida di stile](https://www.microsoft.com/Language/StyleGuides) per la lingua in questione.
 - Per informazioni sulla terminologia localizzata Microsoft, eseguire una ricerca nella [terminologia approvata per prodotti specifici](https://www.microsoft.com/Language/Default.aspx) oppure scaricare la [Raccolta terminologica Microsoft](https://www.microsoft.com/Language/Terminology.aspx) nella propria lingua.
-- Sono disponibili altre informazioni nella sezione [Localization](https://docs.microsoft.com/style-guide/global-communications/) (Localizzazione) della guida di stile Microsoft.
+- Per altre informazioni sulla localizzazione, vedere "Global communications" (Comunicazioni globali) nella [Microsoft Writing Style Guide](https://docs.microsoft.com/style-guide/global-communications) (Guida di stile per la redazione Microsoft).
