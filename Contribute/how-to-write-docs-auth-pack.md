@@ -1,20 +1,19 @@
 ---
-title: Docs Authoring Pack per VS Code
-description: Questo articolo illustra il pacchetto di estensioni VS Code per facilitare la creazione di codice Markdown per docs.microsoft.com.
+title: Docs Authoring Pack per Visual Studio Code
+description: Questo articolo illustra il pacchetto di estensione di Visual Studio Code che facilita la creazione di codice Markdown per docs.microsoft.com.
 author: meganbradley
 ms.author: mbradley
-manager: jemash
-ms.date: 04/06/2018
-ms.openlocfilehash: b9fedce0a73c5c4212ffd0893c745fab56677c8c
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.date: 10/22/2018
+ms.openlocfilehash: 00afafbbf16096ac6433c0ab276578d8d9084b51
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308917"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805655"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Docs Authoring Pack per VS Code
 
-Docs Authoring Pack è una raccolta di estensioni VS Code che facilita la creazione di codice Markdown per docs.microsoft.com. Il pacchetto, [disponibile nel Marketplace di VS Code](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack), contiene le estensioni seguenti:
+Docs Authoring Pack è una raccolta di estensioni di Visual Studio Code che facilita la creazione di codice Markdown per docs.microsoft.com. Il pacchetto, [disponibile nel Marketplace di VS Code](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack), contiene le estensioni seguenti:
 
 - [markdownlint:](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) linter Markdown di ampia diffusione, creato da David Anson, che consente di assicurarsi che il codice Markdown segua le procedure consigliate.
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): correttore ortografico completamente offline di Street Side Software.
@@ -103,7 +102,7 @@ L'estensione Templates supporta tre campi di metadati dinamici: author, ms.autho
 |----------|---------------|
 |author    |ID GitHub, se specificato nel file di impostazioni di VS Code.|
 |ms.author |Alias Microsoft, se specificato nel file di impostazioni di VS Code. Se non si è un dipendente Microsoft, non specificare questo campo.|
-|ms.date   |Data corrente nel formato supportato da Docs, MM/GG/AAAA. Si noti che la data non viene aggiornata automaticamente se si aggiorna il file in seguito, ma è necessario aggiornarla manualmente per indicare la data di aggiornamento del file.|
+|ms.date   |Data corrente nel formato supportato da Docs, MM/GG/AAAA. Si noti che la data non viene aggiornata automaticamente se il file sarà aggiornato in un secondo momento. È necessario aggiornare il valore ms.date manualmente per specificare la data di pubblicazione più recente nel sito docs.microsoft.com.|
 
 ### <a name="to-set-author-github-id-andor-msauthor-microsoft-alias"></a>Per impostare author (ID GitHub) e/o ms.author (alias Microsoft)
 

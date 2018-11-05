@@ -2,18 +2,18 @@
 title: Come usare Markdown per scrivere articoli di Docs
 description: Questo articolo offre informazioni di base e di riferimento sul linguaggio Markdown usato per la stesura di articoli per il sito docs.microsoft.com.
 ms.date: 07/13/2017
-ms.openlocfilehash: dca1ccba2ae4ebd08b6039f5d780e7a7ac92e79f
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238967"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805727"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Come usare Markdown per scrivere articoli di Docs
 
-Gli articoli di docs.microsoft.com sono scritti in un semplice linguaggio di markup denominato [Markdown](https://daringfireball.net/projects/markdown/), facile sia da leggere che da apprendere. Per questo motivo si sta imponendo rapidamente come standard del settore.
+Gli articoli di [docs.microsoft.com](http://docs.microsoft.com) sono scritti in un semplice linguaggio di markup denominato [Markdown](https://daringfireball.net/projects/markdown/), facile sia da leggere che da apprendere. Per questo motivo si sta imponendo rapidamente come standard del settore.
 
-Dato che il contenuto di Docs è archiviato in GitHub, può usare un superset di Markdown denominato [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), che offre funzionalità aggiuntive per esigenze di formattazione comuni. In più, Open Publishing Services (OPS) implementa il parser Markdig per Markdown. Markdig è altamente compatibile con GitHub Flavored Markdown (GFM) e aggiunge funzionalità per abilitare funzioni specifiche di Docs.
+Dato che il contenuto di Docs è archiviato in GitHub, è possibile usare un superset di Markdown denominato [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), che offre funzionalità aggiuntive per esigenze di formattazione comuni. In più, Open Publishing Services (OPS) implementa il parser Markdig per Markdown. Markdig è altamente compatibile con GFM e aggiunge funzionalità per abilitare funzioni specifiche di Docs.
 
 * Markdig è un processore Markdown per .NET veloce, potente, estensibile e conforme a CommonMark.
 * https://github.com/lunet-io/markdig
@@ -27,10 +27,10 @@ Dato che il contenuto di Docs è archiviato in GitHub, può usare un superset di
 Per creare un titolo, usare il segno di cancelletto (#), come segue:
 
 ```markdown
-    # This is heading 1
-    ## This is heading 2
-    ### This is heading 3
-    #### This is heading 4
+# This is heading 1
+## This is heading 2
+### This is heading 3
+#### This is heading 4
 ```
 
 ### <a name="bold-and-italic-text"></a>Testo in grassetto e corsivo
@@ -38,19 +38,19 @@ Per creare un titolo, usare il segno di cancelletto (#), come segue:
 Per applicare il formato **grassetto** al testo, racchiuderlo tra due coppie asterischi:
 
 ```markdown
-    This text is **bold**.
+This text is **bold**.
 ```
 
 Per applicare il formato *corsivo* al testo, racchiuderlo tra due asterischi:
 
 ```markdown
-    This text is *italic*.
+This text is *italic*.
 ```
 
 Per applicare il formato ***grassetto e corsivo*** al testo, racchiuderlo tra due coppie di tre asterischi:
 
 ```markdown
-    This is text is both ***bold and italic***.
+This is text is both ***bold and italic***.
 ```
 
 ### <a name="lists"></a>Elenchi
@@ -107,16 +107,16 @@ Per annidare un elenco all'interno di un altro elenco, far rientrare gli element
 
 ```markdown
 1. First instruction
-    1. Sub-instruction
-    2. Sub-instruction
+   1. Sub-instruction
+   2. Sub-instruction
 2. Second instruction
 ```
 
 verrà rappresentato nel modo seguente:
 
 1. First instruction
-    1. Sub-instruction
-    2. Sub-instruction
+   1. Sub-instruction
+   2. Sub-instruction
 2. Second instruction
 
 ### <a name="tables"></a>Tables
@@ -145,12 +145,12 @@ verrà rappresentato nel modo seguente:
 
 Per altre informazioni sulla creazione di tabelle, vedere:
 
-- La [funzionalità per i ritorni a capo nelle tabelle](#table-wrapping) di Markdig, utile per la formattazione di tabelle estese
-- [Organizing information with tables](https://help.github.com/articles/organizing-information-with-tables/) (Organizzazione delle informazioni con le tabelle) di GitHub
-- L'app Web [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables)
-- [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables) (Informazioni di riferimento rapide su Markdown di Adam Pritchard)
-- [Michel Fortin's Markdown Extra](https://michelf.ca/projects/php-markdown/extra/#table) (Markdown Extra di Michel Fortin)
-- [Convert HTML tables to Markdown](https://jmalarcon.github.io/markdowntables/) (Conversione di tabelle HTML in Markdown)
+- La [funzionalità per il ritorno a capo nelle tabelle](#table-wrapping) di Markdig, utile per la formattazione di tabelle estese.
+- [Organizing information with tables](https://help.github.com/articles/organizing-information-with-tables/) (Organizzazione delle informazioni con le tabelle) di GitHub.
+- L'app Web [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables).
+- [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables) (Informazioni di riferimento rapide su Markdown di Adam Pritchard).
+- [Michel Fortin's Markdown Extra](https://michelf.ca/projects/php-markdown/extra/#table) (Markdown Extra di Michel Fortin).
+- [Convertire tabelle HTML in Markdown](https://jmalarcon.github.io/markdowntables/).
 
 ### <a name="links"></a>Collegamenti
 
@@ -161,7 +161,7 @@ La sintassi di Markdown per un collegamento inline è costituita dalla parte `[l
 Per altre informazioni sui collegamenti, vedere:
 
 - La [guida alla sintassi di Markdown](https://daringfireball.net/projects/markdown/syntax#link) per informazioni dettagliate sul supporto dei collegamenti di base di Markdown.
-- La pagina [Collegamenti](how-to-write-links.md) in questa guida per altri dettagli sulla sintassi aggiuntiva per i collegamenti fornita da Markdig.
+- La pagina [Collegamenti](how-to-write-links.md) in questa guida per dettagli sulla sintassi aggiuntiva per i collegamenti disponibile con Markdig.
 
 ### <a name="code-snippets"></a>Frammenti di codice
 
@@ -212,6 +212,7 @@ Questi linguaggi supportano nomi descrittivi e la maggior parte ha la funzione d
 |PowerShell|powershell|
 |Python|python|
 |Q#|qsharp|
+|R|r|
 |Ruby|ruby|
 |SQL|sql|
 |Swift|swift|
@@ -336,18 +337,19 @@ Markdig supporta l'inclusione avanzata di codice in un articolo, tramite l'esten
 Il testo alternativo che contiene caratteri di sottolineatura non viene visualizzato correttamente. Ad esempio, invece di questa formattazione:
 
 ```markdown
-![ADextension_2FA_Configure_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 Usare caratteri di escape per i caratteri di sottolineatura come in questo esempio:
 
 ```markdown
-![ADextension\_2FA\_Configure\_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension\_2FA\_Configure\_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 ### <a name="apostrophes-and-quotation-marks"></a>Apostrofi e virgolette
 
-Quando si copia da Word in un editor per Markdown, il testo potrebbe contenere apostrofi o virgolette curve, che devono essere codificati o modificati in semplici apostrofi o virgolette. In caso contrario, quando il file viene pubblicato, si ottiene questo risultato: Itâ€™s
+Quando si copia da Word in un editor per Markdown, il testo potrebbe contenere apostrofi o virgolette curve, che devono essere codificati o modificati in semplici apostrofi o virgolette.
+In caso contrario, quando il file viene pubblicato, si ottiene questo risultato: Itâ€™s
 
 Queste sono le codifiche per le versioni curve di questi segni di punteggiatura:
 
@@ -358,14 +360,15 @@ Queste sono le codifiche per le versioni curve di questi segni di punteggiatura:
 
 ### <a name="angle-brackets"></a>Parentesi acute
 
-Se nel testo (non nel codice) di un file si usano parentesi uncinate per indicare ad esempio un segnaposto, è necessario codificarle manualmente. In caso contrario, Markdown le interpreta come tag HTML.
+Le parentesi acute vengono comunemente usate per indicare un segnaposto. Se usate nel testo e non nel codice, le parentesi acute devono essere codificate. In caso contrario, Markdown le interpreta come tag HTML.
 
 Ad esempio, codificare `<script name>` come `&lt;script name&gt;`
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedere anche:
 
 ### <a name="markdown-resources"></a>Risorse per Markdown
 
 - [Introduction to Markdown](https://daringfireball.net/projects/markdown/syntax) (Introduzione a Markdown)
 - [Docs Markdown cheat-sheet](./media/documents/markdown-cheatsheet.pdf?raw=true) (Scheda informativa su Markdown per Docs)
 - [Nozioni di base su Markdown in GitHub](https://help.github.com/articles/markdown-basics/)
+- [Guida Markdown](https://www.markdownguide.org/)

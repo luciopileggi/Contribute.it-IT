@@ -2,12 +2,12 @@
 title: Concetti di base di Git e GitHub per la documentazione
 description: Questo articolo offre una panoramica di Git,  del repository GitHub e dell'organizzazione del contenuto, oltre alle convenzioni di denominazione usate per docs.microsoft.com.
 ms.date: 06/30/2017
-ms.openlocfilehash: 8a116067fdd7d031c560abfb7055236e0bfb1a3d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 05c758845007f859382014166e88fd9614cdb873
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239803"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805701"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Concetti di base di Git e GitHub per Docs
 
@@ -30,8 +30,8 @@ Git usa anche una struttura su più livelli per l'archiviazione e la gestione de
 
 I collaboratori interagiscono con Git per aggiornare e modificare i repository sia a livello locale che di GitHub:
 
-- A livello locale tramite strumenti come la console di Git Bash, che supporta comandi Git per la gestione dei repository locali e la comunicazione con i repository di GitHub
-- Tramite [www.github.com](https://www.github.com), che integra Git per gestire la riconciliazione dei contributi che confluiscono nel repository principale
+- A livello locale tramite strumenti come la console di Git Bash, che supporta comandi Git per la gestione dei repository locali e la comunicazione con i repository di GitHub.
+- Tramite [www.github.com](https://www.github.com), che integra Git per gestire la riconciliazione dei contributi che confluiscono nel repository principale.
 
 ## <a name="github"></a>GitHub
 
@@ -46,7 +46,7 @@ Tutti i flussi di lavoro iniziano e finiscono a livello di GitHub, dove è archi
 
 Come accennato in precedenza, il ramo predefinito/master di un progetto rappresenta la versione corrente del contenuto del progetto stesso. Il contenuto del ramo master e dei rami creati a partire da questo è allineato in modo generico con l'organizzazione degli articoli nelle pagine corrispondenti di Docs. Le sottodirectory vengono usate per separare il contenuto specifico (ad esempio per i servizi), il contenuto multimediale (come i file immagine) e i file di inclusione che consentono il riutilizzo del contenuto.
 
-È in genere possibile trovare una directory `articles` principale dalla radice del repository. La directory articles contiene una serie di sottodirectory. Gli articoli nelle sottodirectory sono formattati come file markdown con estensione *md*. Alcuni repository che supportano più servizi usano una sottodirectory `/articles` generica, come il repository [https://github.com/microsoft/Azure-Docs](https://github.com/microsoft/Azure-Docs). Altri potrebbero usare un nome specifico del servizio, ad esempio il repository [https://github.com/microsoft/IntuneDocs](https://github.com/microsoft/IntuneDocs), che usa `/IntuneDocs`.
+È in genere possibile trovare una directory `articles` principale dalla radice del repository. La directory articles contiene una serie di sottodirectory. Gli articoli nelle sottodirectory sono formattati come file markdown con estensione *md*. Alcuni repository che supportano più servizi usano una sottodirectory `/articles` generica, come il repository [Azure-Docs](https://github.com/MicrosoftDocs/Azure-Docs). Altri potrebbero usare un nome specifico del servizio, ad esempio il repository [IntuneDocs](https://github.com/MicrosoftDocs/IntuneDocs) che usa `/IntuneDocs`.
 
 Alla radice di questa directory sono disponibili gli articoli generali correlati al servizio o al prodotto nel suo insieme. Esiste in genere un'altra serie di sottodirectory corrispondenti a funzionalità/servizi o scenari comuni. Ad esempio, gli articoli relativi alle macchine virtuali di Azure sono inclusi nella sottodirectory `/virtual-machines` e gli articoli dedicati ai concetti e all'esplorazione di Intune sono nella sottodirectory `/understand-explore`.
 

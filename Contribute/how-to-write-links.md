@@ -2,12 +2,12 @@
 title: Come usare collegamenti nella documentazione
 description: Questo articolo rappresenta materiale sussidiario per la creazione di collegamenti a contenuto all'interno di docs.microsoft.com.
 ms.date: 06/29/2017
-ms.openlocfilehash: 92c23f2b91c67d7a1695c5f1e5dcdc80a8517f6e
-ms.sourcegitcommit: 37cd16636d7dcfc5222ef5a5d60e4ff30f74485c
+ms.openlocfilehash: 1820ed9af561964d7afe0b29827ee43526c72489
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48030934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805770"
 ---
 # <a name="using-links-in-documentation"></a>Uso di collegamenti nella documentazione
 Questo articolo descrive come usare collegamenti ipertestuali da pagine ospitate in docs.microsoft.com. È facile aggiungere collegamenti all'interno di markdown, con alcune convenzioni. I collegamenti possono indirizzare gli utenti a contenuto all'interno della stessa pagina, ad altre pagine vicine o a siti e URL esterni.
@@ -158,7 +158,7 @@ La parte &lt;moniker-name&gt; è facoltativa. Se omessa, si verrà indirizzati a
 Quando si usano questi URL si verrà indirizzati alla versione più recente del contenuto. In questo modo non è necessario specificare un moniker di versione. E non si avranno collegamenti a contenuto concettuale che dovranno essere aggiornati in seguito a modifiche di versione.
 
 Per creare il collegamento corretto, trovare la pagina a cui collegarsi nel browser e copiare l'URL.
-Rimuovere quindi ´ "https://docs.microsoft.com" ´ e le informazioni delle impostazioni locali.
+Rimuovere quindi `https://docs.microsoft.com` e le informazioni delle impostazioni locali.
 
 Per i collegamenti da un sommario, è necessario usare l'URL completo senza le informazioni delle impostazioni locali.
 
