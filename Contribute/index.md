@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 921c63c2748149543bfc73e4b38278a2ed74ac56
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: dab2de80654fb55382b2ca7c9f78df36df9971dc
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805793"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609362"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Panoramica della guida per i collaboratori di Microsoft Docs
 
@@ -37,10 +37,12 @@ Le modifiche rapide semplificano il processo di segnalazione e correzione di pic
 
 Fare quindi clic sull'icona a forma di matita illustrata nella figura seguente per modificare l'articolo.
 
-> [!NOTE]
-> Se l'icona a forma di matita è inattiva, è necessario accedere all'account GitHub o crearne uno nuovo. Apportare le modifiche nell'editor Web. È possibile fare clic sulla scheda **Preview changes** (Anteprima modifiche) per controllare la formattazione della modifica.
-
 ![Posizione dell'icona a forma di matita](./media/index/editicon.png)
+
+> [!NOTE]
+> Se l'icona a forma di matita è inattiva, è necessario accedere all'account GitHub o crearne uno nuovo.
+
+Apportare le modifiche nell'editor Web. È possibile fare clic sulla scheda **Preview changes** (Anteprima modifiche) per controllare la formattazione della modifica.
 
 Dopo avere apportato le modifiche, scorrere fino alla fine della pagina. Immettere un titolo e una descrizione per la richiesta pull e fare clic su **Propose file change** (Proponi modifica file), come illustrato nella figura seguente:
 
