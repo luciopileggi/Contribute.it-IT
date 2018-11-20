@@ -8,16 +8,16 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 audience: internal,external
-ms.openlocfilehash: e248eafb0247b200313ba198f2545eca947f5627
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 64921bacf48e638221048db4b24e1a941f1d2777
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805910"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609546"
 ---
 # <a name="markdown-reference-for-ops"></a>Informazioni di riferimento su Markdown per OPS
 
-Markdown è un semplice linguaggio di markup che usa una sintassi di formattazione in testo normale. OPS supporta lo standard CommonMark per Markdown e alcune estensioni Markdown personalizzate progettate per offrire contenuti formattati in docs.microsoft.com. In questo articolo vengono elencanti in ordine alfabetico gli elementi necessari per usare Markdown in OPS per docs.microsoft.com.
+Markdown è un semplice linguaggio di markup che usa una sintassi di formattazione in testo normale. OPS (Open Publishing Services) supporta lo standard CommonMark per Markdown e alcune estensioni Markdown personalizzate progettate per offrire contenuti formattati in docs.microsoft.com. In questo articolo vengono elencanti in ordine alfabetico gli elementi necessari per usare Markdown in OPS per docs.microsoft.com.
 
 Per creare codice Markdown è possibile usare un qualsiasi editor di testo. Per un editore che consenta di inserire sia una sintassi Markdown standard sia estensioni OPS personalizzate, è consigliabile usare [VS Code](https://code.visualstudio.com/) con [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack) installato.
 
@@ -25,7 +25,7 @@ OPS ha adottato come standard Markdig per tutti i nuovi repository mentre dei re
 
 ## <a name="alerts-note-tip-important-caution-warning"></a>Avvisi (nota, suggerimento, informazione importante, attenzione e avvertimento)
 
-Avvisa un estensione Markdown specifica per OPS affinché si creino citazioni per eseguire il rendering in docs.microsoft.com usando colori e icone che indicano il significato del contenuto. Sono supportati i tipi di avviso seguenti:
+Avvisi è un'estensione Markdown specifica per OPS per creare citazioni per il cui rendering docs.microsoft.com usa colori e icone che indicano il significato del contenuto. Sono supportati i tipi di avviso seguenti:
 
 ```markdown
 > [!NOTE]
@@ -308,7 +308,7 @@ Il rendering di esempio in docs.microsoft.com è il seguente:
 > * List item 2
 > * List item 3
 
-Usare gli elenchi di controllo all'inizio o alla fine di un articolo per riepilogare il contenuto di cui si parlerà o di cui si è parlato nell'articolo. Non aggiungere elenchi di controllo casuali all'interno degli articoli.
+Usare elenchi di controllo all'inizio o alla fine di un articolo per riepilogare ciò di cui si parlerà o di cui si è parlato nell'articolo. Non aggiungere elenchi di controllo casuali all'interno degli articoli.
 <!-- is this guidance still accurate? -->
 
 ## <a name="next-step-action"></a>Azione Passaggio successivo
@@ -431,7 +431,7 @@ Tabs are a Markdown extension for docs.microsoft.com that allow us to present di
 Because the syntax and requirements for tabbed content are fairly complex, they are documented separately in Tabbed Content.
 -->
 
-## <a name="tables"></a>Tabelle
+## <a name="tables"></a>Tables
 
 Il metodo più semplice per creare una tabella in Markdown consiste nell'uso di barre verticali e linee. Per creare una tabella standard con un titolo, la prima linea deve essere seguita da una linea tratteggiata:
 

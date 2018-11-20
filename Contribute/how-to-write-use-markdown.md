@@ -2,12 +2,12 @@
 title: Come usare Markdown per scrivere articoli di Docs
 description: Questo articolo offre informazioni di base e di riferimento sul linguaggio Markdown usato per la stesura di articoli per il sito docs.microsoft.com.
 ms.date: 07/13/2017
-ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 21194c4bd6020d847b526a4d9544c826aa199e2a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805727"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609523"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Come usare Markdown per scrivere articoli di Docs
 
@@ -33,6 +33,14 @@ Per creare un titolo, usare il segno di cancelletto (#), come segue:
 #### This is heading 4
 ```
 
+Le intestazioni devono essere in stile atx. Devono quindi iniziare con un numero di caratteri cancelletto (#) compreso tra 1 e 6, corrispondente in HTML ai livelli di intestazione da H1 a H6. Quelli riportati qui sopra sono esempi di intestazioni di livello da 1 a 4.
+
+Nell'argomento **deve** essere presente una sola intestazione di primo livello (H1), che verrà visualizzata come titolo sulla pagina.
+
+Se l'intestazione termina con un carattere `#`, perché il rendering sia corretto è necessario aggiungere un altro carattere `#` alla fine, come, ad esempio, in `# Async Programming in F# #`.
+
+Le intestazioni di secondo livello generano il sommario della sezione "In questo articolo", immediatamente dopo il titolo sulla pagina.
+
 ### <a name="bold-and-italic-text"></a>Testo in grassetto e corsivo
 
 Per applicare il formato **grassetto** al testo, racchiuderlo tra due coppie asterischi:
@@ -52,6 +60,18 @@ Per applicare il formato ***grassetto e corsivo*** al testo, racchiuderlo tra du
 ```markdown
 This is text is both ***bold and italic***.
 ```
+
+### <a name="blockquotes"></a>Citazioni
+
+Per creare citazioni, si usa il carattere `>`:
+
+```markdown
+> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
+```
+
+Ecco il rendering dell'esempio precedente:
+
+> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
 
 ### <a name="lists"></a>Elenchi
 
@@ -93,8 +113,8 @@ Per formattare un elenco ordinato in più passaggi, usare i numeri corrispondent
 
 ```markdown
 1. First instruction
-2. Second instruction
-3. Third instruction
+1. Second instruction
+1. Third instruction
 ```
 
 verrà rappresentato nel modo seguente:
@@ -108,8 +128,8 @@ Per annidare un elenco all'interno di un altro elenco, far rientrare gli element
 ```markdown
 1. First instruction
    1. Sub-instruction
-   2. Sub-instruction
-2. Second instruction
+   1. Sub-instruction
+1. Second instruction
 ```
 
 verrà rappresentato nel modo seguente:
@@ -118,6 +138,8 @@ verrà rappresentato nel modo seguente:
    1. Sub-instruction
    2. Sub-instruction
 2. Second instruction
+
+Si noti che si usa '1.' per tutte le voci. Ciò semplifica l'esame delle differenze in occasione di aggiornamenti successivi, quando vengono aggiunti nuovi passaggi o vengono rimossi passaggi esistenti.
 
 ### <a name="tables"></a>Tables
 
@@ -194,6 +216,8 @@ Questi linguaggi supportano nomi descrittivi e la maggior parte ha la funzione d
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
 |C#|csharp|
+|C# nel browser|csharp-interactive|
+|Console|console|
 |CSHTML|cshtml|
 |DAX|dax|
 |F#|fsharp|
@@ -221,6 +245,8 @@ Questi linguaggi supportano nomi descrittivi e la maggior parte ha la funzione d
 |Interfaccia della riga di comando di VSTS|vstscli|
 |XAML|xaml|
 |XML|xml|
+
+Il nome `csharp-interactive` specifica il linguaggio C# e la capacità di eseguire gli esempi dal browser. Questi frammenti di codice vengono compilati ed eseguiti in un contenitore Docker e i risultati dell'esecuzione del programma vengono visualizzati nella finestra del browser dell'utente.
 
 #### <a name="example-c"></a>Esempio: C\#
 
@@ -256,8 +282,8 @@ __Markdown__
 
     ```sql
     CREATE TABLE T1 (
-      c1 int PRIMARY KEY,
-      c2 varchar(50) SPARSE NULL
+      c1 int PRIMARY KEY,
+      c2 varchar(50) SPARSE NULL
     );
     ```
 
@@ -265,8 +291,8 @@ __Rendering__
 
 ```sql
 CREATE TABLE T1 (
-  c1 int PRIMARY KEY,
-  c2 varchar(50) SPARSE NULL
+  c1 int PRIMARY KEY,
+  c2 varchar(50) SPARSE NULL
 );
 ```
 
@@ -296,6 +322,36 @@ Per attirare l'attenzione su contenuto specifico, è possibile scegliere tra qua
 
 In generale è consigliabile usare i blocchi per le note sporadicamente, perché possono creare problemi. Sebbene in questi blocchi siano supportati anche blocchi di codice, immagini, elenchi e collegamenti, provare a rendere i blocchi per le note il più possibile semplici e lineari.
 
+Esempi:
+
+```markdown
+> [!NOTE]
+> This is a NOTE
+
+> [!WARNING]
+> This is a WARNING
+
+> [!TIP]
+> This is a TIP
+
+> [!IMPORTANT]
+> This is IMPORTANT
+```
+
+Il rendering è il seguente:
+
+> [!NOTE]
+> Questa è una NOTA
+
+> [!WARNING]
+> Questo è un AVVISO
+
+> [!TIP]
+> Questo è un SUGGERIMENTO
+
+> [!IMPORTANT]
+> Questo testo è IMPORTANTE
+
 ### <a name="includes"></a>File di inclusione
 
 In presenza di testo riutilizzabile o file di immagine che devono essere inclusi nei file degli articoli, è possibile usare un riferimento al file di "inclusione" tramite la funzionalità di inclusione file di Markdig. Questa funzionalità indica a OPS di includere il file specificato nell'articolo in fase di compilazione, rendendolo così parte dell'articolo pubblicato. Esistono tre tipi di inclusioni disponibili per agevolare il riutilizzo del contenuto:
@@ -317,13 +373,29 @@ Di seguito sono elencati i requisiti e le considerazioni per i file di inclusion
 - Come per gli articoli normali, non condividere elementi multimediali tra file di inclusione. Usare un file separato con un nome univoco per ogni inclusione e articolo. Archiviare il file multimediale nella cartella associata all'inclusione.
 - Non usare un'inclusione come unico contenuto di un articolo.  Le inclusioni sono pensate come supplemento al contenuto nel resto dell'articolo.
 
+Esempio:
+
+```markdown
+[!INCLUDE[sample include file](../includes/sampleinclude.md)]
+```
+
 ### <a name="selectors"></a>Selettori
 
 Usare i selettori negli articoli tecnici quando si creano più versioni dello stesso articolo per gestire le differenze a livello di implementazione per tecnologie o piattaforme eterogenee. Un esempio tipico è il contenuto per sviluppatori per la piattaforma per dispositivi mobili. In Markdig esistono attualmente due tipi di selettori, un selettore singolo e un selettore multiplo.
 
 Poiché lo stesso selettore Markdown viene aggiunto in ogni articolo della selezione, è consigliabile inserire il selettore dell'articolo in un'inclusione. A questo punto è possibile fare riferimento a quell'inclusione in tutti gli articoli che usano lo stesso selettore.
 
-### <a name="code-snippets"></a>Frammenti di codice
+Di seguito viene illustrato un esempio di selettore:
+
+```markdown
+> [!div class="op_single_selector"]
+- [macOS](../docs/core/tutorials/using-on-macos.md)
+- [Windows](../docs/core/tutorials/with-visual-studio.md)
+```
+
+Per un esempio di selettori attivi, vedere la [documentazione di Azure](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic).
+
+### <a name="code-includes"></a>Inclusioni di codice
 
 Markdig supporta l'inclusione avanzata di codice in un articolo, tramite l'estensione per i frammenti di codice. Sono disponibili opzioni di rendering avanzate basate sulle funzionalità di GFM, come la scelta del linguaggio di programmazione e la colorazione della sintassi, oltre a funzionalità interessanti come:
 
@@ -348,8 +420,7 @@ Usare caratteri di escape per i caratteri di sottolineatura come in questo esemp
 
 ### <a name="apostrophes-and-quotation-marks"></a>Apostrofi e virgolette
 
-Quando si copia da Word in un editor per Markdown, il testo potrebbe contenere apostrofi o virgolette curve, che devono essere codificati o modificati in semplici apostrofi o virgolette.
-In caso contrario, quando il file viene pubblicato, si ottiene questo risultato: Itâ€™s
+Quando si copia da Word in un editor per Markdown, il testo potrebbe contenere apostrofi o virgolette curve, che devono essere codificati o modificati in semplici apostrofi o virgolette. In caso contrario, quando il file viene pubblicato, si ottiene questo risultato: Itâ€™s
 
 Queste sono le codifiche per le versioni curve di questi segni di punteggiatura:
 

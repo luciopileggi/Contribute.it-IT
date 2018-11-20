@@ -5,6 +5,6 @@ Microsoft, Windows, Microsoft Azure e/o altri prodotti e servizi Microsoft menzi
 Le licenze per questo progetto non concedono il diritto a usare eventuali nomi, logo o marchi registrati di Microsoft.
 Per le linee guida generali dei marchi di Microsoft, visitare http://go.microsoft.com/fwlink/?LinkID=254653.
 
-Per informazioni sulla privacy, visitare https://privacy.microsoft.com/en-us/
+Per informazioni sulla privacy, visitare https://privacy.microsoft.com/
 
 Microsoft e i collaboratori si riservano tutti gli altri diritti di copyright, brevetti o marchi registrati, impliciti, preclusivi o di altra natura.

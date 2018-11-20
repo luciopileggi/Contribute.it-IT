@@ -2,12 +2,12 @@
 title: Flusso di lavoro per i contributi a GitHub per modifiche di rilievo o di lunga durata
 description: Questo articolo illustra come usare il flusso di lavoro per i contributi "di rilievo" per gli articoli di docs.microsoft.com.
 ms.date: 08/30/2017
-ms.openlocfilehash: 31f9421fc5edbc2f65c5ff20a86da08c70211ec7
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 93e659df4f72c6a272d15fd7487eb3a997bdf3c8
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239826"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609406"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>Flusso di lavoro per i contributi a GitHub per modifiche di rilievo o di lunga durata
 
@@ -31,7 +31,7 @@ Prima di iniziare, è opportuno rivedere alcuni dei termini di Git/GitHub usati 
 | Nome | Descrizione |
 |-----------|-------------|
 |fork|Normalmente usato come sostantivo per fare riferimento a una copia di un repository principale di GitHub. In pratica, un fork è semplicemente un altro repository, ma è speciale perché GitHub mantiene un collegamento con il repository principale/padre. A volte questo termine descrive un'operazione, come in "è necessario prima di tutto creare un fork del repository".|
-|remoto|Connessione denominata a un repository remoto, ad esempio il remoto "origin" o "upstream". Git indica questi repository come remoti perché vengono usati per fare riferimento a un repository ospitato in un altro computer. In questo flusso di lavoro, un remoto è sempre un repository di GitHub.|
+|remoto|Connessione denominata a un repository remoto, ad esempio il remoto "origin" o "upstream". Git la indica come remota perché è usata per fare riferimento a un repository ospitato in un altro computer. In questo flusso di lavoro, un remoto è sempre un repository di GitHub.|
 |origin|Nome assegnato alla connessione tra il repository locale e il repository da cui è stato clonato. In questo flusso di lavoro, origin indica la connessione al fork. Questo termine viene a volte usato per fare riferimento in modo abbreviato al repository origin, come in "Ricordarsi di eseguire il push delle modifiche nell'origine".|
 |upstream|Come nel caso del remoto origin, upstream è una connessione denominata a un altro repository. In questo flusso di lavoro, upstream rappresenta la connessione tra il repository locale e il repository principale, da cui è stato creato il fork. Questo termine viene a volte usato per fare riferimento in modo abbreviato al repository upstream, come in "Ricordarsi di effettuare il pull delle modifiche dall'upstream".|
 

@@ -4,12 +4,12 @@ description: Questo articolo contiene indicazioni su come creare il repository G
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 5373bf34399105c15caabe0abdc1ea0692c46a4a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805678"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609500"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Configurare un repository Git locale per la documentazione
 
@@ -29,7 +29,7 @@ Eseguire le attività di installazione seguenti, da effettuare una sola volta, p
 
 ## <a name="overview"></a>Panoramica
 
-Per contribuire al sito della documentazione Microsoft, è possibile creare e modificare file Markdown in locale clonando il repository della documentazione corrispondente. Microsoft richiede di eseguire il fork del repository appropriato nel proprio account GitHub, in modo da disporre di autorizzazioni di lettura/scrittura per archiviare le modifiche proposte. Sarà quindi possibile usare richieste pull per unire le modifiche nel repository condiviso centrale in sola lettura.
+Per contribuire al sito della documentazione Microsoft, è possibile creare e modificare file Markdown in locale clonando il repository della documentazione corrispondente. Microsoft richiede di creare una copia tramite fork del repository appropriato nel proprio account GitHub, in modo da disporre di autorizzazioni di lettura/scrittura per archiviare le modifiche proposte. Sarà quindi possibile usare richieste pull per unire le modifiche nel repository condiviso centrale in sola lettura.
 
 ![Triangolo GitHub](./media/git-and-github-initial-setup.png)
 
@@ -41,7 +41,7 @@ Se non si ha familiarità con GitHub, guardare il video seguente per una panoram
 
 La documentazione ospitata in [docs.microsoft.com](https://docs.microsoft.com) si trova in diversi repository su [github.com](https://www.github.com).
 
-1. Se non si è certi del repository da usare, visitare l'articolo su docs.microsoft.com con il Web browser. Selezionare il collegamento **Modifica** (icona a forma di matita) nell'angolo superiore destro dell'articolo.
+1. In caso di dubbi sul repository da usare, vedere l'articolo in [docs.microsoft.com](https://docs.microsoft.com) tramite Web browser. Selezionare il collegamento **Modifica** (icona a forma di matita) nell'angolo superiore destro dell'articolo.
 
    ![Fare clic su Modifica per determinare il repository e il percorso del file.](media/index/edit-article.png)
 
