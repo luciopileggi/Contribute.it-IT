@@ -11,6 +11,11 @@
 ## [Guida rapida a stile e voce](style-quick-start.md)
 ## [Collegamenti](how-to-write-links.md)
 ## [Docs Authoring Pack](how-to-write-docs-auth-pack.md)
+# Materiale sussidiario specifico per set di documentazione
+## [Documentazione .NET](dotnet-contribute.md)
+### [Contribuire alla documentazione .NET](dotnet-contribute-process.md)
+### [Convenzioni di stile della documentazione .NET](dotnet-style-guide.md)
+### [Guida alla voce e allo stile](dotnet-voice-tone.md)
 
 <!--
 ## Creating new content
