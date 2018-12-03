@@ -4,12 +4,12 @@ description: In questo articolo sono riportate le risorse di apprendimento per G
 author: billwagner
 ms.author: wiwagn
 manager: wpickett
-ms.openlocfilehash: bf12947d0956a5ee2953d74840afe3060425074d
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 4c29bfd09f17e32624ee3fc484424c4fe8d3b68e
+ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609569"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52299638"
 ---
 # <a name="additional-git-and-github-resources"></a>Risorse per Git e GitHub aggiuntive
 
@@ -20,8 +20,8 @@ Se non si ha familiarità con Git o GitHub, queste risorse consentono di ottener
 - [Nozioni di base su Git](https://go.microsoft.com/fwlink/?linkid=853939): una panoramica di base del funzionamento di Git.
 - [E-book Pro Git (Web)](https://go.microsoft.com/fwlink/?linkid=853940): informazioni di riferimento su Git, in formato HTML.
 - [E-book Pro Git (PDF)](https://progit2.s3.amazonaws.com/en/2016-03-22-f3531/progit-en.1084.pdf): la stessa risorsa disponibile al precedente collegamento, in formato PDF.
-- [Corso Learn Git di Codecademy](https://www.codecademy.com/learn/learn-git): un'esercitazione su Git di Codecademy.
-- [Corso Try Git di Code School](https://www.codeschool.com/courses/try-git): un'esercitazione su Git da Code School.
+- [Corso Learn Git di Codecademy](https://www.codecademy.com/learn/learn-git): un'esercitazione su Git da Codeacademy.
+- [Corso Try Git di Code School in Pluralsight](https://www.pluralsight.com/courses/code-school-git-real): un'esercitazione su Git da Code School in Pluralsight.
 - [Corso su Git e Github di Udacity](https://www.udacity.com/course/how-to-use-git-and-github--ud775): esercitazione su Git e Github di Udacity
 
 ## <a name="github-resources"></a>Risorse su GitHub
