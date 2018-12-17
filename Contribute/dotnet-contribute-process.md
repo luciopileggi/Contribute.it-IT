@@ -2,12 +2,12 @@
 title: Processo per contribuire ai repository della documentazione di .NET
 description: Questo articolo offre una breve introduzione al processo per inviare contributi per i repository della documentazione di .NET. Vengono presentati i repository usati, il processo per l'organizzazione del contenuto e i criteri per la gestione degli esempi di codice e di altri asset.
 ms.date: 11/07/2018
-ms.openlocfilehash: b83a3080f1abd4df8caaa9d10859760006216e86
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 0e7199b72cf9b94d00a09fb180ffef0558c59a53
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609763"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245850"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>Processo per contribuire alla documentazione di .NET
 
@@ -24,7 +24,7 @@ Seguendo queste linee guida si garantirà un'esperienza migliore per tutti.
 
 ## <a name="make-a-contribution-to-net-docs"></a>Creare un contributo per la documentazione di .NET
 
-**Passaggio 1:** ignorare questo passaggio per piccole modifiche. Se si è interessati alla scrittura di nuovo contenuto o a una revisione consistente di contenuto esistente, aprire un [problema](https://github.com/dotnet/docs/issues) per descrivere le proprie intenzioni.
+**Passaggio 1:** ignorare questo passaggio per le modifiche di piccola entità. Se si è interessati alla scrittura di nuovo contenuto o a una revisione consistente di contenuto esistente, aprire un [problema](https://github.com/dotnet/docs/issues) per descrivere le proprie intenzioni.
 
 Il contenuto all'interno della cartella **docs** è organizzato in sezioni rispecchiate nel sommario. Definire la posizione dell'argomento nel sommario. Ottenere commenti e suggerimenti per la proposta.
 
@@ -76,7 +76,7 @@ Se la richiesta pull risolve un problema esistente, aggiungere la parola chiave 
 
 Il team .NET effettuerà la revisione della richiesta pull e avviserà nel caso siano necessari altri aggiornamenti o modifiche per l'approvazione.
 
-**Passaggio 5:** apportare le eventuali modifiche necessarie al ramo in base a quanto concordato con il team.
+**Passaggio 5:** apportare eventuali modifiche necessarie al ramo in base a quanto concordato con il team.
 
 I responsabili della manutenzione effettueranno il merge della richiesta pull nel ramo master dopo l'applicazione di commenti e suggerimenti e l'approvazione della modifica.
 
@@ -131,6 +131,7 @@ Per creare un esempio:
 2. Scrivere l'argomento che spiega i concetti dimostrati dall'esempio (ad esempio: `docs/standard/linq/where-clause.md`).
 3. Scrivere l'esempio (ad esempio: `WhereClause-Sample1.cs`).
 4. Creare un file Program.cs con un punto di ingresso Main che chiama gli esempi. Se è già disponibile, aggiungere la chiamata all'esempio:
+
     ```csharp
     public class Program
     {
@@ -143,6 +144,7 @@ Per creare un esempio:
         }
     }
     ```
+
 Per compilare qualsiasi frammento di codice o esempio .NET Core si usa l'interfaccia della riga di comando di .NET Core, installabile con [.NET Core SDK](https://www.microsoft.com/net/download). Per compilare ed eseguire l'esempio:
 
 1. Passare alla cartella dell'esempio e compilarlo per verificare se sono presenti errori:

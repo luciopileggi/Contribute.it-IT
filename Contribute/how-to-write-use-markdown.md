@@ -2,12 +2,12 @@
 title: Come usare Markdown per scrivere articoli di Docs
 description: Questo articolo offre informazioni di base e di riferimento sul linguaggio Markdown usato per la stesura di articoli per il sito docs.microsoft.com.
 ms.date: 07/13/2017
-ms.openlocfilehash: 21194c4bd6020d847b526a4d9544c826aa199e2a
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 8613d525afc11caf9ec760c4f15ea44010781634
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609523"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245896"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Come usare Markdown per scrivere articoli di Docs
 
@@ -282,8 +282,8 @@ __Markdown__
 
     ```sql
     CREATE TABLE T1 (
-      c1 int PRIMARY KEY,
-      c2 varchar(50) SPARSE NULL
+      c1 int PRIMARY KEY,
+      c2 varchar(50) SPARSE NULL
     );
     ```
 
@@ -291,8 +291,8 @@ __Rendering__
 
 ```sql
 CREATE TABLE T1 (
-  c1 int PRIMARY KEY,
-  c2 varchar(50) SPARSE NULL
+  c1 int PRIMARY KEY,
+  c2 varchar(50) SPARSE NULL
 );
 ```
 
@@ -352,26 +352,26 @@ Il rendering è il seguente:
 > [!IMPORTANT]
 > Questo testo è IMPORTANTE
 
-### <a name="includes"></a>File di inclusione
+### <a name="include-files"></a>File di inclusione
 
-In presenza di testo riutilizzabile o file di immagine che devono essere inclusi nei file degli articoli, è possibile usare un riferimento al file di "inclusione" tramite la funzionalità di inclusione file di Markdig. Questa funzionalità indica a OPS di includere il file specificato nell'articolo in fase di compilazione, rendendolo così parte dell'articolo pubblicato. Esistono tre tipi di inclusioni disponibili per agevolare il riutilizzo del contenuto:
+In presenza di testo riutilizzabile o file di immagine che devono essere inclusi nei file degli articoli, è possibile usare un riferimento al file di "inclusione" tramite la funzionalità di inclusione file di Markdig. Questa funzionalità indica a OPS di includere il file specificato nell'articolo in fase di compilazione, rendendolo così parte dell'articolo pubblicato. Sono disponibili tre tipi di riferimenti di inclusione per agevolare il riutilizzo del contenuto:
 
 - Inline: riutilizzo di un frammento di testo comune inline all'interno di un'altra frase.
 - Blocco: riutilizzo di un intero file Markdown come blocco, annidato all'interno di una sezione di un articolo.
 - Immagine: questa è l'implementazione standard dell'inclusione di immagini in Docs.
 
-Le inclusioni di tipo Inline e Blocco sono semplici file di Markdown (con estensione md), che possono contenere qualsiasi codice Markdown valido. Tutti i file di inclusione di Markdown devono essere posizionati in una [sottodirectory`/includes` comune](git-github-fundamentals.md#includes-subdirectory), nella radice del repository. Al momento della pubblicazione dell'articolo, il file incluso viene integrato automaticamente.
+Le inclusioni di tipo Inline e Blocco sono semplici file di Markdown (MD), che possono contenere qualsiasi codice Markdown valido. Tutti i file di inclusione di Markdown devono essere posizionati in una [sottodirectory`/includes` comune](git-github-fundamentals.md#includes-subdirectory), nella radice del repository. Al momento della pubblicazione dell'articolo, il file incluso viene integrato automaticamente.
 
 Di seguito sono elencati i requisiti e le considerazioni per i file di inclusione:
 
-- Usare le inclusioni ogni volta che occorre visualizzare lo stesso testo in più articoli.
-- Usare le inclusioni di tipo Blocco per quantità significative di contenuto, ad esempio uno o due paragrafi, una procedura o una sezione condivisa. Non usarle per includere testi più piccoli di una frase.
-- Le inclusioni non vengono visualizzate nel rendering dell'articolo in GitHub, perché si basano su estensioni Markdig. Saranno visualizzate solo dopo la pubblicazione.
-- Assicurarsi che tutto il testo in un'inclusione sia scritto con frasi complete o frasi che non dipendono dal testo precedente o successivo nell'articolo che fa riferimento all'inclusione. Ignorare questa indicazione significa creare una stringa intraducibile nell'articolo con effetti negativi sull'esperienza localizzata.
-- Non incorporare inclusioni in altre inclusioni. Ciò non è supportato.
-- Posizionare i file multimediali in una cartella corrispondete, in una sottodirectory di inclusione, ad esempio la cartella `<repo>`/includi/file multimediali. La directory media non deve includere immagini alla radice. Se nell'inclusione non sono contenute immagini, non è necessaria una directory corrispondente per i file multimediali.
-- Come per gli articoli normali, non condividere elementi multimediali tra file di inclusione. Usare un file separato con un nome univoco per ogni inclusione e articolo. Archiviare il file multimediale nella cartella associata all'inclusione.
-- Non usare un'inclusione come unico contenuto di un articolo.  Le inclusioni sono pensate come supplemento al contenuto nel resto dell'articolo.
+- Usare un file di inclusione ogni volta che è necessario visualizzare lo stesso testo in più articoli.
+- Usare un riferimento di inclusione di tipo Blocco per quantità significative di contenuto, ad esempio uno o due paragrafi, una procedura o una sezione condivisa. Non usarle per includere testi più piccoli di una frase.
+- I riferimenti di inclusione non vengono visualizzati nel rendering dell'articolo in GitHub, perché si basano su estensioni Markdig. Saranno visualizzate solo dopo la pubblicazione.
+- Verificare che tutto il testo in un file di inclusione sia scritto con frasi complete o che non dipendono dal testo precedente o successivo nell'articolo che fa riferimento al file di inclusione. Ignorare questa indicazione significa creare una stringa intraducibile nell'articolo con effetti negativi sull'esperienza localizzata.
+- Non incorporare riferimenti di inclusione in altri file di inclusione. Ciò non è supportato.
+- Posizionare i file multimediali in una cartella corrispondete, in una sottodirectory di inclusione, ad esempio la cartella `<repo>`/includi/file multimediali. La directory media non deve includere immagini alla radice. Se il file di inclusione non contiene immagini, non è necessaria una directory corrispondente per i file multimediali.
+- Come per gli articoli normali, non condividere elementi multimediali tra file di inclusione. Usare un file separato con un nome univoco per ogni file di inclusione e articolo. Archiviare il file multimediale nella cartella dei file multimediali associata al file di inclusione.
+- Non usare un file di inclusione come unico contenuto di un articolo.  I file di inclusione sono pensati come supplemento al contenuto nel resto dell'articolo.
 
 Esempio:
 
@@ -383,7 +383,7 @@ Esempio:
 
 Usare i selettori negli articoli tecnici quando si creano più versioni dello stesso articolo per gestire le differenze a livello di implementazione per tecnologie o piattaforme eterogenee. Un esempio tipico è il contenuto per sviluppatori per la piattaforma per dispositivi mobili. In Markdig esistono attualmente due tipi di selettori, un selettore singolo e un selettore multiplo.
 
-Poiché lo stesso selettore Markdown viene aggiunto in ogni articolo della selezione, è consigliabile inserire il selettore dell'articolo in un'inclusione. A questo punto è possibile fare riferimento a quell'inclusione in tutti gli articoli che usano lo stesso selettore.
+Poiché lo stesso selettore Markdown viene aggiunto in ogni articolo della selezione, è consigliabile inserire il selettore dell'articolo in un file di inclusione. A questo punto è possibile fare riferimento a quel file di inclusione in tutti gli articoli che usano lo stesso selettore.
 
 Di seguito viene illustrato un esempio di selettore:
 
@@ -395,7 +395,7 @@ Di seguito viene illustrato un esempio di selettore:
 
 Per un esempio di selettori attivi, vedere la [documentazione di Azure](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic).
 
-### <a name="code-includes"></a>Inclusioni di codice
+### <a name="code-include-references"></a>Riferimenti di inclusione di codice
 
 Markdig supporta l'inclusione avanzata di codice in un articolo, tramite l'estensione per i frammenti di codice. Sono disponibili opzioni di rendering avanzate basate sulle funzionalità di GFM, come la scelta del linguaggio di programmazione e la colorazione della sintassi, oltre a funzionalità interessanti come:
 
