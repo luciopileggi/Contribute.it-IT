@@ -2,12 +2,12 @@
 title: Modello e foglio informativo per gli articoli .NET
 description: Questo articolo contiene un pratico modello da usare per creare nuovi articoli per i repository di documentazione .NET.
 ms.date: 11/07/2018
-ms.openlocfilehash: 15f64ec86c475e2da2f6539c8f388d076389c4e0
-ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
+ms.openlocfilehash: 08c8e19c858e7417d49cc2de543c67f330b93e89
+ms.sourcegitcommit: b0556fc33803358009a030ac9efcaed23f562868
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52299661"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53264503"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Modello di metadati e Markdown per i documenti .NET
 
@@ -244,13 +244,13 @@ Collegamenti ai pulsanti:
 
 ```markdown
 > [!div class="button"]
-[button links](dotnet-contribute.md)
+> [button links](dotnet-contribute.md)
 ```
 
 Il rendering è il seguente:
 
 > [!div class="button"]
-[button links](dotnet-contribute.md)
+> [button links](dotnet-contribute.md)
 
 Per un esempio di pulsanti attivi, vedere la [documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-2---download-visual-studio).
 
@@ -258,8 +258,8 @@ Per un esempio di pulsanti attivi, vedere la [documentazione di Visual Studio](h
 
 ```markdown
 >[!div class="step-by-step"]
-[Pre](../docs/csharp/expression-trees-interpreting.md)
-[Next](../docs/csharp/expression-trees-translating.md)
+> [Pre](../docs/csharp/expression-trees-interpreting.md)
+> [Next](../docs/csharp/expression-trees-translating.md)
 ```
 
 Per un esempio di guide dettagliate attive, vedere la [Guida di C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/program-structure).

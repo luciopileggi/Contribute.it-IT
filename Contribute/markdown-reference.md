@@ -1,6 +1,6 @@
 ---
-title: Informazioni di riferimento su Markdown per OPS e docs.microsoft.com
-description: Guida della piattaforma OPS per le estensioni Markdown e DocFX Flavored Markdown (DFM).
+title: Informazioni di riferimento su Markdown per docs.microsoft.com
+description: Guida a Markdown della piattaforma Docs.
 author: meganbradley
 ms.author: mbradley
 manager: jemash
@@ -8,24 +8,24 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 audience: internal,external
-ms.openlocfilehash: 64921bacf48e638221048db4b24e1a941f1d2777
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 1023f3036e5c1facd0bcd4c31069e6faf3c95483
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609546"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245873"
 ---
-# <a name="markdown-reference-for-ops"></a>Informazioni di riferimento su Markdown per OPS
+# <a name="markdown-reference"></a>Informazioni di riferimento a Markdown
 
-Markdown è un semplice linguaggio di markup che usa una sintassi di formattazione in testo normale. OPS (Open Publishing Services) supporta lo standard CommonMark per Markdown e alcune estensioni Markdown personalizzate progettate per offrire contenuti formattati in docs.microsoft.com. In questo articolo vengono elencanti in ordine alfabetico gli elementi necessari per usare Markdown in OPS per docs.microsoft.com.
+Markdown è un semplice linguaggio di markup che usa una sintassi di formattazione in testo normale. La piattaforma Docs supporta lo standard CommonMark per Markdown e alcune estensioni Markdown personalizzate progettate per offrire contenuti formattati in docs.microsoft.com. In questo articolo vengono elencati in ordine alfabetico gli elementi necessari per usare Markdown per docs.microsoft.com.
 
-Per creare codice Markdown è possibile usare un qualsiasi editor di testo. Per un editore che consenta di inserire sia una sintassi Markdown standard sia estensioni OPS personalizzate, è consigliabile usare [VS Code](https://code.visualstudio.com/) con [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack) installato.
+Per creare codice Markdown è possibile usare un qualsiasi editor di testo. Per un editore che consenta di inserire sia una sintassi Markdown standard sia estensioni Docs personalizzate, è consigliabile usare [VS Code](https://code.visualstudio.com/) con [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack) installato.
 
-OPS ha adottato come standard Markdig per tutti i nuovi repository mentre dei repository precedenti viene eseguita la migrazione in Markdig. In [https://babelmark.github.io/](https://babelmark.github.io/) è possibile testare il rendering di Markdown in Markdig e in altri motori.
+Docs usa il motore Markdig per Markdown. In [https://babelmark.github.io/](https://babelmark.github.io/) è possibile testare il rendering di Markdown in Markdig e in altri motori.
 
 ## <a name="alerts-note-tip-important-caution-warning"></a>Avvisi (nota, suggerimento, informazione importante, attenzione e avvertimento)
 
-Avvisi è un'estensione Markdown specifica per OPS per creare citazioni per il cui rendering docs.microsoft.com usa colori e icone che indicano il significato del contenuto. Sono supportati i tipi di avviso seguenti:
+Gli avvisi sono un'estensione di Markdown per Docs che consente di creare citazioni per eseguire il rendering in docs.microsoft.com usando colori e icone che indicano il significato del contenuto. Sono supportati i tipi di avviso seguenti:
 
 ```markdown
 > [!NOTE]
@@ -71,7 +71,7 @@ Nei file Markdown è possibile incorporare frammenti di codice.
 
 ## <a name="headings"></a>Titoli
 
-OPS supporta sei livelli di titoli Markdown:
+Docs supporta sei livelli di intestazioni Markdown:
 
 ```markdown
 # This is a first level heading (H1)
@@ -92,7 +92,7 @@ OPS supporta sei livelli di titoli Markdown:
 
 ## <a name="html"></a>HTML
 
-Markdown supporta HTML inline. Il linguaggio HTML non è comunque consigliabile per eseguire la pubblicazione tramite OPS ed eccezione fatta per un breve elenco di valori, genera errori o avvisi di compilazione. <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
+Benché Markdown supporti HTML inline, non è consigliabile usare il linguaggio HTML per la pubblicazione in Docs poiché, fatta eccezione per un piccolo gruppo di valori, genera avvisi o errori di compilazione. <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
 
 ## <a name="images"></a>Immagini
 
@@ -116,7 +116,7 @@ Le immagini devono essere archiviate in una cartella `/media` all'interno del do
 
 ## <a name="links"></a>Collegamenti
 
-Nella maggior parte dei casi OPS usa collegamenti Markdown standard per collegarsi ad altri file e pagine. I tipi di collegamenti vengono descritti nelle sottosezioni seguenti.
+Nella maggior parte dei casi Docs usa collegamenti Markdown standard per collegarsi ad altri file e pagine. I tipi di collegamenti vengono descritti nelle sottosezioni seguenti.
 
 > [!TIP]
 > Docs Authoring Pack per VS Code consente di inserire collegamenti relativi e segnalibri in modo corretto senza dover conoscere i percorsi.
@@ -132,7 +132,7 @@ Nella maggior parte dei casi OPS usa collegamenti Markdown standard per collegar
 
 ### <a name="relative-links-to-files-in-the-same-doc-set"></a>Collegamenti relativi a file all'interno dello stesso docset
 
-Un percorso relativo è il percorso al file di destinazione relativo al file corrente. In OPS è possibile usare un percorso relativo per il collegamento a un altro file all'interno dello stesso docset. La sintassi di un percorso relativo è la seguente:
+Un percorso relativo è il percorso al file di destinazione relativo al file corrente. In Docs è possibile usare un percorso relativo per il collegamento a un altro file all'interno dello stesso docset. La sintassi di un percorso relativo è la seguente:
 
 ```markdown
 [link text](../../folder/filename.md)
@@ -142,7 +142,7 @@ Dove `../` indica un livello superiore nella gerarchia.
 
 - Il percorso relativo verrà risolto durante la compilazione e verrà anche rimossa l'estensione md.
 - È possibile usare "../" per il collegamento a un file nella cartella padre, ma il file deve appartenere allo stesso docset. Non è possibile usare "../" per il collegamento a un file in un'altra cartella del docset.
-- OPS supporta anche un formato speciale di percorso relativo che inizia con "~" (ad esempio, ~/foo/bar.md). Questa sintassi indica un file relativo alla cartella radice di un docset. Anche questo tipo di percorso viene convalidato e risolto durante la compilazione.
+- Docs supporta anche un formato speciale di percorso relativo che inizia con "~" (ad esempio, ~/foo/bar.md). Questa sintassi indica un file relativo alla cartella radice di un docset. Anche questo tipo di percorso viene convalidato e risolto durante la compilazione.
 
 > [!IMPORTANT]
 > Includere l'estensione del file nel percorso relativo. Durante la compilazione viene convalidata l'esistenza del file di destinazione di tale percorso relativo. Se il percorso relativo non include l'estensione file, la compilazione potrebbe segnalare un avviso di collegamento interrotto. Ad esempio, usare:
@@ -153,7 +153,7 @@ Dove `../` indica un livello superiore nella gerarchia.
 >
 > `[link text](../../folder/filename)`
 
-### <a name="absolute-links-to-other-files-in-ops"></a>Collegamenti assoluti ad altri file in OPS
+### <a name="site-relative-links-to-other-files-on-docs"></a>Collegamenti relativi di siti ad altri file in Docs
 
 ```markdown
 [Azure and Linux](/articles/virtual-machines/linux/overview)
@@ -252,7 +252,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 Per creare un elenco numerato è possibile usare tutti 1, che dopo la pubblicazione vengono visualizzati come elenco sequenziale. Per migliorare la leggibilità dell'origine, è possibile incrementare gli elenchi.
 
-Non usare le lettere negli elenchi, neppure negli elenchi annidati. Non vengono visualizzati correttamente quando vengono pubblicati tramite OPS. Gli elenchi annidati che usano i numeri vengono visualizzati con lettere minuscole quando vengono pubblicati. Ad esempio:
+Non usare le lettere negli elenchi, neppure negli elenchi annidati. Non vengono visualizzati correttamente quando vengono pubblicati in Docs. Gli elenchi annidati che usano i numeri vengono visualizzati con lettere minuscole quando vengono pubblicati. Ad esempio:
 
 ```markdown
 1. This is
@@ -423,14 +423,6 @@ Il rendering del testo Markdown della citazione precedente sarà il seguente:
 > - [(Xamarin iOS | Javascript)](how-to-write-workflows-major.md)
 > - [(Xamarin Android | Javascript)](how-to-write-workflows-major.md)
 
-<!-- uncomment and link when Cory's topic is live
-## Tabbed content
-
-Tabs are a Markdown extension for docs.microsoft.com that allow us to present different versions of content, such as procedural steps to accomplish the same task on different platforms, in a tabbed format.
-
-Because the syntax and requirements for tabbed content are fairly complex, they are documented separately in Tabbed Content.
--->
-
 ## <a name="tables"></a>Tables
 
 Il metodo più semplice per creare una tabella in Markdown consiste nell'uso di barre verticali e linee. Per creare una tabella standard con un titolo, la prima linea deve essere seguita da una linea tratteggiata:
@@ -535,13 +527,13 @@ Non è consigliabile usare tabelle HTML per docs.microsoft.com. Non sono leggibi
 
 ### <a name="embedding-videos-into-a-markdown-page"></a>Incorporamento di video in una pagina Markdown
 
-Attualmente OPS può supportare la pubblicazione di video in tre posizioni:
+Attualmente Docs può supportare la pubblicazione di video in tre posizioni:
 
 - YouTube
 - Channel 9
 - Sistema "OnePlayer" Microsoft
 
-È possibile incorporare un video con la sintassi seguente e OPS ne eseguirà il rendering.
+È possibile incorporare un video con la sintassi seguente e Docs ne eseguirà il rendering.
 
 ```markdown
 > [!VIDEO <embedded_video_link>]
