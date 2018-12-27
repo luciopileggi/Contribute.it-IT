@@ -230,11 +230,11 @@ Per gli elenchi è disponibile uno stile personalizzato. È possibile contrasseg
 Il rendering è il seguente:
 
 > [!div class="checklist"]
-> * How to create a .NET Core app (Come creare un'app .NET Core)
-> * How to add a reference to the Microsoft.XmlSerializer.Generator package (Come aggiungere un riferimento al pacchetto Microsoft.XmlSerializer.Generator)
-> * How to edit your MyApp.csproj to add dependencies (Come modificare MyApp.csproj per aggiungere dipendenze)
-> * How to add a class and an XmlSerializer (Come aggiungere una classe e un elemento XmlSerializer)
-> * How to build and run the application (Come compilare ed eseguire l'applicazione)
+> * Come creare un'app .NET Core
+> * Come aggiungere un riferimento al pacchetto Microsoft.XmlSerializer.Generator
+> * Come modificare MyApp.csproj per aggiungere dipendenze
+> * Come aggiungere una classe e un elemento XmlSerializer
+> * Come compilare ed eseguire l'applicazione
 
 Per un esempio di elenchi con segni di spunta, vedere la [documentazione di .NET Core](https://docs.microsoft.com/dotnet/core/additional-tools/xml-serializer-generator).
 
