@@ -2,12 +2,12 @@
 title: Come usare Markdown per scrivere articoli di Docs
 description: Questo articolo offre informazioni di base e di riferimento sul linguaggio Markdown usato per la stesura di articoli per il sito docs.microsoft.com.
 ms.date: 07/13/2017
-ms.openlocfilehash: 8613d525afc11caf9ec760c4f15ea44010781634
-ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
+ms.openlocfilehash: ef75ffd59b75db5757822642f651d863906cf14c
+ms.sourcegitcommit: 18c271ebec920bb976a4bc901f4ab8c1d36b02fa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53245896"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53615836"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Come usare Markdown per scrivere articoli di Docs
 
@@ -232,7 +232,8 @@ Questi linguaggi supportano nomi descrittivi e la maggior parte ha la funzione d
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
-|Formula PowerApps|powerappsfl|
+|PowerApps (separatore decimale punto)|powerapps-dot|
+|PowerApps (separatore decimale virgola)|powerapps-comma|
 |PowerShell|powershell|
 |Python|python|
 |Q#|qsharp|
