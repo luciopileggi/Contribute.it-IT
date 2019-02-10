@@ -1,29 +1,17 @@
 ---
 author: meganbradley
 ms.author: mbradley
-ms.openlocfilehash: fa048980afcf3c50f7d990f9c88064df6ee5ebb5
-ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.openlocfilehash: 5488ba364ea561a732357bcebf9bf66039c26542
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084531"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712787"
 ---
-# <a name="docs-pr-validation-service"></a><span data-ttu-id="f0347-101">Servizio di convalida PR Docs</span><span class="sxs-lookup"><span data-stu-id="f0347-101">Docs PR validation service</span></span>
+# <a name="docs-validation-reference"></a><span data-ttu-id="40674-101">Informazioni di riferimento sulla convalida dei documenti</span><span class="sxs-lookup"><span data-stu-id="40674-101">Docs validation reference</span></span>
 
-<span data-ttu-id="f0347-102">Il servizio di convalida PR Docs è un'applicazione GitHub che esegue regole di convalida sui file in un PR.</span><span class="sxs-lookup"><span data-stu-id="f0347-102">The Docs PR validation service is a GitHub app that runs validation rules on the files in a PR.</span></span>
+<span data-ttu-id="40674-102">Gli articoli di questa sezione forniscono informazioni sugli errori, gli avvisi e i suggerimenti che possono essere visualizzati quando si invia una richiesta pull a un repository di docs.microsoft.com o quando si compila un repository da pubblicare in docs.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="40674-102">The articles in this section provide information about Errors, Warnings, and Suggestions you might see when submitting a PR to a docs.microsoft.com repo, or when building a repo to publish to docs.microsoft.com.</span></span>
 
-<span data-ttu-id="f0347-103">Quando il servizio di convalida è abilitato in un repository, verrà visualizzato il seguente comportamento:</span><span class="sxs-lookup"><span data-stu-id="f0347-103">When the validation service is enabled on a repo, you'll see the following behavior:</span></span>
+<span data-ttu-id="40674-103">Tenere presente che non tutti i problemi saranno abilitati in tutti i repository perché alcuni sono specifici di determinati set di contenuti.</span><span class="sxs-lookup"><span data-stu-id="40674-103">Note that not all issues will be enabled on all repos; some are specific to certain content sets.</span></span> <span data-ttu-id="40674-104">Risolvere i problemi elencati nel report di compilazione, non ogni problema descritto in queste informazioni di riferimento.</span><span class="sxs-lookup"><span data-stu-id="40674-104">Fix the issues listed in your build report, not every issue described in this reference.</span></span>
 
-1. <span data-ttu-id="f0347-104">Viene inviato un PR.</span><span class="sxs-lookup"><span data-stu-id="f0347-104">You submit a PR.</span></span>
-1. <span data-ttu-id="f0347-105">Nel commento di GitHub che indica lo stato del PR, verrà visualizzato lo stato dei "controlli" abilitati sul repository.</span><span class="sxs-lookup"><span data-stu-id="f0347-105">In the GitHub comment that indicates the status of your PR, you'll see the status of "checks" enabled on the repo.</span></span> <span data-ttu-id="f0347-106">Si noti che in questo esempio, sono abilitati due controlli, "Commit Validation" e "OpenPublishing.Build":</span><span class="sxs-lookup"><span data-stu-id="f0347-106">Note that in this example, there are two checks enabled, "Commit Validation" and "OpenPublishing.Build":</span></span>
-
-   ![alcuni controlli non sono riusciti](media/validation-failed.png)
-
-   <span data-ttu-id="f0347-108">Build può essere eseguito anche se la convalida del commit non riesce.</span><span class="sxs-lookup"><span data-stu-id="f0347-108">Build can pass even if commit validation fails.</span></span>
-
-1. <span data-ttu-id="f0347-109">Per altre informazioni, fare clic su **Dettagli**.</span><span class="sxs-lookup"><span data-stu-id="f0347-109">Click **Details** for more information.</span></span>
-1. <span data-ttu-id="f0347-110">Nella pagina Dettagli, verranno visualizzati tutti i controlli di convalida non riusciti, con informazioni su come risolvere i problemi:</span><span class="sxs-lookup"><span data-stu-id="f0347-110">On the Details page, you'll see all the validation checks that failed, with information about how to fix the issues:</span></span>
-
-   ![messaggio di convalida](media/validation-details.png)
-
-<span data-ttu-id="f0347-112">Vedere il TOC riportato a sinistra del presente articolo per l'elenco delle convalide attualmente incluse nel servizio.</span><span class="sxs-lookup"><span data-stu-id="f0347-112">See the left-hand TOC of this article for the list of validations currently in the service.</span></span>
+<span data-ttu-id="40674-105">Tenere anche presente che queste informazioni di riferimento non sono complete. In futuro verranno continuamente aggiunti nuovi articoli con collegamenti nei codici errore del report di compilazione.</span><span class="sxs-lookup"><span data-stu-id="40674-105">Also note that this reference is not complete - new articles will be added and linked from build report error codes as an ongoing effort.</span></span> <span data-ttu-id="40674-106">Anche se i report di compilazione sono pubblici, alcune delle informazioni necessarie per risolvere determinati problemi non sono disponibili al di fuori di Microsoft.</span><span class="sxs-lookup"><span data-stu-id="40674-106">Although build reports are public, some of the information required to fix some issues is not available outside of Microsoft.</span></span> <span data-ttu-id="40674-107">Se non è possibile trovare la documentazione su un errore o un avviso, se il messaggio o la documentazione non risulta chiara o se non si è un collaboratore di Microsoft e non è possibile accedere ad altre informazioni, segnalare il problema a GitHub usando il pulsante sotto per inviare commenti sulla documentazione.</span><span class="sxs-lookup"><span data-stu-id="40674-107">If you can't find documentation for an Error or Warning, if the message or documentation isn't clear, or if you're a non-Microsoft contributor and can't access additional information, use the documentation feedback button below to file a GitHub issue.</span></span>
