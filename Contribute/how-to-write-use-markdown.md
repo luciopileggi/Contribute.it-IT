@@ -1,24 +1,19 @@
 ---
 title: Come usare Markdown per scrivere articoli di Docs
 description: Questo articolo offre informazioni di base e di riferimento sul linguaggio Markdown usato per la stesura di articoli per il sito docs.microsoft.com.
-ms.date: 07/13/2017
-ms.openlocfilehash: ef75ffd59b75db5757822642f651d863906cf14c
-ms.sourcegitcommit: 18c271ebec920bb976a4bc901f4ab8c1d36b02fa
+ms.date: 01/29/2019
+ms.openlocfilehash: 5235189d11c8c20ac20c91572d8bafcf525fb7c0
+ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53615836"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55887299"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Come usare Markdown per scrivere articoli di Docs
 
 Gli articoli di [docs.microsoft.com](http://docs.microsoft.com) sono scritti in un semplice linguaggio di markup denominato [Markdown](https://daringfireball.net/projects/markdown/), facile sia da leggere che da apprendere. Per questo motivo si sta imponendo rapidamente come standard del settore.
 
-Dato che il contenuto di Docs è archiviato in GitHub, è possibile usare un superset di Markdown denominato [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), che offre funzionalità aggiuntive per esigenze di formattazione comuni. In più, Open Publishing Services (OPS) implementa il parser Markdig per Markdown. Markdig è altamente compatibile con GFM e aggiunge funzionalità per abilitare funzioni specifiche di Docs.
-
-* Markdig è un processore Markdown per .NET veloce, potente, estensibile e conforme a CommonMark.
-* https://github.com/lunet-io/markdig
-* Supporto della community migliorato
-* Supporto degli standard migliorato
+Il back-end del sito docs.microsoft.com usa i servizi OPS (Open Publishing Service) che supportano il markdown conforme [CommonMark](https://commonmark.org/) analizzato tramite [Markdig](https://github.com/lunet-io/markdig), oltre a supportare [DocFX Flavored Markdown (DFM)](https://dotnet.github.io/docfx/). Questi tipi di markdown sono per lo più compatibili con [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), perché la maggior parte dei documenti viene archiviata in GitHub dove può essere modificata. Altre funzionalità vengono aggiunte tramite le estensioni per Markdown.
 
 ## <a name="markdown-basics"></a>Nozioni di base su Markdown
 
@@ -220,6 +215,7 @@ Questi linguaggi supportano nomi descrittivi e la maggior parte ha la funzione d
 |Console|console|
 |CSHTML|cshtml|
 |DAX|dax|
+|Docker|dockerfile|
 |F#|fsharp|
 |Go|go|
 |HTML|html|
@@ -227,8 +223,8 @@ Questi linguaggi supportano nomi descrittivi e la maggior parte ha la funzione d
 |Java|java|
 |JavaScript|javascript|
 |JSON|json|
+|Linguaggio di query Kusto|kusto|
 |Markdown|md|
-|NodeJS|nodejs|
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
@@ -243,7 +239,6 @@ Questi linguaggi supportano nomi descrittivi e la maggior parte ha la funzione d
 |Swift|swift|
 |TypeScript|typescript|
 |VB|vb|
-|Interfaccia della riga di comando di VSTS|vstscli|
 |XAML|xaml|
 |XML|xml|
 
