@@ -4,17 +4,17 @@ description: Questo articolo rappresenta materiale sussidiario per la creazione 
 author: gewarren
 ms.author: gewarren
 ms.date: 10/31/2018
-ms.openlocfilehash: e56bc0fe3a5428af2a79641a8959b4da21270d53
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 9dc1b6dc2ac19b8f28a5a137817245f9a8c34eaf
+ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609431"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55887253"
 ---
 # <a name="using-links-in-documentation"></a>Uso di collegamenti nella documentazione
 Questo articolo descrive come usare collegamenti ipertestuali da pagine ospitate in docs.microsoft.com. È facile aggiungere collegamenti all'interno di markdown, con alcune convenzioni. I collegamenti possono indirizzare gli utenti a contenuto all'interno della stessa pagina, ad altre pagine vicine o a siti e URL esterni.
 
-Il back-end del sito docs.microsoft.com usa Open Publishing Services (OPS), che implementa DocFX Flavored Markdown (DFM). DFM ha un'elevata compatibilità con GitHub Flavored Markdown (GFM) e aggiunge altre funzionalità tramite estensioni Markdown.
+Il back-end del sito docs.microsoft.com usa i servizi OPS (Open Publishing Service) che supportano il markdown conforme [CommonMark](https://commonmark.org/) analizzato tramite [Markdig](https://github.com/lunet-io/markdig), oltre a supportare [DocFX Flavored Markdown (DFM)](https://dotnet.github.io/docfx/). Questi tipi di markdown sono per lo più compatibili con [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), perché la maggior parte dei documenti viene archiviata in GitHub dove può essere modificata. Altre funzionalità vengono aggiunte tramite le estensioni per Markdown.
 
 > [!IMPORTANT]
 > Tutti i collegamenti devono essere protetti (`https` invece di `http`) ogni volta che la destinazione lo supporta (come dovrebbe essere nella maggior parte dei casi).
@@ -137,10 +137,10 @@ Per impostare un collegamento a una pagina in un'altra area di proprietà Micros
 
 Per un'esperienza utente ottimale, è consigliabile evitare il più possibile i reindirizzamenti degli utenti a un altro sito. Basare quindi i collegamenti a siti di terze parti, a volte necessari, su queste informazioni:
 
-- **Responsabilità:**: impostare un collegamento a contenuti di terze parti quando le informazioni da condividere sono di proprietà di terzi. Ad esempio, non è compito di Microsoft comunicare agli utenti come usare gli strumenti per sviluppatori Android, è una responsabilità di Google. Se necessario, Microsoft può spiegare come usare gli strumenti per sviluppatori di Android *con* Azure, ma è Google ad avere la responsabilità di pubblicare contenuti con istruzioni per l'uso dei suoi strumenti.
+- **Responsabilità**: impostare un collegamento a contenuti di terze parti quando le informazioni da condividere sono di proprietà di terzi. Ad esempio, non è compito di Microsoft comunicare agli utenti come usare gli strumenti per sviluppatori Android, è una responsabilità di Google. Se necessario, Microsoft può spiegare come usare gli strumenti per sviluppatori di Android *con* Azure, ma è Google ad avere la responsabilità di pubblicare contenuti con istruzioni per l'uso dei suoi strumenti.
 - **Approvazione del PM**: richiedere che Microsoft approvi il contenuto di terze parti. Con l'inserimento di questo tipo di collegamenti Microsoft fa una dichiarazione implicita in merito all'attendibilità del contenuto collegato e si impegna nei confronti dei clienti che seguono le istruzioni.
 - **Verifica dello stato di aggiornamento**: assicurarsi che le informazioni di terze parti siano ancora aggiornate, corrette e pertinenti e che il collegamento non sia stato modificato.
-- **Uscita dal sito**: comunicare agli utenti che stanno passando a un altro sito. Se dal contesto non risulta chiaro, aggiungere una frase esplicativa. Ad esempio, "I prerequisiti includono Android Developer Tools, scaricabile dal sito di Android Studio".
+- **Uscita dal sito**: comunicare agli utenti che stanno passando a un altro sito. Se dal contesto non risulta chiaro, aggiungere una frase esplicativa. Ad esempio: "I prerequisiti includono gli strumenti per sviluppatori di Android, scaricabili dal sito di Android Studio".
 - **Passaggi successivi**: è appropriato aggiungere un collegamento, ad esempio a un blog MVP, nella sezione "Passaggi successivi". Anche in questo caso, assicurarsi che gli utenti capiscano che stanno per passare a un altro sito.
 - **Informazioni legali**: la copertura legale Microsoft è disponibile in **Collegamenti a siti di Terzi** nel piè di pagina **Condizioni per l'utilizzo** in tutte le pagine di ms.com.
 

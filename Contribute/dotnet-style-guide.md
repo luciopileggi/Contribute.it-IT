@@ -2,12 +2,12 @@
 title: Modello e foglio informativo per gli articoli .NET
 description: Questo articolo contiene un pratico modello da usare per creare nuovi articoli per i repository di documentazione .NET.
 ms.date: 11/07/2018
-ms.openlocfilehash: 08c8e19c858e7417d49cc2de543c67f330b93e89
-ms.sourcegitcommit: b0556fc33803358009a030ac9efcaed23f562868
+ms.openlocfilehash: e342373a09b623dc71aadd63e8d8627d154ec8b6
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53264503"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712925"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Modello di metadati e Markdown per i documenti .NET
 
@@ -123,7 +123,7 @@ Per il collegamento a un tipo generico, ad esempio [System.Collections.Generic.L
 
 ## <a name="code"></a>Codice
 
-Il miglior metodo per includere codice è l'inclusione di frammenti di codice da un esempio funzionante. Creare l'esempio in base alle istruzioni fornite nell'articolo [Contributing to .NET docs](dotnet-contribute-process.md#contributing-to-samples) (Contributo ai documenti .NET). Le regole di base per l'inclusione di codice si trovano nelle indicazioni generali per il [codice](how-to-write-use-markdown.md#code-includes).
+Il miglior metodo per includere codice è l'inclusione di frammenti di codice da un esempio funzionante. Creare l'esempio in base alle istruzioni fornite nell'articolo [Contributing to .NET docs](dotnet-contribute-process.md#contributing-to-samples) (Contributo ai documenti .NET). Le regole di base per l'inclusione di codice si trovano nelle indicazioni generali per il [codice](how-to-write-use-markdown.md#code-snippets).
 
 È possibile includere il codice usando la sintassi seguente:
 
