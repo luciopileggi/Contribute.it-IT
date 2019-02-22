@@ -17,7 +17,7 @@ Scheda dipendente facoltativa:
 
 Esempio di sezione di scheda a livello singolo con due schede e il carattere di terminazione del gruppo di schede (---):
 
-```
+```markdown
 # [Linux](#tab/linux)
 
 Content for Linux...
