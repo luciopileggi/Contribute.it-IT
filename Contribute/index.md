@@ -3,20 +3,14 @@ title: Panoramica della guida per i collaboratori di Microsoft Docs
 description: La guida spiega in che modo si può contribuire al sito della documentazione Microsoft docs.microsoft.com.
 author: billwagner
 ms.author: wiwagn
-manager: wpickett
-ms.date: 04/17/2018
-ms.openlocfilehash: 4a9a7573a62cfc7d5187b90de7e1fe147825273e
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712856"
+ms.date: 02/19/2019
 ---
+
 # <a name="microsoft-docs-contributor-guide-overview"></a>Panoramica della guida per i collaboratori di Microsoft Docs
 
 Questa è la Guida per i collaboratori di [docs.microsoft.com](https://docs.microsoft.com).
 
-Diversi set di documentazione sono open source e disponibili su GitHub. Sempre più team a Microsoft stanno adottando regolarmente questo modello. Anche i set di documenti non completamente open source hanno repository pubblici dove è possibile eseguire richieste pull. Ciò permette di semplificare e migliorare le comunicazioni tra gli sviluppatori, i team dei contenuti e i clienti. Operare in modo visibile offre diversi vantaggi:
+Diversi set di documentazione Microsoft sono open source e ospitati in GitHub. Alcuni set di documenti non sono completamente open source, ma per molti sono disponibili repository pubblici dove è possibile eseguire richieste pull. Ciò permette di semplificare e migliorare le comunicazioni tra gli sviluppatori, i team dei contenuti e i clienti. Operare in modo visibile offre diversi vantaggi:
 
 - La pianificazione dei repository open source è visibile per poter ricevere commenti e suggerimenti sugli argomenti che più necessitano di documentazione.
 - La revisione dei repository open source è visibile per poter pubblicare il contenuto più utile già nella prima versione.
@@ -31,30 +25,30 @@ L'esperienza utente in [docs.microsoft.com](https://docs.microsoft.com) viene di
 
 ## <a name="quick-edits-to-existing-documents"></a>Modifiche rapide ai documenti esistenti
 
-Le modifiche rapide semplificano il processo di segnalazione e correzione di piccoli errori e omissioni. Nonostante l'impegno, nei documenti pubblicati si possono riscontrare piccoli errori grammaticali e ortografici. Anche se è possibile creare problemi per segnalare gli errori, è più facile e veloce creare una richiesta pull per risolvere il problema. In quasi tutti gli articoli è presente un pulsante di modifica, come illustrato nella figura seguente. Facendo clic sul pulsante **Edit** (o sulla versione equivalente localizzata) si accede al file di origine in GitHub.
+Le modifiche rapide semplificano il processo di segnalazione e correzione di piccoli errori e omissioni. Nonostante l'impegno, nei documenti pubblicati si possono riscontrare piccoli errori grammaticali e ortografici. Anche se è possibile creare problemi per segnalare gli errori, è più facile e veloce creare una richiesta pull per risolvere il problema, quando questa opzione è disponibile.
 
-![Percorso del collegamento Modifica](./media/index/edit-article.png)
+1. Alcune pagine della documentazione consentono di modificare il contenuto direttamente nel browser. In questo caso, sarà visualizzato un pulsante **Modifica** come quello mostrato di seguito. Facendo clic sul pulsante **Edit** (o sulla versione equivalente localizzata) si accede al file di origine in GitHub. Se il pulsante **Modifica** (icona a forma di matita) non è disponibile, ciò indica che la pagina della documentazione non è disponibile per la modifica.
 
-Fare quindi clic sull'icona a forma di matita illustrata nella figura seguente per modificare l'articolo.
+   ![Percorso del collegamento Modifica](./media/index/edit-article.png)
 
-![Posizione dell'icona a forma di matita](./media/index/edit-icon.png)
+2. Fare quindi clic sull'icona a forma di matita per modificare l'articolo come illustrato. Se l'icona a forma di matita è inattiva, è necessario accedere all'account GitHub o crearne uno nuovo. 
 
-> [!NOTE]
-> Se l'icona a forma di matita è inattiva, è necessario accedere all'account GitHub o crearne uno nuovo.
+   ![Posizione dell'icona a forma di matita](./media/index/edit-icon.png)
 
-Apportare le modifiche nell'editor Web. È possibile fare clic sulla scheda **Preview changes** (Anteprima modifiche) per controllare la formattazione della modifica.
 
-Dopo avere apportato le modifiche, scorrere fino alla fine della pagina. Immettere un titolo e una descrizione per la richiesta pull e fare clic su **Propose file change** (Proponi modifica file), come illustrato nella figura seguente:
+3. Apportare le modifiche nell'editor Web. Fare clic sulla scheda **Preview changes** (Anteprima modifiche) per controllare la formattazione della modifica.
 
-![Proposta della modifica](./media/index/submit-pull-request.png)
+4. Dopo avere apportato le modifiche, scorrere fino alla fine della pagina. Immettere un titolo e una descrizione per le modifiche e fare clic su **Propose file change** (Proponi modifica file), come illustrato nella figura seguente:
 
-Dopo aver proposto la modifica, è necessario chiedere ai proprietari del repository di eseguire il "pull" delle modifiche nel loro repository. Questa operazione viene eseguita tramite una "richiesta pull". Quando si fa clic su **Propose file change** (Proponi modifica file) nella figura precedente, dovrebbe essere visualizzata una pagina simile a quella nella figura seguente:
+   ![Propose file change (Proponi modifica file)](./media/index/submit-pull-request.png)
 
-![creare una richiesta pull](media/index/create-pull-request.png)
+5. Dopo aver proposto la modifica, è necessario chiedere ai proprietari del repository di eseguire il "pull" delle modifiche nel loro repository. Questa operazione viene eseguita tramite una "richiesta pull". Quando si fa clic su **Propose file change** (Proponi modifica file) nella figura precedente, dovrebbe essere visualizzata una pagina simile a quella nella figura seguente:
 
-Fare clic su **Crea richiesta pull**, immettere un titolo (e facoltativamente una descrizione) per la richiesta pull e quindi fare di nuovo clic su **Crea richiesta pull**.
+   ![creare una richiesta pull](media/index/create-pull-request.png)
 
-Questo è tutto. I membri del team dei contenuti esamineranno e uniranno la richiesta pull. Se sono state apportate modifiche più significative, è possibile ricevere alcune richieste di modifica.
+   Fare clic su **Crea richiesta pull**, immettere un titolo (e facoltativamente una descrizione) per la richiesta pull e quindi fare di nuovo clic su **Crea richiesta pull**.
+
+6. Questo è tutto. I membri del team dei contenuti esamineranno e uniranno la richiesta pull. Se sono state apportate modifiche più significative, è possibile ricevere alcune richieste di modifica.
 
 L'interfaccia utente di modifica di GitHub è diversa a seconda delle autorizzazioni per il repository. Le immagini precedenti si riferiscono a collaboratori che non hanno autorizzazioni di scrittura per il repository di destinazione. GitHub crea automaticamente un fork del repository di destinazione nell'account. Se si ha l'accesso in scrittura al repository di destinazione, GitHub crea una nuovo ramo nel repository di destinazione. Il nome del ramo ha il formato **\<GitHubId\>-patch-n**, che usa l'ID GitHub e un identificatore numerico per il ramo della patch.
 
@@ -75,6 +69,8 @@ Per leggere i nuovi argomenti prima che vengano pubblicati, è possibile control
 ## <a name="create-quality-issues"></a>Creare problemi di qualità
 
 I documenti vengono continuamente rielaborati. La corretta formulazione dei problemi consente a Microsoft di impegnarsi maggiormente sulle priorità principali della community. Specificare il maggior numero possibile di dettagli. In questo modo il problema sarà più utile. Indicare le informazioni cercate. Indicare i termini di ricerca usati. Se non si riesce a iniziare, spiegare come si vuole iniziare a esplorare una tecnologia con cui non si ha familiarità.
+
+Molte delle pagine della documentazione di Microsoft includono una sezione **Commenti** nella parte inferiore, in cui è possibile fare clic per inviare **Commenti sul prodotto** oppure **Commenti sul contenuto** per registrare problemi specifici per l'articolo in questione.
 
 I problemi danno avvio a una conversazione su ciò che è necessario. Il team dei contenuti risponderà a questi problemi elencando le idee su ciò che è possibile aggiungere e chiederà l'opinione dell'utente. Quando viene creata una bozza, viene chiesto all'utente di [esaminare la richiesta pull](#review-open-prs).
 

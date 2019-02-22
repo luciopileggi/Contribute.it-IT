@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 1/15/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: f5603dee7efe5c7ce3eaa4fa944031d94a9283d8
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: d7697c8449e451879c137d9d6cdf42327e597be6
+ms.sourcegitcommit: f374ad2607360f46d88982b4b7ecc63d3ab08235
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55713247"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56431462"
 ---
 # <a name="ms-date-missing"></a>ms-date-missing
 
@@ -27,7 +27,13 @@ Questa data viene usata per indicare un aggiornamento, ovvero l'ultima revisione
 
 ## <a name="resolution"></a>Risoluzione
 
-Verificare che l'articolo sia aggiornato e non includa contenuto danneggiato, quindi aggiungere una data valida nel formato MM/GG/AAAA.
+Verificare che l'articolo sia aggiornato e non includa contenuto danneggiato, quindi aggiungere una data valida nel formato MM/GG/AAAA:
+
+```yml
+---
+ms.date: 02/19/2019
+---
+```
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]

@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 1/15/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 863b13e55c2aaa2057920e3bd77ec75ab5945277
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: b38392e9f297e4ee4147ca7fc65f938b5cd53403
+ms.sourcegitcommit: f374ad2607360f46d88982b4b7ecc63d3ab08235
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55713109"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56431485"
 ---
 # <a name="ms-date-too-late"></a>ms-date-too-late
 
@@ -25,7 +25,13 @@ L'attributo `ms.date` viene usato per indicare un aggiornamento, ovvero l'ultima
 
 ## <a name="resolution"></a>Risoluzione
 
-Specificare una `ms.date` fino a cinque giorni successiva a quella corrente, in formato MM/GG/AAAA.
+Specificare una `ms.date` fino a cinque giorni successiva a quella corrente, in formato MM/GG/AAAA:
+
+```yml
+---
+ms.date: 02/19/2019
+---
+```
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
