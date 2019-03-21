@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 1/15/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 4a3cf8bc5435972f0442ca1d41d4147e1ea00d78
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: a7de44e9930def2d2582194f28695e3ef3940541
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55713178"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987616"
 ---
 # <a name="ms-prod-service-mismatch"></a>ms-prod-service-mismatch
 
@@ -31,7 +31,7 @@ Usare `ms.prod` per specificare i prodotti locali e `ms.service` per i servizi c
 
 Verificare prima di tutto di aver selezionato l'attributo padre corretto (`ms.prod` o `ms.service`) per l'articolo. Aggiungere quindi il campo figlio appropriato con un valore abbinato valido. Rimuovere eventuali campi aggiuntivi.
 
-I valori validi sono disponibili in [questo sito interno di Microsoft](https://docsmetadatatool.azurewebsites.net/whitelists).
+I valori validi sono disponibili in [questo sito interno di Microsoft](https://docsmetadatatool.azurewebsites.net/allowlists).
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]

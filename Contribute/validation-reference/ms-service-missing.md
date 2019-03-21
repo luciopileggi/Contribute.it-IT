@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 2/2/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 2bc425726f82840565978072b2efdf13a1284ec0
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 7c5860d9ef50598ad5b3e9546100af0ba436e69f
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55713086"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987722"
 ---
 # <a name="ms-service-missing"></a>ms-service-missing
 
@@ -29,7 +29,7 @@ Usare `ms.service` per specificare i servizi cloud. Per specificare informazioni
 
 Verificare che il valore di `ms.subservice` specificato sia corretto per l'articolo. Aggiungere quindi il valore appropriato di `ms.service`, in modo che sia un elemento padre valido per `ms.subservice`.
 
-I valori validi sono disponibili in [questo sito interno di Microsoft](https://docsmetadatatool.azurewebsites.net/whitelists).
+I valori validi sono disponibili in [questo sito interno di Microsoft](https://docsmetadatatool.azurewebsites.net/allowlists).
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
