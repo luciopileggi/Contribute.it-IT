@@ -1,21 +1,29 @@
-# <a name="tabbed-conceptual"></a><span data-ttu-id="ea92e-101">Contenuto concettuale a schede</span><span class="sxs-lookup"><span data-stu-id="ea92e-101">Tabbed conceptual</span></span>
+---
+ms.openlocfilehash: fa7cd177f6c4a3c4862677dbfa89f63a91e7f464
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987821"
+---
+# <a name="tabbed-conceptual"></a><span data-ttu-id="97dc3-101">Contenuto concettuale a schede</span><span class="sxs-lookup"><span data-stu-id="97dc3-101">Tabbed conceptual</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="ea92e-102">La sintassi per il contenuto concettuale a schede è deprecata e non devono essere aggiunte nuove schede.</span><span class="sxs-lookup"><span data-stu-id="ea92e-102">The tabbed conceptual syntax has been deprecated and new tabs should not be added.</span></span> <span data-ttu-id="ea92e-103">Le convalide descritte in questo articolo si applicano ai set di contenuto approvati per l'uso del contenuto concettuale a schede finché non è disponibile una funzionalità sostitutiva.</span><span class="sxs-lookup"><span data-stu-id="ea92e-103">The validations described in this article apply to content sets that have been approved to use tabbed conceptual until replacement functionality is available.</span></span>
+> <span data-ttu-id="97dc3-102">La sintassi per il contenuto concettuale a schede è deprecata e non devono essere aggiunte nuove schede.</span><span class="sxs-lookup"><span data-stu-id="97dc3-102">The tabbed conceptual syntax has been deprecated and new tabs should not be added.</span></span> <span data-ttu-id="97dc3-103">Le convalide descritte in questo articolo si applicano ai set di contenuto approvati per l'uso del contenuto concettuale a schede finché non è disponibile una funzionalità sostitutiva.</span><span class="sxs-lookup"><span data-stu-id="97dc3-103">The validations described in this article apply to content sets that have been approved to use tabbed conceptual until replacement functionality is available.</span></span>
 
-## <a name="tab-syntax"></a><span data-ttu-id="ea92e-104">Sintassi delle schede</span><span class="sxs-lookup"><span data-stu-id="ea92e-104">Tab syntax</span></span>
+## <a name="tab-syntax"></a><span data-ttu-id="97dc3-104">Sintassi delle schede</span><span class="sxs-lookup"><span data-stu-id="97dc3-104">Tab syntax</span></span>
 
-<span data-ttu-id="ea92e-105">La sintassi per le schede è la seguente:</span><span class="sxs-lookup"><span data-stu-id="ea92e-105">The syntax for tabs is as follows:</span></span>
+<span data-ttu-id="97dc3-105">La sintassi per le schede è la seguente:</span><span class="sxs-lookup"><span data-stu-id="97dc3-105">The syntax for tabs is as follows:</span></span>
 
-<span data-ttu-id="ea92e-106">Scheda a livello singolo:</span><span class="sxs-lookup"><span data-stu-id="ea92e-106">Single level tab:</span></span>
+<span data-ttu-id="97dc3-106">Scheda a livello singolo:</span><span class="sxs-lookup"><span data-stu-id="97dc3-106">Single level tab:</span></span>
 
 `# [Tab Display Name](#tab/tab-id)`
 
-<span data-ttu-id="ea92e-107">Scheda dipendente facoltativa:</span><span class="sxs-lookup"><span data-stu-id="ea92e-107">Optional dependent tab:</span></span>
+<span data-ttu-id="97dc3-107">Scheda dipendente facoltativa:</span><span class="sxs-lookup"><span data-stu-id="97dc3-107">Optional dependent tab:</span></span>
 
 `# [Tab Display Name](#tab/tab-id/tab-condition)`
 
-<span data-ttu-id="ea92e-108">Esempio di sezione di scheda a livello singolo con due schede e il carattere di terminazione del gruppo di schede (---):</span><span class="sxs-lookup"><span data-stu-id="ea92e-108">Example of a single-level tab section with two tabs and the tab group terminator (---):</span></span>
+<span data-ttu-id="97dc3-108">Esempio di sezione di scheda a livello singolo con due schede e il carattere di terminazione del gruppo di schede (---):</span><span class="sxs-lookup"><span data-stu-id="97dc3-108">Example of a single-level tab section with two tabs and the tab group terminator (---):</span></span>
 
 ```markdown
 # [Linux](#tab/linux)
@@ -29,7 +37,7 @@ Content for Windows...
 ---
 ```
 
-<span data-ttu-id="ea92e-109">Facoltativamente le schede possono contenere schede secondarie o schede di dipendenza.</span><span class="sxs-lookup"><span data-stu-id="ea92e-109">Tabs can optionally contain secondary tabs, or dependency tabs.</span></span> <span data-ttu-id="ea92e-110">In questo modo le schede diventano dipendenti nella selezione in un altro set di schede.</span><span class="sxs-lookup"><span data-stu-id="ea92e-110">This makes tabs dependent on the selection in another set of tabs.</span></span> <span data-ttu-id="ea92e-111">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="ea92e-111">Here's an example:</span></span>
+<span data-ttu-id="97dc3-109">Facoltativamente le schede possono contenere schede secondarie o schede di dipendenza.</span><span class="sxs-lookup"><span data-stu-id="97dc3-109">Tabs can optionally contain secondary tabs, or dependency tabs.</span></span> <span data-ttu-id="97dc3-110">In questo modo le schede diventano dipendenti nella selezione in un altro set di schede.</span><span class="sxs-lookup"><span data-stu-id="97dc3-110">This makes tabs dependent on the selection in another set of tabs.</span></span> <span data-ttu-id="97dc3-111">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="97dc3-111">Here's an example:</span></span>
 
 ```markdown
 # [Azure CLI](#tab/azure-cli/linux)
@@ -51,22 +59,22 @@ PowerShell content for Windows...
 ---
 ```
 
-<span data-ttu-id="ea92e-112">Le seguenti convalide si applicano alla sintassi delle schede:</span><span class="sxs-lookup"><span data-stu-id="ea92e-112">The following validations apply to tab syntax:</span></span>
+<span data-ttu-id="97dc3-112">Le seguenti convalide si applicano alla sintassi delle schede:</span><span class="sxs-lookup"><span data-stu-id="97dc3-112">The following validations apply to tab syntax:</span></span>
 
-- <span data-ttu-id="ea92e-113">La sintassi delle schede deve essere corretta.</span><span class="sxs-lookup"><span data-stu-id="ea92e-113">Tab syntax must be correct.</span></span>
-- <span data-ttu-id="ea92e-114">Le schede dipendenti devono essere definite in un gruppo precedente di schede.</span><span class="sxs-lookup"><span data-stu-id="ea92e-114">Dependent tabs must have been defined in a previous tab group.</span></span>
-- <span data-ttu-id="ea92e-115">È consentito un solo livello di dipendenza.</span><span class="sxs-lookup"><span data-stu-id="ea92e-115">Only one level of dependency is allowed.</span></span>
-- <span data-ttu-id="ea92e-116">Non sono consentite meno di due schede.</span><span class="sxs-lookup"><span data-stu-id="ea92e-116">No fewer than two tabs are allowed.</span></span>
-- <span data-ttu-id="ea92e-117">Non sono consentite più di quattro schede.</span><span class="sxs-lookup"><span data-stu-id="ea92e-117">No more than four tabs are allowed.</span></span>
-- <span data-ttu-id="ea92e-118">Le schede devono essere incluse nell'elenco degli elementi consentiti.</span><span class="sxs-lookup"><span data-stu-id="ea92e-118">Tabs must be whitelisted.</span></span>
-- <span data-ttu-id="ea92e-119">Le coppie scheda/ID devono essere valide.</span><span class="sxs-lookup"><span data-stu-id="ea92e-119">Tab/ID pairs must be valid.</span></span>
-- <span data-ttu-id="ea92e-120">Non è possibile avere lo stesso ID scheda più volte in un gruppo di schede.</span><span class="sxs-lookup"><span data-stu-id="ea92e-120">Cannot have the same tab ID multiple times in one tab group.</span></span>
+- <span data-ttu-id="97dc3-113">La sintassi delle schede deve essere corretta.</span><span class="sxs-lookup"><span data-stu-id="97dc3-113">Tab syntax must be correct.</span></span>
+- <span data-ttu-id="97dc3-114">Le schede dipendenti devono essere definite in un gruppo precedente di schede.</span><span class="sxs-lookup"><span data-stu-id="97dc3-114">Dependent tabs must have been defined in a previous tab group.</span></span>
+- <span data-ttu-id="97dc3-115">È consentito un solo livello di dipendenza.</span><span class="sxs-lookup"><span data-stu-id="97dc3-115">Only one level of dependency is allowed.</span></span>
+- <span data-ttu-id="97dc3-116">Non sono consentite meno di due schede.</span><span class="sxs-lookup"><span data-stu-id="97dc3-116">No fewer than two tabs are allowed.</span></span>
+- <span data-ttu-id="97dc3-117">Non sono consentite più di quattro schede.</span><span class="sxs-lookup"><span data-stu-id="97dc3-117">No more than four tabs are allowed.</span></span>
+- <span data-ttu-id="97dc3-118">Le schede devono essere approvate.</span><span class="sxs-lookup"><span data-stu-id="97dc3-118">Tabs must be approved.</span></span>
+- <span data-ttu-id="97dc3-119">Le coppie scheda/ID devono essere valide.</span><span class="sxs-lookup"><span data-stu-id="97dc3-119">Tab/ID pairs must be valid.</span></span>
+- <span data-ttu-id="97dc3-120">Non è possibile avere lo stesso ID scheda più volte in un gruppo di schede.</span><span class="sxs-lookup"><span data-stu-id="97dc3-120">Cannot have the same tab ID multiple times in one tab group.</span></span>
 
-## <a name="tab-whitelist"></a><span data-ttu-id="ea92e-121">Schede incluse nell'elenco degli elementi consentiti</span><span class="sxs-lookup"><span data-stu-id="ea92e-121">Tab whitelist</span></span>
+## <a name="approved-tabs"></a><span data-ttu-id="97dc3-121">Schede approvate</span><span class="sxs-lookup"><span data-stu-id="97dc3-121">Approved tabs</span></span>
 
-<span data-ttu-id="ea92e-122">Le seguenti coppie nome scheda/ID scheda sono incluse nell'elenco degli elementi consentiti.</span><span class="sxs-lookup"><span data-stu-id="ea92e-122">The following tab name/tab ID pairs are whitelisted.</span></span> <span data-ttu-id="ea92e-123">Gli ID delle schede dipendenti non sono accoppiati ma devono essere validi in base alla colonna degli ID scheda.</span><span class="sxs-lookup"><span data-stu-id="ea92e-123">Dependent tab IDs are not paired but must be valid per the Tab ID column.</span></span> <span data-ttu-id="ea92e-124">I valori fanno distinzione tra maiuscole e minuscole</span><span class="sxs-lookup"><span data-stu-id="ea92e-124">The values are case-sensitive</span></span>
+<span data-ttu-id="97dc3-122">Le coppie nome scheda/ID scheda seguenti sono approvate.</span><span class="sxs-lookup"><span data-stu-id="97dc3-122">The following tab name/tab ID pairs are approved.</span></span> <span data-ttu-id="97dc3-123">Gli ID delle schede dipendenti non sono accoppiati ma devono essere validi in base alla colonna degli ID scheda.</span><span class="sxs-lookup"><span data-stu-id="97dc3-123">Dependent tab IDs are not paired but must be valid per the Tab ID column.</span></span> <span data-ttu-id="97dc3-124">I valori fanno distinzione tra maiuscole e minuscole</span><span class="sxs-lookup"><span data-stu-id="97dc3-124">The values are case-sensitive</span></span>
 
-|<span data-ttu-id="ea92e-125">Nome scheda</span><span class="sxs-lookup"><span data-stu-id="ea92e-125">Tab name</span></span>              |<span data-ttu-id="ea92e-126">ID scheda</span><span class="sxs-lookup"><span data-stu-id="ea92e-126">Tab ID</span></span>            |
+|<span data-ttu-id="97dc3-125">Nome scheda</span><span class="sxs-lookup"><span data-stu-id="97dc3-125">Tab name</span></span>              |<span data-ttu-id="97dc3-126">ID scheda</span><span class="sxs-lookup"><span data-stu-id="97dc3-126">Tab ID</span></span>            |
 |----------------------|------------------|
 |`[.NET]`              |`(#tab/dotnet)`   |
 |`[.NET Core 1.x]`     |`(#tab/netcore1x)`|
