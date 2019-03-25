@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fa7cd177f6c4a3c4862677dbfa89f63a91e7f464
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987821"
+---
 # <a name="tabbed-conceptual"></a>Contenuto concettuale a schede
 
 > [!IMPORTANT]
@@ -58,13 +66,13 @@ Le seguenti convalide si applicano alla sintassi delle schede:
 - È consentito un solo livello di dipendenza.
 - Non sono consentite meno di due schede.
 - Non sono consentite più di quattro schede.
-- Le schede devono essere incluse nell'elenco degli elementi consentiti.
+- Le schede devono essere approvate.
 - Le coppie scheda/ID devono essere valide.
 - Non è possibile avere lo stesso ID scheda più volte in un gruppo di schede.
 
-## <a name="tab-whitelist"></a>Schede incluse nell'elenco degli elementi consentiti
+## <a name="approved-tabs"></a>Schede approvate
 
-Le seguenti coppie nome scheda/ID scheda sono incluse nell'elenco degli elementi consentiti. Gli ID delle schede dipendenti non sono accoppiati ma devono essere validi in base alla colonna degli ID scheda. I valori fanno distinzione tra maiuscole e minuscole
+Le coppie nome scheda/ID scheda seguenti sono approvate. Gli ID delle schede dipendenti non sono accoppiati ma devono essere validi in base alla colonna degli ID scheda. I valori fanno distinzione tra maiuscole e minuscole
 
 |Nome scheda              |ID scheda            |
 |----------------------|------------------|

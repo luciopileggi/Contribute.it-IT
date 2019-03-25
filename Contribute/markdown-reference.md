@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
-ms.openlocfilehash: 17bc6d3bf2de5077f490bea2f03cddf23d925b78
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: b4ac631a4ebdf7daf00bc39be80fe2e479720392
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712948"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987883"
 ---
 # <a name="markdown-reference"></a>Informazioni di riferimento a Markdown
 
@@ -90,7 +90,7 @@ Docs supporta sei livelli di intestazioni Markdown:
 
 ## <a name="html"></a>HTML
 
-Benché Markdown supporti HTML inline, non è consigliabile usare il linguaggio HTML per la pubblicazione in Docs poiché, fatta eccezione per un piccolo gruppo di valori, genera avvisi o errori di compilazione. <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
+Benché Markdown supporti HTML inline, non è consigliabile usare il linguaggio HTML per la pubblicazione in Docs poiché, fatta eccezione per un piccolo gruppo di valori, genera avvisi o errori di compilazione.
 
 ## <a name="images"></a>Immagini
 
@@ -110,7 +110,7 @@ Le immagini devono essere archiviate in una cartella `/media` all'interno del do
 - .jpg
 - .png
 
-È possibile supportare altri tipi i immagine aggiungendoli come risorse al file docfx.json<!--add link to reference when available--> nel docset.
+È possibile supportare altri tipi di immagine aggiungendoli come risorse al file docfx.json<!--add link to reference when available--> nel docset.
 
 ## <a name="links"></a>Collegamenti
 
@@ -169,7 +169,7 @@ Collegamento basato su URL a un'altra pagina Web. Deve includere https://.
 
 ### <a name="bookmark-links"></a>Collegamento segnalibro
 
-Collegamento segnalibro a un titolo in un altro file all'interno dello stesso repository:
+Collegamento segnalibro a un titolo in un altro file all'interno dello stesso repository. Ad esempio:
 
 ```markdown
 [Managed Disks](../../linux/overview.md#managed-disks)
@@ -181,7 +181,12 @@ Collegamento segnalibro a un titolo nel file corrente:
 [Managed Disks](#managed-disks)
 ```
 
-Usare un hashtag seguito dalle parole del titolo senza la punteggiatura e sostituire gli spazi con i trattini.
+Usare un segno hash `#` seguito dalle parole del titolo. Per cambiare il testo del titolo in testo del collegamento:
+- Usare solo caratteri minuscoli
+- Rimuovere la punteggiatura
+- Sostituire gli spazi con trattini
+
+Ad esempio, se il nome del titolo è "2.2 Preoccupazioni sulla sicurezza", il testo del collegamento segnalibro sarà "#22-Preoccupazioni-sulla-sicurezza".
 
 ### <a name="explicit-anchor-links"></a>Collegamenti di ancoraggio esplicito
 
@@ -230,7 +235,7 @@ Esempi:
 - `<xref:System.String?displayProperty=nameWithType>` viene visualizzato come "System.String".
 - `[String class](xref:System.String)` viene visualizzato come "String class".
 
-Attualmente non è disponibile un sistema semplice per trovare gli UID. <!-- ? -->Il modo migliore per trovare l'UID per un'API consiste nel visualizzare l'origine della pagina dell'API che si vuole collegare e individuare il valore ms.assetid. I singoli valori di overload non vengono visualizzati nell'origine. È in corso lo sviluppo di un sistema migliore, che sarà disponibile in futuro.
+Attualmente non è disponibile un sistema semplice per trovare gli UID. <!-- ? -->Il modo migliore per trovare l'UID per un'API consiste nel visualizzare l'origine per la pagina dell'API che si vuole collegare e individuare il valore ms.assetid. I singoli valori di overload non vengono visualizzati nell'origine. È in corso lo sviluppo di un sistema migliore, che sarà disponibile in futuro.
 
 Quando l'UID contiene i caratteri speciali \`, \# o \*, il valore dell'UID deve essere con codifica HTML come `%60`, `%23` e `%2A` rispettivamente. A volte sono presenti parentesi con codifica, ma questo non è un requisito.
 
@@ -336,7 +341,8 @@ Nell'azione per il passaggio successivo è possibile usare tutti i collegamenti 
 
 ## <a name="section-definition"></a>Definizione di sezione
 
-<!-- more info about this would be helpful! --> Potrebbe essere necessario definire una sezione. Questa sintassi è usata soprattutto nelle tabelle di codice.
+<!-- more info about this would be helpful! -->
+Potrebbe essere necessario definire una sezione. Questa sintassi è usata soprattutto nelle tabelle di codice.
 Vedere l'esempio seguente:
 
 ````
@@ -360,7 +366,8 @@ Il rendering del testo Markdown della citazione precedente sarà il seguente:
 
 ## <a name="selectors"></a>Selettori
 
-<!-- could be more clear! --> È possibile usare un selettore per collegare pagine diverse dello stesso articolo e consentire ai lettori di passare da una pagina all'altra.
+<!-- could be more clear! -->
+È possibile usare un selettore per collegare pagine diverse dello stesso articolo e consentire ai lettori di passare da una pagina all'altra.
 
 > [!NOTE]
 > Questa estensione funziona in modo diverso in docs.microsoft.com e in MSDN. <!-- should we keep info about MSDN? If so say how they differ?-->

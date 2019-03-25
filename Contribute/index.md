@@ -12,9 +12,9 @@ Questa è la Guida per i collaboratori di [docs.microsoft.com](https://docs.micr
 
 Diversi set di documentazione Microsoft sono open source e ospitati in GitHub. Alcuni set di documenti non sono completamente open source, ma per molti sono disponibili repository pubblici dove è possibile eseguire richieste pull. Ciò permette di semplificare e migliorare le comunicazioni tra gli sviluppatori, i team dei contenuti e i clienti. Operare in modo visibile offre diversi vantaggi:
 
-- La pianificazione dei repository open source è visibile per poter ricevere commenti e suggerimenti sugli argomenti che più necessitano di documentazione.
-- La revisione dei repository open source è visibile per poter pubblicare il contenuto più utile già nella prima versione.
-- Gli aggiornamenti dei repository open source sono visibili per poter migliorare costantemente il contenuto con facilità.
+- La _pianificazione dei repository open source è visibile_ per poter ricevere commenti e suggerimenti sugli argomenti che più necessitano di documentazione.
+- La _revisione dei repository open source è visibile_ per poter pubblicare il contenuto più utile già nella prima versione.
+- Gli _aggiornamenti dei repository open source sono visibili_ per poter migliorare costantemente il contenuto con facilità.
 
 L'esperienza utente in [docs.microsoft.com](https://docs.microsoft.com) viene direttamente integrata con i flussi di lavoro di [GitHub](https://github.com) così da risultare ancora più semplice. È possibile iniziare [modificando il documento visualizzato](#quick-edits-to-existing-documents), dare un contributo [revisionando i nuovi argomenti](#review-open-prs) o [creare problemi di qualità elevata](#create-quality-issues).
 
@@ -25,9 +25,9 @@ L'esperienza utente in [docs.microsoft.com](https://docs.microsoft.com) viene di
 
 ## <a name="quick-edits-to-existing-documents"></a>Modifiche rapide ai documenti esistenti
 
-Le modifiche rapide semplificano il processo di segnalazione e correzione di piccoli errori e omissioni. Nonostante l'impegno, nei documenti pubblicati si possono riscontrare piccoli errori grammaticali e ortografici. Anche se è possibile creare problemi per segnalare gli errori, è più facile e veloce creare una richiesta pull per risolvere il problema, quando questa opzione è disponibile.
+Le modifiche rapide semplificano il processo di segnalazione e correzione di piccoli errori e omissioni. Nonostante l'impegno, nei documenti pubblicati _si possono riscontrare_ piccoli errori grammaticali e ortografici. Anche se è possibile creare problemi per segnalare gli errori, è più facile e veloce creare una richiesta pull per risolvere il problema, quando questa opzione è disponibile.
 
-1. Alcune pagine della documentazione consentono di modificare il contenuto direttamente nel browser. In questo caso, sarà visualizzato un pulsante **Modifica** come quello mostrato di seguito. Facendo clic sul pulsante **Edit** (o sulla versione equivalente localizzata) si accede al file di origine in GitHub. Se il pulsante **Modifica** (icona a forma di matita) non è disponibile, ciò indica che la pagina della documentazione non è disponibile per la modifica.
+1. Alcune pagine della documentazione consentono di modificare il contenuto direttamente nel browser. In questo caso, sarà visualizzato un pulsante **Modifica** come quello mostrato di seguito. Facendo clic sul pulsante **Edit** (o sulla versione equivalente localizzata) si accede al file di origine in GitHub. Se il pulsante **Modifica** (icona a forma di matita senza testo) non è disponibile, ciò indica che la pagina della documentazione non è disponibile per la modifica.
 
    ![Percorso del collegamento Modifica](./media/index/edit-article.png)
 
@@ -46,7 +46,7 @@ Le modifiche rapide semplificano il processo di segnalazione e correzione di pic
 
    ![creare una richiesta pull](media/index/create-pull-request.png)
 
-   Fare clic su **Crea richiesta pull**, immettere un titolo (e facoltativamente una descrizione) per la richiesta pull e quindi fare di nuovo clic su **Crea richiesta pull**.
+   Fare clic su **Crea richiesta pull**, immettere un titolo (e facoltativamente una descrizione) per la richiesta pull e quindi fare di nuovo clic su **Crea richiesta pull**. (Se non si ha familiarità con GitHub, vedere la pagina delle [informazioni sulle richieste pull](https://help.github.com/en/articles/about-pull-requests).)
 
 6. Questo è tutto. I membri del team dei contenuti esamineranno e uniranno la richiesta pull. Se sono state apportate modifiche più significative, è possibile ricevere alcune richieste di modifica.
 
@@ -59,7 +59,7 @@ L'esperienza di modifica nel browser è ideale per modifiche secondarie o poco f
 > [!NOTE]
 > Se abilitato, è possibile modificare un articolo in **qualsiasi lingua** e, in base al tipo di modifica, si verificherà quanto segue:
 > 1. qualsiasi modifica linguistica approvata migliorerà anche il motore di traduzione automatica
-> 2. qualsiasi modifica che cambia in modo significativo il contenuto dell'articolo verrà gestita internamente per inviare un modifica allo stesso articolo in inglese, in modo che venga localizzata in tutte le lingue in caso di approvazione.
+> 2. qualsiasi modifica che cambia in modo significativo il contenuto dell'articolo verrà gestita internamente per inviare una modifica allo stesso articolo in inglese, in modo che venga localizzata in tutte le lingue in caso di approvazione.
 > I miglioramenti consigliati, quindi, non influiranno positivamente solo sugli articoli nella propria lingua, ma in tutte le lingue disponibili.
 
 ## <a name="review-open-prs"></a>Esaminare le richieste pull aperte
@@ -72,7 +72,7 @@ I documenti vengono continuamente rielaborati. La corretta formulazione dei prob
 
 Molte delle pagine della documentazione di Microsoft includono una sezione **Commenti** nella parte inferiore, in cui è possibile fare clic per inviare **Commenti sul prodotto** oppure **Commenti sul contenuto** per registrare problemi specifici per l'articolo in questione.
 
-I problemi danno avvio a una conversazione su ciò che è necessario. Il team dei contenuti risponderà a questi problemi elencando le idee su ciò che è possibile aggiungere e chiederà l'opinione dell'utente. Quando viene creata una bozza, viene chiesto all'utente di [esaminare la richiesta pull](#review-open-prs).
+I problemi danno avvio a una conversazione su ciò che è necessario. Il team dei contenuti risponderà a questi problemi elencando le idee su ciò che è possibile aggiungere e chiederà l'opinione dell'utente. Quando viene creata una bozza, viene chiesto all'utente di [esaminare la richiesta pull](#review-open-PRs).
 
 ## <a name="get-more-involved"></a>Maggiore coinvolgimento
 
