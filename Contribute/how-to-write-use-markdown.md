@@ -1,19 +1,18 @@
 ---
 title: Come usare Markdown per scrivere articoli di Docs
 description: Questo articolo offre informazioni di base e di riferimento sul linguaggio Markdown usato per la stesura di articoli per il sito docs.microsoft.com.
-ms.date: 01/29/2019
-ms.openlocfilehash: 5235189d11c8c20ac20c91572d8bafcf525fb7c0
-ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
+ms.date: 03/26/2019
+ms.openlocfilehash: eeb49961fbf530676b55ae4e42d4fca7b8d7edf7
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55887299"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58637484"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Come usare Markdown per scrivere articoli di Docs
 
-Gli articoli di [docs.microsoft.com](http://docs.microsoft.com) sono scritti in un semplice linguaggio di markup denominato [Markdown](https://daringfireball.net/projects/markdown/), facile sia da leggere che da apprendere. Per questo motivo si sta imponendo rapidamente come standard del settore.
+Gli articoli di [docs.microsoft.com](http://docs.microsoft.com) sono scritti in un semplice linguaggio di markup denominato [Markdown](https://daringfireball.net/projects/markdown/), facile sia da leggere che da apprendere. Per questo motivo si sta imponendo rapidamente come standard del settore. Il sito docs usa la [versione Markdig](#markdown-flavor) di Markdown.
 
-Il back-end del sito docs.microsoft.com usa i servizi OPS (Open Publishing Service) che supportano il markdown conforme [CommonMark](https://commonmark.org/) analizzato tramite [Markdig](https://github.com/lunet-io/markdig), oltre a supportare [DocFX Flavored Markdown (DFM)](https://dotnet.github.io/docfx/). Questi tipi di markdown sono per lo più compatibili con [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), perché la maggior parte dei documenti viene archiviata in GitHub dove può essere modificata. Altre funzionalità vengono aggiunte tramite le estensioni per Markdown.
 
 ## <a name="markdown-basics"></a>Nozioni di base su Markdown
 
@@ -162,7 +161,6 @@ verrà rappresentato nel modo seguente:
 
 Per altre informazioni sulla creazione di tabelle, vedere:
 
-- La [funzionalità per il ritorno a capo nelle tabelle](#table-wrapping) di Markdig, utile per la formattazione di tabelle estese.
 - [Organizing information with tables](https://help.github.com/articles/organizing-information-with-tables/) (Organizzazione delle informazioni con le tabelle) di GitHub.
 - L'app Web [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables).
 - [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables) (Informazioni di riferimento rapide su Markdown di Adam Pritchard).
@@ -207,6 +205,7 @@ Questi linguaggi supportano nomi descrittivi e la maggior parte ha la funzione d
 |AzCopy|azcopy|
 |Interfaccia della riga di comando di Azure|azurecli|
 |Azure PowerShell|azurepowershell|
+|Bash|bash|
 |C++|cpp|
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
@@ -430,6 +429,10 @@ Queste sono le codifiche per le versioni curve di questi segni di punteggiatura:
 Le parentesi acute vengono comunemente usate per indicare un segnaposto. Se usate nel testo e non nel codice, le parentesi acute devono essere codificate. In caso contrario, Markdown le interpreta come tag HTML.
 
 Ad esempio, codificare `<script name>` come `&lt;script name&gt;`
+
+## <a name="markdown-flavor"></a>Versione di Markdown
+
+Il back-end del sito docs.microsoft.com usa i servizi OPS (Open Publishing Service) che supportano il Markdown conforme a [CommonMark](https://commonmark.org/) analizzato tramite il motore di analisi [Markdig](https://github.com/lunet-io/markdig). Questa versione di Markdown è per lo più compatibile con [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), perché la maggior parte dei documenti viene archiviata in GitHub dove può essere modificata. Altre funzionalità vengono aggiunte tramite le estensioni per Markdown.
 
 ## <a name="see-also"></a>Vedere anche:
 

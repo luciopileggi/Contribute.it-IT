@@ -2,12 +2,12 @@
 title: Modello e foglio informativo per gli articoli .NET
 description: Questo articolo contiene un pratico modello da usare per creare nuovi articoli per i repository di documentazione .NET.
 ms.date: 11/07/2018
-ms.openlocfilehash: e342373a09b623dc71aadd63e8d8627d154ec8b6
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 9b57abd96093940c96f90a4a01b9f81eae063ffb
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712925"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653621"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Modello di metadati e Markdown per i documenti .NET
 
@@ -132,7 +132,7 @@ Il miglior metodo per includere codice è l'inclusione di frammenti di codice da
 ```
 
 * `-<language>` (*facoltativo* ma *consigliato*)
-  * Linguaggio del frammento di codice al quale si fa riferimento. Per l'elenco dei valori supportati, vedere [Linguaggi supportati](#supported-languages).
+  * Linguaggio del frammento di codice al quale si fa riferimento.
 
 * `<name>` (*facoltativo*)
   * Nome del frammento di codice. Non deve avere alcun impatto sul file HTML di output ma può essere usato per rendere più leggibile l'origine del Markdown.

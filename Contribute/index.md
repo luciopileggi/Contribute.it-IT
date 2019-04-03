@@ -4,13 +4,18 @@ description: La guida spiega in che modo si può contribuire al sito della docum
 author: billwagner
 ms.author: wiwagn
 ms.date: 02/19/2019
+ms.openlocfilehash: 9b091f864f5191c9f7a00900ec11a4a1cffdb698
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653506"
 ---
-
 # <a name="microsoft-docs-contributor-guide-overview"></a>Panoramica della guida per i collaboratori di Microsoft Docs
 
 Questa è la Guida per i collaboratori di [docs.microsoft.com](https://docs.microsoft.com).
 
-Diversi set di documentazione Microsoft sono open source e ospitati in GitHub. Alcuni set di documenti non sono completamente open source, ma per molti sono disponibili repository pubblici dove è possibile eseguire richieste pull. Ciò permette di semplificare e migliorare le comunicazioni tra gli sviluppatori, i team dei contenuti e i clienti. Operare in modo visibile offre diversi vantaggi:
+Diversi set di documentazione Microsoft sono open source e ospitati in GitHub. Non tutti i set di documenti sono completamente open source, ma per molti sono disponibili repository pubblici dove è possibile suggerire modifiche tramite richieste pull. Questo approccio open source semplifica e migliora la comunicazione tra i progettisti del prodotto, i team dei contenuti e i clienti, oltre a offrire altri vantaggi:
 
 - La _pianificazione dei repository open source è visibile_ per poter ricevere commenti e suggerimenti sugli argomenti che più necessitano di documentazione.
 - La _revisione dei repository open source è visibile_ per poter pubblicare il contenuto più utile già nella prima versione.
@@ -72,7 +77,7 @@ I documenti vengono continuamente rielaborati. La corretta formulazione dei prob
 
 Molte delle pagine della documentazione di Microsoft includono una sezione **Commenti** nella parte inferiore, in cui è possibile fare clic per inviare **Commenti sul prodotto** oppure **Commenti sul contenuto** per registrare problemi specifici per l'articolo in questione.
 
-I problemi danno avvio a una conversazione su ciò che è necessario. Il team dei contenuti risponderà a questi problemi elencando le idee su ciò che è possibile aggiungere e chiederà l'opinione dell'utente. Quando viene creata una bozza, viene chiesto all'utente di [esaminare la richiesta pull](#review-open-PRs).
+I problemi danno avvio a una conversazione su ciò che è necessario. Il team dei contenuti risponderà a questi problemi elencando le idee su ciò che è possibile aggiungere e chiederà l'opinione dell'utente. Quando viene creata una bozza, viene chiesto all'utente di [esaminare la richiesta pull](#review-open-prs).
 
 ## <a name="get-more-involved"></a>Maggiore coinvolgimento
 
