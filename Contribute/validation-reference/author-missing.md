@@ -6,28 +6,26 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 12/12/2018
 ms.prod: non-product-specific
-ms.openlocfilehash: 89725dcfbd4ec266071c45a003748021b480bbc2
-ms.sourcegitcommit: f374ad2607360f46d88982b4b7ecc63d3ab08235
+ms.openlocfilehash: 6c7306cf674a345b25d3e05c4e00662623c44469
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56431531"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58637438"
 ---
-# <a name="author-missing"></a><span data-ttu-id="d326c-103">author-missing</span><span class="sxs-lookup"><span data-stu-id="d326c-103">author-missing</span></span>
-
-<span data-ttu-id="d326c-104">**Presto disponibile.**</span><span class="sxs-lookup"><span data-stu-id="d326c-104">**Coming soon!**</span></span>
+# <a name="author-missing"></a><span data-ttu-id="20468-103">author-missing</span><span class="sxs-lookup"><span data-stu-id="20468-103">author-missing</span></span>
 
 [!INCLUDE [suggestion-note](includes/suggestion-note.md)]
 
-## <a name="suggestion"></a><span data-ttu-id="d326c-105">Suggerimento</span><span class="sxs-lookup"><span data-stu-id="d326c-105">Suggestion</span></span>
+## <a name="suggestion"></a><span data-ttu-id="20468-104">Suggerimento</span><span class="sxs-lookup"><span data-stu-id="20468-104">Suggestion</span></span>
 
 `Missing attribute: author. Add a valid GitHub ID.`
 
-<span data-ttu-id="d326c-106">L'attributo `author` identifica l'autore dell'articolo tramite l'ID di GitHub.</span><span class="sxs-lookup"><span data-stu-id="d326c-106">The `author` attribute identifies the author of the article by GitHub ID.</span></span> 
+<span data-ttu-id="20468-105">L'attributo `author` identifica l'autore dell'articolo tramite l'ID di GitHub.</span><span class="sxs-lookup"><span data-stu-id="20468-105">The `author` attribute identifies the author of the article by GitHub ID.</span></span> 
 
-## <a name="resolution"></a><span data-ttu-id="d326c-107">Risoluzione</span><span class="sxs-lookup"><span data-stu-id="d326c-107">Resolution</span></span>
+## <a name="resolution"></a><span data-ttu-id="20468-106">Risoluzione</span><span class="sxs-lookup"><span data-stu-id="20468-106">Resolution</span></span>
 
-<span data-ttu-id="d326c-108">Aggiungere l'ID GitHub dell'autore all'intestazione YML:</span><span class="sxs-lookup"><span data-stu-id="d326c-108">Add the author's GitHub ID to the YML header:</span></span>
+<span data-ttu-id="20468-107">Aggiungere l'ID GitHub dell'autore all'intestazione YML:</span><span class="sxs-lookup"><span data-stu-id="20468-107">Add the author's GitHub ID to the YML header:</span></span>
 
 ```yml
 ---

@@ -6,28 +6,26 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 2/19/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 3d62ea15c600424bf167fc573990d5d09bebcbb4
-ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
+ms.openlocfilehash: 98894da36e101e5b52ceacf94e0dd474f888eca9
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57987837"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58636817"
 ---
-# <a name="ms-topic-missing"></a><span data-ttu-id="394ae-103">ms-topic-missing</span><span class="sxs-lookup"><span data-stu-id="394ae-103">ms-topic-missing</span></span>
-
-<span data-ttu-id="394ae-104">**Presto disponibile.**</span><span class="sxs-lookup"><span data-stu-id="394ae-104">**Coming soon!**</span></span>
+# <a name="ms-topic-missing"></a><span data-ttu-id="da07c-103">ms-topic-missing</span><span class="sxs-lookup"><span data-stu-id="da07c-103">ms-topic-missing</span></span>
 
 [!INCLUDE [suggestion-note](includes/suggestion-note.md)]
 
-## <a name="suggestion"></a><span data-ttu-id="394ae-105">Suggerimento</span><span class="sxs-lookup"><span data-stu-id="394ae-105">Suggestion</span></span>
+## <a name="suggestion"></a><span data-ttu-id="da07c-104">Suggerimento</span><span class="sxs-lookup"><span data-stu-id="da07c-104">Suggestion</span></span>
 
 `Missing attribute: ms.topic. Add a valid value to indicate the article type.`
 
-## <a name="resolution"></a><span data-ttu-id="394ae-106">Risoluzione</span><span class="sxs-lookup"><span data-stu-id="394ae-106">Resolution</span></span>
+## <a name="resolution"></a><span data-ttu-id="da07c-105">Risoluzione</span><span class="sxs-lookup"><span data-stu-id="da07c-105">Resolution</span></span>
 
-<span data-ttu-id="394ae-107">Aggiungere un valore valido per `ms.topic` che indica il tipo di articolo.</span><span class="sxs-lookup"><span data-stu-id="394ae-107">Add a valid value for `ms.topic` that indicates the article type.</span></span>
+<span data-ttu-id="da07c-106">Aggiungere un valore valido per `ms.topic` che indica il tipo di articolo.</span><span class="sxs-lookup"><span data-stu-id="da07c-106">Add a valid value for `ms.topic` that indicates the article type.</span></span>
 
-<span data-ttu-id="394ae-108">I valori validi sono disponibili in [questo sito interno di Microsoft](https://docsmetadatatool.azurewebsites.net/allowlists).</span><span class="sxs-lookup"><span data-stu-id="394ae-108">Valid values can be found on [this Microsoft-internal site](https://docsmetadatatool.azurewebsites.net/allowlists).</span></span>
+<span data-ttu-id="da07c-107">I valori validi sono disponibili in [questo sito interno di Microsoft](https://docsmetadatatool.azurewebsites.net/allowlists).</span><span class="sxs-lookup"><span data-stu-id="da07c-107">Valid values can be found on [this Microsoft-internal site](https://docsmetadatatool.azurewebsites.net/allowlists).</span></span>
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
