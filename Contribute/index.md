@@ -21,16 +21,16 @@ Diversi set di documentazione Microsoft sono open source e ospitati in GitHub. N
 - La _revisione dei repository open source è visibile_ per poter pubblicare il contenuto più utile già nella prima versione.
 - Gli _aggiornamenti dei repository open source sono visibili_ per poter migliorare costantemente il contenuto con facilità.
 
-L'esperienza utente in [docs.microsoft.com](https://docs.microsoft.com) viene direttamente integrata con i flussi di lavoro di [GitHub](https://github.com) così da risultare ancora più semplice. È possibile iniziare [modificando il documento visualizzato](#quick-edits-to-existing-documents), dare un contributo [revisionando i nuovi argomenti](#review-open-prs) o [creare problemi di qualità elevata](#create-quality-issues).
+L'esperienza utente in [docs.microsoft.com](https://docs.microsoft.com) viene direttamente integrata con i flussi di lavoro di [GitHub](https://github.com) così da risultare ancora più semplice. È possibile iniziare [modificando il documento visualizzato](#quick-edits-to-existing-documents), dare un contributo [revisionando i nuovi argomenti](#review-open-prs) o [segnalare problemi di qualità elevata](#create-quality-issues).
 
 > [!IMPORTANT]
-> Tutti i repository che pubblicano contenuto in docs.microsoft.com adottano il [Codice di comportamento Open Source di Microsoft](https://opensource.microsoft.com/codeofconduct/) o il [Codice di comportamento di .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Per altre informazioni, vedere [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) (Domande frequenti sul Codice di comportamento Open Source di Microsoft) oppure contattare [opencode@microsoft.com](mailto:opencode@microsoft.com) o [conduct@dotnetfoundation.org](mailto:conduct@dotnetfoundation.org) per eventuali domande o commenti.<br>
+> Tutti i repository che pubblicano contenuto in docs.microsoft.com adottano il [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/) (Codice di comportamento Open Source di Microsoft) o il [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct) (Codice di comportamento di .NET Foundation). Per altre informazioni, vedere [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) (Domande frequenti sul Codice di comportamento Open Source di Microsoft) oppure contattare [opencode@microsoft.com](mailto:opencode@microsoft.com) o [conduct@dotnetfoundation.org](mailto:conduct@dotnetfoundation.org) per eventuali domande o commenti.<br>
 >
 > Le correzioni minori o i chiarimenti inviati per la documentazione e gli esempi di codice nei repository pubblici sono coperti dalle [Condizioni per l'utilizzo di docs.microsoft.com](https://docs.microsoft.com/legal/termsofuse). Per le novità o le modifiche significative viene generato un commento nella richiesta pull con la richiesta di inviare un contratto di licenza online per contributi se non si è dipendenti Microsoft. Prima che la richiesta pull venga esaminata o accettata, è necessario completare il modulo online.
 
 ## <a name="quick-edits-to-existing-documents"></a>Modifiche rapide ai documenti esistenti
 
-Le modifiche rapide semplificano il processo di segnalazione e correzione di piccoli errori e omissioni. Nonostante l'impegno, nei documenti pubblicati _si possono riscontrare_ piccoli errori grammaticali e ortografici. Anche se è possibile creare problemi per segnalare gli errori, è più facile e veloce creare una richiesta pull per risolvere il problema, quando questa opzione è disponibile.
+Le modifiche rapide semplificano il processo di segnalazione e correzione di piccoli errori e omissioni. Nonostante l'impegno, nei documenti pubblicati _si possono riscontrare_ piccoli errori grammaticali e ortografici. Anche se è possibile segnalare problemi per informare di errori, è più facile e veloce creare una richiesta pull per risolvere il problema, quando questa opzione è disponibile.
 
 1. Alcune pagine della documentazione consentono di modificare il contenuto direttamente nel browser. In questo caso, sarà visualizzato un pulsante **Modifica** come quello mostrato di seguito. Facendo clic sul pulsante **Edit** (o sulla versione equivalente localizzata) si accede al file di origine in GitHub. Se il pulsante **Modifica** (icona a forma di matita senza testo) non è disponibile, ciò indica che la pagina della documentazione non è disponibile per la modifica.
 
@@ -53,7 +53,7 @@ Le modifiche rapide semplificano il processo di segnalazione e correzione di pic
 
    Fare clic su **Crea richiesta pull**, immettere un titolo (e facoltativamente una descrizione) per la richiesta pull e quindi fare di nuovo clic su **Crea richiesta pull**. (Se non si ha familiarità con GitHub, vedere la pagina delle [informazioni sulle richieste pull](https://help.github.com/en/articles/about-pull-requests).)
 
-6. Questo è tutto. I membri del team dei contenuti esamineranno e uniranno la richiesta pull. Se sono state apportate modifiche più significative, è possibile ricevere alcune richieste di modifica.
+6. Questo è tutto. I membri del team dei contenuti esamineranno ed eseguiranno il merge della richiesta pull. Se sono state apportate modifiche più significative, è possibile ricevere alcune richieste di modifica.
 
 L'interfaccia utente di modifica di GitHub è diversa a seconda delle autorizzazioni per il repository. Le immagini precedenti si riferiscono a collaboratori che non hanno autorizzazioni di scrittura per il repository di destinazione. GitHub crea automaticamente un fork del repository di destinazione nell'account. Se si ha l'accesso in scrittura al repository di destinazione, GitHub crea una nuovo ramo nel repository di destinazione. Il nome del ramo ha il formato **\<GitHubId\>-patch-n**, che usa l'ID GitHub e un identificatore numerico per il ramo della patch.
 
@@ -63,21 +63,21 @@ L'esperienza di modifica nel browser è ideale per modifiche secondarie o poco f
 
 > [!NOTE]
 > Se abilitato, è possibile modificare un articolo in **qualsiasi lingua** e, in base al tipo di modifica, si verificherà quanto segue:
-> 1. qualsiasi modifica linguistica approvata migliorerà anche il motore di traduzione automatica
-> 2. qualsiasi modifica che cambia in modo significativo il contenuto dell'articolo verrà gestita internamente per inviare una modifica allo stesso articolo in inglese, in modo che venga localizzata in tutte le lingue in caso di approvazione.
+> 1. Qualsiasi modifica linguistica approvata migliorerà anche il motore di traduzione automatica.
+> 2. Qualsiasi modifica che cambia in modo significativo il contenuto dell'articolo verrà gestita internamente per inviare una modifica allo stesso articolo in inglese, in modo che venga localizzata in tutte le lingue in caso di approvazione.
 > I miglioramenti consigliati, quindi, non influiranno positivamente solo sugli articoli nella propria lingua, ma in tutte le lingue disponibili.
 
 ## <a name="review-open-prs"></a>Esaminare le richieste pull aperte
 
 Per leggere i nuovi argomenti prima che vengano pubblicati, è possibile controllare le richieste pull attualmente aperte. Le revisioni seguono il processo del [flusso GitHub](https://guides.github.com/introduction/flow/). È possibile visualizzare gli aggiornamenti proposti o i nuovi articoli nei repository pubblici. Esaminarli e aggiungere i commenti. Esaminare i repository di documenti e controllare le richieste pull aperte per le aree a cui si è interessati. I commenti e suggerimenti della community sugli aggiornamenti proposti sono utili all'intera community.
 
-## <a name="create-quality-issues"></a>Creare problemi di qualità
+## <a name="create-quality-issues"></a>Segnalare problemi di qualità
 
-I documenti vengono continuamente rielaborati. La corretta formulazione dei problemi consente a Microsoft di impegnarsi maggiormente sulle priorità principali della community. Specificare il maggior numero possibile di dettagli. In questo modo il problema sarà più utile. Indicare le informazioni cercate. Indicare i termini di ricerca usati. Se non si riesce a iniziare, spiegare come si vuole iniziare a esplorare una tecnologia con cui non si ha familiarità.
+I documenti vengono continuamente rielaborati. La corretta formulazione dei problemi consente a Microsoft di impegnarsi maggiormente sulle priorità principali della community. Specificare il maggior numero possibile di dettagli. In questo modo la segnalazione sarà più utile. Indicare le informazioni cercate. Indicare i termini di ricerca usati. Se non si riesce a iniziare, spiegare come si vuole iniziare a esplorare una tecnologia con cui non si ha familiarità.
 
-Molte delle pagine della documentazione di Microsoft includono una sezione **Commenti** nella parte inferiore, in cui è possibile fare clic per inviare **Commenti sul prodotto** oppure **Commenti sul contenuto** per registrare problemi specifici per l'articolo in questione.
+Molte delle pagine della documentazione di Microsoft includono una sezione **Commenti** nella parte inferiore, in cui è possibile fare clic per inviare **Commenti sul prodotto** oppure **Commenti sul contenuto** per registrare segnalazioni specifiche per l'articolo in questione.
 
-I problemi danno avvio a una conversazione su ciò che è necessario. Il team dei contenuti risponderà a questi problemi elencando le idee su ciò che è possibile aggiungere e chiederà l'opinione dell'utente. Quando viene creata una bozza, viene chiesto all'utente di [esaminare la richiesta pull](#review-open-prs).
+Le segnalazioni danno avvio a una conversazione su ciò che è necessario. Il team dei contenuti risponderà a queste segnalazioni elencando le idee su ciò che è possibile aggiungere e chiederà l'opinione dell'utente. Quando viene creata una bozza, viene chiesto all'utente di [esaminare la richiesta pull](#review-open-prs).
 
 ## <a name="get-more-involved"></a>Maggiore coinvolgimento
 
