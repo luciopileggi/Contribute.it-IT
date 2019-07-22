@@ -31,7 +31,7 @@ Le intestazioni devono essere in stile atx. Devono quindi iniziare con un numero
 
 Nell'argomento **deve** essere presente una sola intestazione di primo livello (H1), che verrà visualizzata come titolo sulla pagina.
 
-Se l'intestazione termina con un carattere `#`, perché il rendering sia corretto è necessario aggiungere un altro carattere `#` alla fine, come, ad esempio, in `# Async Programming in F# #`.
+Se l'intestazione termina con un carattere `#`, perché il rendering sia corretto è necessario aggiungere un altro carattere `#` alla fine, come ad esempio in `# Async Programming in F# #`.
 
 Le intestazioni di secondo livello generano il sommario della sezione "In questo articolo", immediatamente dopo il titolo sulla pagina.
 
@@ -135,7 +135,7 @@ verrà rappresentato nel modo seguente:
 
 Si noti che si usa '1.' per tutte le voci. Ciò semplifica l'esame delle differenze in occasione di aggiornamenti successivi, quando vengono aggiunti nuovi passaggi o vengono rimossi passaggi esistenti.
 
-### <a name="tables"></a>Tables
+### <a name="tables"></a>Tabelle
 
 Le tabelle non fanno parte della specifica Markdown principale, ma sono supportate da GFM. È possibile creare tabelle usando i caratteri barra verticale (|) e segno meno (-). I segni meno sono usati per creare l'intestazione delle colonne e le barre verticali per separare ogni colonna. Includere una riga vuota prima della tabella per assicurarne il rendering corretto.
 
@@ -152,7 +152,7 @@ Il testo Markdown seguente, ad esempio:
 
 verrà rappresentato nel modo seguente:
 
-| Fun                  | With                 | Tables          |
+| Fun                  | With                 | Tabelle          |
 | :------------------- | -------------------: |:---------------:|
 | left-aligned column  | right-aligned column | centered column |
 | $100                 | $100                 | $100            |
@@ -310,10 +310,10 @@ Per l'elenco completo, vedere "Markdig e le estensioni Markdown" e "Frammenti di
 
 Per attirare l'attenzione su contenuto specifico, è possibile scegliere tra quattro tipi di blocchi per le note:
 
-- NOTA
-- AVVISO
-- SUGGERIMENTO
-- IMPORTANTE
+- NOTE
+- WARNING
+- TIP
+- IMPORTANT
 
 In generale è consigliabile usare i blocchi per le note sporadicamente, perché possono creare problemi. Sebbene in questi blocchi siano supportati anche blocchi di codice, immagini, elenchi e collegamenti, provare a rendere i blocchi per le note il più possibile semplici e lineari.
 
@@ -336,16 +336,16 @@ Esempi:
 Il rendering è il seguente:
 
 > [!NOTE]
-> Questa è una NOTA
+> This is a NOTE
 
 > [!WARNING]
-> Questo è un AVVISO
+> This is a WARNING
 
 > [!TIP]
-> Questo è un SUGGERIMENTO
+> This is a TIP
 
 > [!IMPORTANT]
-> Questo testo è IMPORTANTE
+> This is IMPORTANT
 
 ### <a name="include-files"></a>File di inclusione
 

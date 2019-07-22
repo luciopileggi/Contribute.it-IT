@@ -21,7 +21,7 @@ Per creare codice Markdown è possibile usare un qualsiasi editor di testo. Per 
 
 Docs usa il motore Markdig per Markdown. In [https://babelmark.github.io/](https://babelmark.github.io/) è possibile testare il rendering di Markdown in Markdig e in altri motori.
 
-## <a name="alerts-note-tip-important-caution-warning"></a>Avvisi (nota, suggerimento, informazione importante, attenzione e avvertimento)
+## <a name="alerts-note-tip-important-caution-warning"></a>Avvisi (nota, suggerimento, informazione importante, attenzione e avviso)
 
 Gli avvisi sono un'estensione di Markdown per Docs che consente di creare citazioni per eseguire il rendering in docs.microsoft.com usando colori e icone che indicano il significato del contenuto. Sono supportati i tipi di avviso seguenti:
 
@@ -45,23 +45,23 @@ Gli avvisi sono un'estensione di Markdown per Docs che consente di creare citazi
 L'aspetto degli avvisi in docs.microsoft.com è il seguente:
 
 > [!NOTE]
-> Informazioni che l'utente dovrebbe leggere velocemente.
+> Information the user should notice even if skimming.
 
 > [!TIP]
-> Informazioni facoltative che facilitano le attività dell'utente.
+> Optional information to help a user be more successful.
 
 > [!IMPORTANT]
-> Informazioni essenziali per le attività dell'utente.
+> Essential information required for user success.
 
 > [!CAUTION]
-> Conseguenze potenzialmente negative di un'azione.
+> Negative potential consequences of an action.
 
 > [!WARNING]
-> Conseguenze assolutamente pericolose di un'azione.
+> Dangerous certain consequences of an action.
 
 ## <a name="code-snippets"></a>Frammenti di codice
 
-Nei file Markdown è possibile incorporare frammenti di codice.
+Nei file Markdown è possibile incorporare frammenti di codice:
 
 ```markdown
 [!code-<language>[<name>](<codepath><queryoption><queryoptionvalue> "<title>")]
@@ -335,7 +335,7 @@ Ad esempio:
 Il rendering è il seguente:
 
 > [!div class="nextstepaction"]
-> [Informazioni su stile di base](style-quick-start.md)
+> [Learn about basic style](style-quick-start.md)
 
 Nell'azione per il passaggio successivo è possibile usare tutti i collegamenti supportati, incluso un collegamento Markdown a un'altra pagina Web. Nella maggior parte dei casi il collegamento all'azione successiva sarà un collegamento relativo a un altro file all'interno dello stesso docset.
 
@@ -428,7 +428,7 @@ Il rendering del testo Markdown della citazione precedente sarà il seguente:
 > - [(Xamarin iOS | Javascript)](how-to-write-workflows-major.md)
 > - [(Xamarin Android | Javascript)](how-to-write-workflows-major.md)
 
-## <a name="tables"></a>Tables
+## <a name="tables"></a>Tabelle
 
 Il metodo più semplice per creare una tabella in Markdown consiste nell'uso di barre verticali e linee. Per creare una tabella standard con un titolo, la prima linea deve essere seguita da una linea tratteggiata:
 
