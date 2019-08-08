@@ -1,12 +1,12 @@
 ---
 author: meganbradley
 ms.author: mbradley
-ms.openlocfilehash: 97a5e8df1fbac10119a1bed7f979ad424db1cab0
-ms.sourcegitcommit: 4053577bd0478d711257a283ee661d618b49c2df
+ms.openlocfilehash: 22d9b3b13856e978aa5b8a902f27e460293e0bd0
+ms.sourcegitcommit: 495d49f10df51a8897687940aa653e906c48c2a0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57458037"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68819714"
 ---
 > [!IMPORTANT]
-> Questa regola viene inizialmente abilitata come "suggerimento" in modo che i team dei contenuti abbiano il tempo di valutare l'impatto e di sviluppare un piano per pulire i repository. I suggerimenti non richiedono un'azione immediata, ma è consigliabile intervenire il prima possibile perché a un certo punto verranno elevati ad avvisi o errori. Dettagli su quando cambierà la gravità e su che cosa verrà incluso nel messaggio quando sarà disponibile.
+> Questa regola è stata inizialmente abilitata come "suggerimento" in modo che i team dei contenuti abbiano il tempo di valutare l'impatto e di sviluppare un piano per pulire i repository. **Verrà promossa ad "Avviso" in data 1/9/2019**.
