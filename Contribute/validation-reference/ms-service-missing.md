@@ -6,18 +6,16 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 2/2/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 17e2e272e3a21e14e038e27ff68866afe28bee60
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: b50d9d6f57c953569a4e5dd873961b8c511a8bb1
+ms.sourcegitcommit: dd751d0cb5b11f81a64ef62f3c83fd17cc5f0541
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58636702"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236489"
 ---
 # <a name="ms-service-missing"></a>ms-service-missing
 
-[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
-
-## <a name="suggestion"></a>Suggerimento
+## <a name="warning"></a>Avviso
 
 `Missing attribute: ms.service. If you specify ms.subservice, you must also specify ms.service.`
 
@@ -27,7 +25,7 @@ Usare `ms.service` per specificare i servizi cloud. Per specificare informazioni
 
 Verificare che il valore di `ms.subservice` specificato sia corretto per l'articolo. Aggiungere quindi il valore appropriato di `ms.service`, in modo che sia un elemento padre valido per `ms.subservice`.
 
-I valori validi sono disponibili in [questo sito interno di Microsoft](https://docsmetadatatool.azurewebsites.net/allowlists).
+I valori validi sono disponibili in [questo sito interno di Microsoft](https://docsmetadatatool.azurewebsites.net/allowlists). Per richiedere nuovi valori, seguire [questa procedura](https://review.docs.microsoft.com/help/contribute/metadata-changes?branch=master).
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
