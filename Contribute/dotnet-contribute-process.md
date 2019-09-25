@@ -2,12 +2,12 @@
 title: Processo per contribuire ai repository della documentazione di .NET
 description: Questo articolo offre una breve introduzione al processo per inviare contributi per i repository della documentazione di .NET. Vengono presentati i repository usati, il processo per l'organizzazione del contenuto e i criteri per la gestione degli esempi di codice e di altri asset.
 ms.date: 11/07/2018
-ms.openlocfilehash: 121f6c885ef6d292968e5bb3961cae8e9c22942b
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: a5429864efe56e2004ccfeac4443dc74fbf15dc3
+ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58637507"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71247316"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>Processo per contribuire alla documentazione di .NET
 
@@ -32,11 +32,11 @@ Il contenuto all'interno della cartella **docs** è organizzato in sezioni rispe
 
 È anche possibile scegliere tra i problemi esistenti per cui sono benvenuti i contributi della community. In [Projects for .NET Community contributors](https://github.com/dotnet/docs/projects/35) (Progetti per i collaboratori della community .NET) sono elencati molti dei problemi disponibili per i collaboratori della community. A seconda dei propri interessi e del livello di impegno, è possibile scegliere tra i problemi nelle categorie seguenti:
 
-- **Maintenance (Manutenzione)**. Questa categoria include contributi piuttosto semplici, come la correzione di collegamenti interrotti o non corretti, l'aggiunta di esempi di codice mancanti o la correzione di problemi limitati del contenuto. Questi problemi possono a volte interessare numerosi file. In tal caso, è opportuno fare sapere a Microsoft su cosa si vorrebbe lavorare prima di iniziare. Aggiungere un commento al problema per segnalare che si sta lavorando al problema.
+- **Maintenance (Manutenzione)** . Questa categoria include contributi piuttosto semplici, come la correzione di collegamenti interrotti o non corretti, l'aggiunta di esempi di codice mancanti o la correzione di problemi limitati del contenuto. Questi problemi possono a volte interessare numerosi file. In tal caso, è opportuno fare sapere a Microsoft su cosa si vorrebbe lavorare prima di iniziare. Aggiungere un commento al problema per segnalare che si sta lavorando al problema.
 
-- **Content updates (Aggiornamenti del contenuto)**. Considerata la vastità del set di documenti, i contenuti diventano facilmente obsoleti e richiedono una revisione. Inoltre, per svariati motivi, certi contenuti sono duplicati o persino triplicati. L'aggiornamento del contenuto comporta assicurarsi che i singoli argomenti siano aggiornati oppure rivedere il contenuto in un'area funzionale per eliminare duplicati e assicurarsi che tutto il contenuto univoco sia mantenuto nel set di documentazione più ridotto.
+- **Content updates (Aggiornamenti del contenuto)** . Considerata la vastità del set di documenti, i contenuti diventano facilmente obsoleti e richiedono una revisione. Inoltre, per svariati motivi, certi contenuti sono duplicati o persino triplicati. L'aggiornamento del contenuto comporta assicurarsi che i singoli argomenti siano aggiornati oppure rivedere il contenuto in un'area funzionale per eliminare duplicati e assicurarsi che tutto il contenuto univoco sia mantenuto nel set di documentazione più ridotto.
 
-- **New content authoring (Creazione di nuovo contenuto)**. Se si è interessati a creare un nuovo argomento, questi problemi elencano gli argomenti che Microsoft vorrebbe aggiungere al set di documenti. Prima di iniziare a lavorare a un argomento, però, farlo sapere a Microsoft. Se si è interessati a scrivere un argomento non presente in questo elenco, aprire un problema.
+- **New content authoring (Creazione di nuovo contenuto)** . Se si è interessati a creare un nuovo argomento, questi problemi elencano gli argomenti che Microsoft vorrebbe aggiungere al set di documenti. Prima di iniziare a lavorare a un argomento, però, farlo sapere a Microsoft. Se si è interessati a scrivere un argomento non presente in questo elenco, aprire un problema.
 
 È anche possibile dare un'occhiata all'elenco dei [problemi aperti](https://github.com/dotnet/docs/issues) e offrirsi come volontari per lavorare a quelli di proprio interesse. Viene usata l'etichetta [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) per contrassegnare i problemi identificati come candidati per il contributo della community. Per questi problemi sono in genere necessarie informazioni di contesto minime e sono per questo adatti per le prime esperienze. Invitiamo i collaboratori esperti della community a individuare eventuali problemi di interesse. Quando se ne trova uno, aggiungere un commento per richiedere se è aperto.
 
@@ -94,7 +94,7 @@ Per il codice presente nel repository esistono le distinzioni seguenti:
 Tutto il codice è posizionato nel repository [dotnet/samples](https://github.com/dotnet/samples). È in progetto l'elaborazione di un modello nel quale la struttura di cartelle degli esempi corrisponde a quella della documentazione. Questi sono gli standard adottati:
 
 - La cartella *snippets* di primo livello contiene frammenti di codice per piccoli esempi specifici.
-- Gli esempi di riferimento per le API sono posizionati in una cartella con lo schema seguente: *snippets/\<lingua>/api/\<spaziodeinomi>/\<nomeapi>*.
+- Gli esempi di riferimento per le API sono posizionati in una cartella con lo schema seguente: *snippets/\<lingua>/api/\<spaziodeinomi>/\<nomeapi>* .
 - Le altre cartelle di primo livello corrispondono alle cartelle di primo livello nel repository *docs*. Ad esempio, il repository docs include una cartella *machine-learning/tutorials* e gli esempi per le esercitazioni di Machine Learning sono nella cartella *samples/machine-learning/tutorials*.
 
 Inoltre, tutti gli esempi nelle cartelle *core* e *standard* devono poter essere compilati ed eseguiti su tutte le piattaforme supportate da .NET Core. Il sistema di compilazione CI imporrà tale requisito. La cartella *framework* di primo livello contiene esempi compilati e convalidati solo in Windows.
@@ -103,7 +103,7 @@ I progetti di esempio devono poter essere compilati ed eseguiti nel set di piatt
 
 È in progetto l'implementazione di un sistema CI per tutto il codice. Quando si aggiornano gli esempi, assicurarsi che ogni aggiornamento faccia parte di un progetto compilabile. Idealmente, aggiungere anche test per verificare la correttezza degli esempi.
 
-Ogni esempio completo creato deve contenere un file *readme.md*. Questo file deve contenere una breve descrizione dell'esempio (uno o due paragrafi). Il file *readme.md* deve indicare ai lettori i concetti illustrati dall'esempio. Il file *readme.md* deve anche contenere un collegamento al documento online nel [sito della documentazione di .NET](https://docs.microsoft.com/dotnet/welcome). Per stabilire se un determinato file nel repository corrisponde a tale sito, sostituire `/docs` nel percorso del repository con `http://docs.microsoft.com/dotnet`.
+Ogni esempio completo creato deve contenere un file *readme.md*. Questo file deve contenere una breve descrizione dell'esempio (uno o due paragrafi). Il file *readme.md* deve indicare ai lettori i concetti illustrati dall'esempio. Il file *readme.md* deve anche contenere un collegamento al documento online nel [sito della documentazione di .NET](https://docs.microsoft.com/dotnet/welcome). Per stabilire se un determinato file nel repository corrisponde a tale sito, sostituire `/docs` nel percorso del repository con `https://docs.microsoft.com/dotnet`.
 
 L'argomento includerà anche collegamenti all'esempio. Aggiungere un collegamento diretto alla cartella dell'esempio in GitHub.
 
@@ -158,7 +158,7 @@ Per compilare qualsiasi frammento di codice o esempio .NET Core si usa l'interfa
     dotnet run
     ```
 
-3. Aggiungere un file readme.md nella directory radice dell'esempio. 
+3. Aggiungere un file readme.md nella directory radice dell'esempio.
 
    Il file deve includere una breve descrizione del codice e indirizzare gli utenti all'articolo che fa riferimento all'esempio.
 

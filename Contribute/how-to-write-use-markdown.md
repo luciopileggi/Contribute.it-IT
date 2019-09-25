@@ -2,16 +2,16 @@
 title: Come usare Markdown per scrivere articoli di Docs
 description: Questo articolo offre informazioni di base e di riferimento sul linguaggio Markdown usato per la stesura di articoli per il sito docs.microsoft.com.
 ms.date: 03/26/2019
-ms.openlocfilehash: 9fcd76e6103761465815784e4bf24e7042fb9f34
-ms.sourcegitcommit: 5f7212a091e9fc4e9cd1320fdfa8efaff51384c7
+ms.openlocfilehash: 7a42aa88bab65846ce54e2444387ac3a578779c0
+ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373127"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71247352"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Come usare Markdown per scrivere articoli di Docs
 
-Gli articoli di [docs.microsoft.com](http://docs.microsoft.com) sono scritti in un semplice linguaggio di markup denominato [Markdown](https://daringfireball.net/projects/markdown/), facile sia da leggere che da apprendere. Per questo motivo si sta imponendo rapidamente come standard del settore. Il sito docs usa la [versione Markdig](#markdown-flavor) di Markdown.
+Gli articoli di [docs.microsoft.com](https://docs.microsoft.com) sono scritti in un semplice linguaggio di markup denominato [Markdown](https://daringfireball.net/projects/markdown/), facile sia da leggere che da apprendere. Per questo motivo si sta imponendo rapidamente come standard del settore. Il sito docs usa la [versione Markdig](#markdown-flavor) di Markdown.
 
 
 ## <a name="markdown-basics"></a>Nozioni di base su Markdown
