@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 12/12/2018
 ms.prod: non-product-specific
-ms.openlocfilehash: 677127d09349445bb80778dfb501d7d4294ea46b
-ms.sourcegitcommit: 89147521f0aa3b39e7ddf390136b09a43d95c416
+ms.openlocfilehash: 2d0b766bba5b5ba32bff68f7ac185ab639fc7557
+ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70848463"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71247404"
 ---
 # <a name="h1-missing"></a>h1-missing
 
@@ -36,7 +36,9 @@ ms.author: mbradley
 ```
 
 > [!NOTE]
-> Questa regola non si applica ai file inclusi. Se vengono visualizzati avvisi H1 nei file inclusi, probabilmente è necessario spostare i file inclusi in una cartella `includes`. La cartella `includes` può essere in qualsiasi livello nel percorso del file. In base al percorso, la compilazione di Docs riconoscerà il file come file incluso e le convalide H1 non verranno eseguite.
+> Questa regola non si applica ai file inclusi. Se vengono visualizzati risultati H1 nei file inclusi, probabilmente è necessario spostare i file inclusi in una cartella `includes`. La cartella `includes` può essere in qualsiasi livello nel percorso del file. In base al percorso, la compilazione di Docs riconoscerà il file come file incluso e le convalide H1 non verranno eseguite.
+>
+> Una delle cause comuni di H1 mancanti nei file padre è l'utilizzo improprio dei file inclusi: l'H1 si trova nel file incluso, non nel file padre. Questa operazione non è consentita perché l'utilizzo di un H1 in un file incluso indica che ci sono H1 duplicati nei file padre oppure che il file incluso viene usato una sola volta. Gli H1 devono essere univoci all'interno di un set di contenuto e i file inclusi devono essere usati solo per condividere contenuto tra più file. Se vengono visualizzati risultati `h1-missing` perché l'H1 si trova in un file incluso, la soluzione consiste nello spostare l'H1 e tutto il contenuto incluso se il file incluso viene usato solo una volta nel file padre. Per altre informazioni sui file inclusi in Docs, vedere l'articolo interno Microsoft [Include reusable content in articles](https://review.docs.microsoft.com/en-us/help/contribute/includes-best-practices?branch=master) (Includere contenuto riutilizzabile negli articoli).
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]

@@ -4,12 +4,12 @@ description: Questo articolo contiene indicazioni su come creare il repository G
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: 1053900b0af5a0ea3dec99ccd27114f16b828406
-ms.sourcegitcommit: c6a5a715af1b915ecd4ef64d40f7d18c6035c858
+ms.openlocfilehash: 285c25fe0e5df067ceeaa5a42da1bad5533d2c84
+ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68669917"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71247387"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Configurare un repository Git locale per la documentazione
 
@@ -55,7 +55,7 @@ La documentazione ospitata in [docs.microsoft.com](https://docs.microsoft.com) s
    - Documentazione di Visual Studio [https://github.com/MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs)
    - Documentazione di .NET [https://github.com/dotnet/docs](https://github.com/dotnet/docs)
    - Documentazione di Azure .NET SDK [https://github.com/azure/azure-docs-sdk-dotnet](https://github.com/azure/azure-docs-sdk-dotnet)
-   - Documentazione di ConfigMgr https://github.com/MicrosoftDocs/SCCMdocs [] (https://github.com/MicrosoftDocs/SCCMdocs/)
+   - Documentazione di ConfigMgr [https://github.com/MicrosoftDocs/SCCMdocs](https://github.com/MicrosoftDocs/SCCMdocs/)
 
 ## <a name="fork-the-repository"></a>Creare una copia tramite fork del repository
 Selezionando il repository appropriato, creare un fork del repository nel proprio account GitHub usando il sito Web GitHub.
