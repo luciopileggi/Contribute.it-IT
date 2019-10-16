@@ -1,13 +1,16 @@
 ---
 title: Modello e foglio informativo per gli articoli .NET
 description: Questo articolo contiene un pratico modello da usare per creare nuovi articoli per i repository di documentazione .NET.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 9b57abd96093940c96f90a4a01b9f81eae063ffb
-ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+ms.openlocfilehash: 998ebf90c8a162451dd4ca2e7c8a55833ed9d408
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58653621"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288374"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Modello di metadati e Markdown per i documenti .NET
 
