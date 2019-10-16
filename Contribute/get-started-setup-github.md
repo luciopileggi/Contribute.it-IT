@@ -1,13 +1,16 @@
 ---
 title: Procedura di configurazione dell'account GitHub
 description: Questo articolo offre una descrizione dettagliata della procedura di configurazione degli account per GitHub, necessari per contribuire al contenuto di docs.microsoft.com.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 02/27/2018
-ms.openlocfilehash: 89f45c32f969fe1186eff3b442cb995fd08a8d11
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 4f7a639da4f69cf8f6a88ef1da3be31f262d1bed
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609477"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288399"
 ---
 # <a name="github-account-setup"></a>Configurazione dell'account GitHub
 

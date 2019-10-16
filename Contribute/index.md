@@ -4,12 +4,15 @@ description: La guida spiega in che modo si può contribuire al sito della docum
 author: billwagner
 ms.author: wiwagn
 ms.date: 02/19/2019
-ms.openlocfilehash: 9b091f864f5191c9f7a00900ec11a4a1cffdb698
-ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
+ms.openlocfilehash: 3efe66a71a4a61b84ff513a6253777cb2d21bc9e
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58653506"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288642"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Panoramica della guida per i collaboratori di Microsoft Docs
 

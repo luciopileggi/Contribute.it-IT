@@ -1,13 +1,16 @@
 ---
 title: Processo per contribuire ai repository della documentazione di .NET
 description: Questo articolo offre una breve introduzione al processo per inviare contributi per i repository della documentazione di .NET. Vengono presentati i repository usati, il processo per l'organizzazione del contenuto e i criteri per la gestione degli esempi di codice e di altri asset.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: a5429864efe56e2004ccfeac4443dc74fbf15dc3
-ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
+ms.openlocfilehash: e54ade313f026b5ea512c0f783d3f8ad83979390
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71247316"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288340"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>Processo per contribuire alla documentazione di .NET
 
