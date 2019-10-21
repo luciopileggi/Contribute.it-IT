@@ -4,14 +4,14 @@ description: Spiegazione e risoluzione del problema di compilazione di Docs mult
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 12/12/2018
+ms.date: 10/09/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: a1006d9d75ebd53751c9ab81aa016d67d6e5df57
-ms.sourcegitcommit: 89147521f0aa3b39e7ddf390136b09a43d95c416
+ms.openlocfilehash: c97ae237cd2ce657bd02132af5169cb6544ae306
+ms.sourcegitcommit: 57eb071bdc55ef71fa3f8ac979326c3f8fbe9c45
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70848598"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72246283"
 ---
 # <a name="multiple-h1"></a>multiple-h1
 
@@ -22,6 +22,16 @@ ms.locfileid: "70848598"
 `Multiple H1s are not allowed. You can only have one top-level heading.`
 
 H1 si riferisce alla prima intestazione di un file Markdown. Quando viene pubblicato in docs.microsoft.com, l'H1 viene visualizzato nella parte superiore della pagina in caratteri grandi. Un H1 viene creato iniziando una riga con un singolo codice hash (#) seguito da uno spazio, quindi dal testo dell'intestazione. È possibile avere solo un H1 in ogni file.
+
+Questo messaggio potrebbe essere visualizzato anche se l'articolo contiene una riga di segni di uguale per ottenere una doppia sottolineatura, come questa: `=======`. Si tratta di una sintassi Markdown alternativa per un H1. Viene anche comunemente visualizzato nei conflitti di merge:
+
+```markdown
+<<<<<<< HEAD
+...
+=======
+...
+>>>>>>> 1d82c7efe18f86136247fb366df5030843199c19
+```
 
 ## <a name="resolution"></a>Risoluzione
 
@@ -38,6 +48,8 @@ Some content...
 
 ## This is an H2
 ```
+
+Se un'intestazione H1 aggiuntiva è effettivamente una doppia sottolineatura (`=======`), rimuoverla o sostituirla con un'intestazione hashtag, ad esempio `##`, in base alle esigenze. Se la doppia sottolineatura fa parte di un conflitto di merge, assicurarsi di rimuovere anche gli indicatori di inizio e fine del conflitto di merge e il testo obsoleto.
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]

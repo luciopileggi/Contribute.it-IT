@@ -1,16 +1,18 @@
 ---
 title: Installare gli strumenti di creazione del contenuto
 description: Questo articolo include informazioni utili per scaricare e installare gli strumenti client che saranno necessari per Git e la modifica dei file markdown.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 author: jasonwhowell
 ms.author: jasonh
-manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 715634a9a2342311eb1d358cb8379f90a7074d80
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 24d47c4e094c318be75a27dbaaec11d8ead94452
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609392"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288546"
 ---
 # <a name="install-content-authoring-tools"></a>Installare gli strumenti di creazione del contenuto
 
@@ -39,7 +41,7 @@ Seguire le istruzioni relative al client selezionato per l'installazione e confi
 
 Nel prossimo articolo verrà descritto come [configurare un repository Git locale](get-started-setup-local.md).
 
-   Le risorse aggiuntive su Git sono disponibili qui: [Terminologia di Git](https://help.github.com/articles/github-glossary) | [Nozioni di base su Git](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) | [Risorse di formazione per Git e GitHub](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
+   Altre risorse su Git sono disponibili qui: [Git terminology (Terminologia di Git)](https://help.github.com/articles/github-glossary) | [Git basics (Nozioni di base su Git)](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) | [Learning Git and GitHub (Apprendimento di Git e GitHub)](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
 
 ## <a name="understand-markdown-editors"></a>Informazioni sugli editor Markdown
 

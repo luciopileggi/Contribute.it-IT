@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 9/27/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: b3100b4a304356aee3c50f805628890b8c738fe1
-ms.sourcegitcommit: d2f5b68b6a6d1ac902dba5063482ff5955a5b1f7
+ms.openlocfilehash: 615d9f5978893196a24e3a043f3b71a22e1eb353
+ms.sourcegitcommit: 57eb071bdc55ef71fa3f8ac979326c3f8fbe9c45
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481710"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72246303"
 ---
 # <a name="ms-author-invalid"></a>ms-author-invalid
 
@@ -21,7 +21,7 @@ ms.locfileid: "71481710"
 
 ## <a name="resolution"></a>Risoluzione
 
-Verificare che il valore `ms.author` sia l'alias Microsoft valido dell'autore corrente. È consigliabile che l'autore designato sia un dipendente a tempo pieno o una lista di distribuzione di team, anziché un fornitore a breve termine. Se l'alias è una lista di distribuzione, deve essere anche nell'elenco degli indirizzi consentiti `ms.author`.
+Aggiornare il valore `ms.author` con l'alias Microsoft valido dell'autore corrente. È consigliabile che l'autore designato sia un dipendente a tempo pieno o una lista di distribuzione di team, anziché un fornitore a breve termine. Se l'alias è una lista di distribuzione, deve essere anche nell'elenco degli indirizzi consentiti `ms.author`.
 
 I valori validi per le liste di distribuzione `ms.author` sono disponibili in [questo sito interno di Microsoft](https://docsmetadatatool.azurewebsites.net/allowlists).
 

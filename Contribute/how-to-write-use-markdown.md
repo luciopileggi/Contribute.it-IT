@@ -1,13 +1,16 @@
 ---
 title: Come usare Markdown per scrivere articoli di Docs
 description: Questo articolo offre informazioni di base e di riferimento sul linguaggio Markdown usato per la stesura di articoli per il sito docs.microsoft.com.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: 7a42aa88bab65846ce54e2444387ac3a578779c0
-ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
+ms.openlocfilehash: c823e086ba61e7ddfe643da13afc8597e5ea280c
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71247352"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288410"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Come usare Markdown per scrivere articoli di Docs
 
@@ -291,10 +294,10 @@ CREATE TABLE T1 (
 );
 ```
 
-## <a name="ops-custom-markdown-extensions"></a>Estensioni Markdown personalizzate di OPS
+## <a name="docs-custom-markdown-extensions"></a>Estensioni Markdown personalizzate di Docs
 
 > [!NOTE]
-> OPS (Open Publishing Services) implementa il parser Markdig per Markdown, altamente compatibile con GitHub Flavored Markdown (GFM). Markdig aggiunge altre funzionalità tramite le estensioni per Markdown. Di conseguenza, alcuni articoli della guida completa alla creazione in OPS sono inclusi in questa guida per riferimento (vedere ad esempio "Markdig e le estensioni Markdown" e "Frammenti di codice" nel sommario).
+> Docs.Microsoft.com (Docs) implementa il parser Markdig per Markdown, altamente compatibile con GitHub Flavored Markdown (GFM). Markdig aggiunge altre funzionalità tramite le estensioni per Markdown. Di conseguenza, alcuni articoli della guida completa alla creazione in OPS sono inclusi in questa guida per riferimento (vedere ad esempio "Markdig e le estensioni Markdown" e "Frammenti di codice" nel sommario).
 
 Gli articoli di Docs usano GFM per la maggior parte della formattazione, come paragrafi, collegamenti, elenchi, titoli e così via. Per elementi di formattazione più elaborati, negli articoli è possibile usare funzionalità Markdig come:
 
@@ -432,7 +435,7 @@ Ad esempio, codificare `<script name>` come `&lt;script name&gt;`
 
 ## <a name="markdown-flavor"></a>Versione di Markdown
 
-Il back-end del sito docs.microsoft.com usa i servizi OPS (Open Publishing Service) che supportano il Markdown conforme a [CommonMark](https://commonmark.org/) analizzato tramite il motore di analisi [Markdig](https://github.com/lunet-io/markdig). Questa versione di Markdown è per lo più compatibile con [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), perché la maggior parte dei documenti viene archiviata in GitHub dove può essere modificata. Altre funzionalità vengono aggiunte tramite le estensioni per Markdown.
+Il back-end del sito docs.microsoft.com supporta il Markdown conforme a [CommonMark](https://commonmark.org/) analizzato tramite il motore di analisi [Markdig](https://github.com/lunet-io/markdig). Questa versione di Markdown è per lo più compatibile con [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), perché la maggior parte dei documenti viene archiviata in GitHub dove può essere modificata. Altre funzionalità vengono aggiunte tramite le estensioni per Markdown.
 
 ## <a name="see-also"></a>Vedere anche:
 

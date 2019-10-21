@@ -1,13 +1,16 @@
 ---
 title: Flusso di lavoro per i contributi a GitHub per modifiche di rilievo o di lunga durata
 description: Questo articolo illustra come usare il flusso di lavoro per i contributi "di rilievo" per gli articoli di docs.microsoft.com.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 08/30/2017
-ms.openlocfilehash: 93e659df4f72c6a272d15fd7487eb3a997bdf3c8
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 87c31979e60a957586ea623b22be190bfdaa41d9
+ms.sourcegitcommit: d357977935b432381f3df6297164417ed59ab434
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609406"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310277"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>Flusso di lavoro per i contributi a GitHub per modifiche di rilievo o di lunga durata
 
@@ -59,4 +62,4 @@ Di seguito viene descritta la procedura per creare un nuovo ramo di lavoro nel r
 
 Questo è tutto. Il proprio contributo è stato inserito nei contenuti di docs.microsoft.com.
 
-- Per altre informazioni su argomenti come la sintassi per Markdown e le estensioni Markdown, continuare con la sezione Informazioni di base per la scrittura.
+- Per altre informazioni su argomenti come la sintassi per Markdown e le estensioni Markdown, continuare con l'articolo [Informazioni di base per la scrittura](how-to-write-use-markdown.md).

@@ -1,24 +1,27 @@
 ---
 title: Docs Authoring Pack per Visual Studio Code
 description: Questo articolo illustra il pacchetto di estensione di Visual Studio Code che facilita la creazione di codice Markdown per docs.microsoft.com.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 author: meganbradley
 ms.author: mbradley
 ms.date: 10/22/2018
-ms.openlocfilehash: 00afafbbf16096ac6433c0ab276578d8d9084b51
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 11f18ce4f769b478108d399b780937f927e0e12d
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805655"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288320"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Docs Authoring Pack per VS Code
 
 Docs Authoring Pack è una raccolta di estensioni di Visual Studio Code che facilita la creazione di codice Markdown per docs.microsoft.com. Il pacchetto, [disponibile nel Marketplace di VS Code](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack), contiene le estensioni seguenti:
 
-- [markdownlint:](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) linter Markdown di ampia diffusione, creato da David Anson, che consente di assicurarsi che il codice Markdown segua le procedure consigliate.
+- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint): linter Markdown di ampia diffusione, creato da David Anson, che consente di assicurarsi che il codice Markdown segua le procedure consigliate.
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): correttore ortografico completamente offline di Street Side Software.
 - [Docs Preview](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-preview): usa CSS di docs.microsoft.com per una visualizzazione in anteprima del Markdown più accurata, incluso il Markdown personalizzato.
-- [Docs Markdown:](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-markdown) offre assistenza per la creazione di codice Markdown per contenuto docs.microsoft.com in Open Publishing System (OPS). Offre sia supporto di base che per la sintassi Markdown personalizzata in OPS. Il resto di questo argomento descrive l'estensione Docs Markdown.
+- [Docs Markdown](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-markdown): offre assistenza per la creazione di codice Markdown per contenuto docs.microsoft.com in Open Publishing System (OPS). Offre sia supporto di base che per la sintassi Markdown personalizzata in OPS. Il resto di questo argomento descrive l'estensione Docs Markdown.
 - [Docs Article Templates](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-article-templates): consente agli utenti di applicare contenuto modello Markdown ai nuovi file.
 
 ## <a name="prerequisites-and-assumptions"></a>Prerequisiti e presupposti
@@ -43,7 +46,7 @@ Per accedere al menu Docs Markdown, digitare `ALT+M`. Per selezionare una funzio
 |Tabella        |Inserisce la struttura Markdown di una tabella.<br><br>Dopo aver inserito il comando per la tabella, specificare il numero di colonne e di righe nel formato colonne:righe, ad esempio 3:4. Si noti che il numero massimo di colonne che è possibile specificare tramite questa estensione è 5, che rappresenta il limite massimo consigliato per la leggibilità.|
 |Collegamento a file nel repository|Inserisce un collegamento relativo a un altro file nel repository corrente. Dopo aver selezionato questa opzione, digitare nella finestra di comando in modo da filtrare i file per nome e quindi selezionare il file voluto. In presenza di testo selezionato in precedenza, questo diventerà il testo del collegamento. In caso contrario, come testo del collegamento verrà usato il titolo H1 del file di destinazione.|
 |Collegamento a pagina Web    |Inserisce un collegamento a una pagina Web. Dopo aver selezionato questa opzione, incollare o digitare l'URI nella finestra di comando. `https://` è obbligatorio. In presenza di testo selezionato in precedenza, questo diventerà il testo del collegamento. In caso contrario, come testo del collegamento verrà usato l'URI.|
-|Collegamento a titolo     |Aggiunge un collegamento a un segnalibro nel file corrente o in un altro file nel repository.<br>`Bookmark in this file`: scegliere da un elenco di intestazioni nel file corrente per inserire un segnalibro formattato in modo corretto.<br>`Bookmark in another file`: prima filtrare in base al nome e selezionare il file a cui collegarsi e quindi scegliere l'intestazione appropriata all'interno del file selezionato.|
+|Collegamento a titolo     |Aggiunge un collegamento a un segnalibro nel file corrente o in un altro file nel repository.<br>`Bookmark in this file`: scegliere da un elenco di intestazioni nel file corrente per inserire un segnalibro formattato in modo corretto.<br>`Bookmark in another file`: prima di tutto filtrare in base al nome e selezionare il file a cui collegarsi e quindi scegliere l'intestazione appropriata all'interno del file selezionato.|
 |Immagine        |Digitare testo alternativo (necessario per l'accessibilità) e selezionarlo, quindi chiamare questo comando per filtrare l'elenco dei file di immagine supportati presenti nel repository e selezionare il file voluto. Se quando si chiama questo comando non è stato selezionato testo alternativo, verrà richiesto di farlo per poter selezionare un file di immagine.|
 |Inclusione      |Consente di trovare un file da incorporare nel file corrente.|
 |Frammento di codice      |Consente di trovare un frammento di codice nel repository da incorporare nel file corrente.|

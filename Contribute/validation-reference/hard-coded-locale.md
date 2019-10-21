@@ -6,18 +6,18 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 12/12/2018
 ms.prod: non-product-specific
-ms.openlocfilehash: 1862014076fa4cbff18535095b244e8f94a17b0f
-ms.sourcegitcommit: 4053577bd0478d711257a283ee661d618b49c2df
+ms.openlocfilehash: eb9ae17673b3da5f921139d88cc9af469423c9c3
+ms.sourcegitcommit: d357977935b432381f3df6297164417ed59ab434
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57427670"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310342"
 ---
 # <a name="hard-coded-locale"></a>hard-coded-locale
 
 ## <a name="warning"></a>Avviso
 
-`Link {URL} contains locale code {code}. For localizability, remove {code} from links to Microsoft sites.`
+`Link '{URL}' contains locale code '{code}'. For localizability, remove '{code}' from links to Microsoft sites.`
 
 I codici delle impostazioni locali, come `en-us`, non devono essere inclusi nei collegamenti a determinati siti Microsoft. Se si include il codice di un'impostazione locale in un collegamento con contenuto in inglese, verrà incluso anche nei collegamenti localizzati, producendo un'esperienza localizzata errata. Ad esempio, se un collegamento in un contenuto localizzato in tedesco include `en-us`, i clienti tedeschi si troveranno a collegarsi all'articolo in inglese, anche se è disponibile una versione in tedesco.
 
@@ -39,6 +39,13 @@ Prima:
 Dopo:
 
 `https://docs.microsoft.com/vsts/load-test/app-service-web-app-performance-test`
+
+> [!TIP]
+> L'estensione Docs Markdown per VS Code include uno script di pulizia per i collegamenti Microsoft. Lo script controlla tutti i collegamenti ai siti Microsoft in un repository per assicurarsi che inizino con `https` anziché `http` e non contengano il codice delle impostazioni locali, ad esempio `en-us`. Per eseguire lo script:
+>
+> 1. Installare l'estensione [Docs Markdown ](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-markdown) per VS Code.
+> 1. Premere ALT+M per aprire il menu Markdown.
+> 1. Selezionare **Cleanup** (Pulizia) e quindi **Microsoft links** (Collegamenti Microsoft).
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
