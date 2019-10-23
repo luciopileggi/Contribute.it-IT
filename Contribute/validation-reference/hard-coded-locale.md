@@ -4,18 +4,21 @@ description: Spiegazione e risoluzione del problema di compilazione di Docs hard
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 12/12/2018
+ms.date: 10/18/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: eb9ae17673b3da5f921139d88cc9af469423c9c3
-ms.sourcegitcommit: d357977935b432381f3df6297164417ed59ab434
+ms.openlocfilehash: 0fbc7634e00202fdfdf607b9504744a6d9846792
+ms.sourcegitcommit: 836d4d6127fabb5569ffc0809db5fb25e46038b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72310342"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72590854"
 ---
 # <a name="hard-coded-locale"></a>hard-coded-locale
 
-## <a name="warning"></a>Avviso
+> [!IMPORTANT]
+> Questa regola è stata inizialmente abilitata come "suggerimento" in modo che i team dei contenuti abbiano il tempo di valutare l'impatto e di sviluppare un piano per pulire i repository. **Verrà promossa ad "Avviso" in data 20/12/2019**.
+
+## <a name="suggestion"></a>Suggerimento
 
 `Link '{URL}' contains locale code '{code}'. For localizability, remove '{code}' from links to Microsoft sites.`
 
