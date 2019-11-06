@@ -7,12 +7,12 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 3142b1aee8cadb69f82bfbcd3f89c701fac5b356
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: a5ff6c5122a08d2b611fd6b0344a6f5740d93928
+ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288296"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592554"
 ---
 # <a name="markdown-reference"></a>Informazioni di riferimento a Markdown
 
@@ -26,7 +26,7 @@ Docs usa il motore Markdig per Markdown. In [https://babelmark.github.io/](https
 
 Gli avvisi sono un'estensione di Markdown per Docs che consente di creare citazioni per eseguire il rendering in docs.microsoft.com usando colori e icone che indicano il significato del contenuto. Sono supportati i tipi di avviso seguenti:
 
-```markdown
+```md
 > [!NOTE]
 > Information the user should notice even if skimming.
 
@@ -45,26 +45,13 @@ Gli avvisi sono un'estensione di Markdown per Docs che consente di creare citazi
 
 L'aspetto degli avvisi in docs.microsoft.com è il seguente:
 
-> [!NOTE]
-> Information the user should notice even if skimming.
-
-> [!TIP]
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]
-> Essential information required for user success.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
-
-> [!WARNING]
-> Dangerous certain consequences of an action.
+![mostra l'aspetto degli avvisi dell'esempio precedente nella pagina di Docs pubblicata con icone e colori diversi](media/alerts-rendering.png)
 
 ## <a name="code-snippets"></a>Frammenti di codice
 
 Nei file Markdown è possibile incorporare frammenti di codice:
 
-```markdown
+```md
 [!code-<language>[<name>](<codepath><queryoption><queryoptionvalue> "<title>")]
 ```
 
@@ -72,7 +59,7 @@ Nei file Markdown è possibile incorporare frammenti di codice:
 
 Docs supporta sei livelli di intestazioni Markdown:
 
-```markdown
+```md
 # This is a first level heading (H1)
 
 ## This is a second level heading (H2)
@@ -97,7 +84,7 @@ Benché Markdown supporti HTML inline, non è consigliabile usare il linguaggio 
 
 La sintassi per l'inclusione di un'immagine è la seguente:
 
-```markdown
+```md
 ![[alt text]](<folderPath>)
 
 Example:
@@ -133,7 +120,7 @@ Nella maggior parte dei casi Docs usa collegamenti Markdown standard per collega
 
 Un percorso relativo è il percorso al file di destinazione relativo al file corrente. In Docs è possibile usare un percorso relativo per il collegamento a un altro file all'interno dello stesso docset. La sintassi di un percorso relativo è la seguente:
 
-```markdown
+```md
 [link text](../../folder/filename.md)
 ```
 
@@ -154,7 +141,7 @@ Dove `../` indica un livello superiore nella gerarchia.
 
 ### <a name="site-relative-links-to-other-files-on-docs"></a>Collegamenti relativi di siti ad altri file in Docs
 
-```markdown
+```md
 [Azure and Linux](/articles/virtual-machines/linux/overview)
 ```
 
@@ -162,7 +149,7 @@ Non includere l'estensione file md. In questo modo si crea il collegamento al fi
 
 ### <a name="links-to-external-sites"></a>Collegamenti a siti esterni
 
-```markdown
+```md
 [Microsoft](https://www.microsoft.com)
 ```
 
@@ -172,13 +159,13 @@ Collegamento basato su URL a un'altra pagina Web. Deve includere https://.
 
 Collegamento segnalibro a un titolo in un altro file all'interno dello stesso repository. Ad esempio:
 
-```markdown
+```md
 [Managed Disks](../../linux/overview.md#managed-disks)
 ```
 
 Collegamento segnalibro a un titolo nel file corrente:
 
-```markdown
+```md
 [Managed Disks](#managed-disks)
 ```
 
@@ -197,7 +184,7 @@ I collegamenti di ancoraggio esplicito che usano il tag HTML `<a>` **non sono n�
 
 Per il collegamento ad ancoraggi espliciti, usare la sintassi seguente:
 
-```markdown
+```md
 To go to a section on the same page:
 [text](#AnchorText)
 
@@ -258,7 +245,7 @@ Per creare un elenco numerato è possibile usare tutti 1, che dopo la pubblicazi
 
 Non usare le lettere negli elenchi, neppure negli elenchi annidati. Non vengono visualizzati correttamente quando vengono pubblicati in Docs. Gli elenchi annidati che usano i numeri vengono visualizzati con lettere minuscole quando vengono pubblicati. Ad esempio:
 
-```markdown
+```md
 1. This is
 1. a parent numbered list
    1. and this is
@@ -278,7 +265,7 @@ Il rendering è il seguente:
 
 Per creare un elenco puntato, usare `-` seguito da uno spazio all'inizio di ogni linea:
 
-```markdown
+```md
 - This is
 - a parent bulleted list
   - and this is
@@ -298,7 +285,7 @@ Il rendering è il seguente:
 
 Gli elenchi di controllo possono essere usati solo in docs.microsoft.com tramite un'estensione Markdown personalizzata:
 
-```markdown
+```md
 > [!div class="checklist"]
 > * List item 1
 > * List item 2
@@ -321,14 +308,14 @@ Usare elenchi di controllo all'inizio o alla fine di un articolo per riepilogare
 
 La sintassi è la seguente:
 
-```markdown
+```md
 > [!div class="nextstepaction"]
 > [button text](link to topic)
 ```
 
 Ad esempio:
 
-```markdown
+```md
 > [!div class="nextstepaction"]
 > [Learn about basic style](style-quick-start.md)
 ```
@@ -433,7 +420,7 @@ Il rendering del testo Markdown della citazione precedente sarà il seguente:
 
 Il metodo più semplice per creare una tabella in Markdown consiste nell'uso di barre verticali e linee. Per creare una tabella standard con un titolo, la prima linea deve essere seguita da una linea tratteggiata:
 
-```markdown
+```md
 |This is   |a simple   |table header|
 |----------|-----------|------------|
 |table     |data       |here        |
@@ -449,7 +436,7 @@ Il rendering è il seguente:
 
 È anche possibile creare una tabella senza un titolo. Ad esempio, per creare un elenco con più colonne:
 
-```markdown
+```md
 |   |   |
 | - | - |
 | This | table |
@@ -465,7 +452,7 @@ Il rendering è il seguente:
 
 È possibile allineare le colonne usando i due punti:
 
-```markdown
+```md
 |                  |
 |------------------|
 |    right aligned:|
@@ -495,7 +482,7 @@ Se si crea una tabella in Markdown, la tabella potrebbe espandersi fino alla bar
 
 Ecco un esempio di tabella Markdown con tre righe per le quali il ritorno a capo verrà gestito con `div` con il nome di classe `mx-tdBreakAll`.
 
-```markdown
+```md
 > [!div class="mx-tdBreakAll"]
 > |Name|Syntax|Mandatory for silent installation?|Description|
 > |-------------|----------|---------|---------|
@@ -541,13 +528,13 @@ Attualmente Docs può supportare la pubblicazione di video in tre posizioni:
 
 È possibile incorporare un video con la sintassi seguente e Docs ne eseguirà il rendering.
 
-```markdown
+```md
 > [!VIDEO <embedded_video_link>]
 ```
 
 Esempio:
 
-```markdown
+```md
 > [!VIDEO https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player]
 
 > [!VIDEO https://www.youtube.com/embed/iAtwVM-Z7rY]
@@ -591,6 +578,6 @@ Per caricare nuovi video, è consigliabile attenersi al processo seguente:
 1. Dopo aver recuperato il collegamento video, chiudere l'elemento di lavoro.
 1. Il collegamento video può essere quindi aggiunto al post usando la sintassi seguente:
 
-   ```markdown
+   ```md
    > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
    ```
