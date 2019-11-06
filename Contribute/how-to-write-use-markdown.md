@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: c823e086ba61e7ddfe643da13afc8597e5ea280c
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: ffc44f07929890ef17b3878ba389dfeea82691a6
+ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288410"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592482"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Come usare Markdown per scrivere articoli di Docs
 
@@ -23,7 +23,7 @@ Gli articoli di [docs.microsoft.com](https://docs.microsoft.com) sono scritti in
 
 Per creare un titolo, usare il segno di cancelletto (#), come segue:
 
-```markdown
+```md
 # This is heading 1
 ## This is heading 2
 ### This is heading 3
@@ -42,19 +42,19 @@ Le intestazioni di secondo livello generano il sommario della sezione "In questo
 
 Per applicare il formato **grassetto** al testo, racchiuderlo tra due coppie asterischi:
 
-```markdown
+```md
 This text is **bold**.
 ```
 
 Per applicare il formato *corsivo* al testo, racchiuderlo tra due asterischi:
 
-```markdown
+```md
 This text is *italic*.
 ```
 
 Per applicare il formato ***grassetto e corsivo*** al testo, racchiuderlo tra due coppie di tre asterischi:
 
-```markdown
+```md
 This is text is both ***bold and italic***.
 ```
 
@@ -62,7 +62,7 @@ This is text is both ***bold and italic***.
 
 Per creare citazioni, si usa il carattere `>`:
 
-```markdown
+```md
 > The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
 ```
 
@@ -76,7 +76,7 @@ Ecco il rendering dell'esempio precedente:
 
 Per formattare un elenco puntato non ordinato, si possono usare asterischi o trattini. Il testo Markdown seguente, ad esempio:
 
-```markdown
+```md
 - List item 1
 - List item 2
 - List item 3
@@ -90,7 +90,7 @@ verrà rappresentato nel modo seguente:
 
 Per annidare un elenco all'interno di un altro elenco, far rientrare gli elementi dell'elenco figlio. Il testo Markdown seguente, ad esempio:
 
-```markdown
+```md
 - List item 1
   - List item A
   - List item B
@@ -108,7 +108,7 @@ verrà rappresentato nel modo seguente:
 
 Per formattare un elenco ordinato in più passaggi, usare i numeri corrispondenti. Il testo Markdown seguente, ad esempio:
 
-```markdown
+```md
 1. First instruction
 1. Second instruction
 1. Third instruction
@@ -122,7 +122,7 @@ verrà rappresentato nel modo seguente:
 
 Per annidare un elenco all'interno di un altro elenco, far rientrare gli elementi dell'elenco figlio. Il testo Markdown seguente, ad esempio:
 
-```markdown
+```md
 1. First instruction
    1. Sub-instruction
    1. Sub-instruction
@@ -144,7 +144,7 @@ Le tabelle non fanno parte della specifica Markdown principale, ma sono supporta
 
 Il testo Markdown seguente, ad esempio:
 
-```markdown
+```md
 | Fun                  | With                 | Tables          |
 | :------------------- | -------------------: |:---------------:|
 | left-aligned column  | right-aligned column | centered column |
@@ -322,33 +322,26 @@ In generale è consigliabile usare i blocchi per le note sporadicamente, perché
 
 Esempi:
 
-```markdown
+```md
 > [!NOTE]
-> This is a NOTE
-
-> [!WARNING]
-> This is a WARNING
+> Information the user should notice even if skimming.
 
 > [!TIP]
-> This is a TIP
+> Optional information to help a user be more successful.
 
 > [!IMPORTANT]
-> This is IMPORTANT
+> Essential information required for user success.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
+> [!WARNING]
+> Dangerous certain consequences of an action.
 ```
 
-Il rendering è il seguente:
+L'aspetto degli avvisi in docs.microsoft.com è il seguente:
 
-> [!NOTE]
-> This is a NOTE
-
-> [!WARNING]
-> This is a WARNING
-
-> [!TIP]
-> This is a TIP
-
-> [!IMPORTANT]
-> This is IMPORTANT
+![mostra l'aspetto degli avvisi dell'esempio precedente nella pagina di Docs pubblicata con icone e colori diversi](media/alerts-rendering.png)
 
 ### <a name="include-files"></a>File di inclusione
 
@@ -373,7 +366,7 @@ Di seguito sono elencati i requisiti e le considerazioni per i file di inclusion
 
 Esempio:
 
-```markdown
+```md
 [!INCLUDE[sample include file](../includes/sampleinclude.md)]
 ```
 
@@ -385,7 +378,7 @@ Poiché lo stesso selettore Markdown viene aggiunto in ogni articolo della selez
 
 Di seguito viene illustrato un esempio di selettore:
 
-```markdown
+```md
 > [!div class="op_single_selector"]
 - [macOS](../docs/core/tutorials/using-on-macos.md)
 - [Windows](../docs/core/tutorials/with-visual-studio.md)
@@ -406,13 +399,13 @@ Markdig supporta l'inclusione avanzata di codice in un articolo, tramite l'esten
 
 Il testo alternativo che contiene caratteri di sottolineatura non viene visualizzato correttamente. Ad esempio, invece di questa formattazione:
 
-```markdown
+```md
 ![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 Usare caratteri di escape per i caratteri di sottolineatura come in questo esempio:
 
-```markdown
+```md
 ![ADextension\_2FA\_Configure\_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
