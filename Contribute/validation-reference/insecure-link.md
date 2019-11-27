@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 10/1/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: c22404e624ae85369d7b0b95f44e37d51f847368
-ms.sourcegitcommit: ab31cbb17c64a06cab4ffb37b157fd812417a499
+ms.openlocfilehash: 4735d47cdf2029d2c613c9b333a393c7d978c58e
+ms.sourcegitcommit: 423d9b8145a11426c91f45510b2d77319838eb27
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72587687"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74528856"
 ---
 # <a name="insecure-link"></a>insecure-link
 
@@ -28,7 +28,11 @@ Questo messaggio indica che è stato usato un collegamento Markdown esplicito co
 
 Modificare tutti gli URL di siti Microsoft in modo da usare `https` anziché `http`.
 
-Se il collegamento è un URL non elaborato, modificarlo in un collegamento Markdown esplicito che inizia con `https`.
+Se il collegamento è un URL non elaborato, modificarlo in un collegamento Markdown esplicito che inizia con `https`, ad esempio:
+
+```md
+`[www.microsoft.com](https://www.microsoft.com)`.
+```
 
 > [!TIP]
 > L'estensione Docs Markdown per VS Code include uno script di pulizia per i collegamenti Microsoft. Lo script controlla tutti i collegamenti ai siti Microsoft in un repository per assicurarsi che inizino con `https` anziché `http` e non contengano il codice delle impostazioni locali, ad esempio `en-us`. Per eseguire lo script:
@@ -36,6 +40,12 @@ Se il collegamento è un URL non elaborato, modificarlo in un collegamento Markd
 > 1. Installare l'estensione [Docs Markdown ](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-markdown) per VS Code.
 > 1. Premere ALT+M per aprire il menu Markdown.
 > 1. Selezionare **Cleanup** (Pulizia) e quindi **Microsoft links** (Collegamenti Microsoft).
+
+In alcuni casi, potrebbe essere necessario documentare gli indirizzi Web, ad esempio i nomi di dominio completi, che non sono destinati a essere collegamenti selezionabili tramite clic. È necessario applicare lo stile di codice inline, ad esempio:
+
+```md
+`www.microsoft.com:90`
+```
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
