@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: ffc44f07929890ef17b3878ba389dfeea82691a6
-ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
+ms.openlocfilehash: 1f43cecb450c988e4f546aa5ecc5907061521f34
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592482"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188296"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Come usare Markdown per scrivere articoli di Docs
 
@@ -196,7 +196,7 @@ I blocchi di codice delimitati sono un modo semplice per abilitare l'evidenziazi
     ...
     ```
 
-L'alias dopo i tre apici inversi iniziali '`' definisce l'evidenziazione della sintassi da usare. L'elenco seguente include i linguaggi di programmazione di uso comune nel contenuto Docs e l'etichetta corrispondente:
+L'alias dopo i tre apici inversi iniziali (\`) definisce l'evidenziazione della sintassi da usare. L'elenco seguente include i linguaggi di programmazione di uso comune nel contenuto Docs e l'etichetta corrispondente:
 
 Questi linguaggi supportano nomi descrittivi e la maggior parte ha la funzione di evidenziazione del linguaggio.
 
@@ -230,6 +230,7 @@ Questi linguaggi supportano nomi descrittivi e la maggior parte ha la funzione d
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
+|protobuf|protobuf|
 |PowerApps (separatore decimale punto)|powerapps-dot|
 |PowerApps (separatore decimale virgola)|powerapps-comma|
 |PowerShell|powershell|
