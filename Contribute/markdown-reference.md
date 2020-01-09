@@ -7,12 +7,12 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: a5ff6c5122a08d2b611fd6b0344a6f5740d93928
-ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
+ms.openlocfilehash: 452cbf97db748532ae2b0e09b4bb558c8f757a61
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592554"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188265"
 ---
 # <a name="markdown-reference"></a>Informazioni di riferimento a Markdown
 
@@ -73,7 +73,7 @@ Docs supporta sei livelli di intestazioni Markdown:
 - Ogni file Markdown deve avere esclusivamente un elemento H1.
 - L'elemento H1 deve essere il primo contenuto nel file dopo il blocco di metadati YML.
 - Gli elementi H2 vengono visualizzati automaticamente nel menu di spostamento a destra del file pubblicato. Non esistono titoli di livello inferiore. Usare gli H2 in modo strategico per consentire agli utenti di navigare il contenuto.
-- I titoli HMTL, ad esempio `<h1>`, non sono consigliati e in alcuni casi generano avvisi di compilazione.
+- I titoli HTML, ad esempio `<h1>`, non sono consigliati e in alcuni casi generano avvisi di compilazione.
 - È possibile creare un collegamento a singoli titoli in un file usando i [segnalibri](#bookmark-links).
 
 ## <a name="html"></a>HTML
@@ -178,7 +178,7 @@ Ad esempio, se il nome del titolo è "2.2 Preoccupazioni sulla sicurezza", il te
 
 ### <a name="explicit-anchor-links"></a>Collegamenti di ancoraggio esplicito
 
-I collegamenti di ancoraggio esplicito che usano il tag HTML `<a>` **non sono né necessari né consigliati** tranne in pagine hub e pagine di destinazione. Usare i segnalibri in file Markdown generali, come descritto in precedenza. In caso di pagine hub e pagine di destinazione, usare gli ancoraggi come descritto di seguito:
+I collegamenti di ancoraggio esplicito che usano il tag HTML `<a>`**non sono né necessari né consigliati** tranne in pagine hub e pagine di destinazione. Usare i segnalibri in file Markdown generali, come descritto in precedenza. In caso di pagine hub e pagine di destinazione, usare gli ancoraggi come descritto di seguito:
 
 `## <a id="AnchorText"> </a>Header text` oppure `## <a name="AnchorText"> </a>Header text`
 

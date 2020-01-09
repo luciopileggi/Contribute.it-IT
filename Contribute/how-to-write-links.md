@@ -7,15 +7,16 @@ ms.custom: external-contributor-guide
 author: gewarren
 ms.author: gewarren
 ms.date: 10/31/2018
-ms.openlocfilehash: 69371cd201d156b2d0ce5e3e38527d77baca5a8a
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 970f80b4e6ce795e0e2f15192d31680d7de6d35b
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288580"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188332"
 ---
-# <a name="using-links-in-documentation"></a>Uso di collegamenti nella documentazione
-Questo articolo descrive come usare collegamenti ipertestuali da pagine ospitate in docs.microsoft.com. È facile aggiungere collegamenti all'interno di markdown, con alcune convenzioni. I collegamenti possono indirizzare gli utenti a contenuto all'interno della stessa pagina, ad altre pagine vicine o a siti e URL esterni.
+# <a name="use-links-in-documentation"></a>Usare collegamenti nella documentazione
+
+Questo articolo descrive come usare collegamenti ipertestuali da pagine ospitate in docs.microsoft.com. È facile aggiungere collegamenti all'interno di markdown, con alcune convenzioni. I collegamenti possono indirizzare gli utenti a contenuto all'interno della stessa pagina, in altre pagine vicine o in siti e URL esterni.
 
 Il back-end del sito docs.microsoft.com usa i servizi OPS (Open Publishing Service) che supportano il Markdown conforme a [CommonMark](https://commonmark.org/) analizzato tramite il motore di analisi [Markdig](https://github.com/lunet-io/markdig). Questa versione di Markdown è per lo più compatibile con [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), perché la maggior parte dei documenti viene archiviata in GitHub dove può essere modificata. Altre funzionalità vengono aggiunte tramite le estensioni per Markdown.
 
@@ -43,28 +44,35 @@ Le parole che vengono incluse nel testo del collegamento devono essere semplici.
 
 ## <a name="links-from-one-article-to-another"></a>Collegamenti da un articolo a un altro
 
-Per creare un collegamento inline da un articolo tecnico di Docs a un altro articolo tecnico di Docs all'interno dello stesso docset, usare la sintassi seguente per i collegamenti:
+Per creare un collegamento inline da un articolo tecnico di Docs a un altro articolo tecnico di Docs all'interno dello stesso *docset*, usare la sintassi seguente per i collegamenti:
 
-- Un articolo in una directory si collega a un altro articolo nella stessa directory:
+- Un articolo si collega a un altro articolo nella stessa directory:
 
   `[link text](article-name.md)`
 
-- Un articolo si collega da una sottodirectory a un articolo nella directory radice:
+- Un articolo si collega a un articolo nella directory padre della directory corrente:
 
   `[link text](../article-name.md)`
 
-- Un articolo nella directory radice si collega a un articolo in una sottodirectory:
+- Un articolo si collega a un articolo in una sottodirectory della directory corrente:
 
-  `[link text](./directory/article-name.md)`
+  `[link text](directory/article-name.md)`
 
-- Un articolo in una sottodirectory si collega a un articolo in un'altra sottodirectory:
+- Un articolo si collega a un articolo in una sottodirectory della directory padre della directory corrente:
 
   `[link text](../directory/article-name.md)`
 
-- Un articolo che si collega a più docset (anche se nello stesso repository):  `[link text](./directory/article-name)`
+> [!NOTE]
+> Nessuno degli esempi precedenti usa `~/` come parte del collegamento. Per creare un collegamento a un percorso assoluto che inizia dalla radice del repository, iniziare il collegamento con `/`. Quando ci si sposta nei repository di origine in GitHub, l'inserimento di `~/` genera collegamenti non validi. Iniziare il percorso con `/` risolve correttamente il problema.
 
-> [!IMPORTANT]
-> Nessuno degli esempi precedenti utilizza `~/` come parte del collegamento. Se ci si collega a un percorso alla radice del repository, iniziare con `/`. Quando ci si sposta nei repository di origine in GitHub, l'inserimento di `~/` genera collegamenti non validi. Iniziare il percorso con `/` risolve correttamente il problema.
+Per creare un collegamento a un articolo in un altro docset, anche se il file si trova nello stesso repository, usare la sintassi seguente:
+
+`[link text](/docset-root/directory/article-name)`
+   
+Ad esempio, se un articolo il cui URL radice è `https://docs.microsoft.com/dotnet` si collega a un articolo il cui URL radice è `https://docs.microsoft.com/visualstudio`, il collegamento sarà `[link text](/visualstudio/directory/article-name)`.
+
+> [!TIP]
+> Gli articoli nello stesso *docset* hanno lo stesso frammento di URL dopo "docs.microsoft.com". Ad esempio, `https://docs.microsoft.com/dotnet/core/get-started` e `https://docs.microsoft.com/dotnet/framework/install` si trovano nello stesso docset e `https://docs.microsoft.com/dotnet/core/get-started` e `https://docs.microsoft.com/visualstudio/whats-new` si trovano in docset diversi.
 
 ## <a name="links-to-anchors"></a>Collegamenti agli ancoraggi
 
@@ -75,12 +83,7 @@ Non è necessario creare ancoraggi. Vengono generati automaticamente in fase di 
   `[link](#the-text-of-the-H2-section-separated-by-hyphens)`
   `[Create cache](#create-cache)`
 
-- Per impostare un collegamento a un ancoraggio in un altro articolo nella stessa sottodirectory:
-
-  `[link text](article-name.md#anchor-name)`
-  `[Configure your profile](media-services-create-account.md#configure-your-profile)`
-
-- Per impostare un collegamento a un ancoraggio nella sottodirectory di un altro servizio:
+- Per impostare un collegamento a un ancoraggio in un altro articolo:
 
   `[link text](../directory/article-name.md#anchor-name)`
   `[Configure your profile](../directory/media-services-create-account.md#configure-your-profile)`
@@ -147,10 +150,6 @@ Per un'esperienza utente ottimale, è consigliabile evitare il più possibile i 
 - **Passaggi successivi**: è appropriato aggiungere un collegamento, ad esempio a un blog MVP, nella sezione "Passaggi successivi". Anche in questo caso, assicurarsi che gli utenti capiscano che stanno per passare a un altro sito.
 - **Informazioni legali**: la copertura legale Microsoft è disponibile in **Collegamenti a siti di Terzi** nel piè di pagina **Condizioni per l'utilizzo** in tutte le pagine di ms.com.
 
-## <a name="links-to-msdn-or-technet"></a>Collegamenti a MSDN o TechNet
-
-Quando è necessario inserire un collegamento a MSDN o TechNet, usare il collegamento completo all'argomento rimuovendo l'indicatore della lingua delle impostazioni locali "it-it" dal collegamento.
-
 ## <a name="links-to-azure-powershell-reference-content"></a>Collegamenti a contenuto di riferimento di Azure PowerShell
 
 Il contenuto di riferimento di Azure PowerShell è stato sottoposto a numerose modifiche da novembre 2016. Usare le linee guida seguenti per aggiungere collegamenti a questo contenuto da altri articoli in docs.microsoft.com.
@@ -174,18 +173,15 @@ La parte `<moniker-name>` è facoltativa. Se omessa, si verrà indirizzati alla 
 
 Quando si usano questi URL si verrà indirizzati alla versione più recente del contenuto. In questo modo non è necessario specificare un moniker di versione. E non si avranno collegamenti a contenuto concettuale che dovranno essere aggiornati in seguito a modifiche di versione.
 
-Per creare il collegamento corretto, trovare la pagina a cui collegarsi nel browser e copiare l'URL.
-Rimuovere quindi `https://docs.microsoft.com` e le informazioni delle impostazioni locali.
-
-Per i collegamenti da un sommario, è necessario usare l'URL completo senza le informazioni delle impostazioni locali.
+Per creare il collegamento corretto, trovare la pagina a cui collegarsi nel browser, copiare l'URL e quindi rimuovere il codice delle impostazioni locali, ad esempio **en-US**.
 
 Markdown di esempio:
 
 ```markdown
-[Get-AzureRmResourceGroup](/powershell/module/azurerm.resources/get-azurermresourcegroup)
-[Get-AzureRmResourceGroup](/powershell/module/azurerm.resources/get-azurermresourcegroup?view=azurermps-4.1.0)
-[New-AzureVM](/powershell/module/azure/new-azurevm?view=azuresmps-4.0.0)
-[New-AzureRmVM](/powershell/module/azurerm.compute/new-azurermvm)
-[Install Azure PowerShell for Service Management](/powershell/azure/servicemanagement/install-azurerm-ps)
-[Install Azure PowerShell](/powershell/azure/install-azurerm-ps)
+[Get-AzureRmResourceGroup](https://docs.microsoft.com/powershell/module/azurerm.resources/get-azurermresourcegroup)
+[Get-AzureRmResourceGroup](https://docs.microsoft.com/powershell/module/azurerm.resources/get-azurermresourcegroup?view=azurermps-4.1.0)
+[New-AzureVM](https://docs.microsoft.com/powershell/module/azure/new-azurevm?view=azuresmps-4.0.0)
+[New-AzureRmVM](https://docs.microsoft.com/powershell/module/azurerm.compute/new-azurermvm)
+[Install Azure PowerShell for Service Management](https://docs.microsoft.com/powershell/azure/servicemanagement/install-azurerm-ps)
+[Install Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-azurerm-ps)
 ```
