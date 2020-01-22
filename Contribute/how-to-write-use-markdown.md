@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: 1f43cecb450c988e4f546aa5ecc5907061521f34
-ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
+ms.openlocfilehash: 086972acaef9647709fbe43f07c07abde71c7d9f
+ms.sourcegitcommit: fd92198ec2d0ce2d6687b6f1521a82b3fefc60e0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "75188296"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111057"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Come usare Markdown per scrivere articoli di Docs
 
@@ -389,10 +389,312 @@ Per un esempio di selettori attivi, vedere la [documentazione di Azure](https://
 
 ### <a name="code-include-references"></a>Riferimenti di inclusione di codice
 
-Markdig supporta l'inclusione avanzata di codice in un articolo, tramite l'estensione per i frammenti di codice. Sono disponibili opzioni di rendering avanzate basate sulle funzionalità di GFM, come la scelta del linguaggio di programmazione e la colorazione della sintassi, oltre a funzionalità interessanti come:
+L'estensione Markdown per i frammenti di codice Docs consente di incorporare esempi di codice negli articoli e di eseguirne il rendering con colorazione della sintassi specifica del linguaggio. È possibile includere codice dal repository corrente o da un altro repository. Nelle istruzioni riportate di seguito viene fornita una panoramica di come usare la funzionalità con [docs.microsoft.com Authoring Pack](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack). In Visual Studio Code è possibile visualizzare l'anteprima dei frammenti di codice aprendo **Anteprima**. L'evidenziazione e l'interattività non sono disponibili nell'anteprima.
 
-- Inclusione di esempi di codice/frammenti di codice centralizzati da un repository esterno.
-- Interfaccia utente a schede per visualizzare più versioni degli esempi di codice in linguaggi diversi.
+> [!NOTE]
+> L'estensione non supporta l'inclusione del contenuto del codice inline. Questa operazione deve essere eseguita tramite la convenzione Markdown standard con triplo apice.
+
+#### <a name="code-from-current-repository"></a>Codice dal repository corrente
+
+1. In Visual Studio Code fare clic su **ALT+M** o **Opzione+M** e selezionare Snippet (Frammento).
+2. Dopo aver selezionato Snippet (Frammento) verrà richiesto di selezionare Full Search (Ricerca completa), Scoped Search (Ricerca con ambito) o Cross-Repository Reference (Riferimento tra repository). Per eseguire la ricerca in locale, selezionare Full Local Search (Ricerca locale completa).
+3. Immettere un termine di ricerca per trovare il file. Dopo aver trovato il file, selezionarlo.
+4. Selezionare quindi un'opzione per determinare le righe di codice da includere nel frammento. Le opzioni disponibili sono: **ID**, **Range** (Intervallo) e **None** (Nessuna).
+5. In base alla selezione effettuata nel passaggio 4, fornire un valore se necessario.
+
+Visualizzare l'intero file di codice:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs":::
+```
+
+Visualizzare una parte di un file di codice specificando i numeri di riga:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+```
+
+Visualizzare una parte di un file di codice in base a un nome di frammento:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" id="snippet_Create":::
+```
+
+#### <a name="code-from-another-repository"></a>Codice da un altro repository
+
+1. In Visual Studio Code fare clic su **ALT+M** o **Opzione+M** e selezionare Snippet (Frammento).
+2. Dopo aver selezionato Snippet (Frammento) verrà richiesto di selezionare Full Search (Ricerca completa), Scoped Search (Ricerca con ambito) o Cross-Repository Reference (Riferimento tra repository). Per eseguire la ricerca tra repository, selezionare Cross-Repository Reference (Riferimento tra repository).
+3. Verrà fornita una selezione di repository disponibili in *.openpublishing.publish.config.json*. Selezionare un repository.
+3. Immettere un termine di ricerca per trovare il file. Dopo aver trovato il file, selezionarlo.
+4. Selezionare quindi un'opzione per determinare le righe di codice da includere nel frammento. Le opzioni disponibili sono: **ID**, **Range** (Intervallo) e **None** (Nessuna).
+5. In base alla selezione effettuata nel passaggio 5, fornire un valore se necessario.
+
+Il riferimento al frammento di codice sarà simile al seguente:
+
+```markdown
+:::code language="csharp" source="~/samples-durable-functions/samples/csx/shared/Location.csx" highlight="2,5":::
+```
+
+#### <a name="path-to-code-file"></a>Percorso del file di codice
+
+Esempio:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+```
+
+L'esempio è tratto dal repository docs ASP.NET, file dell'articolo [aspnetcore/data/ef-mvc/crud.md](https://github.com/aspnet/Docs/blob/master/aspnetcore/data/ef-mvc/crud.md). Si fa riferimento al file di codice tramite un percorso relativo a [aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs](https://github.com/aspnet/Docs/blob/master/aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs) nello stesso repository.
+
+#### <a name="selected-line-numbers"></a>Numeri di riga selezionati
+
+Esempio:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+```
+
+Questo esempio mostra solo le righe 2-24 e 26 del file di codice *StudentController.cs*.
+
+Preferire i riferimenti a frammenti di codice piuttosto che a numeri di riga hardcoded, come spiegato nella sezione successiva.
+
+#### <a name="named-snippet"></a>Frammento di codice denominato
+
+Esempio:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" id="snippet_Create":::
+```
+
+Usare solo lettere e caratteri di sottolineatura per il nome.
+
+L'esempio mostra la sezione `snippet_Create` del file di codice. Il file di codice per questo esempio include un'area C# denominata `snippet_Create`:
+
+```cs
+// code excluded from the snippet
+// <snippet_Create>
+// code included in the snippet
+// </snippet_Create>
+// code excluded from the snippet
+```
+
+Quando possibile, fare riferimento a una sezione denominata piuttosto che specificare numeri di riga. I riferimenti ai numeri di riga sono precari perché i file di codice inevitabilmente cambiano in modi che comportano anche la modifica dei numeri di riga.
+Non si riceve necessariamente notifica di queste modifiche e nell'articolo iniziano a essere visualizzate le righe sbagliate senza alcuna indicazione di cosa è cambiato.
+
+#### <a name="highlighting-selected-lines"></a>Evidenziazione delle righe selezionate
+
+Esempio:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26" highlight="2,5":::
+```
+
+Nell'esempio vengono evidenziate le righe 2 e 5, a partire dall'inizio del frammento visualizzato. (I numeri di riga da evidenziare non vengono conteggiati dall'inizio del file di codice.) In altre parole, vengono evidenziate le righe 3 e 6 del file di codice.
+
+#### <a name="interactive-code-snippets"></a>Frammenti di codice interattivi
+
+È possibile abilitare la modalità interattiva per i frammenti di codice inclusi per riferimento. Ecco alcuni esempi:
+
+```markdown
+:::code language="powershell" source="PowerShell.ps1" interactive="cloudshell-powershell":::
+```
+
+```markdown
+:::code language="bash" source="Bash.sh" interactive="cloudshell-bash":::
+```
+
+Per attivare questa funzionalità per un blocco di codice specifico, usare l'attributo `interactive`. I valori disponibili per l'attributo sono:
+
+- `cloudshell-powershell` - Abilita Azure PowerShell Cloud Shell, come nell'esempio precedente
+- `cloudshell-bash` - Abilita Azure Cloud Shell
+- `try-dotnet` -Abilita Try .NET
+- `try-dotnet-class` -Abilita Try .NET con scaffolding delle classi
+- `try-dotnet-method` -Abilita Try .NET con scaffolding dei metodi
+
+Sono disponibili coppie di `language` e `interactive` compatibili. Ad esempio, se `interactive` è `try-dotnet`, il linguaggio deve essere `csharp`. Analogamente, `cloudshell-powershell` funzionerebbe solo con `powershell` e `cloudshell-bash` funzionerebbe solo con `bash` come linguaggio.
+
+Per Azure Cloud Shell e PowerShell Cloud Shell, gli utenti possono eseguire i comandi solo con l'account personale di Azure.
+
+[Try .NET](https://github.com/dotnet/try) consente l'esecuzione interattiva di codice .NET (C#) nel browser. Per Try .NET sono disponibili tre opzioni per l'interattività: `try-dotnet`, `try-dotnet-class` e `try-dotnet-method`. L'uso di queste opzioni non richiede alcuna configurazione aggiuntiva all'interno del frammento di codice. Gli spazi dei nomi attualmente disponibili per impostazione predefinita sono:
+
+- System
+- System.Linq
+- System.Collections.Generic
+- System.Text
+- System.Globalization
+- System.Text.RegularExpressions
+
+Il valore dell'attributo `try-dotnet` consente agli utenti di eseguire codice C# nel browser senza che sia necessario eseguirne il wrapping in codice personalizzato.
+
+Esempio:
+
+```md
+:::code language="csharp" source="relative/path/source.cs" interactive="try-dotnet":::
+```
+
+Il valore `try-dotnet-class` applica lo scaffolding a livello di classi al codice passato al componente interattivo.
+
+```md
+:::code language="csharp" source="relative/path/source.cs" id="snippet-tag" interactive="try-dotnet-class":::
+```
+
+Esempio:
+
+Frammento di codice senza scaffolding delle classi applicato
+
+```md
+public static void Main()
+    {  
+        // Specify the data source.  
+        int[] scores = new int[] { 97, 92, 81, 60 };        // Define the query expression.
+
+        IEnumerable<int> scoreQuery =
+            from score in scores  
+            where score > 80  
+            select score;
+
+        // Execute the query.  
+        foreach (int i in scoreQuery)
+        {  
+            Console.Write(i + " ");
+        }
+    }  
+}
+```
+
+Frammento di codice con scaffolding delle classi applicato
+
+```md
+class NameOfClass {
+
+   public static void Main()
+    {
+        // Specify the data source.
+        int[] scores = new int[] { 97, 92, 81, 60 };
+
+        // Define the query expression.
+        IEnumerable<int> scoreQuery =
+            from score in scores
+            where score > 80
+            select score;
+
+        // Execute the query.
+        foreach (int i in scoreQuery)
+        {
+            Console.Write(i + " ");
+        }
+    }  
+}
+```
+
+Il valore `try-dotnet-method` applica lo scaffolding a livello di metodi al codice passato al componente interattivo.
+
+```md
+:::code language="csharp" source="relative/path/source.cs" id="snippet-tag" interactive="try-dotnet-method":::
+```
+
+Esempio:
+
+Frammento di codice senza scaffolding dei metodi applicato
+
+```md
+/*Print some string in C#*/
+
+Console.WriteLine("Hello C#.);
+```
+
+Frammento di codice con scaffolding dei metodi applicato
+
+```md
+public static void Main(string args[]) {
+
+/*Print some string in C#*/
+
+Console.WriteLine("Hello C#.);
+}
+```
+
+#### <a name="snippet-syntax-reference"></a>Informazioni di riferimento per la sintassi per i frammenti di codice
+
+Per fare riferimento ai frammenti di codice archiviati nel repository, usare il linguaggio del codice specificato. Il contenuto del percorso di codice specificato verrà espanso e incluso nel file.
+
+Non esistono restrizioni per la struttura delle cartelle dei frammenti di codice. È possibile gestire i frammenti di codice come se fossero codice sorgente normale.
+
+Sintassi:
+
+```md
+:::code language="<language>" source="<path>" <attribute>="<attribute-value>":::
+```
+
+> [!IMPORTANT]
+> Questa sintassi è un'estensione Markdown di blocco e deve essere usata su una riga a sé stante.
+
+- `<language>` (*facoltativo*)
+  - Linguaggio del frammento di codice. Per altre informazioni, vedere la sezione [Linguaggi supportati](#supported-languages) più avanti in questo articolo.
+
+- `<path>` (*obbligatorio*)
+  - Percorso relativo nel file system che indica il file del frammento di codice a cui fare riferimento.
+
+- `<attribute>` e `<attribute-value>` (*facoltativo*)
+  - Usati insieme per specificare come il codice deve essere recuperato dal file:
+    - `range`: `1,3-5` Intervallo di righe. Questo esempio include le righe 1, 3, 4 e 5.
+    - `id`: `snippet_Create` ID del frammento che deve essere inserito dal file di codice. Questo valore non può coesistere con un intervallo.
+    - `highlight`: `2-4,6` Intervallo e/o numero di righe che devono essere evidenziate nel frammento di codice generato. La numerazione è relativa al frammento di codice, non all'intervallo importato.
+    - `interactive`: `cloudshell-powershell`, `cloudshell-bash`, `try-dotnet`, `try-dotnet-class``try-dotnet-method` Valore stringa che determina quali tipi di interattività sono abilitati.
+
+#### <a name="supported-languages"></a>Linguaggi supportati
+
+|Nome|Etichetta Markdown|
+|-----|-------|
+|Interfaccia della riga di comando di .NET Core|`dotnetcli`|
+|ASP.NET con C#|`aspx-csharp`|
+|ASP.NET con VB|`aspx-vb`|
+|Interfaccia della riga di comando di Azure|`azurecli`|
+|Interfaccia della riga di comando di Azure nel browser|`azurecli-interactive`|
+|Azure PowerShell nel browser|`azurepowershell-interactive`|
+|AzCopy|`azcopy`|
+|Bash|`bash`|
+|C++|`cpp`|
+|C#|`csharp`|
+|C# nel browser|`csharp-interactive`|
+|Console|`console`|
+|CSHTML|`cshtml`|
+|DAX|`dax`|
+|Docker|`Dockerfile`|
+|F#|`fsharp`|
+|HTML|`html`|
+|Java|`java`|
+|JavaScript|`javascript`|
+|JSON|`json`|
+|Linguaggio di query Kusto|`kusto`|
+|Markdown|`md`|
+|Objective-C|`objc`|
+|PHP|`php`|
+|PowerShell|`powershell`|
+|Power Query M|`powerquery-m`|
+|protobuf|`protobuf`|
+|Python|`python`|
+|Ruby|`ruby`|
+|SQL|`sql`|
+|Swift|`swift`|
+|VB|`vb`|
+|XAML|`xaml`|
+|XML|`xml`|
+|YAML|`yml`|
+
+#### <a name="code-extensions"></a>Estensioni del codice
+
+|Nome|Etichetta Markdown|Estensione del file|
+|-----|-------|-----|
+|C#|csharp|.cs, .csx|
+|C++|cpp|.cpp, .h|
+|F#|fsharp|.fs|
+|Java|java|.java|
+|JavaScript|javascript|.js|
+|Python|python|.py|
+|SQL|sql|.sql|
+|VB|vb|.vb|
+|XAML|xaml|.xaml|
+|XML|xml|.xml|
 
 ## <a name="gotchas-and-troubleshooting"></a>Problemi e risoluzione
 
