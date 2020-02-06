@@ -20,6 +20,8 @@
       href: markdown-reference.md
     - name: Guida rapida a stile e voce
       href: style-quick-start.md
+    - name: Guida di stile
+      href: /style-guide/
     - name: Collegamenti
       href: how-to-write-links.md
     - name: Docs Authoring Pack
