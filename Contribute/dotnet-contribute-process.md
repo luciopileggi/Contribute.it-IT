@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: e54ade313f026b5ea512c0f783d3f8ad83979390
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 161f831bf3f31428f78d3a828b12b4c9ecaffb0e
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288340"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331769"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>Processo per contribuire alla documentazione di .NET
 
@@ -169,7 +169,7 @@ Se non quando indicato, tutti gli esempi possono essere compilati dalla riga di 
 
 ## <a name="the-c-interactive-experience"></a>Esperienza C# Interactive
 
-Tutti gli esempi inclusi in un articolo usano un [tag di linguaggio](how-to-write-use-markdown.md#code-snippets) per indicare il linguaggio sorgente. Per brevi esempi di codice in C# è possibile usare il tag di linguaggio `csharp-interactive` per specificare un esempio C# eseguito nel browser. (Gli esempi di codice inline usano il tag `csharp-interactive`. Per i frammenti di codice inclusi dall'origine, usare il tag `code-csharp-interactive`.) Questi esempi di codice visualizzano una finestra del codice e una finestra di output nell'articolo. La finestra di output mostra l'eventuale output dell'esecuzione del codice interattivo dopo l'esecuzione dell'esempio da parte dell'utente.
+Tutti gli esempi inclusi in un articolo usano un [tag di linguaggio](code-in-docs.md) per indicare il linguaggio sorgente. Per brevi esempi di codice in C# è possibile usare il tag di linguaggio `csharp-interactive` per specificare un esempio C# eseguito nel browser. (Gli esempi di codice inline usano il tag `csharp-interactive`. Per i frammenti di codice inclusi dall'origine, usare il tag `code-csharp-interactive`.) Questi esempi di codice visualizzano una finestra del codice e una finestra di output nell'articolo. La finestra di output mostra l'eventuale output dell'esecuzione del codice interattivo dopo l'esecuzione dell'esempio da parte dell'utente.
 
 L'esperienza C# Interactive cambia il modo di utilizzare gli esempi. I visitatori possono eseguire l'esempio per visualizzare i risultati. Sono numerosi i fattori che consentono di determinare se l'esempio o il testo corrispondente devono includere informazioni sull'output.
 
