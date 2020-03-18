@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 998ebf90c8a162451dd4ca2e7c8a55833ed9d408
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 8d4d8c572435b9261038017c04dcad78ec83fe67
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288374"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331748"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Modello di metadati e Markdown per i documenti .NET
 
@@ -43,7 +43,7 @@ A ogni articolo sono associati altri metadati, ma in generale la maggior parte d
 
 ## <a name="basic-markdown-gfm-and-special-characters"></a>Nozioni di base su Markdown, GFM e caratteri speciali
 
-Per le nozioni di base su Markdown, GitHub Flavored Markdown (GFM) e sulle estensioni specifiche di OPS, vedere gli articoli generali [Markdown](how-to-write-use-markdown.md) e [Informazioni di riferimento su Markdown per OPS](markdown-reference.md).
+Per le nozioni di base su Markdown, GitHub Flavored Markdown (GFM) e sulle estensioni specifiche per OPS, vedere l'articolo [Informazioni di riferimento su Markdown](markdown-reference.md).
 
 Markdown usa caratteri speciali per la formattazione, quali \*, \` e \#. Se si vuole includere uno di questi caratteri nel contenuto, seguire una di queste due procedure:
 
@@ -126,7 +126,7 @@ Per il collegamento a un tipo generico, ad esempio [System.Collections.Generic.L
 
 ## <a name="code"></a>Codice
 
-Il miglior metodo per includere codice è l'inclusione di frammenti di codice da un esempio funzionante. Creare l'esempio in base alle istruzioni fornite nell'articolo [Contributing to .NET docs](dotnet-contribute-process.md#contributing-to-samples) (Contributo ai documenti .NET). Le regole di base per l'inclusione di codice si trovano nelle indicazioni generali per il [codice](how-to-write-use-markdown.md#code-snippets).
+Il miglior metodo per includere codice è l'inclusione di frammenti di codice da un esempio funzionante. Creare l'esempio in base alle istruzioni fornite nell'articolo [Contributing to .NET docs](dotnet-contribute-process.md#contributing-to-samples) (Contributo ai documenti .NET). Le regole di base per l'inclusione di codice si trovano nelle indicazioni generali per il [codice](code-in-docs.md).
 
 È possibile includere il codice usando la sintassi seguente:
 

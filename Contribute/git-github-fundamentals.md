@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 06/30/2017
-ms.openlocfilehash: 5154b80102069f1d5526b744637f8ba854f1fe3f
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: c099a458718ade11840c314542c530dd6669402d
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288432"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331884"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Concetti di base di Git e GitHub per Docs
 
@@ -61,7 +61,7 @@ Ogni directory di articoli contiene una sottodirectory `/media` per i file multi
 
 L'eventuale contenuto riutilizzabile condiviso da due o più articoli viene posizionato in una sottodirectory `/includes` all'interno della directory `articles` principale. In un file markdown che usa il file di inclusione viene inserita un'estensione Markdown "include" corrispondente nel punto in cui è necessario fare riferimento al file di inclusione.
 
-Vedere [Come usare Markdown: file di inclusione](how-to-write-use-markdown.md#include-files) per informazioni aggiuntive.
+Vedere [Informazioni di riferimento su Markdown: file di inclusione](markdown-reference.md#included-markdown-files) per informazioni aggiuntive.
 
 ### <a name="markdown-file-template"></a>Modello di file markdown
 

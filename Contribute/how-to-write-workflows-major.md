@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/30/2017
-ms.openlocfilehash: 997f313e94e4858f37501736c1ec0be2fa8fd552
-ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
+ms.openlocfilehash: 5231b68f04caa94d3ff2ff26afc38e3218ca06b8
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "75188232"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331907"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>Flusso di lavoro per i contributi a GitHub per le modifiche di rilievo o di lunga durata
 
@@ -110,4 +110,4 @@ A questo punto ci si trova in un nuovo ramo ed è possibile fornire il proprio c
 
 Questo è tutto. È stato completato l'intero flusso di lavoro per fornire il proprio contributo per i contenuti di docs.microsoft.com.
 
-- Per altre informazioni su argomenti come la sintassi per Markdown e le estensioni Markdown, continuare con l'articolo [Informazioni di base per la scrittura](how-to-write-use-markdown.md).
+- Per altre informazioni su argomenti come Markdown e la sintassi delle estensioni di Markdown, proseguire con la lettura dell'articolo [Informazioni di riferimento su Markdown](markdown-reference.md).
