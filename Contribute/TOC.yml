@@ -14,18 +14,40 @@
       href: how-to-write-workflows-major.md
 - name: Informazioni di base per la scrittura
   items:
-    - name: Markdown
-      href: how-to-write-use-markdown.md
     - name: Informazioni di riferimento su Markdown
       href: markdown-reference.md
+      displayName: alerts notes tips important caution warnings apostrophes quotation marks quotes blockquotes bold italic code snippets columns headings html images includes links lists bullets bulleted checklist numbered next steps button localize non-localized section selector superscript subscript table tables tabs tabbed videos icons
     - name: Guida rapida a stile e voce
       href: style-quick-start.md
     - name: Guida di stile
       href: /style-guide/
+    - name: Aggiungere codice agli articoli
+      href: code-in-docs.md
+      displayName: 'backtick, code blocks, inline code blocks, repo snippet reference, !code-, interactive code snippets, programming languages, languages, code extensions, extensions'
+    - name: Formattare testo
+      href: text-formatting-guidelines.md
     - name: Collegamenti
       href: how-to-write-links.md
     - name: Docs Authoring Pack
-      href: how-to-write-docs-auth-pack.md
+      items:
+        - name: Panoramica
+          href: how-to-write-docs-auth-pack.md
+        - name: Funzionalità
+          items:
+            - name: Completamento dei linguaggi di sviluppo
+              href: docs-authoring/dev-lang-completion.md
+            - name: Compressione delle immagini
+              href: docs-authoring/image-compression.md
+            - name: Aggiornamenti dei metadati
+              href: docs-authoring/metadata-updates.md
+            - name: Riformattazione delle tabelle Markdown
+              href: docs-authoring/reformat-table.md
+            - name: Sostituzione delle virgolette curve
+              href: docs-authoring/smart-quote-replacement.md
+            - name: Ordinamento dei reindirizzamenti
+              href: docs-authoring/sort-redirects.md
+            - name: Ordinamento della selezione
+              href: docs-authoring/sort-selection.md
 - name: Materiale sussidiario specifico per set di documentazione
   items:
     - name: Documentazione di .NET

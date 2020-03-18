@@ -3,30 +3,30 @@ title: Informazioni di riferimento su Markdown per docs.microsoft.com
 description: Informazioni sulle funzionalità e sulla sintassi Markdown usate nella piattaforma Microsoft Docs.
 author: meganbradley
 ms.author: mbradley
-ms.date: 05/18/2018
+ms.date: 01/30/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 452cbf97db748532ae2b0e09b4bb558c8f757a61
-ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
+ms.openlocfilehash: 14cc9f0912149eb342c97d0dd7d2776bd54c84e7
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "75188265"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331965"
 ---
-# <a name="markdown-reference"></a><span data-ttu-id="4447f-103">Informazioni di riferimento a Markdown</span><span class="sxs-lookup"><span data-stu-id="4447f-103">Markdown Reference</span></span>
+# <a name="docs-markdown-reference"></a><span data-ttu-id="3bcf2-103">Informazioni di riferimento su Docs Markdown</span><span class="sxs-lookup"><span data-stu-id="3bcf2-103">Docs Markdown reference</span></span>
 
-<span data-ttu-id="4447f-104">Markdown è un semplice linguaggio di markup che usa una sintassi di formattazione in testo normale.</span><span class="sxs-lookup"><span data-stu-id="4447f-104">Markdown is a lightweight markup language with plain text formatting syntax.</span></span> <span data-ttu-id="4447f-105">La piattaforma Docs supporta lo standard CommonMark per Markdown e alcune estensioni Markdown personalizzate progettate per offrire contenuti formattati in docs.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="4447f-105">The Docs platform supports the CommonMark standard for Markdown, plus some custom Markdown extensions designed to provide richer content on docs.microsoft.com.</span></span> <span data-ttu-id="4447f-106">In questo articolo vengono elencati in ordine alfabetico gli elementi necessari per usare Markdown per docs.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="4447f-106">This article provides an alphabetical reference for using Markdown for docs.microsoft.com.</span></span>
+<span data-ttu-id="3bcf2-104">In questo articolo sono elencati in ordine alfabetico gli elementi necessari per scrivere codice Markdown per docs.microsoft.com (Docs).</span><span class="sxs-lookup"><span data-stu-id="3bcf2-104">This article provides an alphabetical reference for writing Markdown for docs.microsoft.com (Docs).</span></span>
 
-<span data-ttu-id="4447f-107">Per creare codice Markdown è possibile usare un qualsiasi editor di testo.</span><span class="sxs-lookup"><span data-stu-id="4447f-107">You can use any text editor to author Markdown.</span></span> <span data-ttu-id="4447f-108">Per un editore che consenta di inserire sia una sintassi Markdown standard sia estensioni Docs personalizzate, è consigliabile usare [VS Code](https://code.visualstudio.com/) con [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack) installato.</span><span class="sxs-lookup"><span data-stu-id="4447f-108">For an editor that facilitates inserting both standard Markdown syntax and custom Docs extensions, we recommend [VS Code](https://code.visualstudio.com/) with the [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack) installed.</span></span>
+<span data-ttu-id="3bcf2-105">[Markdown](https://daringfireball.net/projects/markdown/) è un linguaggio di tipo Lightweight Markup Language (LML) con sintassi di formattazione in testo normale.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-105">[Markdown](https://daringfireball.net/projects/markdown/) is a lightweight markup language with plain text formatting syntax.</span></span> <span data-ttu-id="3bcf2-106">Docs supporta Markdown conforme a [CommonMark](https://commonmark.org/), analizzato tramite il motore di analisi [Markdig](https://github.com/lunet-io/markdig).</span><span class="sxs-lookup"><span data-stu-id="3bcf2-106">Docs supports [CommonMark](https://commonmark.org/) compliant Markdown parsed through the [Markdig](https://github.com/lunet-io/markdig) parsing engine.</span></span> <span data-ttu-id="3bcf2-107">Supporta inoltre estensioni di Markdown personalizzate che offrono una formattazione più avanzata dei contenuti sul sito Docs.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-107">Docs also supports custom Markdown extensions that provide richer content on the Docs site.</span></span>
 
-<span data-ttu-id="4447f-109">Docs usa il motore Markdig per Markdown.</span><span class="sxs-lookup"><span data-stu-id="4447f-109">Docs uses the Markdig Markdown engine.</span></span> <span data-ttu-id="4447f-110">In [https://babelmark.github.io/](https://babelmark.github.io/) è possibile testare il rendering di Markdown in Markdig e in altri motori.</span><span class="sxs-lookup"><span data-stu-id="4447f-110">You can test the rendering of Markdown in Markdig vs. other engines at [https://babelmark.github.io/](https://babelmark.github.io/).</span></span>
+<span data-ttu-id="3bcf2-108">Per scrivere codice Markdown è possibile usare qualsiasi editor di testo, ma è consigliabile [Visual Studio Code](https://code.visualstudio.com/) con [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack).</span><span class="sxs-lookup"><span data-stu-id="3bcf2-108">You can use any text editor to write Markdown, but we recommend [Visual Studio Code](https://code.visualstudio.com/) with the [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack).</span></span> <span data-ttu-id="3bcf2-109">Docs Authoring Pack offre strumenti di modifica e una funzionalità di anteprima che consente di visualizzare l'aspetto che avranno gli articoli quando ne verrà eseguito il rendering in Docs.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-109">The Docs Authoring Pack provides editing tools and preview functionality that lets you see what your articles will look like when rendered on Docs.</span></span>
 
-## <a name="alerts-note-tip-important-caution-warning"></a><span data-ttu-id="4447f-111">Avvisi (nota, suggerimento, informazione importante, attenzione e avviso)</span><span class="sxs-lookup"><span data-stu-id="4447f-111">Alerts (Note, Tip, Important, Caution, Warning)</span></span>
+## <a name="alerts-note-tip-important-caution-warning"></a><span data-ttu-id="3bcf2-110">Avvisi (nota, suggerimento, informazione importante, attenzione e avviso)</span><span class="sxs-lookup"><span data-stu-id="3bcf2-110">Alerts (Note, Tip, Important, Caution, Warning)</span></span>
 
-<span data-ttu-id="4447f-112">Gli avvisi sono un'estensione di Markdown per Docs che consente di creare citazioni per eseguire il rendering in docs.microsoft.com usando colori e icone che indicano il significato del contenuto.</span><span class="sxs-lookup"><span data-stu-id="4447f-112">Alerts are a Docs Markdown extension to create block quotes that render on docs.microsoft.com with colors and icons that indicate the significance of the content.</span></span> <span data-ttu-id="4447f-113">Sono supportati i tipi di avviso seguenti:</span><span class="sxs-lookup"><span data-stu-id="4447f-113">The following alert types are supported:</span></span>
+<span data-ttu-id="3bcf2-111">Per gli avvisi è disponibile un'estensione di Markdown che consente di creare in docs.microsoft.com blocchi di testo in evidenza con colori e icone che indicano il significato del contenuto.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-111">Alerts are a Markdown extension to create block quotes that render on docs.microsoft.com with colors and icons that indicate the significance of the content.</span></span> <span data-ttu-id="3bcf2-112">Sono supportati i tipi di avviso seguenti:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-112">The following alert types are supported:</span></span>
 
-```md
+```markdown
 > [!NOTE]
 > Information the user should notice even if skimming.
 
@@ -43,23 +43,136 @@ ms.locfileid: "75188265"
 > Dangerous certain consequences of an action.
 ```
 
-<span data-ttu-id="4447f-114">L'aspetto degli avvisi in docs.microsoft.com è il seguente:</span><span class="sxs-lookup"><span data-stu-id="4447f-114">These alerts look like this on docs.microsoft.com:</span></span>
+<span data-ttu-id="3bcf2-113">L'aspetto degli avvisi in docs.microsoft.com è il seguente:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-113">These alerts look like this on docs.microsoft.com:</span></span>
 
-![mostra l'aspetto degli avvisi dell'esempio precedente nella pagina di Docs pubblicata con icone e colori diversi](media/alerts-rendering.png)
+> [!NOTE]
+> <span data-ttu-id="3bcf2-114">Information the user should notice even if skimming.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-114">Information the user should notice even if skimming.</span></span>
 
-## <a name="code-snippets"></a><span data-ttu-id="4447f-116">Frammenti di codice</span><span class="sxs-lookup"><span data-stu-id="4447f-116">Code snippets</span></span>
+> [!TIP]
+> <span data-ttu-id="3bcf2-115">Optional information to help a user be more successful.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-115">Optional information to help a user be more successful.</span></span>
 
-<span data-ttu-id="4447f-117">Nei file Markdown è possibile incorporare frammenti di codice:</span><span class="sxs-lookup"><span data-stu-id="4447f-117">You can embed code snippets in your Markdown files:</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="3bcf2-116">Essential information required for user success.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-116">Essential information required for user success.</span></span>
+
+> [!CAUTION]
+> <span data-ttu-id="3bcf2-117">Negative potential consequences of an action.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-117">Negative potential consequences of an action.</span></span>
+
+> [!WARNING]
+> <span data-ttu-id="3bcf2-118">Dangerous certain consequences of an action.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-118">Dangerous certain consequences of an action.</span></span>
+
+### <a name="angle-brackets"></a><span data-ttu-id="3bcf2-119">Parentesi acute</span><span class="sxs-lookup"><span data-stu-id="3bcf2-119">Angle brackets</span></span>
+
+<span data-ttu-id="3bcf2-120">Se nel testo di un file si usano parentesi acute, ad esempio per indicare un segnaposto, è necessario codificarle manualmente.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-120">If you use angle brackets in text in your file--for example, to denote a placeholder--you need to manually encode the angle brackets.</span></span> <span data-ttu-id="3bcf2-121">In caso contrario, Markdown le interpreta come tag HTML.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-121">Otherwise, Markdown thinks that they're intended to be an HTML tag.</span></span>
+
+<span data-ttu-id="3bcf2-122">Ad esempio, codificare `<script name>` come `&lt;script name&gt;` o `\<script name>`.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-122">For example, encode `<script name>` as `&lt;script name&gt;` or `\<script name>`.</span></span>
+
+<span data-ttu-id="3bcf2-123">Le parentesi acute non devono essere precedute da caratteri di escape nel testo formattato come codice inline o nei blocchi di codice.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-123">Angle brackets don't have to be escaped in text formatted as inline code or in code blocks.</span></span>
+
+## <a name="apostrophes-and-quotation-marks"></a><span data-ttu-id="3bcf2-124">Apostrofi e virgolette</span><span class="sxs-lookup"><span data-stu-id="3bcf2-124">Apostrophes and quotation marks</span></span>
+
+<span data-ttu-id="3bcf2-125">Quando si copia da Word in un editor per Markdown, il testo potrebbe contenere apostrofi o virgolette curve,</span><span class="sxs-lookup"><span data-stu-id="3bcf2-125">If you copy from Word into a Markdown editor, the text might contain "smart" (curly) apostrophes or quotation marks.</span></span> <span data-ttu-id="3bcf2-126">che devono essere codificati o modificati in semplici apostrofi o virgolette.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-126">These need to be encoded or changed to basic apostrophes or quotation marks.</span></span> <span data-ttu-id="3bcf2-127">In caso contrario, quando il file viene pubblicato, si ottiene questo risultato: Itâ€™s</span><span class="sxs-lookup"><span data-stu-id="3bcf2-127">Otherwise, you end up with things like this when the file is published: Itâ€™s</span></span>
+
+<span data-ttu-id="3bcf2-128">Queste sono le codifiche per le versioni curve di questi segni di punteggiatura:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-128">Here are the encodings for the "smart" versions of these punctuation marks:</span></span>
+
+- <span data-ttu-id="3bcf2-129">Virgolette (aperte) a sinistra: `&#8220;`</span><span class="sxs-lookup"><span data-stu-id="3bcf2-129">Left (opening) quotation mark: `&#8220;`</span></span>
+- <span data-ttu-id="3bcf2-130">Virgolette (chiuse) a destra: `&#8221;`</span><span class="sxs-lookup"><span data-stu-id="3bcf2-130">Right (closing) quotation mark: `&#8221;`</span></span>
+- <span data-ttu-id="3bcf2-131">Virgoletta singola (chiusa) a destra o apostrofo: `&#8217;`</span><span class="sxs-lookup"><span data-stu-id="3bcf2-131">Right (closing) single quotation mark or apostrophe: `&#8217;`</span></span>
+- <span data-ttu-id="3bcf2-132">Virgoletta singola (aperta) a sinistra (usata raramente): `&#8216;`</span><span class="sxs-lookup"><span data-stu-id="3bcf2-132">Left (opening) single quotation mark (rarely used): `&#8216;`</span></span>
+
+## <a name="blockquotes"></a><span data-ttu-id="3bcf2-133">Citazioni</span><span class="sxs-lookup"><span data-stu-id="3bcf2-133">Blockquotes</span></span>
+
+<span data-ttu-id="3bcf2-134">Per creare citazioni, si usa il carattere `>`:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-134">Blockquotes are created using the `>` character:</span></span>
 
 ```md
-[!code-<language>[<name>](<codepath><queryoption><queryoptionvalue> "<title>")]
+> This is a blockquote. It is usually rendered indented and with a different background color.
 ```
 
-## <a name="headings"></a><span data-ttu-id="4447f-118">Titoli</span><span class="sxs-lookup"><span data-stu-id="4447f-118">Headings</span></span>
+<span data-ttu-id="3bcf2-135">Ecco il rendering dell'esempio precedente:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-135">The preceding example renders as follows:</span></span>
 
-<span data-ttu-id="4447f-119">Docs supporta sei livelli di intestazioni Markdown:</span><span class="sxs-lookup"><span data-stu-id="4447f-119">Docs supports six levels of Markdown headings:</span></span>
+> <span data-ttu-id="3bcf2-136">This is a blockquote.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-136">This is a blockquote.</span></span> <span data-ttu-id="3bcf2-137">It is usually rendered indented and with a different background color.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-137">It is usually rendered indented and with a different background color.</span></span>
 
-```md
+## <a name="bold-and-italic-text"></a><span data-ttu-id="3bcf2-138">Testo in grassetto e corsivo</span><span class="sxs-lookup"><span data-stu-id="3bcf2-138">Bold and italic text</span></span>
+
+<span data-ttu-id="3bcf2-139">Per applicare il formato **grassetto** al testo, racchiuderlo tra due coppie asterischi:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-139">To format text as **bold**, enclose it in two asterisks:</span></span>
+
+```markdown
+This text is **bold**.
+```
+
+<span data-ttu-id="3bcf2-140">Per applicare il formato *corsivo* al testo, racchiuderlo tra due asterischi:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-140">To format text as *italic*, enclose it in a single asterisk:</span></span>
+
+```markdown
+This text is *italic*.
+```
+
+<span data-ttu-id="3bcf2-141">Per applicare il formato ***grassetto e corsivo*** al testo, racchiuderlo tra due coppie di tre asterischi:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-141">To format text as both ***bold and italic***, enclose it in three asterisks:</span></span>
+
+```markdown
+This text is both ***bold and italic***.
+```
+
+## <a name="code-snippets"></a><span data-ttu-id="3bcf2-142">Frammenti di codice</span><span class="sxs-lookup"><span data-stu-id="3bcf2-142">Code snippets</span></span>
+
+<span data-ttu-id="3bcf2-143">Docs Markdown supporta il posizionamento di frammenti di codice sia inline in una frase sia come blocco separato "delimitato" tra due frasi.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-143">Docs Markdown supports the placement of code snippets both inline in a sentence and as a separate "fenced" block between sentences.</span></span> <span data-ttu-id="3bcf2-144">Per altre informazioni, vedere [Come includere codice in Docs](code-in-docs.md).</span><span class="sxs-lookup"><span data-stu-id="3bcf2-144">For more information, see [How to add code to docs](code-in-docs.md).</span></span>
+
+## <a name="columns"></a><span data-ttu-id="3bcf2-145">Colonne</span><span class="sxs-lookup"><span data-stu-id="3bcf2-145">Columns</span></span>
+
+<span data-ttu-id="3bcf2-146">L'estensione di Markdown per le **colonne** consente agli autori di Docs di aggiungere layout di contenuto basati su colonna più flessibili e potenti rispetto alle tabelle Markdown di base, che sono adatte solo ai dati tabulari veri e propri.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-146">The **columns** Markdown extension gives Docs authors the ability to add column-based content layouts that are more flexible and powerful than basic Markdown tables, which are only suited for true tabular data.</span></span> <span data-ttu-id="3bcf2-147">È possibile aggiungere al massimo quattro colonne e usare l'attributo `span` facoltativo per unire due o più colonne.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-147">You can add up to four columns, and use the optional `span` attribute to merge two or more columns.</span></span>
+
+<span data-ttu-id="3bcf2-148">La sintassi per le colonne è la seguente:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-148">The syntax for columns is as follows:</span></span>
+
+```markdown
+:::row:::
+   :::column span="":::
+      Content...
+   :::column-end:::
+   :::column span="":::
+      More content...
+   :::column-end:::
+:::row-end:::
+```
+
+<span data-ttu-id="3bcf2-149">Le colonne devono contenere solo codice Markdown di base, comprese le immagini.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-149">Columns should only contain basic Markdown, including images.</span></span> <span data-ttu-id="3bcf2-150">Non è consigliabile includere intestazioni, tabelle, tabulazioni e altre strutture complesse.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-150">Headings, tables, tabs, and other complex structures shouldn't be included.</span></span> <span data-ttu-id="3bcf2-151">Una riga non può includere contenuto all'esterno della colonna.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-151">A row can't have any content outside of column.</span></span>
+
+<span data-ttu-id="3bcf2-152">Il codice Markdown seguente, ad esempio, crea una colonna che si estende su due larghezze e una colonna standard (senza `span`):</span><span class="sxs-lookup"><span data-stu-id="3bcf2-152">For example, the following Markdown creates one column that spans two column widths, and one standard (no `span`) column:</span></span>
+
+```markdown
+:::row:::
+   :::column span="2":::
+      **This is a 2-span column with lots of text.**
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum mollis nunc
+      ornare commodo. Nullam ac metus imperdiet, rutrum justo vel, vulputate leo. Donec
+      rutrum non eros eget consectetur.
+   :::column-end:::
+   :::column span="":::
+      **This is a single-span column with an image in it.**
+
+      ![Doc.U.Ment](media/markdown-reference/document.png)
+   :::column-end:::
+:::row-end:::
+```
+
+<span data-ttu-id="3bcf2-153">Il rendering è il seguente:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-153">This renders as follows:</span></span>
+
+:::row:::
+   :::column span="2":::
+      <span data-ttu-id="3bcf2-154">**Questa è una colonna che si estende su due larghezze con molto testo.**</span><span class="sxs-lookup"><span data-stu-id="3bcf2-154">**This is a 2-span column with lots of text.**</span></span>
+
+      <span data-ttu-id="3bcf2-155">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-155">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></span> <span data-ttu-id="3bcf2-156">Donec vestibulum mollis nunc ornare commodo.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-156">Donec vestibulum mollis nunc ornare commodo.</span></span> <span data-ttu-id="3bcf2-157">Nullam ac metus imperdiet, rutrum justo vel, vulputate leo.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-157">Nullam ac metus imperdiet, rutrum justo vel, vulputate leo.</span></span> <span data-ttu-id="3bcf2-158">Donec rutrum non eros eget consectetur.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-158">Donec rutrum non eros eget consectetur.</span></span>
+   :::column-end:::
+   :::column span="":::
+      <span data-ttu-id="3bcf2-159">**Questa è una colonna a larghezza singola contenente un'immagine.**</span><span class="sxs-lookup"><span data-stu-id="3bcf2-159">**This is a single-span column with an image in it.**</span></span>
+
+      ![Doc.U.Ment](media/markdown-reference/document.png)
+   :::column-end:::
+:::row-end:::
+
+## <a name="headings"></a><span data-ttu-id="3bcf2-161">Titoli</span><span class="sxs-lookup"><span data-stu-id="3bcf2-161">Headings</span></span>
+
+<span data-ttu-id="3bcf2-162">Docs supporta sei livelli di intestazioni Markdown:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-162">Docs supports six levels of Markdown headings:</span></span>
+
+```markdown
 # This is a first level heading (H1)
 
 ## This is a second level heading (H2)
@@ -69,183 +182,135 @@ ms.locfileid: "75188265"
 ###### This is a sixth level heading (H6)
 ```
 
-- <span data-ttu-id="4447f-120">Deve essere presente uno spazio tra l'ultimo `#` e il testo del titolo.</span><span class="sxs-lookup"><span data-stu-id="4447f-120">There must be a space between the last `#` and heading text.</span></span>
-- <span data-ttu-id="4447f-121">Ogni file Markdown deve avere esclusivamente un elemento H1.</span><span class="sxs-lookup"><span data-stu-id="4447f-121">Each Markdown file must have one and only one H1.</span></span>
-- <span data-ttu-id="4447f-122">L'elemento H1 deve essere il primo contenuto nel file dopo il blocco di metadati YML.</span><span class="sxs-lookup"><span data-stu-id="4447f-122">The H1 must be the first content in the file after the YML metadata block.</span></span>
-- <span data-ttu-id="4447f-123">Gli elementi H2 vengono visualizzati automaticamente nel menu di spostamento a destra del file pubblicato.</span><span class="sxs-lookup"><span data-stu-id="4447f-123">H2s automatically appear in the right-hand navigating menu of the published file.</span></span> <span data-ttu-id="4447f-124">Non esistono titoli di livello inferiore. Usare gli H2 in modo strategico per consentire agli utenti di navigare il contenuto.</span><span class="sxs-lookup"><span data-stu-id="4447f-124">Lower-level headings do not, so use H2s strategically to help readers navigate your content.</span></span>
-- <span data-ttu-id="4447f-125">I titoli HTML, ad esempio `<h1>`, non sono consigliati e in alcuni casi generano avvisi di compilazione.</span><span class="sxs-lookup"><span data-stu-id="4447f-125">HTML headings, such as `<h1>`, are not recommended and in some cases will cause build warnings.</span></span>
-- <span data-ttu-id="4447f-126">È possibile creare un collegamento a singoli titoli in un file usando i [segnalibri](#bookmark-links).</span><span class="sxs-lookup"><span data-stu-id="4447f-126">You can link to individual headings in a file via [bookmarks](#bookmark-links).</span></span>
+- <span data-ttu-id="3bcf2-163">Deve essere presente uno spazio tra l'ultimo `#` e il testo del titolo.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-163">There must be a space between the last `#` and heading text.</span></span>
+- <span data-ttu-id="3bcf2-164">Ogni file Markdown deve avere una sola intestazione H1.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-164">Each Markdown file must have one and only one H1 heading.</span></span>
+- <span data-ttu-id="3bcf2-165">L'intestazione H1 deve essere il primo contenuto nel file dopo il blocco di metadati YML.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-165">The H1 heading must be the first content in the file after the YML metadata block.</span></span>
+- <span data-ttu-id="3bcf2-166">Le intestazioni H2 vengono visualizzate automaticamente nel menu di spostamento a destra del file pubblicato.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-166">H2 headings automatically appear in the right-hand navigating menu of the published file.</span></span> <span data-ttu-id="3bcf2-167">Non esistono titoli di livello inferiore. Usare quindi le intestazioni H2 in maniera mirata per facilitare la lettura del contenuto.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-167">Lower-level headings don't appear, so use H2s strategically to help readers navigate your content.</span></span>
+- <span data-ttu-id="3bcf2-168">Le intestazioni HTML, ad esempio `<h1>`, non sono consigliate e in alcuni casi generano avvisi di compilazione.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-168">HTML headings, such as `<h1>`, aren't recommended, and in some cases will cause build warnings.</span></span>
+- <span data-ttu-id="3bcf2-169">È possibile creare un collegamento a singole intestazioni in un file usando i [collegamenti a segnalibro](how-to-write-links.md#links-to-anchors).</span><span class="sxs-lookup"><span data-stu-id="3bcf2-169">You can link to individual headings in a file via [bookmark links](how-to-write-links.md#links-to-anchors).</span></span>
 
-## <a name="html"></a><span data-ttu-id="4447f-127">HTML</span><span class="sxs-lookup"><span data-stu-id="4447f-127">HTML</span></span>
+## <a name="html"></a><span data-ttu-id="3bcf2-170">HTML</span><span class="sxs-lookup"><span data-stu-id="3bcf2-170">HTML</span></span>
 
-<span data-ttu-id="4447f-128">Benché Markdown supporti HTML inline, non è consigliabile usare il linguaggio HTML per la pubblicazione in Docs poiché, fatta eccezione per un piccolo gruppo di valori, genera avvisi o errori di compilazione.</span><span class="sxs-lookup"><span data-stu-id="4447f-128">Although Markdown supports inline HTML, HTML is not recommended for publishing to Docs, and except for a limited list of values will cause build errors or warnings.</span></span>
+<span data-ttu-id="3bcf2-171">Benché Markdown supporti HTML inline, non è consigliabile usare il linguaggio HTML per la pubblicazione in Docs poiché, fatta eccezione per un piccolo gruppo di valori, genera avvisi o errori di compilazione.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-171">Although Markdown supports inline HTML, HTML isn't recommended for publishing to Docs, and except for a limited list of values will cause build errors or warnings.</span></span> 
 
-## <a name="images"></a><span data-ttu-id="4447f-129">Immagini</span><span class="sxs-lookup"><span data-stu-id="4447f-129">Images</span></span>
+## <a name="images"></a><span data-ttu-id="3bcf2-172">Immagini</span><span class="sxs-lookup"><span data-stu-id="3bcf2-172">Images</span></span>
 
-<span data-ttu-id="4447f-130">La sintassi per l'inclusione di un'immagine è la seguente:</span><span class="sxs-lookup"><span data-stu-id="4447f-130">The syntax to include an image is:</span></span>
+<span data-ttu-id="3bcf2-173">Per impostazione predefinita, per le immagini sono supportati i tipi di file seguenti:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-173">The following file types are supported by default for images:</span></span>
 
-```md
-![[alt text]](<folderPath>)
+- <span data-ttu-id="3bcf2-174">.jpg</span><span class="sxs-lookup"><span data-stu-id="3bcf2-174">.jpg</span></span>
+- <span data-ttu-id="3bcf2-175">.png</span><span class="sxs-lookup"><span data-stu-id="3bcf2-175">.png</span></span>
+
+### <a name="standard-conceptual-images-default-markdown"></a><span data-ttu-id="3bcf2-176">Immagini concettuali standard (Markdown predefinito)</span><span class="sxs-lookup"><span data-stu-id="3bcf2-176">Standard conceptual images (default Markdown)</span></span>
+
+<span data-ttu-id="3bcf2-177">La sintassi Markdown di base per incorporare un'immagine è la seguente:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-177">The basic Markdown syntax to embed an image is:</span></span>
+
+```Markdown
+![<alt text>](<folderPath>)
 
 Example:
 ![alt text for image](../images/Introduction.png)
 ```
 
-<span data-ttu-id="4447f-131">Dove `alt text` è una breve descrizione dell'immagine e `<folder path>` è un percorso relativo all'immagine.</span><span class="sxs-lookup"><span data-stu-id="4447f-131">Where `alt text` is a brief description of the image and `<folder path>` is a relative path to the image.</span></span> <span data-ttu-id="4447f-132">Il testo alternativo è necessario perché gli utenti con problemi di vista possano leggere lo schermo.</span><span class="sxs-lookup"><span data-stu-id="4447f-132">Alternate text is required for screen readers for the visually impaired.</span></span> <span data-ttu-id="4447f-133">È anche utile se in presenza di un bug nel sito non è possibile eseguire il rendering dell'immagine.</span><span class="sxs-lookup"><span data-stu-id="4447f-133">It is also useful if there is a site bug where the image cannot render.</span></span>
+<span data-ttu-id="3bcf2-178">Dove `<alt text>` è una breve descrizione dell'immagine e `<folder path>` è un percorso relativo all'immagine.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-178">Where `<alt text>` is a brief description of the image and `<folder path>` is a relative path to the image.</span></span> <span data-ttu-id="3bcf2-179">Il testo alternativo è necessario perché gli utenti con problemi di vista possano leggere lo schermo.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-179">Alternate text is required for screen readers for the visually impaired.</span></span> <span data-ttu-id="3bcf2-180">È anche utile se, in presenza di un bug nel sito, non è possibile eseguire il rendering dell'immagine.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-180">It's also useful if there's a site bug where the image can't render.</span></span>
 
-<span data-ttu-id="4447f-134">Le immagini devono essere archiviate in una cartella `/media` all'interno del docset.</span><span class="sxs-lookup"><span data-stu-id="4447f-134">Images should be stored in a `/media` folder within your doc set.</span></span> <span data-ttu-id="4447f-135">Per impostazione predefinita, per le immagini sono supportati i tipi di file seguenti:</span><span class="sxs-lookup"><span data-stu-id="4447f-135">The following file types are supported by default for images:</span></span>
+<span data-ttu-id="3bcf2-181">I caratteri di sottolineatura nel testo alternativo vengono sottoposti a rendering correttamente solo se sono preceduti da una barra rovesciata (`\_`).</span><span class="sxs-lookup"><span data-stu-id="3bcf2-181">Underscores in alt text aren't rendered properly unless you escape them by prefixing them with a backslash (`\_`).</span></span> <span data-ttu-id="3bcf2-182">Evitare tuttavia di copiare i nomi di file per usarli come testo alternativo.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-182">However, don't copy file names for use as alt text.</span></span> <span data-ttu-id="3bcf2-183">Ad esempio, invece di scrivere questo:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-183">For example, instead of this:</span></span>
 
-- <span data-ttu-id="4447f-136">.jpg</span><span class="sxs-lookup"><span data-stu-id="4447f-136">.jpg</span></span>
-- <span data-ttu-id="4447f-137">.png</span><span class="sxs-lookup"><span data-stu-id="4447f-137">.png</span></span>
-
-<span data-ttu-id="4447f-138">È possibile supportare altri tipi di immagine aggiungendoli come risorse al file docfx.json</span><span class="sxs-lookup"><span data-stu-id="4447f-138">You can add support for other image types by adding them as resources to the docfx.json file</span></span><!--add link to reference when available--> <span data-ttu-id="4447f-139">nel docset.</span><span class="sxs-lookup"><span data-stu-id="4447f-139">for your doc set.</span></span>
-
-## <a name="links"></a><span data-ttu-id="4447f-140">Collegamenti</span><span class="sxs-lookup"><span data-stu-id="4447f-140">Links</span></span>
-
-<span data-ttu-id="4447f-141">Nella maggior parte dei casi Docs usa collegamenti Markdown standard per collegarsi ad altri file e pagine.</span><span class="sxs-lookup"><span data-stu-id="4447f-141">In most cases, Docs uses standard Markdown links to other files and pages.</span></span> <span data-ttu-id="4447f-142">I tipi di collegamenti vengono descritti nelle sottosezioni seguenti.</span><span class="sxs-lookup"><span data-stu-id="4447f-142">The types of links are described in subsections below.</span></span>
-
-> [!TIP]
-> <span data-ttu-id="4447f-143">Docs Authoring Pack per VS Code consente di inserire collegamenti relativi e segnalibri in modo corretto senza dover conoscere i percorsi.</span><span class="sxs-lookup"><span data-stu-id="4447f-143">The Docs Authoring Pack for VS Code can help insert relative links and bookmarks correctly without the tedium of figuring out the paths!</span></span>
-
-> [!IMPORTANT]
-> <span data-ttu-id="4447f-144">Nei collegamenti ai siti Microsoft non includere codici delle impostazioni locali, ad esempio it-it.</span><span class="sxs-lookup"><span data-stu-id="4447f-144">Do not include locale codes, such as en-us, in your links to Microsoft sites.</span></span> <span data-ttu-id="4447f-145">I codici delle impostazioni locali hardcoded impediscono il rendering del contenuto localizzato. Si assiste così a una pessima esperienza utente in altre impostazioni locali e a un aumento significativo dei costi i localizzazione.</span><span class="sxs-lookup"><span data-stu-id="4447f-145">Hard-coded locale codes prevent localized content from rendering, which is a bad customer experience for users in other locales and incurs significant localization costs.</span></span> <span data-ttu-id="4447f-146">Quando si copia un URL da un browser, il codice delle impostazioni locali viene incluso per impostazione predefinita. È quindi necessario eliminarlo manualmente quando si crea il collegamento.</span><span class="sxs-lookup"><span data-stu-id="4447f-146">When you copy a URL from a browser, the locale code is included by default, so you need to manually delete it when you create your link.</span></span> <span data-ttu-id="4447f-147">Ad esempio, usare:</span><span class="sxs-lookup"><span data-stu-id="4447f-147">For example, use:</span></span>
->
-> `[Microsoft](https://www.microsoft.com)`
->
-> <span data-ttu-id="4447f-148">Non usare:</span><span class="sxs-lookup"><span data-stu-id="4447f-148">Not:</span></span>
->
-> `[Microsoft](https://www.microsoft.com/en-us/)`
-
-### <a name="relative-links-to-files-in-the-same-doc-set"></a><span data-ttu-id="4447f-149">Collegamenti relativi a file all'interno dello stesso docset</span><span class="sxs-lookup"><span data-stu-id="4447f-149">Relative links to files in the same doc set</span></span>
-
-<span data-ttu-id="4447f-150">Un percorso relativo è il percorso al file di destinazione relativo al file corrente.</span><span class="sxs-lookup"><span data-stu-id="4447f-150">A relative path is the path to the target file relative to the current file.</span></span> <span data-ttu-id="4447f-151">In Docs è possibile usare un percorso relativo per il collegamento a un altro file all'interno dello stesso docset.</span><span class="sxs-lookup"><span data-stu-id="4447f-151">In Docs, you can use a relative path to link to another file within the same doc set.</span></span> <span data-ttu-id="4447f-152">La sintassi di un percorso relativo è la seguente:</span><span class="sxs-lookup"><span data-stu-id="4447f-152">The syntax for a relative path is as follows:</span></span>
-
-```md
-[link text](../../folder/filename.md)
+```markdown
+![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
-<span data-ttu-id="4447f-153">Dove `../` indica un livello superiore nella gerarchia.</span><span class="sxs-lookup"><span data-stu-id="4447f-153">Where `../` indicates one level above in the hierarchy.</span></span>
+<span data-ttu-id="3bcf2-184">Scrivere questo:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-184">Write this:</span></span>
 
-- <span data-ttu-id="4447f-154">Il percorso relativo verrà risolto durante la compilazione e verrà anche rimossa l'estensione md.</span><span class="sxs-lookup"><span data-stu-id="4447f-154">The relative path will be resolved during the build, including removal of the .md extension.</span></span>
-- <span data-ttu-id="4447f-155">È possibile usare "../" per il collegamento a un file nella cartella padre, ma il file deve appartenere allo stesso docset.</span><span class="sxs-lookup"><span data-stu-id="4447f-155">You can use "../" to link to a file in the parent folder, but that file has to be in the same doc set.</span></span> <span data-ttu-id="4447f-156">Non è possibile usare "../" per il collegamento a un file in un'altra cartella del docset.</span><span class="sxs-lookup"><span data-stu-id="4447f-156">You cannot use "../" to link to a file in another doc set folder.</span></span>
-- <span data-ttu-id="4447f-157">Docs supporta anche un formato speciale di percorso relativo che inizia con "~" (ad esempio, ~/foo/bar.md).</span><span class="sxs-lookup"><span data-stu-id="4447f-157">Docs also supports a special form of relative path that starts with "~" (for example, ~/foo/bar.md).</span></span> <span data-ttu-id="4447f-158">Questa sintassi indica un file relativo alla cartella radice di un docset.</span><span class="sxs-lookup"><span data-stu-id="4447f-158">This syntax indicates a file relative to the root folder of a doc set.</span></span> <span data-ttu-id="4447f-159">Anche questo tipo di percorso viene convalidato e risolto durante la compilazione.</span><span class="sxs-lookup"><span data-stu-id="4447f-159">This kind of path is also validated and resolved during the build.</span></span>
-
-> [!IMPORTANT]
-> <span data-ttu-id="4447f-160">Includere l'estensione del file nel percorso relativo.</span><span class="sxs-lookup"><span data-stu-id="4447f-160">Include the file extension in the relative path.</span></span> <span data-ttu-id="4447f-161">Durante la compilazione viene convalidata l'esistenza del file di destinazione di tale percorso relativo.</span><span class="sxs-lookup"><span data-stu-id="4447f-161">Build validates the existence of the target file of that relative path.</span></span> <span data-ttu-id="4447f-162">Se il percorso relativo non include l'estensione file, la compilazione potrebbe segnalare un avviso di collegamento interrotto.</span><span class="sxs-lookup"><span data-stu-id="4447f-162">If relative path does not include file extension, it is likely build will report a warning of broken link.</span></span> <span data-ttu-id="4447f-163">Ad esempio, usare:</span><span class="sxs-lookup"><span data-stu-id="4447f-163">For example, use:</span></span>
->
-> `[link text](../../folder/filename.md)`
->
-> <span data-ttu-id="4447f-164">Non usare:</span><span class="sxs-lookup"><span data-stu-id="4447f-164">Not:</span></span>
->
-> `[link text](../../folder/filename)`
-
-### <a name="site-relative-links-to-other-files-on-docs"></a><span data-ttu-id="4447f-165">Collegamenti relativi di siti ad altri file in Docs</span><span class="sxs-lookup"><span data-stu-id="4447f-165">Site relative links to other files on Docs</span></span>
-
-```md
-[Azure and Linux](/articles/virtual-machines/linux/overview)
+```markdown
+![Active Directory extension for two-factor authentication, step 4: Configure](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
-<span data-ttu-id="4447f-166">Non includere l'estensione file md.</span><span class="sxs-lookup"><span data-stu-id="4447f-166">Do not include the file extension (.md).</span></span> <span data-ttu-id="4447f-167">In questo modo si crea il collegamento al file della panoramica Linux dall'esterno del doset "articles" di Azure.</span><span class="sxs-lookup"><span data-stu-id="4447f-167">This links to the Linux overview file from outside the Azure "articles" doc set.</span></span>
+### <a name="standard-conceptual-images-docs-markdown"></a><span data-ttu-id="3bcf2-185">Immagini concettuali standard (Docs Markdown)</span><span class="sxs-lookup"><span data-stu-id="3bcf2-185">Standard conceptual images (Docs Markdown)</span></span>
 
-### <a name="links-to-external-sites"></a><span data-ttu-id="4447f-168">Collegamenti a siti esterni</span><span class="sxs-lookup"><span data-stu-id="4447f-168">Links to external sites</span></span>
+<span data-ttu-id="3bcf2-186">L'estensione `:::image:::` personalizzata di Docs supporta immagini standard, immagini complesse e icone.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-186">The Docs custom `:::image:::` extension supports standard images, complex images, and icons.</span></span>
 
-```md
-[Microsoft](https://www.microsoft.com)
+<span data-ttu-id="3bcf2-187">Per le immagini standard, la sintassi Markdown precedente continuerà a funzionare, ma è consigliabile usare la nuova estensione perché supporta funzionalità più potenti, ad esempio la possibilità di specificare un ambito di localizzazione diverso dall'argomento padre.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-187">For standard images, the older Markdown syntax will still work, but the new extension is recommended because it supports more powerful functionality, such as specifying a localization scope that's different from the parent topic.</span></span> <span data-ttu-id="3bcf2-188">Altre funzionalità avanzate, ad esempio la possibilità di selezionare un'immagine dalla raccolta di immagini condivise invece di specificarne una locale, saranno disponibili in futuro.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-188">Other advanced functionality, such as selecting from the shared image gallery instead of specifying a local image, will be available in the future.</span></span> <span data-ttu-id="3bcf2-189">La nuova sintassi è la seguente:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-189">The new syntax is as follows:</span></span>
+
+```Markdown
+:::image type="content" source="<folderPath>" alt-text="<alt text>":::
 ```
 
-<span data-ttu-id="4447f-169">Collegamento basato su URL a un'altra pagina Web. Deve includere https://.</span><span class="sxs-lookup"><span data-stu-id="4447f-169">URL-based link to another web page (must include https://).</span></span>
+<span data-ttu-id="3bcf2-190">Se `type="content"` (impostazione predefinita), è necessario specificare sia `source` che `alt-text`.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-190">If `type="content"` (the default), both `source` and `alt-text` are required.</span></span>
 
-### <a name="bookmark-links"></a><span data-ttu-id="4447f-170">Collegamento segnalibro</span><span class="sxs-lookup"><span data-stu-id="4447f-170">Bookmark links</span></span>
+### <a name="complex-images-with-long-descriptions"></a><span data-ttu-id="3bcf2-191">Immagini complesse con lunghe descrizioni</span><span class="sxs-lookup"><span data-stu-id="3bcf2-191">Complex images with long descriptions</span></span>
 
-<span data-ttu-id="4447f-171">Collegamento segnalibro a un titolo in un altro file all'interno dello stesso repository.</span><span class="sxs-lookup"><span data-stu-id="4447f-171">Bookmark link to a heading in another file in the same repo.</span></span> <span data-ttu-id="4447f-172">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="4447f-172">For example:</span></span>
+<span data-ttu-id="3bcf2-192">È anche possibile usare questa estensione per aggiungere un'immagine con una lunga descrizione che viene letta dalle utilità per la lettura dello schermo, ma non viene visualizzata nella pagina pubblicata.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-192">You can also use this extension to add an image with a long description that is read by screen readers but not rendered visually on the published page.</span></span> <span data-ttu-id="3bcf2-193">Le descrizioni lunghe sono un requisito di accessibilità per immagini complesse, ad esempio i grafici.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-193">Long descriptions are an accessibility requirement for complex images, such as graphs.</span></span> <span data-ttu-id="3bcf2-194">La sintassi è la seguente:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-194">The syntax is the following:</span></span>
 
-```md
-[Managed Disks](../../linux/overview.md#managed-disks)
+```Markdown
+:::image type="complex" source="<folderPath>" alt-text="<alt text>":::
+   <long description here>
+:::image-end:::
 ```
 
-<span data-ttu-id="4447f-173">Collegamento segnalibro a un titolo nel file corrente:</span><span class="sxs-lookup"><span data-stu-id="4447f-173">Bookmark link to a heading in the current file:</span></span>
+<span data-ttu-id="3bcf2-195">Se `type="complex"`, è necessario specificare `source`, `alt-text`, una lunga descrizione e il tag `:::image-end:::`.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-195">If `type="complex"`, `source`, `alt-text`, a long description, and the `:::image-end:::` tag are all required.</span></span>
 
-```md
-[Managed Disks](#managed-disks)
+### <a name="specifying-loc-scope"></a><span data-ttu-id="3bcf2-196">Specifica dell'attributo loc-scope</span><span class="sxs-lookup"><span data-stu-id="3bcf2-196">Specifying loc-scope</span></span>
+
+<span data-ttu-id="3bcf2-197">A volte l'ambito di localizzazione di un'immagine è diverso da quello dell'articolo o del modulo che la contiene.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-197">Sometimes the localization scope for an image is different from that of the article or module that contains it.</span></span> <span data-ttu-id="3bcf2-198">Questo può avere effetti negativi sull'esperienza globale, ad esempio se uno screenshot di un prodotto viene accidentalmente localizzato in una lingua per cui il prodotto non è disponibile.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-198">This can cause a bad global experience: for example, if a screenshot of a product is accidentally localized into a language the product isn't available in.</span></span> <span data-ttu-id="3bcf2-199">Per evitare questo problema, è possibile specificare l'attributo facoltativo `loc-scope` nelle immagini di tipo `content` e `complex`.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-199">To prevent this, you can specify the optional `loc-scope` attribute in images of types `content` and `complex`.</span></span>
+
+### <a name="icons"></a><span data-ttu-id="3bcf2-200">Icone</span><span class="sxs-lookup"><span data-stu-id="3bcf2-200">Icons</span></span>
+
+<span data-ttu-id="3bcf2-201">L'estensione per le immagini supporta le icone, che sono immagini decorative e non devono avere testo alternativo.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-201">The image extension supports icons, which are decorative images and should not have alt text.</span></span> <span data-ttu-id="3bcf2-202">La sintassi per le icone è la seguente:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-202">The syntax for icons is:</span></span>
+
+```Markdown
+:::image type="icon" source="<folderPath>":::
 ```
 
-<span data-ttu-id="4447f-174">Usare un segno hash `#` seguito dalle parole del titolo.</span><span class="sxs-lookup"><span data-stu-id="4447f-174">Use a hash mark `#` followed by the words of the heading.</span></span> <span data-ttu-id="4447f-175">Per cambiare il testo del titolo in testo del collegamento:</span><span class="sxs-lookup"><span data-stu-id="4447f-175">To change the heading text into link text:</span></span>
-- <span data-ttu-id="4447f-176">Usare solo caratteri minuscoli</span><span class="sxs-lookup"><span data-stu-id="4447f-176">Use all lowercase characters</span></span>
-- <span data-ttu-id="4447f-177">Rimuovere la punteggiatura</span><span class="sxs-lookup"><span data-stu-id="4447f-177">Remove punctuation</span></span>
-- <span data-ttu-id="4447f-178">Sostituire gli spazi con trattini</span><span class="sxs-lookup"><span data-stu-id="4447f-178">Replace spaces with dashes</span></span>
+<span data-ttu-id="3bcf2-203">Se `type="icon"`, è necessario specificare solo `source`.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-203">If `type="icon"`, only `source` should be specified.</span></span>
 
-<span data-ttu-id="4447f-179">Ad esempio, se il nome del titolo è "2.2 Preoccupazioni sulla sicurezza", il testo del collegamento segnalibro sarà "#22-Preoccupazioni-sulla-sicurezza".</span><span class="sxs-lookup"><span data-stu-id="4447f-179">For example, if the heading name is "2.2 Security concerns", then the bookmark link text will be "#22-security-concerns".</span></span>
+## <a name="included-markdown-files"></a><span data-ttu-id="3bcf2-204">File Markdown inclusi</span><span class="sxs-lookup"><span data-stu-id="3bcf2-204">Included Markdown files</span></span>
 
-### <a name="explicit-anchor-links"></a><span data-ttu-id="4447f-180">Collegamenti di ancoraggio esplicito</span><span class="sxs-lookup"><span data-stu-id="4447f-180">Explicit anchor links</span></span>
+<span data-ttu-id="3bcf2-205">Se i file Markdown devono essere ripetuti in più articoli, è possibile usare un file di inclusione.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-205">Where markdown files need to be repeated in multiple articles, you can use an include file.</span></span> <span data-ttu-id="3bcf2-206">La funzionalità delle inclusioni indica a Docs di sostituire il riferimento con il contenuto del file di inclusione in fase di compilazione.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-206">The includes feature instructs Docs to replace the reference with the contents of the include file at build time.</span></span> <span data-ttu-id="3bcf2-207">È possibile usare le inclusioni nei modi seguenti:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-207">You can use includes in the following ways:</span></span>
 
-<span data-ttu-id="4447f-181">I collegamenti di ancoraggio esplicito che usano il tag HTML `<a>`**non sono né necessari né consigliati** tranne in pagine hub e pagine di destinazione.</span><span class="sxs-lookup"><span data-stu-id="4447f-181">Explicit anchor links using the `<a>` HTML tag are **not required or recommended** except in hub and landing pages.</span></span> <span data-ttu-id="4447f-182">Usare i segnalibri in file Markdown generali, come descritto in precedenza.</span><span class="sxs-lookup"><span data-stu-id="4447f-182">Use bookmarks as described above in general Markdown files.</span></span> <span data-ttu-id="4447f-183">In caso di pagine hub e pagine di destinazione, usare gli ancoraggi come descritto di seguito:</span><span class="sxs-lookup"><span data-stu-id="4447f-183">For hub and landing pages, use anchors as follows:</span></span>
+- <span data-ttu-id="3bcf2-208">Inline: riutilizzo di un frammento di testo comune inline all'interno di una frase.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-208">Inline: Reuse a common text snippet inline with within a sentence.</span></span>
+- <span data-ttu-id="3bcf2-209">Blocco: riutilizzo di un intero file Markdown come blocco, annidato all'interno di una sezione di un articolo.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-209">Block: Reuse an entire Markdown file as a block, nested within a section of an article.</span></span>
 
-<span data-ttu-id="4447f-184">`## <a id="AnchorText"> </a>Header text` oppure `## <a name="AnchorText"> </a>Header text`</span><span class="sxs-lookup"><span data-stu-id="4447f-184">`## <a id="AnchorText"> </a>Header text` or `## <a name="AnchorText"> </a>Header text`</span></span>
+<span data-ttu-id="3bcf2-210">I file di inclusione di tipo Inline o Blocco sono file Markdown (con estensione md)</span><span class="sxs-lookup"><span data-stu-id="3bcf2-210">An inline or block include file is a Markdown (.md) file.</span></span> <span data-ttu-id="3bcf2-211">che possono contenere qualsiasi codice Markdown valido.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-211">It can contain any valid Markdown.</span></span> <span data-ttu-id="3bcf2-212">I file di inclusione si trovano in genere in una sottodirectory *includes* comune, nella radice del repository.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-212">Include files are typically located in a common *includes* subdirectory, in the root of the repository.</span></span> <span data-ttu-id="3bcf2-213">Al momento della pubblicazione dell'articolo, il file incluso viene integrato automaticamente.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-213">When the article is published, the included file is seamlessly integrated into it.</span></span>
 
-<span data-ttu-id="4447f-185">Per il collegamento ad ancoraggi espliciti, usare la sintassi seguente:</span><span class="sxs-lookup"><span data-stu-id="4447f-185">To link to explicit anchors, use the following syntax:</span></span>
+### <a name="includes-syntax"></a><span data-ttu-id="3bcf2-214">Sintassi delle inclusioni</span><span class="sxs-lookup"><span data-stu-id="3bcf2-214">Includes syntax</span></span>
 
-```md
-To go to a section on the same page:
-[text](#AnchorText)
+<span data-ttu-id="3bcf2-215">L'inclusione di tipo Blocco si trova su una riga a sé stante:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-215">Block include is on its own line:</span></span>
 
-To go to a section on another page.
-[text](FileName.md#AnchorText)
+```markdown
+[!INCLUDE [<title>](<filepath>)]
 ```
 
-### <a name="xref-cross-reference-links"></a><span data-ttu-id="4447f-186">Collegamenti XREF (riferimento incrociato)</span><span class="sxs-lookup"><span data-stu-id="4447f-186">XREF (cross reference) links</span></span>
+<span data-ttu-id="3bcf2-216">L'inclusione di tipo Inline si trova all'interno di una riga:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-216">Inline include is within a line:</span></span>
 
-<span data-ttu-id="4447f-187">Per il collegamento alle pagine di riferimento API generate automaticamente nel docset corrente o in altri docset, usare i collegamenti XREF con l'ID univoco (UID).</span><span class="sxs-lookup"><span data-stu-id="4447f-187">To link to auto-generated API references pages in the current doc set or other doc sets, use XREF links with the unique ID (UID).</span></span>
+```markdown
+Text before [!INCLUDE [<title>](<filepath>)] and after.
+```
 
-> [!NOTE]
-> <span data-ttu-id="4447f-188">Per fare riferimento a pagine di riferimento API in altri docset, è necessario aggiungere la configurazione `xrefService` nel file `docfx.json`.</span><span class="sxs-lookup"><span data-stu-id="4447f-188">To reference API reference pages in other doc sets, you need to add `xrefService` configuration in `docfx.json` file.</span></span>
-> ```
-> "build": {
->   ...
->   "xrefService": [ "https://xref.docs.microsoft.com/query?uid={uid}" ]
-> }
-> ```
+<span data-ttu-id="3bcf2-217">Dove `<title>` è il nome del file e `<filepath>` è il percorso relativo del file.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-217">Where `<title>` is the name of the file and `<filepath>` is the relative path to the file.</span></span> <span data-ttu-id="3bcf2-218">`INCLUDE` deve essere riportato in lettere maiuscole e prima di `<title>` deve essere presente uno spazio.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-218">`INCLUDE` must be capitalized and there must be a space before the `<title>`.</span></span>
 
-<span data-ttu-id="4447f-189">L'UID corrisponde al nome completo di classe e membro.</span><span class="sxs-lookup"><span data-stu-id="4447f-189">The UID equates to the fully qualified class and member name.</span></span> <span data-ttu-id="4447f-190">Se si aggiunge \* dopo l'UID, il collegamento rappresenta la pagina di overload e non un'API specifica.</span><span class="sxs-lookup"><span data-stu-id="4447f-190">If you add a \* after the UID, the link then represents the overload page and not a specific API.</span></span> <span data-ttu-id="4447f-191">Ad esempio, usare `List<T>.BinarySearch*` per il collegamento alla pagina BinarySearch Method anziché all'overload specifico, come `List<T>.BinarySearch(T, IComparer<T>)`.</span><span class="sxs-lookup"><span data-stu-id="4447f-191">For example, use `List<T>.BinarySearch*` to link to the BinarySearch Method page instead of linking to a specific overload such as `List<T>.BinarySearch(T, IComparer<T>)`.</span></span>
+<span data-ttu-id="3bcf2-219">Di seguito sono elencati i requisiti e le considerazioni per i file di inclusione:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-219">Here are requirements and considerations for include files:</span></span>
 
-<span data-ttu-id="4447f-192">È possibile usare una delle sintassi seguenti:</span><span class="sxs-lookup"><span data-stu-id="4447f-192">You can use one of the following syntaxes:</span></span>
+- <span data-ttu-id="3bcf2-220">Usare le inclusioni di tipo Blocco per quantità significative di contenuto, ad esempio uno o due paragrafi, una procedura o una sezione condivisa.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-220">Use block includes for significant amounts of content--a paragraph or two, a shared procedure, or a shared section.</span></span> <span data-ttu-id="3bcf2-221">Non usarle per includere testi più piccoli di una frase.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-221">Do not use them for anything smaller than a sentence.</span></span>
+- <span data-ttu-id="3bcf2-222">Le inclusioni non vengono visualizzate nel rendering dell'articolo in GitHub, perché si basano sulle estensioni di Docs.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-222">Includes won't be rendered in the GitHub rendered view of your article, because they rely on Docs extensions.</span></span> <span data-ttu-id="3bcf2-223">Saranno visualizzate solo dopo la pubblicazione.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-223">They'll be rendered only after publication.</span></span>
+- <span data-ttu-id="3bcf2-224">Verificare che tutto il testo in un file di inclusione sia scritto con espressioni o frasi complete che non dipendono dal testo precedente o successivo nell'articolo che fa riferimento all'inclusione.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-224">Ensure that all the text in an include file is written in complete sentences or phrases that do not depend on preceding text or following text in the article that references the include.</span></span> <span data-ttu-id="3bcf2-225">Ignorare questa indicazione significa creare una stringa non traducibile nell'articolo.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-225">Ignoring this guidance creates an untranslatable string in the article.</span></span>
+- <span data-ttu-id="3bcf2-226">Non incorporare file di inclusione in altri file di inclusione.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-226">Don't embed include files within other include files.</span></span>
+- <span data-ttu-id="3bcf2-227">Posizionare i file multimediali in un'apposita cartella, specifica della sottodirectory delle inclusioni, ad esempio la cartella `<repo>` */includes/media*.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-227">Place media files in a media folder that's specific to the include subdirectory--for instance, the `<repo>`*/includes/media* folder.</span></span> <span data-ttu-id="3bcf2-228">La directory *media* non deve contenere immagini nella radice.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-228">The *media* directory should not contain any images in its root.</span></span> <span data-ttu-id="3bcf2-229">Se l'inclusione non contiene immagini, non è necessario creare una cartella *media* corrispondente.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-229">If the include does not have images, a corresponding *media* directory is not required.</span></span>
+- <span data-ttu-id="3bcf2-230">Come per gli articoli normali, non condividere elementi multimediali tra file di inclusione.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-230">As with regular articles, don't share media between include files.</span></span> <span data-ttu-id="3bcf2-231">Usare un file separato con un nome univoco per ogni inclusione e articolo.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-231">Use a separate file with a unique name for each include and article.</span></span> <span data-ttu-id="3bcf2-232">Archiviare il file multimediale nella cartella associata all'inclusione.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-232">Store the media file in the media folder that's associated with the include.</span></span>
+- <span data-ttu-id="3bcf2-233">Non usare un'inclusione come unico contenuto di un articolo.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-233">Don't use an include as the only content of an article.</span></span>  <span data-ttu-id="3bcf2-234">Le inclusioni sono pensate come supplemento al contenuto nel resto dell'articolo.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-234">Includes are meant to be supplemental to the content in the rest of the article.</span></span>
 
-- <span data-ttu-id="4447f-193">Collegamento automatico: `<xref:UID> or <xref:UID?displayProperty=nameWithType>`</span><span class="sxs-lookup"><span data-stu-id="4447f-193">Auto-link: `<xref:UID> or <xref:UID?displayProperty=nameWithType>`</span></span>
+## <a name="links"></a><span data-ttu-id="3bcf2-235">Collegamenti</span><span class="sxs-lookup"><span data-stu-id="3bcf2-235">Links</span></span>
 
-  <span data-ttu-id="4447f-194">Il parametro di query `displayProperty` facoltativo genera un testo del collegamento completo.</span><span class="sxs-lookup"><span data-stu-id="4447f-194">The optional `displayProperty` query parameter produces a fully qualified link text.</span></span> <span data-ttu-id="4447f-195">Per impostazione predefinita, il testo del collegamento mostra solo il nome del membro o del tipo.</span><span class="sxs-lookup"><span data-stu-id="4447f-195">By default, link text shows only the member or type name.</span></span>
+<span data-ttu-id="3bcf2-236">Per informazioni sulla sintassi per i collegamenti, vedere [Usare i collegamenti nella documentazione](how-to-write-links.md).</span><span class="sxs-lookup"><span data-stu-id="3bcf2-236">For information on syntax for links, see [Use links in documentation](how-to-write-links.md).</span></span>
 
-- <span data-ttu-id="4447f-196">Collegamento Markdown: `[link text](xref:UID)`</span><span class="sxs-lookup"><span data-stu-id="4447f-196">Markdown link: `[link text](xref:UID)`</span></span>
-  
-  <span data-ttu-id="4447f-197">Può essere usato quando si vuole personalizzare il testo del collegamento visualizzato.</span><span class="sxs-lookup"><span data-stu-id="4447f-197">Use when you want to customize the link text displayed.</span></span>
+## <a name="lists-numbered-bulleted-checklist"></a><span data-ttu-id="3bcf2-237">Elenchi (numerati, puntati, di controllo)</span><span class="sxs-lookup"><span data-stu-id="3bcf2-237">Lists (Numbered, Bulleted, Checklist)</span></span>
 
-<span data-ttu-id="4447f-198">Esempi:</span><span class="sxs-lookup"><span data-stu-id="4447f-198">Examples:</span></span>
+### <a name="numbered-list"></a><span data-ttu-id="3bcf2-238">Elenco numerato</span><span class="sxs-lookup"><span data-stu-id="3bcf2-238">Numbered list</span></span>
 
-- <span data-ttu-id="4447f-199">`<xref:System.String>` viene visualizzato come "String".</span><span class="sxs-lookup"><span data-stu-id="4447f-199">`<xref:System.String>` renders as "String".</span></span>
-- <span data-ttu-id="4447f-200">`<xref:System.String?displayProperty=nameWithType>` viene visualizzato come "System.String".</span><span class="sxs-lookup"><span data-stu-id="4447f-200">`<xref:System.String?displayProperty=nameWithType>` renders as "System.String".</span></span>
-- <span data-ttu-id="4447f-201">`[String class](xref:System.String)` viene visualizzato come "String class".</span><span class="sxs-lookup"><span data-stu-id="4447f-201">`[String class](xref:System.String)` renders as "String class".</span></span>
+<span data-ttu-id="3bcf2-239">Per creare un elenco numerato, è possibile usare sempre il numero 1.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-239">To create a numbered list, you can use all 1s.</span></span> <span data-ttu-id="3bcf2-240">Al momento della pubblicazione, il rendering dei numeri viene eseguito in ordine crescente, come elenco sequenziale.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-240">The numbers are rendered in ascending order as a sequential list when published.</span></span> <span data-ttu-id="3bcf2-241">Per migliorare la leggibilità dell'origine, è possibile incrementare gli elenchi manualmente.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-241">For increased source readability, you can increment your lists manually.</span></span>
 
-<span data-ttu-id="4447f-202">Attualmente non è disponibile un sistema semplice per trovare gli UID.</span><span class="sxs-lookup"><span data-stu-id="4447f-202">Right now, there is no easy way to find the UIDs.</span></span> <!-- ? --><span data-ttu-id="4447f-203">Il modo migliore per trovare l'UID per un'API consiste nel visualizzare l'origine per la pagina dell'API che si vuole collegare e individuare il valore ms.assetid.</span><span class="sxs-lookup"><span data-stu-id="4447f-203">The best way to find the UID for an API is to view the source for the API page you want to link to and find the ms.assetid value.</span></span> <span data-ttu-id="4447f-204">I singoli valori di overload non vengono visualizzati nell'origine.</span><span class="sxs-lookup"><span data-stu-id="4447f-204">Individual overload values are not shown in the source.</span></span> <span data-ttu-id="4447f-205">È in corso lo sviluppo di un sistema migliore, che sarà disponibile in futuro.</span><span class="sxs-lookup"><span data-stu-id="4447f-205">We're working on having a better system in the future.</span></span>
+<span data-ttu-id="3bcf2-242">Non usare lettere negli elenchi, neppure in quelli annidati,</span><span class="sxs-lookup"><span data-stu-id="3bcf2-242">Don't use letters in lists, including nested lists.</span></span> <span data-ttu-id="3bcf2-243">poiché non vengono visualizzate correttamente al momento della pubblicazione in Docs. Gli elenchi annidati che usano i numeri vengono visualizzati con lettere minuscole quando vengono pubblicati.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-243">They don't render correctly when published to Docs. Nested lists using numbers will render as lowercase letters when published.</span></span> <span data-ttu-id="3bcf2-244">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-244">For example:</span></span>
 
-<span data-ttu-id="4447f-206">Quando l'UID contiene i caratteri speciali \`, \# o \*, il valore dell'UID deve essere con codifica HTML come `%60`, `%23` e `%2A` rispettivamente.</span><span class="sxs-lookup"><span data-stu-id="4447f-206">When the UID contains the special characters \`, \#, or \*, the UID value needs to be HTML encoded as `%60`, `%23`, and `%2A`, respectively.</span></span> <span data-ttu-id="4447f-207">A volte sono presenti parentesi con codifica, ma questo non è un requisito.</span><span class="sxs-lookup"><span data-stu-id="4447f-207">You'll sometimes see parentheses encoded but it's not a requirement.</span></span>
-
-<span data-ttu-id="4447f-208">Esempi:</span><span class="sxs-lookup"><span data-stu-id="4447f-208">Examples:</span></span>
-
-- <span data-ttu-id="4447f-209">System.Threading.Tasks.Task\`1 diventa `System.Threading.Tasks.Task%601`</span><span class="sxs-lookup"><span data-stu-id="4447f-209">System.Threading.Tasks.Task\`1 becomes `System.Threading.Tasks.Task%601`</span></span>
-- <span data-ttu-id="4447f-210">System.Exception.\#ctor diventa `System.Exception.%23ctor`</span><span class="sxs-lookup"><span data-stu-id="4447f-210">System.Exception.\#ctor becomes `System.Exception.%23ctor`</span></span>
-- <span data-ttu-id="4447f-211">System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) diventa `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`</span><span class="sxs-lookup"><span data-stu-id="4447f-211">System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) becomes  `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`</span></span>
-
-<!-- leave out of Contributor Guide for now
-Using XREF may require some configuration. For more information, see XREF Service.
--->
-
-## <a name="lists-numbered-bulleted-checklist"></a><span data-ttu-id="4447f-212">Elenchi (numerati, puntati, di controllo)</span><span class="sxs-lookup"><span data-stu-id="4447f-212">Lists (Numbered, Bulleted, Checklist)</span></span>
-
-### <a name="numbered-list"></a><span data-ttu-id="4447f-213">Elenco numerato</span><span class="sxs-lookup"><span data-stu-id="4447f-213">Numbered list</span></span>
-
-<span data-ttu-id="4447f-214">Per creare un elenco numerato è possibile usare tutti 1, che dopo la pubblicazione vengono visualizzati come elenco sequenziale.</span><span class="sxs-lookup"><span data-stu-id="4447f-214">To create a numbered list, you can use all 1s, which are rendered as a sequential list when published.</span></span> <span data-ttu-id="4447f-215">Per migliorare la leggibilità dell'origine, è possibile incrementare gli elenchi.</span><span class="sxs-lookup"><span data-stu-id="4447f-215">For increased source readability, you can increment your lists.</span></span>
-
-<span data-ttu-id="4447f-216">Non usare le lettere negli elenchi, neppure negli elenchi annidati.</span><span class="sxs-lookup"><span data-stu-id="4447f-216">Do not use letters in lists, including nested lists.</span></span> <span data-ttu-id="4447f-217">Non vengono visualizzati correttamente quando vengono pubblicati in Docs. Gli elenchi annidati che usano i numeri vengono visualizzati con lettere minuscole quando vengono pubblicati.</span><span class="sxs-lookup"><span data-stu-id="4447f-217">They do not render correctly when published to Docs. Nested lists using numbers will render as lowercase letters when published.</span></span> <span data-ttu-id="4447f-218">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="4447f-218">For example:</span></span>
-
-```md
+```markdown
 1. This is
 1. a parent numbered list
    1. and this is
@@ -253,19 +318,19 @@ Using XREF may require some configuration. For more information, see XREF Servic
 1. (fin)
 ```
 
-<span data-ttu-id="4447f-219">Il rendering è il seguente:</span><span class="sxs-lookup"><span data-stu-id="4447f-219">This renders as follows:</span></span>
+<span data-ttu-id="3bcf2-245">Il rendering è il seguente:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-245">This renders as follows:</span></span>
 
-1. <span data-ttu-id="4447f-220">This is</span><span class="sxs-lookup"><span data-stu-id="4447f-220">This is</span></span>
-1. <span data-ttu-id="4447f-221">a parent numbered list</span><span class="sxs-lookup"><span data-stu-id="4447f-221">a parent numbered list</span></span>
-   1. <span data-ttu-id="4447f-222">and this is</span><span class="sxs-lookup"><span data-stu-id="4447f-222">and this is</span></span>
-   1. <span data-ttu-id="4447f-223">a nested numbered list</span><span class="sxs-lookup"><span data-stu-id="4447f-223">a nested numbered list</span></span>
-1. <span data-ttu-id="4447f-224">(fin)</span><span class="sxs-lookup"><span data-stu-id="4447f-224">(fin)</span></span>
+1. <span data-ttu-id="3bcf2-246">This is</span><span class="sxs-lookup"><span data-stu-id="3bcf2-246">This is</span></span>
+1. <span data-ttu-id="3bcf2-247">a parent numbered list</span><span class="sxs-lookup"><span data-stu-id="3bcf2-247">a parent numbered list</span></span>
+   1. <span data-ttu-id="3bcf2-248">and this is</span><span class="sxs-lookup"><span data-stu-id="3bcf2-248">and this is</span></span>
+   1. <span data-ttu-id="3bcf2-249">a nested numbered list</span><span class="sxs-lookup"><span data-stu-id="3bcf2-249">a nested numbered list</span></span>
+1. <span data-ttu-id="3bcf2-250">(fin)</span><span class="sxs-lookup"><span data-stu-id="3bcf2-250">(fin)</span></span>
 
-### <a name="bulleted-list"></a><span data-ttu-id="4447f-225">Elenco puntato</span><span class="sxs-lookup"><span data-stu-id="4447f-225">Bulleted list</span></span>
+### <a name="bulleted-list"></a><span data-ttu-id="3bcf2-251">Elenco puntato</span><span class="sxs-lookup"><span data-stu-id="3bcf2-251">Bulleted list</span></span>
 
-<span data-ttu-id="4447f-226">Per creare un elenco puntato, usare `-` seguito da uno spazio all'inizio di ogni linea:</span><span class="sxs-lookup"><span data-stu-id="4447f-226">To create a bulleted list, use `-` followed by a space at the beginning of each line:</span></span>
+<span data-ttu-id="3bcf2-252">Per creare un elenco puntato, usare `-` o `*` seguito da uno spazio all'inizio di ogni riga:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-252">To create a bulleted list, use `-` or `*` followed by a space at the beginning of each line:</span></span>
 
-```md
+```markdown
 - This is
 - a parent bulleted list
   - and this is
@@ -273,216 +338,275 @@ Using XREF may require some configuration. For more information, see XREF Servic
 - All done!
 ```
 
-<span data-ttu-id="4447f-227">Il rendering è il seguente:</span><span class="sxs-lookup"><span data-stu-id="4447f-227">This renders as follows:</span></span>
+<span data-ttu-id="3bcf2-253">Il rendering è il seguente:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-253">This renders as follows:</span></span>
 
-- <span data-ttu-id="4447f-228">This is</span><span class="sxs-lookup"><span data-stu-id="4447f-228">This is</span></span>
-- <span data-ttu-id="4447f-229">a parent bulleted list</span><span class="sxs-lookup"><span data-stu-id="4447f-229">a parent bulleted list</span></span>
-  - <span data-ttu-id="4447f-230">and this is</span><span class="sxs-lookup"><span data-stu-id="4447f-230">and this is</span></span>
-  - <span data-ttu-id="4447f-231">a nested bulleted list</span><span class="sxs-lookup"><span data-stu-id="4447f-231">a nested bulleted list</span></span>
-- <span data-ttu-id="4447f-232">All done!</span><span class="sxs-lookup"><span data-stu-id="4447f-232">All done!</span></span>
+- <span data-ttu-id="3bcf2-254">This is</span><span class="sxs-lookup"><span data-stu-id="3bcf2-254">This is</span></span>
+- <span data-ttu-id="3bcf2-255">a parent bulleted list</span><span class="sxs-lookup"><span data-stu-id="3bcf2-255">a parent bulleted list</span></span>
+  - <span data-ttu-id="3bcf2-256">and this is</span><span class="sxs-lookup"><span data-stu-id="3bcf2-256">and this is</span></span>
+  - <span data-ttu-id="3bcf2-257">a nested bulleted list</span><span class="sxs-lookup"><span data-stu-id="3bcf2-257">a nested bulleted list</span></span>
+- <span data-ttu-id="3bcf2-258">All done!</span><span class="sxs-lookup"><span data-stu-id="3bcf2-258">All done!</span></span>
 
-### <a name="checklist"></a><span data-ttu-id="4447f-233">Elenco di controllo</span><span class="sxs-lookup"><span data-stu-id="4447f-233">Checklist</span></span>
+<span data-ttu-id="3bcf2-259">Indipendentemente dalla sintassi scelta, `-` o `*`, usarla in modo coerente all'interno di un articolo.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-259">Whichever syntax you use, `-` or `*`, use it consistently within an article.</span></span>
 
-<span data-ttu-id="4447f-234">Gli elenchi di controllo possono essere usati solo in docs.microsoft.com tramite un'estensione Markdown personalizzata:</span><span class="sxs-lookup"><span data-stu-id="4447f-234">Checklists are available for use on docs.microsoft.com (only) via a custom Markdown extension:</span></span>
+### <a name="checklist"></a><span data-ttu-id="3bcf2-260">Elenco di controllo</span><span class="sxs-lookup"><span data-stu-id="3bcf2-260">Checklist</span></span>
 
-```md
+<span data-ttu-id="3bcf2-261">Gli elenchi di controllo possono essere usati solo in Docs tramite un'estensione di Markdown personalizzata:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-261">Checklists are available for use on Docs via a custom Markdown extension:</span></span>
+
+```markdown
 > [!div class="checklist"]
 > * List item 1
 > * List item 2
 > * List item 3
 ```
 
-<span data-ttu-id="4447f-235">Il rendering di esempio in docs.microsoft.com è il seguente:</span><span class="sxs-lookup"><span data-stu-id="4447f-235">This example renders on docs.microsoft.com like this:</span></span>
+<span data-ttu-id="3bcf2-262">Il rendering di questo esempio in Docs è il seguente:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-262">This example renders on Docs like this:</span></span>
 
 > [!div class="checklist"]
-> * <span data-ttu-id="4447f-236">List item 1</span><span class="sxs-lookup"><span data-stu-id="4447f-236">List item 1</span></span>
-> * <span data-ttu-id="4447f-237">List item 2</span><span class="sxs-lookup"><span data-stu-id="4447f-237">List item 2</span></span>
-> * <span data-ttu-id="4447f-238">List item 3</span><span class="sxs-lookup"><span data-stu-id="4447f-238">List item 3</span></span>
+> * <span data-ttu-id="3bcf2-263">List item 1</span><span class="sxs-lookup"><span data-stu-id="3bcf2-263">List item 1</span></span>
+> * <span data-ttu-id="3bcf2-264">List item 2</span><span class="sxs-lookup"><span data-stu-id="3bcf2-264">List item 2</span></span>
+> * <span data-ttu-id="3bcf2-265">List item 3</span><span class="sxs-lookup"><span data-stu-id="3bcf2-265">List item 3</span></span>
 
-<span data-ttu-id="4447f-239">Usare elenchi di controllo all'inizio o alla fine di un articolo per riepilogare ciò di cui si parlerà o di cui si è parlato nell'articolo.</span><span class="sxs-lookup"><span data-stu-id="4447f-239">Use checklists at the beginning or end of an article to summarize "What will you learn" or "What have you learned" content.</span></span> <span data-ttu-id="4447f-240">Non aggiungere elenchi di controllo casuali all'interno degli articoli.</span><span class="sxs-lookup"><span data-stu-id="4447f-240">Do not add random checklists throughout your articles.</span></span>
-<!-- is this guidance still accurate? -->
+<span data-ttu-id="3bcf2-266">Usare elenchi di controllo all'inizio o alla fine di un articolo per riepilogare ciò di cui si parlerà o di cui si è parlato nell'articolo.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-266">Use checklists at the beginning or end of an article to summarize "What will you learn" or "What have you learned" content.</span></span> <span data-ttu-id="3bcf2-267">Non aggiungere elenchi di controllo casuali all'interno degli articoli.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-267">Do not add random checklists throughout your articles.</span></span>
 
-## <a name="next-step-action"></a><span data-ttu-id="4447f-241">Azione Passaggio successivo</span><span class="sxs-lookup"><span data-stu-id="4447f-241">Next step action</span></span>
+## <a name="next-step-action"></a><span data-ttu-id="3bcf2-268">Azione Passaggio successivo</span><span class="sxs-lookup"><span data-stu-id="3bcf2-268">Next step action</span></span>
 
-<span data-ttu-id="4447f-242">È possibile usare un'estensione personalizzata per aggiungere solo alle pagine in docs.microsoft.com un pulsante di azione per il passaggio successivo.</span><span class="sxs-lookup"><span data-stu-id="4447f-242">You can use a custom extension to add a next step action button to pages on docs.microsoft.com (only).</span></span>
+<span data-ttu-id="3bcf2-269">È possibile usare un'estensione personalizzata per aggiungere un pulsante di azione Passaggio successivo nelle pagine di Docs.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-269">You can use a custom extension to add a next step action button to Docs pages.</span></span>
 
-<span data-ttu-id="4447f-243">La sintassi è la seguente:</span><span class="sxs-lookup"><span data-stu-id="4447f-243">The syntax is as follows:</span></span>
+<span data-ttu-id="3bcf2-270">La sintassi è la seguente:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-270">The syntax is as follows:</span></span>
 
-```md
+```markdown
 > [!div class="nextstepaction"]
 > [button text](link to topic)
 ```
 
-<span data-ttu-id="4447f-244">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="4447f-244">For example:</span></span>
+<span data-ttu-id="3bcf2-271">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-271">For example:</span></span>
 
-```md
+```markdown
 > [!div class="nextstepaction"]
-> [Learn about basic style](style-quick-start.md)
+> [Learn about adding code to articles](code-in-docs.md)
 ```
 
-<span data-ttu-id="4447f-245">Il rendering è il seguente:</span><span class="sxs-lookup"><span data-stu-id="4447f-245">This renders as follows:</span></span>
+<span data-ttu-id="3bcf2-272">Il rendering è il seguente:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-272">This renders as follows:</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="4447f-246">Learn about basic style</span><span class="sxs-lookup"><span data-stu-id="4447f-246">Learn about basic style</span></span>](style-quick-start.md)
+> [<span data-ttu-id="3bcf2-273">Informazioni sull'aggiunta di codice negli articoli</span><span class="sxs-lookup"><span data-stu-id="3bcf2-273">Learn about adding code to articles</span></span>](code-in-docs.md)
 
-<span data-ttu-id="4447f-247">Nell'azione per il passaggio successivo è possibile usare tutti i collegamenti supportati, incluso un collegamento Markdown a un'altra pagina Web.</span><span class="sxs-lookup"><span data-stu-id="4447f-247">You can use any supported link in a next step action, including a Markdown link to another web page.</span></span> <span data-ttu-id="4447f-248">Nella maggior parte dei casi il collegamento all'azione successiva sarà un collegamento relativo a un altro file all'interno dello stesso docset.</span><span class="sxs-lookup"><span data-stu-id="4447f-248">In most cases, the next action link will be a relative link to another file in the same doc set.</span></span>
+<span data-ttu-id="3bcf2-274">Nell'azione per il passaggio successivo è possibile usare tutti i collegamenti supportati, incluso un collegamento Markdown a un'altra pagina Web.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-274">You can use any supported link in a next step action, including a Markdown link to another web page.</span></span> <span data-ttu-id="3bcf2-275">Nella maggior parte dei casi, il collegamento all'azione successiva è un collegamento relativo a un altro file all'interno dello stesso docset.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-275">In most cases, the next action link will be a relative link to another file in the same docset.</span></span>
 
-## <a name="section-definition"></a><span data-ttu-id="4447f-249">Definizione di sezione</span><span class="sxs-lookup"><span data-stu-id="4447f-249">Section definition</span></span>
+## <a name="non-localized-strings"></a><span data-ttu-id="3bcf2-276">Stringhe non localizzate</span><span class="sxs-lookup"><span data-stu-id="3bcf2-276">Non-localized strings</span></span>
 
-<!-- more info about this would be helpful! -->
-<span data-ttu-id="4447f-250">Potrebbe essere necessario definire una sezione.</span><span class="sxs-lookup"><span data-stu-id="4447f-250">You might need to define a section.</span></span> <span data-ttu-id="4447f-251">Questa sintassi è usata soprattutto nelle tabelle di codice.</span><span class="sxs-lookup"><span data-stu-id="4447f-251">This syntax is mostly used for code tables.</span></span>
-<span data-ttu-id="4447f-252">Vedere l'esempio seguente:</span><span class="sxs-lookup"><span data-stu-id="4447f-252">See the following example:</span></span>
+<span data-ttu-id="3bcf2-277">È possibile usare l'estensione di Markdown personalizzata `no-loc` per identificare le stringhe di contenuto che devono essere ignorate dal processo di localizzazione.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-277">You can use the custom `no-loc` Markdown extension to identify strings of content that you would like the localization process to ignore.</span></span>
 
-````
-> [!div class="tabbedCodeSnippets" data-resources="OutlookServices.Calendar"]
-> ```cs
-> <cs code text>
-> ```
-> ```javascript
-> <js code text>
-> ```
-````
+<span data-ttu-id="3bcf2-278">Per tutte le stringhe indicate viene fatta distinzione tra maiuscole e minuscole. In altre parole, la stringa deve corrispondere esattamente per essere ignorata per la localizzazione.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-278">All strings called out will be case-sensitive; that is, the string must match exactly to be ignored for localization.</span></span>
 
-<span data-ttu-id="4447f-253">Il rendering del testo Markdown della citazione precedente sarà il seguente:</span><span class="sxs-lookup"><span data-stu-id="4447f-253">The preceding blockquote Markdown text will be rendered as:</span></span>
-> [!div class="tabbedCodeSnippets" data-resources="OutlookServices.Calendar"]
-> ```cs
-> <cs code text>
-> ```
-> ```javascript
-> <js code text>
-> ```
+<span data-ttu-id="3bcf2-279">Per contrassegnare una singola stringa come non localizzabile, usare questa sintassi:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-279">To mark an individual string as non-localizable, use this syntax:</span></span>
 
-## <a name="selectors"></a><span data-ttu-id="4447f-254">Selettori</span><span class="sxs-lookup"><span data-stu-id="4447f-254">Selectors</span></span>
+```markdown
+:::no-loc text="String":::
+```
 
-<!-- could be more clear! -->
-<span data-ttu-id="4447f-255">È possibile usare un selettore per collegare pagine diverse dello stesso articolo e</span><span class="sxs-lookup"><span data-stu-id="4447f-255">You can use a selector when you want to connect different pages for the same article.</span></span> <span data-ttu-id="4447f-256">consentire ai lettori di passare da una pagina all'altra.</span><span class="sxs-lookup"><span data-stu-id="4447f-256">Readers can then switch between those pages.</span></span>
+<span data-ttu-id="3bcf2-280">Nel codice seguente, ad esempio, solo la singola istanza di `Document` verrà ignorata durante il processo di localizzazione:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-280">For example, in the following, only the single instance of `Document` will be ignored during the localization process:</span></span>
+
+```markdown
+# Heading 1 of the Document
+
+Markdown content within the :::no-loc text="Document":::.  The are multiple instances of Document, document, and documents.
+```
 
 > [!NOTE]
-> <span data-ttu-id="4447f-257">Questa estensione funziona in modo diverso in docs.microsoft.com e in MSDN.</span><span class="sxs-lookup"><span data-stu-id="4447f-257">This extension works differently between docs.microsoft.com and MSDN.</span></span> <!-- should we keep info about MSDN? If so say how they differ?-->
+> <span data-ttu-id="3bcf2-281">Usare `\` per applicare una sequenza di escape ai caratteri speciali:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-281">Use `\` to escape special characters:</span></span>
+> ```markdown
+> Lorem :::no-loc text="Find a \"Quotation\""::: Ipsum.
+> ```
 
-### <a name="single-selector"></a><span data-ttu-id="4447f-258">Selettore singolo</span><span class="sxs-lookup"><span data-stu-id="4447f-258">Single selector</span></span>
+<span data-ttu-id="3bcf2-282">È anche possibile usare i metadati nell'intestazione YAML per contrassegnare come non localizzabili tutte le istanze di una stringa all'interno del file Markdown corrente:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-282">You can also use metadata in the YAML header to mark all instances of a string within the current Markdown file as non-localizable:</span></span>
 
+```yml
+author: cillroy
+no-loc: [Global, Strings, to be, Ignored]
 ```
+
+> [!NOTE]
+> <span data-ttu-id="3bcf2-283">I metadati no-loc non sono supportati come metadati globali nel file *docfx.json*.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-283">The no-loc metadata is not supported as global metadata in *docfx.json* file.</span></span> <span data-ttu-id="3bcf2-284">La pipeline di localizzazione non legge il file *docfx.json* e quindi i metadati no-loc devono essere aggiunti in ogni singolo file di origine.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-284">The localization pipeline doesn't read the *docfx.json* file, so the no-loc metadata must be added into each individual source file.</span></span>
+
+<span data-ttu-id="3bcf2-285">Nell'esempio seguente, sia nel campo dei metadati `title` sia nell'intestazione Markdown, la parola `Document` verrà ignorata durante il processo di localizzazione.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-285">In the following example, both in the metadata `title` and the Markdown header the word `Document` will be ignored during the localization process.</span></span>
+
+<span data-ttu-id="3bcf2-286">Nel campo dei metadati `description` e nel contenuto principale di Markdown, la parola `document` viene invece localizzata, perché non inizia con una lettera `D` maiuscola.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-286">In the metadata `description` and the Markdown main content the word `document` is localized, because it does not start with a capital `D`.</span></span>
+
+```markdown
+---
+title: Title of the Document
+author: author-name
+description: Description for the document
+no-loc: [Title, Document]
+---
+# Heading 1 of the Document
+
+Markdown content within the document.
+```
+
+<!-- commenting out for now because no one knows what this means
+## Section definition
+
+You might need to define a section. This syntax is mostly used for code tables.
+See the following example:
+
+````
+> [!div class="tabbedCodeSnippets" data-resources="OutlookServices.Calendar"]
+> ```cs
+> <cs code text>
+> ```
+> ```javascript
+> <js code text>
+> ```
+````
+
+The preceding blockquote Markdown text will be rendered as:
+> [!div class="tabbedCodeSnippets" data-resources="OutlookServices.Calendar"]
+> ```cs
+> <cs code text>
+> ```
+> ```javascript
+> <js code text>
+> ```
+-->
+
+## <a name="selectors"></a><span data-ttu-id="3bcf2-287">Selettori</span><span class="sxs-lookup"><span data-stu-id="3bcf2-287">Selectors</span></span>
+
+<span data-ttu-id="3bcf2-288">I selettori sono elementi dell'interfaccia utente che consentono all'utente di passare da una versione all'altra dello stesso articolo.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-288">Selectors are UI elements that let the user switch between multiple flavors of the same article.</span></span> <span data-ttu-id="3bcf2-289">Questi elementi vengono usati in alcuni set di documenti per illustrare le differenze di implementazione tra tecnologie o piattaforme.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-289">They are used in some doc sets to address differences in implementation across technologies or platforms.</span></span> <span data-ttu-id="3bcf2-290">Un esempio tipico è il contenuto per sviluppatori relativo a più piattaforme per dispositivi mobili.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-290">Selectors are typically most applicable to our mobile platform content for developers.</span></span>
+
+<span data-ttu-id="3bcf2-291">Poiché lo stesso selettore Markdown viene aggiunto in ogni file di articolo che prevede l'uso del selettore, è consigliabile inserirlo in un file di inclusione.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-291">Because the same selector Markdown goes in each article file that uses the selector, we recommend placing the selector for your article in an include file.</span></span> <span data-ttu-id="3bcf2-292">Sarà quindi possibile fare riferimento al file di inclusione in tutti i file di articolo che usano lo stesso selettore.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-292">Then you can reference that include file in all your article files that use the same selector.</span></span>
+
+<span data-ttu-id="3bcf2-293">Esistono due tipi di selettori: un selettore singolo e un selettore multiplo.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-293">There are two types of selectors: a single selector and a multi-selector.</span></span>
+
+### <a name="single-selector"></a><span data-ttu-id="3bcf2-294">Selettore singolo</span><span class="sxs-lookup"><span data-stu-id="3bcf2-294">Single selector</span></span>
+
+```markdown
 > [!div class="op_single_selector"]
-> - [Universal Windows](how-to-write-use-markdown.md)
-> - [Windows Phone](how-to-write-use-markdown.md)
-> - [iOS](how-to-write-use-markdown.md)
-> - [Android](how-to-write-use-markdown.md)
-> - [Kindle](how-to-write-use-markdown.md)
-> - [Baidu](how-to-write-use-markdown.md)
-> - [Xamarin.iOS](how-to-write-use-markdown.md)
-> - [Xamarin.Android](how-to-write-use-markdown.md)
+> - [Universal Windows](../articles/notification-hubs-windows-store-dotnet-get-started/)
+> - [Windows Phone](../articles/notification-hubs-windows-phone-get-started/)
+> - [iOS](../articles/notification-hubs-ios-get-started/)
+> - [Android](../articles/notification-hubs-android-get-started/)
+> - [Kindle](../articles/notification-hubs-kindle-get-started/)
+> - [Baidu](../articles/notification-hubs-baidu-get-started/)
+> - [Xamarin.iOS](../articles/partner-xamarin-notification-hubs-ios-get-started/)
+> - [Xamarin.Android](../articles/partner-xamarin-notification-hubs-android-get-started/)
 ```
 
-<span data-ttu-id="4447f-259">... il rendering sarà il seguente:</span><span class="sxs-lookup"><span data-stu-id="4447f-259">... will be rendered like this:</span></span>
+<span data-ttu-id="3bcf2-295">... il rendering sarà il seguente:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-295">... will be rendered like this:</span></span>
 
 > [!div class="op_single_selector"]
-> - [Universal Windows](how-to-write-use-markdown.md)
-> - [Windows Phone](how-to-write-use-markdown.md)
-> - [iOS](how-to-write-use-markdown.md)
-> - [Android](how-to-write-use-markdown.md)
-> - [Kindle](how-to-write-use-markdown.md)
-> - [Baidu](how-to-write-use-markdown.md)
-> - [Xamarin.iOS](how-to-write-use-markdown.md)
-> - [Xamarin.Android](how-to-write-use-markdown.md)
+> - [Universal Windows](how-to-write-links.md)
+> - [Windows Phone](how-to-write-links.md)
+> - [iOS](how-to-write-links.md)
+> - [Android](how-to-write-links.md)
+> - [Kindle](how-to-write-links.md)
+> - [Baidu](how-to-write-links.md)
+> - [Xamarin.iOS](how-to-write-links.md)
+> - [Xamarin.Android](how-to-write-links.md)
 
-### <a name="multi-selector"></a><span data-ttu-id="4447f-268">Selezione multipla</span><span class="sxs-lookup"><span data-stu-id="4447f-268">Multi-selector</span></span>
+### <a name="multi-selector"></a><span data-ttu-id="3bcf2-304">Selezione multipla</span><span class="sxs-lookup"><span data-stu-id="3bcf2-304">Multi-selector</span></span>
 
-```
+```markdown
 > [!div class="op_multi_selector" title1="Platform" title2="Backend"]
-> - [(iOS | .NET)](how-to-write-workflows-major.md)
-> - [(iOS | JavaScript)](how-to-write-workflows-major.md)
-> - [(Windows universal C# | .NET)](how-to-write-workflows-major.md)
-> - [(Windows universal C# | Javascript)](how-to-write-workflows-major.md)
-> - [(Windows Phone | .NET)](how-to-write-workflows-major.md)
-> - [(Windows Phone | Javascript)](how-to-write-workflows-major.md)
-> - [(Android | .NET)](how-to-write-workflows-major.md)
-> - [(Android | Javascript)](how-to-write-workflows-major.md)
-> - [(Xamarin iOS | Javascript)](how-to-write-workflows-major.md)
-> - [(Xamarin Android | Javascript)](how-to-write-workflows-major.md)
+> - [(iOS | .NET)](./mobile-services-dotnet-backend-ios-get-started-push.md)
+> - [(iOS | JavaScript)](./mobile-services-javascript-backend-ios-get-started-push.md)
+> - [(Windows universal C# | .NET)](./mobile-services-dotnet-backend-windows-universal-dotnet-get-started-push.md)
+> - [(Windows universal C# | Javascript)](./mobile-services-javascript-backend-windows-universal-dotnet-get-started-push.md)
+> - [(Windows Phone | .NET)](./mobile-services-dotnet-backend-windows-phone-get-started-push.md)
+> - [(Windows Phone | Javascript)](./mobile-services-javascript-backend-windows-phone-get-started-push.md)
+> - [(Android | .NET)](./mobile-services-dotnet-backend-android-get-started-push.md)
+> - [(Android | Javascript)](./mobile-services-javascript-backend-android-get-started-push.md)
+> - [(Xamarin iOS | Javascript)](./partner-xamarin-mobile-services-ios-get-started-push.md)
+> - [(Xamarin Android | Javascript)](./partner-xamarin-mobile-services-android-get-started-push.md)
 ```
 
-<span data-ttu-id="4447f-269">... il rendering sarà il seguente:</span><span class="sxs-lookup"><span data-stu-id="4447f-269">... will be rendered like this:</span></span>
+<span data-ttu-id="3bcf2-305">... il rendering sarà il seguente:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-305">... will be rendered like this:</span></span>
 
 > [!div class="op_multi_selector" title1="Piattaforma" title2="Back-end"]
-> - [(iOS | .NET)](how-to-write-workflows-major.md)
-> - [(iOS | JavaScript)](how-to-write-workflows-major.md)
-> - [(Windows Universal C# | .NET)](how-to-write-workflows-major.md)
-> - [(Windows Universal C# | Javascript)](how-to-write-workflows-major.md)
-> - [(Windows Phone | .NET)](how-to-write-workflows-major.md)
-> - [(Windows Phone | Javascript)](how-to-write-workflows-major.md)
-> - [(Android | .NET)](how-to-write-workflows-major.md)
-> - [(Android | Javascript)](how-to-write-workflows-major.md)
-> - [(Xamarin iOS | Javascript)](how-to-write-workflows-major.md)
-> - [(Xamarin Android | Javascript)](how-to-write-workflows-major.md)
+> - [(iOS | .NET)](how-to-write-links.md)
+> - [(iOS | JavaScript)](how-to-write-links.md)
+> - [(Windows Universal C# | .NET)](how-to-write-links.md)
+> - [(Windows Universal C# | Javascript)](how-to-write-links.md)
+> - [(Windows Phone | .NET)](how-to-write-links.md)
+> - [(Windows Phone | Javascript)](how-to-write-links.md)
+> - [(Android | .NET)](how-to-write-links.md)
+> - [(Android | Javascript)](how-to-write-links.md)
+> - [(Xamarin iOS | Javascript)](how-to-write-links.md)
+> - [(Xamarin Android | Javascript)](how-to-write-links.md)
 
-## <a name="tables"></a><span data-ttu-id="4447f-282">Tabelle</span><span class="sxs-lookup"><span data-stu-id="4447f-282">Tables</span></span>
+## <a name="subscript-and-superscript"></a><span data-ttu-id="3bcf2-318">Apice e pedice</span><span class="sxs-lookup"><span data-stu-id="3bcf2-318">Subscript and superscript</span></span>
 
-<span data-ttu-id="4447f-283">Il metodo più semplice per creare una tabella in Markdown consiste nell'uso di barre verticali e linee.</span><span class="sxs-lookup"><span data-stu-id="4447f-283">The simplest way to create a table in Markdown is to use pipes and lines.</span></span> <span data-ttu-id="4447f-284">Per creare una tabella standard con un titolo, la prima linea deve essere seguita da una linea tratteggiata:</span><span class="sxs-lookup"><span data-stu-id="4447f-284">To create a standard table with a header, follow the first line with dashed line:</span></span>
+<span data-ttu-id="3bcf2-319">È consigliabile usare il formato apice e pedice quando è necessario per assicurare l'accuratezza tecnica, ad esempio quando si scrivono le formule matematiche.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-319">You should only use subscript or superscript when necessary for technical accuracy, such as when writing about mathematical formulas.</span></span> <span data-ttu-id="3bcf2-320">Non usarlo per gli stili non standard, come le note a piè di pagina.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-320">Don't use them for non-standard styles, such as footnotes.</span></span>
 
-```md
+<span data-ttu-id="3bcf2-321">Per il formato apice e pedice, usare il codice HTML:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-321">For both subscript and superscript, use HTML:</span></span>
+
+```html
+Hello <sub>This is subscript!</sub>
+```
+
+<span data-ttu-id="3bcf2-322">Il rendering è il seguente:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-322">This renders as follows:</span></span>
+
+<span data-ttu-id="3bcf2-323">Hello <sub>This is subscript!</sub></span><span class="sxs-lookup"><span data-stu-id="3bcf2-323">Hello <sub>This is subscript!</sub></span></span>
+
+```html
+Goodbye <sup>This is superscript!</sup>
+```
+
+<span data-ttu-id="3bcf2-324">Il rendering è il seguente:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-324">This renders as follows:</span></span>
+
+<span data-ttu-id="3bcf2-325">Goodbye <sup>This is superscript!</sup></span><span class="sxs-lookup"><span data-stu-id="3bcf2-325">Goodbye <sup>This is superscript!</sup></span></span>
+
+## <a name="tables"></a><span data-ttu-id="3bcf2-326">Tabelle</span><span class="sxs-lookup"><span data-stu-id="3bcf2-326">Tables</span></span>
+
+<span data-ttu-id="3bcf2-327">Il metodo più semplice per creare una tabella in Markdown consiste nell'uso di barre verticali e linee.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-327">The simplest way to create a table in Markdown is to use pipes and lines.</span></span> <span data-ttu-id="3bcf2-328">Per creare una tabella standard con un titolo, la prima linea deve essere seguita da una linea tratteggiata:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-328">To create a standard table with a header, follow the first line with dashed line:</span></span>
+
+```markdown
 |This is   |a simple   |table header|
 |----------|-----------|------------|
 |table     |data       |here        |
 |it doesn't|actually   |have to line up nicely!|
 ```
 
-<span data-ttu-id="4447f-285">Il rendering è il seguente:</span><span class="sxs-lookup"><span data-stu-id="4447f-285">This renders as follows:</span></span>
+<span data-ttu-id="3bcf2-329">Il rendering è il seguente:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-329">This renders as follows:</span></span>
 
-|<span data-ttu-id="4447f-286">This is</span><span class="sxs-lookup"><span data-stu-id="4447f-286">This is</span></span>   |<span data-ttu-id="4447f-287">a simple</span><span class="sxs-lookup"><span data-stu-id="4447f-287">a simple</span></span>   |<span data-ttu-id="4447f-288">table header</span><span class="sxs-lookup"><span data-stu-id="4447f-288">table header</span></span>|
+|<span data-ttu-id="3bcf2-330">This is</span><span class="sxs-lookup"><span data-stu-id="3bcf2-330">This is</span></span>   |<span data-ttu-id="3bcf2-331">a simple</span><span class="sxs-lookup"><span data-stu-id="3bcf2-331">a simple</span></span>   |<span data-ttu-id="3bcf2-332">table header</span><span class="sxs-lookup"><span data-stu-id="3bcf2-332">table header</span></span>|
 |----------|-----------|------------|
-|<span data-ttu-id="4447f-289">table</span><span class="sxs-lookup"><span data-stu-id="4447f-289">table</span></span>     |<span data-ttu-id="4447f-290">data</span><span class="sxs-lookup"><span data-stu-id="4447f-290">data</span></span>       |<span data-ttu-id="4447f-291">here</span><span class="sxs-lookup"><span data-stu-id="4447f-291">here</span></span>        |
-|<span data-ttu-id="4447f-292">it doesn't</span><span class="sxs-lookup"><span data-stu-id="4447f-292">it doesn't</span></span>|<span data-ttu-id="4447f-293">actually</span><span class="sxs-lookup"><span data-stu-id="4447f-293">actually</span></span>   |<span data-ttu-id="4447f-294">have to line up nicely!</span><span class="sxs-lookup"><span data-stu-id="4447f-294">have to line up nicely!</span></span>||
+|<span data-ttu-id="3bcf2-333">table</span><span class="sxs-lookup"><span data-stu-id="3bcf2-333">table</span></span>     |<span data-ttu-id="3bcf2-334">data</span><span class="sxs-lookup"><span data-stu-id="3bcf2-334">data</span></span>       |<span data-ttu-id="3bcf2-335">here</span><span class="sxs-lookup"><span data-stu-id="3bcf2-335">here</span></span>        |
+|<span data-ttu-id="3bcf2-336">it doesn't</span><span class="sxs-lookup"><span data-stu-id="3bcf2-336">it doesn't</span></span>|<span data-ttu-id="3bcf2-337">actually</span><span class="sxs-lookup"><span data-stu-id="3bcf2-337">actually</span></span>   |<span data-ttu-id="3bcf2-338">have to line up nicely!</span><span class="sxs-lookup"><span data-stu-id="3bcf2-338">have to line up nicely!</span></span>||
 
-<span data-ttu-id="4447f-295">È anche possibile creare una tabella senza un titolo.</span><span class="sxs-lookup"><span data-stu-id="4447f-295">You can also create a table without a header.</span></span> <span data-ttu-id="4447f-296">Ad esempio, per creare un elenco con più colonne:</span><span class="sxs-lookup"><span data-stu-id="4447f-296">For example, to create a multiple-column list:</span></span>
+<span data-ttu-id="3bcf2-339">È possibile allineare le colonne usando i due punti:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-339">You can align the columns by using colons:</span></span>
 
-```md
-|   |   |
-| - | - |
-| This | table |
-| has no | header |
+```markdown
+| Fun                  | With                 | Tables          |
+| :------------------- | -------------------: |:---------------:|
+| left-aligned column  | right-aligned column | centered column |
+| $100                 | $100                 | $100            |
+| $10                  | $10                  | $10             |
+| $1                   | $1                   | $1              |
 ```
 
-<span data-ttu-id="4447f-297">Il rendering è il seguente:</span><span class="sxs-lookup"><span data-stu-id="4447f-297">This renders like this:</span></span>
+<span data-ttu-id="3bcf2-340">Il rendering è il seguente:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-340">Renders as follows:</span></span>
 
-|   |   |
-| - | - |
-| <span data-ttu-id="4447f-298">This</span><span class="sxs-lookup"><span data-stu-id="4447f-298">This</span></span> | <span data-ttu-id="4447f-299">table</span><span class="sxs-lookup"><span data-stu-id="4447f-299">table</span></span> |
-| <span data-ttu-id="4447f-300">has no</span><span class="sxs-lookup"><span data-stu-id="4447f-300">has no</span></span> | <span data-ttu-id="4447f-301">header</span><span class="sxs-lookup"><span data-stu-id="4447f-301">header</span></span> |
-
-<span data-ttu-id="4447f-302">È possibile allineare le colonne usando i due punti:</span><span class="sxs-lookup"><span data-stu-id="4447f-302">You can align the columns by using colons:</span></span>
-
-```md
-|                  |
-|------------------|
-|    right aligned:|
-|:left aligned     |
-|:centered        :|
-```
-
-<span data-ttu-id="4447f-303">Il rendering è il seguente:</span><span class="sxs-lookup"><span data-stu-id="4447f-303">Renders as follows:</span></span>
-
-|                  |
-|------------------|
-|    <span data-ttu-id="4447f-304">right aligned:</span><span class="sxs-lookup"><span data-stu-id="4447f-304">right aligned:</span></span>|
-|<span data-ttu-id="4447f-305">:left aligned</span><span class="sxs-lookup"><span data-stu-id="4447f-305">:left aligned</span></span>     |
-|<span data-ttu-id="4447f-306">:centered        :</span><span class="sxs-lookup"><span data-stu-id="4447f-306">:centered        :</span></span>|
+| <span data-ttu-id="3bcf2-341">Fun</span><span class="sxs-lookup"><span data-stu-id="3bcf2-341">Fun</span></span>                  | <span data-ttu-id="3bcf2-342">With</span><span class="sxs-lookup"><span data-stu-id="3bcf2-342">With</span></span>                 | <span data-ttu-id="3bcf2-343">Tabelle</span><span class="sxs-lookup"><span data-stu-id="3bcf2-343">Tables</span></span>          |
+| :------------------- | -------------------: |:---------------:|
+| <span data-ttu-id="3bcf2-344">left-aligned column</span><span class="sxs-lookup"><span data-stu-id="3bcf2-344">left-aligned column</span></span>  | <span data-ttu-id="3bcf2-345">right-aligned column</span><span class="sxs-lookup"><span data-stu-id="3bcf2-345">right-aligned column</span></span> | <span data-ttu-id="3bcf2-346">centered column</span><span class="sxs-lookup"><span data-stu-id="3bcf2-346">centered column</span></span> |
+| <span data-ttu-id="3bcf2-347">$100</span><span class="sxs-lookup"><span data-stu-id="3bcf2-347">$100</span></span>                 | <span data-ttu-id="3bcf2-348">$100</span><span class="sxs-lookup"><span data-stu-id="3bcf2-348">$100</span></span>                 | <span data-ttu-id="3bcf2-349">$100</span><span class="sxs-lookup"><span data-stu-id="3bcf2-349">$100</span></span>            |
+| <span data-ttu-id="3bcf2-350">$10</span><span class="sxs-lookup"><span data-stu-id="3bcf2-350">$10</span></span>                  | <span data-ttu-id="3bcf2-351">$10</span><span class="sxs-lookup"><span data-stu-id="3bcf2-351">$10</span></span>                  | <span data-ttu-id="3bcf2-352">$10</span><span class="sxs-lookup"><span data-stu-id="3bcf2-352">$10</span></span>             |
+| <span data-ttu-id="3bcf2-353">$1</span><span class="sxs-lookup"><span data-stu-id="3bcf2-353">$1</span></span>                   | <span data-ttu-id="3bcf2-354">$1</span><span class="sxs-lookup"><span data-stu-id="3bcf2-354">$1</span></span>                   | <span data-ttu-id="3bcf2-355">$1</span><span class="sxs-lookup"><span data-stu-id="3bcf2-355">$1</span></span>              |
 
 > [!TIP]
-> <span data-ttu-id="4447f-307">Docs Authoring Extension per VS Code semplifica l'aggiunta di tabelle Markdown di base.</span><span class="sxs-lookup"><span data-stu-id="4447f-307">The Docs Authoring Extension for VS Code makes it easy to add basic Markdown tables!</span></span>
+> <span data-ttu-id="3bcf2-356">Docs Authoring Extension per VS Code semplifica l'aggiunta di tabelle Markdown di base.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-356">The Docs Authoring Extension for VS Code makes it easy to add basic Markdown tables!</span></span>
 >
-> <span data-ttu-id="4447f-308">È anche possibile usare un [generatore di tabelle online](http://www.tablesgenerator.com/markdown_tables).</span><span class="sxs-lookup"><span data-stu-id="4447f-308">You can also use an [online table generator](http://www.tablesgenerator.com/markdown_tables).</span></span>
+> <span data-ttu-id="3bcf2-357">È anche possibile usare un [generatore di tabelle online](http://www.tablesgenerator.com/markdown_tables).</span><span class="sxs-lookup"><span data-stu-id="3bcf2-357">You can also use an [online table generator](http://www.tablesgenerator.com/markdown_tables).</span></span>
 
-### <a name="mx-tdbreakall"></a><span data-ttu-id="4447f-309">mx-tdBreakAll</span><span class="sxs-lookup"><span data-stu-id="4447f-309">mx-tdBreakAll</span></span>
+### <a name="line-breaks-within-words-in-any-table-cell"></a><span data-ttu-id="3bcf2-358">Interruzioni di riga all'interno di parole in qualsiasi cella di tabella</span><span class="sxs-lookup"><span data-stu-id="3bcf2-358">Line breaks within words in any table cell</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="4447f-310">Funziona solo nel sito docs.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="4447f-310">This only works on the docs.microsoft.com site.</span></span>
+<span data-ttu-id="3bcf2-359">Se si usano parole lunghe in una tabella Markdown, la tabella potrebbe espandersi fino alla barra di spostamento destra e diventare illeggibile.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-359">Long words in a Markdown table might make the table expand to the right navigation and become unreadable.</span></span> <span data-ttu-id="3bcf2-360">È possibile risolvere questo problema consentendo al rendering di Docs di inserire automaticamente interruzioni di riga all'interno di parole, quando necessario.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-360">You can solve that by allowing Docs rendering to automatically insert line breaks within words when needed.</span></span> <span data-ttu-id="3bcf2-361">È sufficiente impostare il ritorno a capo nella tabella con la classe personalizzata `[!div class="mx-tdBreakAll"]`.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-361">Just wrap up the table with the custom class `[!div class="mx-tdBreakAll"]`.</span></span>
 
-<span data-ttu-id="4447f-311">Se si crea una tabella in Markdown, la tabella potrebbe espandersi fino alla barra di spostamento destra e diventare illeggibile.</span><span class="sxs-lookup"><span data-stu-id="4447f-311">If you create a table in Markdown, the table might expand to the right navigation and become unreadable.</span></span> <span data-ttu-id="4447f-312">È possibile risolvere l'inconveniente consentendo l'aggiunta di ritorni a capo alla tabella quando necessario durante il rendering dei documenti.</span><span class="sxs-lookup"><span data-stu-id="4447f-312">You can solve that by allowing Docs rendering to break the table when needed.</span></span> <span data-ttu-id="4447f-313">È sufficiente impostare il ritorno a capo nella tabella con la classe personalizzata `[!div class="mx-tdBreakAll"]`.</span><span class="sxs-lookup"><span data-stu-id="4447f-313">Just wrap up the table with the custom class `[!div class="mx-tdBreakAll"]`.</span></span>
+<span data-ttu-id="3bcf2-362">Ecco un esempio di tabella Markdown con tre righe per le quali il ritorno a capo verrà gestito con `div` con il nome di classe `mx-tdBreakAll`.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-362">Here is a Markdown sample of a table with three rows that will be wrapped by a `div` with the class name `mx-tdBreakAll`.</span></span>
 
-<span data-ttu-id="4447f-314">Ecco un esempio di tabella Markdown con tre righe per le quali il ritorno a capo verrà gestito con `div` con il nome di classe `mx-tdBreakAll`.</span><span class="sxs-lookup"><span data-stu-id="4447f-314">Here is a Markdown sample of a table with three rows that will be wrapped by a `div` with the class name `mx-tdBreakAll`.</span></span>
-
-```md
+```markdown
 > [!div class="mx-tdBreakAll"]
 > |Name|Syntax|Mandatory for silent installation?|Description|
 > |-------------|----------|---------|---------|
@@ -491,93 +615,19 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > |Help|/help|No|Provides help and quick reference. Displays the correct use of the setup command, including a list of all options and behaviors.|
 ```
 
-<span data-ttu-id="4447f-315">Verrà eseguito il rendering come segue:</span><span class="sxs-lookup"><span data-stu-id="4447f-315">It will be rendered like this:</span></span>
+<span data-ttu-id="3bcf2-363">Verrà eseguito il rendering come segue:</span><span class="sxs-lookup"><span data-stu-id="3bcf2-363">It will be rendered like this:</span></span>
 
 > [!div class="mx-tdBreakAll"]
-> |<span data-ttu-id="4447f-316">Nome</span><span class="sxs-lookup"><span data-stu-id="4447f-316">Name</span></span>|<span data-ttu-id="4447f-317">Sintassi</span><span class="sxs-lookup"><span data-stu-id="4447f-317">Syntax</span></span>|<span data-ttu-id="4447f-318">Obbligatorio per l'installazione invisibile all'utente?</span><span class="sxs-lookup"><span data-stu-id="4447f-318">Mandatory for silent installation?</span></span>|<span data-ttu-id="4447f-319">Descrizione</span><span class="sxs-lookup"><span data-stu-id="4447f-319">Description</span></span>|
+> |<span data-ttu-id="3bcf2-364">Nome</span><span class="sxs-lookup"><span data-stu-id="3bcf2-364">Name</span></span>|<span data-ttu-id="3bcf2-365">Sintassi</span><span class="sxs-lookup"><span data-stu-id="3bcf2-365">Syntax</span></span>|<span data-ttu-id="3bcf2-366">Obbligatorio per l'installazione invisibile all'utente?</span><span class="sxs-lookup"><span data-stu-id="3bcf2-366">Mandatory for silent installation?</span></span>|<span data-ttu-id="3bcf2-367">Descrizione</span><span class="sxs-lookup"><span data-stu-id="3bcf2-367">Description</span></span>|
 > |-------------|----------|---------|---------|
-> |<span data-ttu-id="4447f-320">Quiet</span><span class="sxs-lookup"><span data-stu-id="4447f-320">Quiet</span></span>|<span data-ttu-id="4447f-321">/quiet</span><span class="sxs-lookup"><span data-stu-id="4447f-321">/quiet</span></span>|<span data-ttu-id="4447f-322">Sì</span><span class="sxs-lookup"><span data-stu-id="4447f-322">Yes</span></span>|<span data-ttu-id="4447f-323">Esegue il programma di installazione senza visualizzare elementi dell'interfaccia utente o richieste di conferma.</span><span class="sxs-lookup"><span data-stu-id="4447f-323">Runs the installer, displaying no UI and no prompts.</span></span>|
-> |<span data-ttu-id="4447f-324">NoRestart</span><span class="sxs-lookup"><span data-stu-id="4447f-324">NoRestart</span></span>|<span data-ttu-id="4447f-325">/norestart</span><span class="sxs-lookup"><span data-stu-id="4447f-325">/norestart</span></span>|<span data-ttu-id="4447f-326">No</span><span class="sxs-lookup"><span data-stu-id="4447f-326">No</span></span>|<span data-ttu-id="4447f-327">Impedisce qualsiasi tentativo di riavvio.</span><span class="sxs-lookup"><span data-stu-id="4447f-327">Suppresses any attempts to restart.</span></span> <span data-ttu-id="4447f-328">Per impostazione predefinita l'interfaccia utente richiede una conferma prima del riavvio.</span><span class="sxs-lookup"><span data-stu-id="4447f-328">By default, the UI will prompt before restart.</span></span>|
-> |<span data-ttu-id="4447f-329">Help</span><span class="sxs-lookup"><span data-stu-id="4447f-329">Help</span></span>|<span data-ttu-id="4447f-330">/help</span><span class="sxs-lookup"><span data-stu-id="4447f-330">/help</span></span>|<span data-ttu-id="4447f-331">No</span><span class="sxs-lookup"><span data-stu-id="4447f-331">No</span></span>|<span data-ttu-id="4447f-332">Rende disponibili la Guida e il Riferimento rapido.</span><span class="sxs-lookup"><span data-stu-id="4447f-332">Provides help and quick reference.</span></span> <span data-ttu-id="4447f-333">Visualizza l'uso corretto del comando di impostazione con un elenco di tutte le opzioni e i comportamenti.</span><span class="sxs-lookup"><span data-stu-id="4447f-333">Displays the correct use of the setup command, including a list of all options and behaviors.</span></span>|
+> |<span data-ttu-id="3bcf2-368">Quiet</span><span class="sxs-lookup"><span data-stu-id="3bcf2-368">Quiet</span></span>|<span data-ttu-id="3bcf2-369">/quiet</span><span class="sxs-lookup"><span data-stu-id="3bcf2-369">/quiet</span></span>|<span data-ttu-id="3bcf2-370">Sì</span><span class="sxs-lookup"><span data-stu-id="3bcf2-370">Yes</span></span>|<span data-ttu-id="3bcf2-371">Esegue il programma di installazione senza visualizzare elementi dell'interfaccia utente o richieste di conferma.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-371">Runs the installer, displaying no UI and no prompts.</span></span>|
+> |<span data-ttu-id="3bcf2-372">NoRestart</span><span class="sxs-lookup"><span data-stu-id="3bcf2-372">NoRestart</span></span>|<span data-ttu-id="3bcf2-373">/norestart</span><span class="sxs-lookup"><span data-stu-id="3bcf2-373">/norestart</span></span>|<span data-ttu-id="3bcf2-374">No</span><span class="sxs-lookup"><span data-stu-id="3bcf2-374">No</span></span>|<span data-ttu-id="3bcf2-375">Impedisce qualsiasi tentativo di riavvio.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-375">Suppresses any attempts to restart.</span></span> <span data-ttu-id="3bcf2-376">Per impostazione predefinita l'interfaccia utente richiede una conferma prima del riavvio.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-376">By default, the UI will prompt before restart.</span></span>|
+> |<span data-ttu-id="3bcf2-377">Help</span><span class="sxs-lookup"><span data-stu-id="3bcf2-377">Help</span></span>|<span data-ttu-id="3bcf2-378">/help</span><span class="sxs-lookup"><span data-stu-id="3bcf2-378">/help</span></span>|<span data-ttu-id="3bcf2-379">No</span><span class="sxs-lookup"><span data-stu-id="3bcf2-379">No</span></span>|<span data-ttu-id="3bcf2-380">Rende disponibili la Guida e il Riferimento rapido.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-380">Provides help and quick reference.</span></span> <span data-ttu-id="3bcf2-381">Visualizza l'uso corretto del comando di impostazione con un elenco di tutte le opzioni e i comportamenti.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-381">Displays the correct use of the setup command, including a list of all options and behaviors.</span></span>|
 
-### <a name="mx-tdcol2breakall"></a><span data-ttu-id="4447f-334">mx-tdCol2BreakAll</span><span class="sxs-lookup"><span data-stu-id="4447f-334">mx-tdCol2BreakAll</span></span>
+### <a name="line-breaks-within-words-in-second-column-table-cells"></a><span data-ttu-id="3bcf2-382">Interruzioni di riga all'interno di parole nelle celle della seconda colonna della tabella</span><span class="sxs-lookup"><span data-stu-id="3bcf2-382">Line breaks within words in second column table cells</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="4447f-335">Funziona solo nel sito docs.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="4447f-335">This only works on the docs.microsoft.com site.</span></span>
+<span data-ttu-id="3bcf2-383">Può essere opportuno impostare l'inserimento automatico di interruzioni di riga all'interno di parole solo nella seconda colonna di una tabella.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-383">You might want line breaks to be automatically inserted within words only in the second column of a table.</span></span> <span data-ttu-id="3bcf2-384">Per limitare le interruzioni alla seconda colonna, applicare la classe `mx-tdCol2BreakAll` usando la sintassi del wrapper `div`, come illustrato in precedenza.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-384">To limit the breaks to the second column, apply the class `mx-tdCol2BreakAll` by using the `div` wrapper syntax as shown earlier.</span></span>
 
-<span data-ttu-id="4447f-336">Occasionalmente potrebbero essere presenti parole molto lunghe nella seconda colonna di una tabella.</span><span class="sxs-lookup"><span data-stu-id="4447f-336">From time to time, you might have very long words in the second column of a table.</span></span> <span data-ttu-id="4447f-337">Per assicurarsi che vengano divise correttamente, è possibile applicare la classe `mx-tdCol2BreakAll` usando la sintassi per il ritorno a capo `div`, come illustrato in precedenza.</span><span class="sxs-lookup"><span data-stu-id="4447f-337">To ensure they are broken apart nicely, you can apply the class `mx-tdCol2BreakAll` by using the `div` wrapper syntax as shown earlier.</span></span>
+### <a name="html-tables"></a><span data-ttu-id="3bcf2-385">Tabelle HTML</span><span class="sxs-lookup"><span data-stu-id="3bcf2-385">HTML Tables</span></span>
 
-### <a name="html-tables"></a><span data-ttu-id="4447f-338">Tabelle HTML</span><span class="sxs-lookup"><span data-stu-id="4447f-338">HTML Tables</span></span>
-
-<span data-ttu-id="4447f-339">Non è consigliabile usare tabelle HTML per docs.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="4447f-339">HTML tables are not recommended for docs.microsoft.com.</span></span> <span data-ttu-id="4447f-340">Non sono leggibili nell'origine, un principio fondamentale di Markdown.</span><span class="sxs-lookup"><span data-stu-id="4447f-340">They are not human readable in the source - which is a key principle of Markdown.</span></span>
-
-<!--If you use HTML tables and your Markdown is not being rendered between the two tables, you need to add a closing `br` tag after the closing `table` tag.
-
-![break HTML tables](media/break-tables.png)
--->
-
-## <a name="videos"></a><span data-ttu-id="4447f-341">Video</span><span class="sxs-lookup"><span data-stu-id="4447f-341">Videos</span></span>
-
-### <a name="embedding-videos-into-a-markdown-page"></a><span data-ttu-id="4447f-342">Incorporamento di video in una pagina Markdown</span><span class="sxs-lookup"><span data-stu-id="4447f-342">Embedding videos into a Markdown page</span></span>
-
-<span data-ttu-id="4447f-343">Attualmente Docs può supportare la pubblicazione di video in tre posizioni:</span><span class="sxs-lookup"><span data-stu-id="4447f-343">Currently, Docs can support videos published to one of three locations:</span></span>
-
-- <span data-ttu-id="4447f-344">YouTube</span><span class="sxs-lookup"><span data-stu-id="4447f-344">YouTube</span></span>
-- <span data-ttu-id="4447f-345">Channel 9</span><span class="sxs-lookup"><span data-stu-id="4447f-345">Channel 9</span></span>
-- <span data-ttu-id="4447f-346">Sistema "OnePlayer" Microsoft</span><span class="sxs-lookup"><span data-stu-id="4447f-346">Microsoft's own 'One Player' system</span></span>
-
-<span data-ttu-id="4447f-347">È possibile incorporare un video con la sintassi seguente e Docs ne eseguirà il rendering.</span><span class="sxs-lookup"><span data-stu-id="4447f-347">You can embed a video with the following syntax, and Docs will render it.</span></span>
-
-```md
-> [!VIDEO <embedded_video_link>]
-```
-
-<span data-ttu-id="4447f-348">Esempio:</span><span class="sxs-lookup"><span data-stu-id="4447f-348">Example:</span></span>
-
-```md
-> [!VIDEO https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player]
-
-> [!VIDEO https://www.youtube.com/embed/iAtwVM-Z7rY]
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
-```
-
-<span data-ttu-id="4447f-349">... il rendering sarà il seguente:</span><span class="sxs-lookup"><span data-stu-id="4447f-349">... will be rendered as:</span></span>
-
-```html
-<iframe src="https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
-
-<iframe src="https://www.youtube-nocookie.com/embed/iAtwVM-Z7rY" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
-<iframe src="https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
-```
-
-<span data-ttu-id="4447f-350">E verrà visualizzato nel modo seguente nelle pagine pubblicate:</span><span class="sxs-lookup"><span data-stu-id="4447f-350">And it will be displayed like this on published pages:</span></span>
-
-> [!VIDEO https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player]
-
-> [!VIDEO https://www.youtube.com/embed/iAtwVM-Z7rY]
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
-
-> [!IMPORTANT]
-> <span data-ttu-id="4447f-351">L'URL del video CH9 deve iniziare con `https` e terminare con `/player`.</span><span class="sxs-lookup"><span data-stu-id="4447f-351">The CH9 video URL should start with `https` and end with `/player`.</span></span> <span data-ttu-id="4447f-352">In caso contrario verrà incorporata l'intera pagina anziché solo il video.</span><span class="sxs-lookup"><span data-stu-id="4447f-352">Otherwise, it will embed the whole page instead of the video only.</span></span>
-
-### <a name="uploading-new-videos"></a><span data-ttu-id="4447f-353">Caricamento di nuovi video</span><span class="sxs-lookup"><span data-stu-id="4447f-353">Uploading new videos</span></span>
-
-<span data-ttu-id="4447f-354">Per caricare nuovi video, è consigliabile attenersi al processo seguente:</span><span class="sxs-lookup"><span data-stu-id="4447f-354">Any new videos should be uploaded using the following process:</span></span>
-
-1. <span data-ttu-id="4447f-355">Unirsi al gruppo **docs_video_users** in IDWEB.</span><span class="sxs-lookup"><span data-stu-id="4447f-355">Join the **docs_video_users** group on IDWEB.</span></span>
-1. <span data-ttu-id="4447f-356">Accedere a https://aka.ms/VideoUploadRequest e inserire i dettagli del video.</span><span class="sxs-lookup"><span data-stu-id="4447f-356">Go to https://aka.ms/VideoUploadRequest and fill in the details for your video.</span></span> <span data-ttu-id="4447f-357">Sono necessarie le informazioni seguenti. Si noti che nessuna di queste informazioni sarà visibile al pubblico:</span><span class="sxs-lookup"><span data-stu-id="4447f-357">You will need (note that none of these items will be visible to the public):</span></span>
-    1. <span data-ttu-id="4447f-358">Un titolo per il video.</span><span class="sxs-lookup"><span data-stu-id="4447f-358">A title for your video.</span></span>
-    1. <span data-ttu-id="4447f-359">Un elenco di prodotti/servizi ai quali il video è correlato.</span><span class="sxs-lookup"><span data-stu-id="4447f-359">A list of products/services that your video is related to.</span></span>
-    1. <span data-ttu-id="4447f-360">La pagina di destinazione oppure, se la pagine non è ancora disponibile, il docset che ospiterà il video.</span><span class="sxs-lookup"><span data-stu-id="4447f-360">The target page or (if you don’t have the page yet) doc set that your video will be hosted on.</span></span>
-    1. <span data-ttu-id="4447f-361">Un collegamento al file MP4 per il video. In assenza di un percorso in cui inserire il file, è possibile usare temporaneamente il percorso `\\scratch2\scratch\apex`.</span><span class="sxs-lookup"><span data-stu-id="4447f-361">A link to the MP4 file for your video (if you don’t have a location to put the file, you can put it here temporarily:   `\\scratch2\scratch\apex`).</span></span> <span data-ttu-id="4447f-362">La risoluzione dei file MP4 deve essere 720p o superiore.</span><span class="sxs-lookup"><span data-stu-id="4447f-362">MP4 files should be 720p or higher.</span></span>
-    1. <span data-ttu-id="4447f-363">Una descrizione del video.</span><span class="sxs-lookup"><span data-stu-id="4447f-363">A description of the video.</span></span>
-1. <span data-ttu-id="4447f-364">Inviare (salvare) l'elemento.</span><span class="sxs-lookup"><span data-stu-id="4447f-364">Submit (save) that item.</span></span>
-1. <span data-ttu-id="4447f-365">Entro due giorni lavorativi, il video verrà caricato.</span><span class="sxs-lookup"><span data-stu-id="4447f-365">Within two business days, the video will get uploaded.</span></span> <span data-ttu-id="4447f-366">Il collegamento necessario per incorporare il video sarà disponibile nell'elemento di lavoro e sarà risolto *dall'utente*.</span><span class="sxs-lookup"><span data-stu-id="4447f-366">The link you need for embedding will be placed into the work item, and it will be resolved *back to you*.</span></span>
-1. <span data-ttu-id="4447f-367">Dopo aver recuperato il collegamento video, chiudere l'elemento di lavoro.</span><span class="sxs-lookup"><span data-stu-id="4447f-367">Once you have grabbed the video link, close the work item.</span></span>
-1. <span data-ttu-id="4447f-368">Il collegamento video può essere quindi aggiunto al post usando la sintassi seguente:</span><span class="sxs-lookup"><span data-stu-id="4447f-368">The video link can then be added to your post, using this syntax:</span></span>
-
-   ```md
-   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
-   ```
+<span data-ttu-id="3bcf2-386">Non è consigliabile usare tabelle HTML per docs.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-386">HTML tables aren't recommended for docs.microsoft.com.</span></span> <span data-ttu-id="3bcf2-387">Non sono leggibili nell'origine, mentre questo è un principio fondamentale di Markdown.</span><span class="sxs-lookup"><span data-stu-id="3bcf2-387">They aren't human readable in the source - which is a key principle of Markdown.</span></span>
