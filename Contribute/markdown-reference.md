@@ -7,12 +7,12 @@ ms.date: 01/30/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 14cc9f0912149eb342c97d0dd7d2776bd54c84e7
-ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
+ms.openlocfilehash: c1568264c687ebaf26048f5432fdea7d5132c012
+ms.sourcegitcommit: 216ef77ca2cd1eeb31c6c89d96778b178fc0d540
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78331965"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80070087"
 ---
 # <a name="docs-markdown-reference"></a>Informazioni di riferimento su Docs Markdown
 
@@ -627,6 +627,19 @@ Verrà eseguito il rendering come segue:
 ### <a name="line-breaks-within-words-in-second-column-table-cells"></a>Interruzioni di riga all'interno di parole nelle celle della seconda colonna della tabella
 
 Può essere opportuno impostare l'inserimento automatico di interruzioni di riga all'interno di parole solo nella seconda colonna di una tabella. Per limitare le interruzioni alla seconda colonna, applicare la classe `mx-tdCol2BreakAll` usando la sintassi del wrapper `div`, come illustrato in precedenza.
+
+### <a name="data-matrix-tables"></a>Tabelle di matrici di dati
+
+Una tabella di matrici di dati include un'intestazione e una prima colonna ponderata, creando una matrice con una cella vuota in alto a sinistra. Docs ha un Markdown personalizzato per le tabelle di matrici di dati:
+
+```md
+|                  |Header 1 |Header 2|
+|------------------|---------|--------|
+|**First column A**|Cell 1A  |Cell 2A |
+|**First column B**|Cell 1B  |Cell 2B |
+```
+
+Ogni voce nella prima colonna deve essere in grassetto (`**bold**`); in caso contrario, le tabelle non saranno accessibili per le utilità per la lettura dello schermo o valide per Docs.
 
 ### <a name="html-tables"></a>Tabelle HTML
 
