@@ -3,16 +3,16 @@ title: Informazioni di riferimento su Markdown per docs.microsoft.com
 description: Informazioni sulle funzionalità e sulla sintassi Markdown usate nella piattaforma Microsoft Docs.
 author: meganbradley
 ms.author: mbradley
-ms.date: 01/30/2020
+ms.date: 03/31/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: c1568264c687ebaf26048f5432fdea7d5132c012
-ms.sourcegitcommit: 216ef77ca2cd1eeb31c6c89d96778b178fc0d540
+ms.openlocfilehash: f0aed4ebb57ee1ce34f55d9085bab718fd4511cb
+ms.sourcegitcommit: 5ef2dc72e2ff8bddf873415a3f4b816eb16029dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80070087"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80624739"
 ---
 # <a name="docs-markdown-reference"></a>Informazioni di riferimento su Docs Markdown
 
@@ -70,7 +70,7 @@ Le parentesi acute non devono essere precedute da caratteri di escape nel testo 
 
 ## <a name="apostrophes-and-quotation-marks"></a>Apostrofi e virgolette
 
-Quando si copia da Word in un editor per Markdown, il testo potrebbe contenere apostrofi o virgolette curve, che devono essere codificati o modificati in semplici apostrofi o virgolette. In caso contrario, quando il file viene pubblicato, si ottiene questo risultato: Itâ€™s
+Quando si copia da Word in un editor per Markdown, il testo potrebbe contenere apostrofi o virgolette curve, che devono essere codificati o modificati in semplici apostrofi o virgolette. In caso contrario, quando il file viene pubblicato, si ottiene questo risultato: Itâ&euro;&trade;s
 
 Queste sono le codifiche per le versioni curve di questi segni di punteggiatura:
 
@@ -187,11 +187,11 @@ Docs supporta sei livelli di intestazioni Markdown:
 - L'intestazione H1 deve essere il primo contenuto nel file dopo il blocco di metadati YML.
 - Le intestazioni H2 vengono visualizzate automaticamente nel menu di spostamento a destra del file pubblicato. Non esistono titoli di livello inferiore. Usare quindi le intestazioni H2 in maniera mirata per facilitare la lettura del contenuto.
 - Le intestazioni HTML, ad esempio `<h1>`, non sono consigliate e in alcuni casi generano avvisi di compilazione.
-- È possibile creare un collegamento a singole intestazioni in un file usando i [collegamenti a segnalibro](how-to-write-links.md#links-to-anchors).
+- È possibile creare un collegamento a singole intestazioni in un file usando i [collegamenti a segnalibro](how-to-write-links.md#explicit-anchor-links).
 
 ## <a name="html"></a>HTML
 
-Benché Markdown supporti HTML inline, non è consigliabile usare il linguaggio HTML per la pubblicazione in Docs poiché, fatta eccezione per un piccolo gruppo di valori, genera avvisi o errori di compilazione. 
+Benché Markdown supporti HTML inline, non è consigliabile usare il linguaggio HTML per la pubblicazione in Docs poiché, fatta eccezione per un piccolo gruppo di valori, genera avvisi o errori di compilazione.
 
 ## <a name="images"></a>Immagini
 
