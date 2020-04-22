@@ -7,12 +7,12 @@ ms.date: 02/19/2019
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 3efe66a71a4a61b84ff513a6253777cb2d21bc9e
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 95dadff41bb31e0b34ee34f85ae47708297954f1
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288642"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81784286"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Panoramica della guida per i collaboratori di Microsoft Docs
 
@@ -68,7 +68,7 @@ L'esperienza di modifica nel browser è ideale per modifiche secondarie o poco f
 > Se abilitato, è possibile modificare un articolo in **qualsiasi lingua** e, in base al tipo di modifica, si verificherà quanto segue:
 > 1. Qualsiasi modifica linguistica approvata migliorerà anche il motore di traduzione automatica.
 > 2. Qualsiasi modifica che cambia in modo significativo il contenuto dell'articolo verrà gestita internamente per inviare una modifica allo stesso articolo in inglese, in modo che venga localizzata in tutte le lingue in caso di approvazione.
-> I miglioramenti consigliati, quindi, non influiranno positivamente solo sugli articoli nella propria lingua, ma in tutte le lingue disponibili.
+> I miglioramenti consigliati non influiranno positivamente solo sugli articoli nella propria lingua, ma per tutte le lingue disponibili.
 
 ## <a name="review-open-prs"></a>Esaminare le richieste pull aperte
 

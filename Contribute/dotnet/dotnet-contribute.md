@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: d52d681987e26fddc89a33075b3d35279608ac04
-ms.sourcegitcommit: bf2f4c7d9050b480d4db306df19d4c9f8714eff0
+ms.openlocfilehash: d97d72e8458a53ab11b01cbd4bb5df3b8458b048
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80759588"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81784301"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>Informazioni su come apportare contributi ai repository della documentazione .NET
 
@@ -203,6 +203,10 @@ L'esperienza C# Interactive cambia il modo di utilizzare gli esempi. I visitator
 
 > [!NOTE]
 > Si potrebbe notare che alcuni argomenti non seguono in effetti tutte le linee guida qui presentate. Il nostro scopo è ottenere coerenza in tutto il sito. Vedere l'elenco dei [problemi aperti](https://github.com/dotnet/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22%3Abookmark_tabs%3A+Information+Architecture%22) correlati a questo obiettivo specifico.
+
+### <a name="contributing-to-international-content"></a>Contributi per il contenuto internazionale   
+
+I contributi per il contenuto tradotto automaticamente non sono attualmente accettati. Per migliorare la qualità del contenuto tradotto automaticamente, è stato effettuato il passaggio a un motore di traduzione automatica neurale. Microsoft accetta e incoraggia i contributi per il contenuto con traduzione umana, usato per il training del motore di traduzione automatica neurale. Nel corso del tempo i contributi per il contenuto tradotto miglioreranno la qualità sia della traduzione umana che della traduzione automatica. Gli argomenti tradotti in modo automatico includeranno una dichiarazione di non responsabilità che informa che parte dell'argomento potrebbe essere tradotta automaticamente e il pulsante **Modifica** non verrà visualizzato, perché la modifica è disabilitata.   
 
 ## <a name="contributor-license-agreement"></a>Contratto di licenza per i collaboratori
 
