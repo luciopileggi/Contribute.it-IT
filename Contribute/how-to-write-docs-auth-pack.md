@@ -8,10 +8,10 @@ author: meganbradley
 ms.author: mbradley
 ms.date: 03/05/2020
 ms.openlocfilehash: 5bbf51af52069d5636715ffb2bd3f59bf459d5b9
-ms.sourcegitcommit: dbc2c48194e29bfa0c88d33f50f94b9ee26be2da
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78336419"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Docs Authoring Pack per VS Code
@@ -41,7 +41,7 @@ Per un elenco aggiornato dei comandi, vedere il [readme di Docs Markdown](https:
 
 ## <a name="how-to-generate-a-master-redirect-file"></a>Come generare un file di reindirizzamento master
 
-L'estensione Docs Markdown include uno script per generare o aggiornare un file di reindirizzamento master per un repository, in base ai metadati `redirect_url` nei singoli file. Questo script controlla ogni file Markdown nel repository per `redirect_url`, aggiunge i metadati di reindirizzamento al file di reindirizzamento master ( *.openpublishing.redirection.json*) per il repository e sposta i file reindirizzati in una cartella all'esterno del repository. Per eseguire lo script:
+L'estensione Docs Markdown include uno script per generare o aggiornare un file di reindirizzamento master per un repository, in base ai metadati `redirect_url` nei singoli file. Questo script controlla ogni file Markdown nel repository per `redirect_url`, aggiunge i metadati di reindirizzamento al file di reindirizzamento master (*.openpublishing.redirection.json*) per il repository e sposta i file reindirizzati in una cartella all'esterno del repository. Per eseguire lo script:
 
 1. Selezionare <kbd>F1</kbd> per aprire il riquadro comandi di VS Code.
 2. Iniziare a digitare "Docs: Generate..."

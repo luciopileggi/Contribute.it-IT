@@ -9,7 +9,7 @@ ms.openlocfilehash: d97d72e8458a53ab11b01cbd4bb5df3b8458b048
 ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "81784301"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>Informazioni su come apportare contributi ai repository della documentazione .NET

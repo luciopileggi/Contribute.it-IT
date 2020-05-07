@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 9cb0ba651d40d2834081d32443a8fd2b1152003d
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "53285925"
+---
 ## <a name="pull-request-processing"></a>Elaborazione delle richieste pull
 
 Nella sezione precedente è stato illustrato il processo di invio delle modifiche proposte raggruppandole in una nuova richiesta pull che viene quindi aggiunta alla coda delle richieste pull del repository di destinazione. Una richiesta pull attiva il modello per la collaborazione di GitHub, richiedendo il pull delle modifiche dal ramo di lavoro e la loro unione in un altro ramo. Nella maggior parte dei casi l'unione avviene nel ramo predefinito/master nel repository principale.

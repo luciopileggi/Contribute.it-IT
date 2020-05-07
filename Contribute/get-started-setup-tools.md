@@ -8,10 +8,10 @@ author: jasonwhowell
 ms.author: jasonh
 ms.date: 04/30/2018
 ms.openlocfilehash: ba7e511d756f43acfa5cfbbd228f793d7fbce727
-ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78331861"
 ---
 # <a name="install-content-authoring-tools"></a>Installare gli strumenti di creazione del contenuto
@@ -41,7 +41,7 @@ Seguire le istruzioni relative al client selezionato per l'installazione e confi
 
 Nel prossimo articolo verrà descritto come [configurare un repository Git locale](get-started-setup-local.md).
 
-   Altre risorse su Git sono disponibili qui: [Git terminology (Terminologia di Git)](https://help.github.com/articles/github-glossary) | [Git basics (Nozioni di base su Git)](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) | [Learning Git and GitHub (Apprendimento di Git e GitHub)](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
+   Le risorse aggiuntive su Git sono disponibili qui: [Terminologia di Git](https://help.github.com/articles/github-glossary) | [Nozioni di base su Git](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) | [Risorse di formazione per Git e GitHub](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
 
 ## <a name="understand-markdown-editors"></a>Informazioni sugli editor Markdown
 
