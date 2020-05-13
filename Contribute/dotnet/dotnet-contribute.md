@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: d97d72e8458a53ab11b01cbd4bb5df3b8458b048
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 948c96a63754566fc73e54c722998739984977d6
+ms.sourcegitcommit: 43a4f52ab827a7cf4609cc592483595efde3ceae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "81784301"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83203054"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>Informazioni su come apportare contributi ai repository della documentazione .NET
 
@@ -69,7 +69,11 @@ Per le modifiche di minore entità, vedere le istruzioni per la modifica in GitH
 
 Nel caso di un nuovo argomento, è possibile usare questo [file modello](dotnet-style-guide.md) come punto di partenza. Il file contiene linee guida per la redazione del contenuto e spiega anche i metadati richiesti per ogni articolo, come le informazioni sull'autore.
 
-Passare alla cartella corrispondente alla posizione del sommario stabilita per l'articolo nel passaggio 1. Tale cartella contiene i file Markdown per tutti gli articoli in quella sezione. Se necessario, creare una nuova cartella in cui posizionare i file per il contenuto. L'articolo principale per tale sezione è denominato *index.md*. Per le immagini e altre risorse statiche, creare una sottocartella denominata **media** all'interno della cartella che contiene l'articolo, se non esiste già. All'interno della cartella **media** creare una sottocartella con il nome dell'articolo (ad eccezione del file index). Il codice di esempio deve essere collocato nel repository `dotnet/samples`, come descritto nella sezione dedicata agli [esempi](#contributing-to-samples).
+Passare alla cartella corrispondente alla posizione del sommario stabilita per l'articolo nel passaggio 1. Tale cartella contiene i file Markdown per tutti gli articoli in quella sezione. Se necessario, creare una nuova cartella in cui posizionare i file per il contenuto. L'articolo principale per tale sezione è denominato *index.md*.
+
+Per le immagini e altre risorse statiche, creare una sottocartella denominata **media** all'interno della cartella che contiene l'articolo, se non esiste già. All'interno della cartella **media** creare una sottocartella con il nome dell'articolo (ad eccezione del file index). 
+
+Per i **frammenti di codice** creare una sottocartella denominata **snippets** all'interno della cartella che contiene l'articolo, se non esiste già. Nella maggior parte dei casi saranno disponibili frammenti di codice per tutti e tre i principali linguaggi .NET, ovvero C#, F# e Visual Basic. In tal caso, creare sottocartelle denominate **csharp**, **fsharp** e **vb** per ognuno dei tre progetti. Per semplicità, usare la cartella **snippets** per il progetto nella guida per C#, nella guida per F# e nella guida per Visual Basic. Tali aree contengono in genere i frammenti di codice per un linguaggio. I frammenti di codice sono esempi di codice piccoli e mirati che illustrano i concetti trattati in un articolo. I programmi più grandi, destinati al download e all'esplorazione, devono essere posizionati nel repository [dotnet/samples](https://github.com/dotnet/samples). Gli esempi completi sono trattati nella sezione [Contributi per gli esempi](#contributing-to-samples).
 
 Assicurarsi di usare la sintassi Markdown corretta. Per esempi comuni, vedere le [informazioni di riferimento su modelli e Markdown](dotnet-style-guide.md).
 
@@ -83,6 +87,24 @@ Assicurarsi di usare la sintassi Markdown corretta. Per esempi comuni, vedere le
           /media
             /porting-overview
                 portability_report.png
+          /snippets
+            /porting-overview
+              /csharp
+                porting.csproj
+                porting-overview.cs
+                Program.cs
+              /fsharp
+                porting.fsproj
+                porting-overview.fs
+                Program.fs
+               /vb
+                porting.vbproj
+                porting-overview.vb
+                Program.vb
+
+La struttura illustrata in precedenza include un'immagine, *portability_report.png*, e tre progetti di codice che includono i **frammenti di codice** inclusi nell'articolo *porting-overview.md*. Una struttura alternativa accettata contiene un progetto per ogni linguaggio, che contiene tutti i frammenti di codice per tutti gli articoli in tale cartella. Questa alternativa è stata usata nelle aree dedicate alle informazioni di riferimento sul linguaggio, considerata la presenza di frammenti molto piccoli per dimostrare la sintassi del linguaggio. È sconsigliata in altre aree.
+
+Per motivi cronologici, molti dei frammenti di codice inclusi vengono archiviati nella cartella */samples* nel repository *dotnet/docs*. Se si apportano modifiche sostanziali a un articolo, i frammenti di codice devono essere spostati nella nuova struttura. Non spostare i frammenti di codice per piccole modifiche.
 
 **Passaggio 4:** inviare una richiesta pull (PR) dal ramo personale al ramo master.
 
@@ -105,16 +127,14 @@ Viene eseguito regolarmente il push di tutti i commit dal ramo master al ramo pu
 
 Il repository [dotnet/samples](https://github.com/dotnet/samples) contiene tutti il codice di esempio che fa parte di qualsiasi argomento nella documentazione di .NET. Esistono svariati progetti diversi organizzati in sottocartelle. Queste sottocartelle hanno un'organizzazione simile a quella della documentazione per .NET.
 
-Per il codice presente nel repository esistono le distinzioni seguenti:
+Viene fatta la distinzione seguente per il codice che supporta il contenuto:
 
 - Esempi: i lettori possono scaricare ed eseguire gli esempi. Tutti gli esempi devono essere applicazioni o librerie complete. Se l'esempio crea una libreria, deve includere unit test o un'applicazione che consenta ai lettori di eseguire il codice. Spesso vengono usati più toolkit, tecnologie o funzionalità. Il file readme.md per ogni esempio farà riferimento all'articolo in modo da poter leggere altre informazioni sui concetti illustrati.
 - Frammenti di codice: illustrano un concetto o un'attività più limitati. Possono essere compilati, ma non sono progettati per essere applicazioni complete. Devono poter essere eseguiti correttamente, ma non rappresentano un'applicazione di esempio per uno scenario tipico. Sono invece progettati per illustrare singoli concetti o funzionalità con il minor codice possibile. Non dovrebbero essere composti da più di una schermata di codice.
 
-Tutto il codice è posizionato nel repository [dotnet/samples](https://github.com/dotnet/samples). È in progetto l'elaborazione di un modello nel quale la struttura di cartelle degli esempi corrisponde a quella della documentazione. Questi sono gli standard adottati:
+Gli esempi vengono archiviati nel repository [dotnet/samples](https://github.com/dotnet/samples). È in progetto l'elaborazione di un modello nel quale la struttura di cartelle degli esempi corrisponde a quella della documentazione. Questi sono gli standard adottati:
 
-- La cartella *snippets* di primo livello contiene frammenti di codice per piccoli esempi specifici.
-- Gli esempi di riferimento per le API sono posizionati in una cartella con lo schema seguente: *snippets/\<lingua>/api/\<spaziodeinomi>/\<nomeapi>* .
-- Le altre cartelle di primo livello corrispondono alle cartelle di primo livello nel repository *docs*. Ad esempio, il repository docs include una cartella *machine-learning/tutorials* e gli esempi per le esercitazioni di Machine Learning sono nella cartella *samples/machine-learning/tutorials*.
+- Le cartelle di primo livello corrispondono alle cartelle di primo livello nel repository *docs*. Ad esempio, il repository docs include una cartella *machine-learning/tutorials* e gli esempi per le esercitazioni di Machine Learning sono nella cartella *samples/machine-learning/tutorials*.
 
 Inoltre, tutti gli esempi nelle cartelle *core* e *standard* devono poter essere compilati ed eseguiti su tutte le piattaforme supportate da .NET Core. Il sistema di compilazione CI imporrà tale requisito. La cartella *framework* di primo livello contiene esempi compilati e convalidati solo in Windows.
 
@@ -126,7 +146,9 @@ Ogni esempio completo creato deve contenere un file *readme.md*. Questo file dev
 
 L'argomento includerà anche collegamenti all'esempio. Aggiungere un collegamento diretto alla cartella dell'esempio in GitHub.
 
-### <a name="writing-a-new-snippet-or-sample"></a>Scrittura di un nuovo frammento di codice o esempio
+### <a name="writing-a-new-sample"></a>Scrittura di un nuovo esempio
+
+Gli esempi sono programmi completi e librerie destinati al download. Possono avere un ambito ridotto, ma illustrano i concetti in modo da consentire agli utenti di esplorare e sperimentare autonomamente. Le linee guida per gli esempi assicurano che i lettori possano scaricarli ed esplorarli. Esaminare gli esempi per [Parallel LINQ (PLINQ)](https://github.com/dotnet/samples/tree/master/csharp/parallel/PLINQ) come esempio di ciascuna delle linee guida.
 
 1. L'esempio **deve fare parte di un progetto compilabile**. Se possibile, i progetti devono poter essere compilati per tutte le piattaforme supportate da .NET Core. Rappresentano un'eccezione gli esempi dimostrativi di una funzionalità specifica di una piattaforma o di uno strumento specifico di una piattaforma.
 
@@ -179,7 +201,29 @@ Per compilare qualsiasi frammento di codice o esempio .NET Core si usa l'interfa
 
 3. Aggiungere un file readme.md nella directory radice dell'esempio.
 
-   Il file deve includere una breve descrizione del codice e indirizzare gli utenti all'articolo che fa riferimento all'esempio.
+   Il file deve includere una breve descrizione del codice e indirizzare gli utenti all'articolo che fa riferimento all'esempio. Nella parte superiore del file *readme.md* devono essere presenti i metadati necessari per il sito di [esplorazione degli esempi](https://docs.microsoft.com/samples). Il blocco di intestazione deve contenere i campi seguenti:
+
+   ```yml
+   ---
+   name: "really cool sample"
+   description: "Learn everything about this really cool sample."
+   page_type: sample
+   languages:
+     - csharp
+     - fsharp
+     - vbnet
+   products:
+     - dotnet-core
+     - dotnet
+     - dotnet-standard
+     - aspnet
+     - aspnet-core
+     - ef-core
+   ---
+   ```
+
+   - La raccolta `languages` deve includere solo i linguaggi disponibili per l'esempio.
+   - La raccolta `products` deve includere solo i prodotti rilevanti per l'esempio.
 
 Se non quando indicato, tutti gli esempi possono essere compilati dalla riga di comando su qualsiasi piattaforma supportata da .NET Core. Esistono alcuni esempi specifici di Visual Studio che richiedono Visual Studio 2017 o versioni successive. Alcuni esempi, inoltre, illustrano funzionalità specifiche di una piattaforma e richiederanno una piattaforma specifica. Altri esempi e frammenti di codice richiedono .NET Framework e verranno eseguiti su piattaforme Windows e sarà necessario il Developer Pack per la versione di .NET Framework di destinazione.
 
@@ -204,9 +248,9 @@ L'esperienza C# Interactive cambia il modo di utilizzare gli esempi. I visitator
 > [!NOTE]
 > Si potrebbe notare che alcuni argomenti non seguono in effetti tutte le linee guida qui presentate. Il nostro scopo è ottenere coerenza in tutto il sito. Vedere l'elenco dei [problemi aperti](https://github.com/dotnet/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22%3Abookmark_tabs%3A+Information+Architecture%22) correlati a questo obiettivo specifico.
 
-### <a name="contributing-to-international-content"></a>Contributi per il contenuto internazionale   
+### <a name="contributing-to-international-content"></a>Contributi per il contenuto internazionale
 
-I contributi per il contenuto tradotto automaticamente non sono attualmente accettati. Per migliorare la qualità del contenuto tradotto automaticamente, è stato effettuato il passaggio a un motore di traduzione automatica neurale. Microsoft accetta e incoraggia i contributi per il contenuto con traduzione umana, usato per il training del motore di traduzione automatica neurale. Nel corso del tempo i contributi per il contenuto tradotto miglioreranno la qualità sia della traduzione umana che della traduzione automatica. Gli argomenti tradotti in modo automatico includeranno una dichiarazione di non responsabilità che informa che parte dell'argomento potrebbe essere tradotta automaticamente e il pulsante **Modifica** non verrà visualizzato, perché la modifica è disabilitata.   
+I contributi per il contenuto tradotto automaticamente non sono attualmente accettati. Per migliorare la qualità del contenuto tradotto automaticamente, è stato effettuato il passaggio a un motore di traduzione automatica neurale. Microsoft accetta e incoraggia i contributi per il contenuto con traduzione umana, usato per il training del motore di traduzione automatica neurale. Nel corso del tempo i contributi per il contenuto tradotto miglioreranno la qualità sia della traduzione umana che della traduzione automatica. Gli argomenti tradotti in modo automatico includeranno una dichiarazione di non responsabilità che informa che parte dell'argomento potrebbe essere tradotta automaticamente e il pulsante **Modifica** non verrà visualizzato, perché la modifica è disabilitata.
 
 ## <a name="contributor-license-agreement"></a>Contratto di licenza per i collaboratori
 
